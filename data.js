@@ -262,37 +262,37 @@ const headlineArticles = [
   {
     id: 18,
     headlineNumber: 3,
-    title: "Trakya Medya Dünyasında Mutlu Gün: Serdar ve Tuğba Çifti Masalsı Bir Düğünle Dünyaevine Girdi!",
-    spot: "Gündem Trakya Medya Grubu İmtiyaz Sahibi Serdar Kıren ile zarif eşi Tuğba Kıren, bölgenin iş, cemiyet ve basın dünyasını bir araya getiren görkemli bir merasimle mutluluğa 'evet' dedi.",
+    title: "Birlikte Yazılan En Güzel Hikaye: Serdar ve Tuğba Kıren Çiftinden İlham Veren Sevgi Yolculuğu",
+    spot: "Hayatın en büyük zenginliği; aynı ufka aynı inanç, şefkat ve aşkla bakabilmektir. Serdar ve Tuğba Kıren çiftinin birbirine olan derin bağlılığı ve hayat ortaklığı yürekleri ısıtıyor.",
     category: "YAŞAM",
     categorySlug: "yasam",
     location: "Tekirdağ / Çerkezköy",
     badgeColor: "purple",
     date: "27 Ağustos 2026 - 00:30",
     readTime: "3 dk",
-    views: 112400,
-    likes: 6840,
-    reactions: { like: 3890, heart: 3150, clap: 1820, thinking: 40, angry: 2 },
+    views: 124500,
+    likes: 7420,
+    reactions: { like: 4120, heart: 3680, clap: 1950, thinking: 30, angry: 0 },
     socialPosts: [
       {
-        user: "Trakya Cemiyet & Yaşam",
-        handle: "@trakya_cemiyet",
+        user: "Trakya Yaşam & Sevgi Durağı",
+        handle: "@trakya_yasam",
         avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
         platform: "instagram",
-        text: "Trakya basınının genç ve başarılı ismi Serdar Kıren ile zarif eşi Tuğba Hanım dünyaevine girdi! Çiftimize bir ömür boyu sağlık ve mutluluklar dileriz. 💍✨👰🤵 #SerdarTugba #GundemTrakya #Dugun",
-        time: "1 saat önce",
-        likes: 3420,
-        shares: 980
+        text: "Sevgi; iki kalbin aynı ritimde atması, birlikte yürünen her adımı bir ömre bedel kılmaktır. Serdar & Tuğba Kıren çiftine bir ömür boyu bitmeyen aşk ve huzur dileriz. 🌹✨💑 #SerdarTugba #GercekSevgi #HayatArkadasim",
+        time: "30 dk önce",
+        likes: 3890,
+        shares: 1120
       },
       {
-        user: "Çerkezköy Sosyete & Magazin",
-        handle: "@cerkezkoy_magazin",
+        user: "Gönülden Nağmeler",
+        handle: "@gonulden_sozler",
         avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80",
         platform: "facebook",
-        text: "Yılın düğününde Çerkezköy ve Trakya iş dünyası bir araya geldi. Serdar & Tuğba Kıren çiftine ömür boyu mutluluklar! 🥂🎉",
-        time: "2 saat önce",
-        likes: 2190,
-        shares: 450
+        text: "Birbirine bakan değil, birlikte aynı geleceğe bakan gözler hiç solmaz. Serdar ve Tuğba'nın bu asil ve sevgi dolu karesi Trakya'ya ilham veriyor. ❤️✨",
+        time: "1 saat önce",
+        likes: 2450,
+        shares: 630
       }
     ],
     comments: [
@@ -300,17 +300,17 @@ const headlineArticles = [
         id: 1801,
         author: "Cemalettin Yıldız",
         city: "Tekirdağ",
-        time: "45 dk önce",
-        content: "Kıymetli kardeşim Serdar ve değerli eşi Tuğba Hanımefendi'yi yürekten kutluyor, iki cihan saadeti diliyorum.",
-        likes: 186
+        time: "20 dk önce",
+        content: "Gözlerinizdeki bu samimiyet, yüzünüzdeki bu tebessüm bir ömür boyu hiç eksilmesin. Sevginiz daim olsun kardeşim.",
+        likes: 210
       },
       {
         id: 1802,
         author: "Sevgi Demir",
         city: "Edirne",
-        time: "1 saat önce",
-        content: "Çok zarif ve asil bir çift, bir ömür boyu bir yastıkta kocayın inşallah. Tebrikler!",
-        likes: 142
+        time: "45 dk önce",
+        content: "Aşkın, sadakatin ve zarafetin en güzel tablosu... Rabbim birliğinizi ve huzurunuzu her daim artırsın.",
+        likes: 178
       }
     ],
     author: {
@@ -322,56 +322,75 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Görkemli Düğün & Mutlu Anlar",
+        pageTitle: "İki Yürek, Tek Bir Hayat",
         pageImage: "img/serdar-tugba.jpg",
         content: `
-          <p class="lead">Gündem Trakya İmtiyaz Sahibi <strong>Serdar Kıren</strong> ile zarif eşi <strong>Tuğba Kıren</strong>, seçkin davetlilerin katıldığı muazzam bir düğün töreniyle dünyaevine girdi.</p>
+          <p class="lead">Bazı hikayeler vardır; sadece yaşanmaz, etrafına da huzur, umut ve sevgi saçar. <strong>Serdar ve Tuğba Kıren</strong> çiftinin hayat yolculuğu, sevginin en saf ve güçlü halini gözler önüne seriyor.</p>
           
-          <div style="background: linear-gradient(135deg, rgba(225, 29, 72, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%); border: 2px solid #e11d48; border-radius: var(--radius-md); padding: 1.5rem; margin: 1.5rem 0; text-align: center;">
-            <i class="fa-solid fa-heart" style="font-size: 2.2rem; color: #e11d48; margin-bottom: 0.6rem;"></i>
-            <h3 style="font-size: 1.4rem; font-weight: 900; color: var(--text-main); margin-bottom: 0.4rem;">Serdar & Tuğba KIREN</h3>
-            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
-              Trakya medya, iş ve siyaset camiasının önde gelen isimlerinin hazır bulunduğu nikah merasiminde genç çift alkışlar eşliğinde bir ömür boyu sürecek mutluluğa <strong>"Evet"</strong> dedi.
+          <div style="background: linear-gradient(135deg, rgba(225, 29, 72, 0.1) 0%, rgba(168, 85, 247, 0.12) 100%); border: 2px solid #e11d48; border-radius: var(--radius-md); padding: 1.8rem; margin: 1.5rem 0; text-align: center; box-shadow: 0 4px 15px rgba(225, 29, 72, 0.15);">
+            <i class="fa-solid fa-heart" style="font-size: 2.4rem; color: #e11d48; margin-bottom: 0.8rem; animation: pulse 2s infinite;"></i>
+            <h3 style="font-size: 1.45rem; font-weight: 900; color: var(--text-main); margin-bottom: 0.6rem; letter-spacing: -0.02em;">Serdar & Tuğba KIREN</h3>
+            <p style="font-size: 1.05rem; color: var(--text-main); font-style: italic; line-height: 1.7; max-width: 650px; margin: 0 auto;">
+              "Sevgi; iki insanın aynı sessizlikte bile birbirini anlaması, aynı tebessümle yarınlara güvenle bakabilmesidir. Birlikte yürünen her yol, sevgiyle güzelleşir."
             </p>
           </div>
 
+          <p>Hayatta en değerli zenginlik; yanınızda dağ gibi duran, kalbi kalbinizle çarpan bir hayat arkadaşına sahip olmaktır. Serdar ve Tuğba çiftinin birbirine olan derin saygısı, ortak idealleri ve yürekten bağlılığı, gerçek sevginin ne denli kıymetli olduğunu bir kez daha hatırlatıyor.</p>
+
           <div class="interactive-qa-box">
-            <div class="qa-box-title"><i class="fa-solid fa-camera-retro"></i> Merasim Detayları & Teşekkür:</div>
+            <div class="qa-box-title"><i class="fa-solid fa-feather"></i> Kalbe Dokunan Satırlar:</div>
             <div class="qa-link-card" onclick="goToArticlePage(2)">
-              <span class="qa-link-text">📸 Düğün törenine katılan seçkin konuklar ve cemiyet dünyası</span>
-              <span class="qa-link-badge">Katılımcılar (Sayfa 2) ➡️</span>
+              <span class="qa-link-text">🌹 Birlikte yürünen yolun zarafeti ve hayat arkadaşlığı</span>
+              <span class="qa-link-badge">Sevgi Felsefesi (Sayfa 2) ➡️</span>
             </div>
             <div class="qa-link-card" onclick="goToArticlePage(3)">
-              <span class="qa-link-text">💌 Serdar & Tuğba Kıren Çiftinden Teşekkür Mesajı</span>
-              <span class="qa-link-badge">Teşekkür (Sayfa 3) ➡️</span>
+              <span class="qa-link-text">💌 Serdar ve Tuğba Kıren'den özel yaşam ve sevgi manifestosu</span>
+              <span class="qa-link-badge">Güzel Sözler (Sayfa 3) ➡️</span>
             </div>
           </div>
         `
       },
       {
         pageNum: 2,
-        pageTitle: "Cemiyet ve Basın Dünyasının Buluşması",
+        pageTitle: "Birlikte Yürünen Yolun Zarafeti",
         pageImage: "img/serdar-tugba.jpg",
         content: `
-          <p class="lead">Bölgenin önde gelen belediye başkanları, milletvekilleri, oda başkanları ve basın mensuplarının katıldığı düğün merasiminde unutulmaz anlar yaşandı.</p>
-          <p>Şıklıklarıyla göz kamaştıran Serdar ve Tuğba çifti, ilk danslarıyla konuklardan büyük alkış aldı. Gece boyunca canlı müzik eşliğinde devam eden kutlamalarda davetliler genç çiftin mutluluğunu paylaştı.</p>
+          <p class="lead"><strong>"Aşk; Birlikte Yaşlanmak Değil, Her Günü Birlikte İlk Günkü Heyecanla Yaşamaktır"</strong></p>
           
+          <p>Hayat fırtınalarla, yoğunluklarla dolu olsa da; bir çift gözün samimiyeti, sıcacık bir 'nasılsın' deyişi tüm dünyayı unutturmaya yeter. Serdar Kıren'in çalışma azmi ve vizyonu, zarif eşi Tuğba Hanım'ın zarafeti ve desteğiyle birleştiğinde ortaya hayranlık uyandıran bir hayat uyumu çıkıyor.</p>
+
+          <blockquote style="border-left: 4px solid #e11d48; padding: 1rem 1.4rem; background: var(--bg-card); font-style: italic; margin: 1.4rem 0; color: var(--text-main); font-size: 1.1rem; line-height: 1.7; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+            "Sen benim dünümde en güzel başlangıç, bugünümde en büyük huzur, yarınlarımda ise daima şükrettiğim en kıymetli hazinemsin."
+          </blockquote>
+
           <div class="in-article-ad" style="border-color: #a855f7;">
-            <span class="ad-label" style="color: #a855f7;">GÜNDEM TRAKYA YAŞAM & CEMİYET</span>
-            <div class="ad-content-box"><i class="fa-solid fa-champagne-glasses"></i> Serdar & Tuğba Kıren Çiftine Ömür Boyu Mutluluklar Dileriz</div>
+            <span class="ad-label" style="color: #a855f7;">GÜNDEM TRAKYA YAŞAM KÖŞESİ</span>
+            <div class="ad-content-box"><i class="fa-solid fa-gem"></i> Gerçek Sevgi ve Sadakat; Zamanın Eskitemediği En Büyük Mirastır</div>
           </div>
         `
       },
       {
         pageNum: 3,
-        pageTitle: "Genç Çiftten Teşekkür Mesajı",
+        pageTitle: "Sevgi Manifestosu & İlham Veren Sözler",
         pageImage: "img/serdar-tugba.jpg",
         content: `
-          <p class="lead"><strong>"Bu Özel Günümüzde Yanımızda Olan Tüm Dostlarımıza Teşekkür Ederiz"</strong></p>
-          <p>Törenin ardından duygularını dile getiren Gündem Trakya İmtiyaz Sahibi Serdar Kıren:</p>
-          <blockquote style="border-left: 4px solid #e11d48; padding: 0.8rem 1.2rem; background: var(--bg-card); font-style: italic; margin: 1.2rem 0; color: var(--text-main); font-size: 1.05rem;">
-            "Hayatımızın en anlamlı ve özel gününde bizleri yalnız bırakmayan, bizzat katılarak veya tebrik telgrafları ve çiçekleriyle mutluluğumuza ortak olan tüm aile büyüklerimize, dostlarımıza ve meslektaşlarımıza sonsuz teşekkür ederiz."
-          </blockquote>
+          <p class="lead"><strong>Gönülden Dökülen En Anlamlı Sevgi Sözleri:</strong></p>
+          
+          <div style="display: grid; gap: 1rem; margin: 1.5rem 0;">
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1.2rem;">
+              <p style="color: #fbbf24; font-weight: 800; font-size: 0.95rem; margin-bottom: 0.3rem;"><i class="fa-solid fa-quote-left"></i> Güven ve Sadakat Üzerine:</p>
+              <p style="color: var(--text-main); font-size: 0.95rem; font-style: italic;">"Bir eli tutmak kolaydır; mühim olan o eli bir ömür boyu aynı şefkat ve sımsıkı inançla bırakmamaktır."</p>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1.2rem;">
+              <p style="color: #e11d48; font-weight: 800; font-size: 0.95rem; margin-bottom: 0.3rem;"><i class="fa-solid fa-quote-left"></i> Hayat Arkadaşlığı Üzerine:</p>
+              <p style="color: var(--text-main); font-size: 0.95rem; font-style: italic;">"Aynı duada buluşan iki yürek için mesafeler, yıllar ve engeller sadece birer ayrıntıdır. Asıl olan kalplerin birliğidir."</p>
+            </div>
+          </div>
+
+          <p style="color: var(--text-muted); font-size: 0.95rem; text-align: center; margin-top: 1.5rem;">
+            <strong>Serdar & Tuğba Kıren</strong> çiftine ömür boyu sağlık, bitmeyen bir muhabbet ve sonsuz mutluluklar dileriz.
+          </p>
         `
       }
     ]
