@@ -1,5 +1,5 @@
 /**
- * GÜNDEM TRAKYA - Canlı Kayan Borsa Şeridi, Otomatik Güncelleyici & Haber Sistemi
+ * GÜNDEM TRAKYA - Kategori Filtreleme, Köşe Yazarları, Kayan Borsa, Sosyal Medya & Yorum Sistemi
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     breakingIndex: 0,
     breakingTimer: null,
     bookmarks: JSON.parse(localStorage.getItem('haber_bookmarks') || '[]'),
+    userReactions: JSON.parse(localStorage.getItem('haber_reactions') || '{}'),
     theme: localStorage.getItem('haber_theme') || 'dark',
+    cookieConsent: localStorage.getItem('cookie_consent') === 'true',
     currentArticleId: null,
     currentArticlePage: 1,
     weatherIndex: 0
@@ -25,7 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { city: "Tekirdağ", temp: "28°C", icon: "fa-sun", condition: "Güneşli" },
     { city: "Edirne", temp: "29°C", icon: "fa-cloud-sun", condition: "Açık" },
     { city: "Kırklareli", temp: "26°C", icon: "fa-sun", condition: "Az Bulutlu" },
-    { city: "Çorlu", temp: "28°C", icon: "fa-wind", condition: "Rüzgarlı" }
+    { city: "Çorlu", temp: "28°C", icon: "fa-wind", condition: "Rüzgarlı" },
+    { city: "Çerkezköy", temp: "27°C", icon: "fa-cloud", condition: "Parçalı Bulutlu" }
   ];
 
   // DOM Elemanları
@@ -47,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navSearchInput: document.getElementById('navSearchInput'),
     navSearchBtn: document.getElementById('navSearchBtn'),
 
+    feedSectionTitle: document.getElementById('feedSectionTitle'),
+    feedCountBadge: document.getElementById('feedCountBadge'),
+
     sliderMediaBox: document.getElementById('sliderMediaBox'),
     sliderImg: document.getElementById('sliderImg'),
     sliderCategoryBadge: document.getElementById('sliderCategoryBadge'),
@@ -63,6 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     feedArticlesGrid: document.getElementById('feedArticlesGrid'),
     topReadList: document.getElementById('topReadList'),
+
+    // Cookie Banner
+    cookieConsentBar: document.getElementById('cookieConsentBar'),
+    acceptCookieBtn: document.getElementById('acceptCookieBtn'),
 
     // Modal
     articleModal: document.getElementById('articleModal'),
@@ -118,6 +128,19 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.bookmarkToggleBtn?.addEventListener('click', () => {
       showToast(`${state.bookmarks.length} adet kaydedilen haberiniz var`);
     });
+
+    if (!state.cookieConsent && elements.cookieConsentBar) {
+      setTimeout(() => {
+        elements.cookieConsentBar.classList.add('active');
+      }, 1000);
+    }
+
+    elements.acceptCookieBtn?.addEventListener('click', () => {
+      state.cookieConsent = true;
+      localStorage.setItem('cookie_consent', 'true');
+      elements.cookieConsentBar.classList.remove('active');
+      showToast('Çerez tercihleriniz kaydedildi');
+    });
   }
 
   function updateThemeIcon() {
@@ -154,11 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `).join('');
 
-    // Çift set render ederek kesintisiz sonsuz kayma sağlar
     elements.financeTrack.innerHTML = generateItems(1) + generateItems(2);
   }
 
-  // Sürekli canlı borsa mikro güncellemesi (Her 4 saniyede bir gerçekçi fiyat dalgalanması)
   function startLiveFinanceTicker() {
     setInterval(() => {
       const randomIdx = Math.floor(Math.random() * financeData.length);
@@ -212,23 +233,21 @@ document.addEventListener('DOMContentLoaded', () => {
   elements.prevBreakingBtn?.addEventListener('click', prevBreaking);
   state.breakingTimer = setInterval(nextBreaking, 6000);
 
-  // --- 5. Kategori Navigasyonu & Arama ---
+  // --- 5. Kategori Menüsü & Kusursuz Filtreleme / Kaydırma ---
   function renderCategoryNav() {
     if (!elements.categoryNavList) return;
     elements.categoryNavList.innerHTML = portalCategories.map(cat => `
       <li>
         <button class="nav-item-btn ${state.activeCategory === cat.slug ? 'active' : ''}" data-cat="${cat.slug}">
-          ${cat.name}
+          <i class="fa-solid ${cat.icon || 'fa-tag'}" style="margin-right: 0.35rem; font-size: 0.82rem; opacity: 0.9;"></i>${cat.name}
         </button>
       </li>
     `).join('');
 
     elements.categoryNavList.querySelectorAll('.nav-item-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        state.activeCategory = btn.getAttribute('data-cat');
-        renderCategoryNav();
-        renderFeedArticles();
-        showToast(`${btn.textContent.trim()} kategorisi filtrelendi`);
+        const slug = btn.getAttribute('data-cat');
+        filterCategory(slug);
       });
     });
 
@@ -238,12 +257,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  window.filterCategory = function(slug) {
+    state.activeCategory = slug;
+    state.searchQuery = '';
+    if (elements.navSearchInput) elements.navSearchInput.value = '';
+
+    renderCategoryNav();
+    renderFeedArticles();
+
+    const feedSec = document.getElementById('feedSection');
+    if (feedSec) {
+      feedSec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const catObj = portalCategories.find(c => c.slug === slug);
+    const catTitle = catObj ? catObj.name : 'GÜNCEL';
+    showToast(`${catTitle} kategorisi açıldı`);
+  };
+
   function executeSearch() {
     const q = elements.navSearchInput.value.trim().toLowerCase();
     state.searchQuery = q;
     renderFeedArticles();
     if (q) {
       showToast(`"${q}" için sonuçlar listeleniyor`);
+      const feedSec = document.getElementById('feedSection');
+      if (feedSec) feedSec.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
@@ -271,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderSliderNumbers() {
     if (!elements.sliderNumbersBar) return;
-    elements.sliderNumbersBar.innerHTML = headlineArticles.map((art, idx) => `
+    elements.sliderNumbersBar.innerHTML = headlineArticles.slice(0, 10).map((art, idx) => `
       <button class="slider-num-btn ${idx === 0 ? 'active' : ''}" data-index="${idx}">
         ${idx + 1}
       </button>
@@ -310,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (state.sliderTimer) clearInterval(state.sliderTimer);
     state.sliderTimer = setInterval(() => {
       if (!state.isSliderPaused) {
-        state.currentHeadlineIndex = (state.currentHeadlineIndex + 1) % headlineArticles.length;
+        state.currentHeadlineIndex = (state.currentHeadlineIndex + 1) % 10;
         showHeadline(state.currentHeadlineIndex);
       }
     }, 4500);
@@ -348,7 +387,10 @@ document.addEventListener('DOMContentLoaded', () => {
           <img src="${art.image}" alt="${art.title}" class="sub-img" loading="lazy" />
         </div>
         <div class="sub-body">
-          <span style="color: var(--news-red); font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">${art.category}</span>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.2rem;">
+            <span style="color: var(--news-red); font-size: 0.72rem; font-weight: 800; text-transform: uppercase;">${art.category}</span>
+            <span style="color: var(--text-light); font-size: 0.7rem;"><i class="fa-solid fa-location-dot"></i> ${art.location || 'Trakya'}</span>
+          </div>
           <h4 class="sub-title">${art.title}</h4>
         </div>
       </div>
@@ -362,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 7. Köşe Yazarları ---
+  // --- 7. Köşe Yazarları Kartları & Tıklamayla Makale Açma ---
   function renderColumnists() {
     if (!elements.columnistsGrid) return;
     elements.columnistsGrid.innerHTML = columnistsData.map(col => `
@@ -378,11 +420,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     elements.columnistsGrid.querySelectorAll('.columnist-card').forEach(card => {
       card.addEventListener('click', () => {
-        const id = parseInt(card.getAttribute('data-col-id'), 10);
-        const col = columnistsData.find(c => c.id === id);
-        if (col) {
-          showToast(`${col.name}: "${col.articleTitle}" açılıyor...`);
-        }
+        const colId = parseInt(card.getAttribute('data-col-id'), 10);
+        openArticleModal(colId);
       });
     });
   }
@@ -396,7 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderPharmacyTabs() {
     if (!elements.pharmacyTabs) return;
     const cities = [
-      { id: 'tekirdag', name: 'Tekirdağ / Çorlu' },
+      { id: 'tekirdag', name: 'Tekirdağ / Çorlu / Çerkezköy' },
       { id: 'edirne', name: 'Edirne' },
       { id: 'kirklareli', name: 'Kırklareli' }
     ];
@@ -437,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
-  // --- 9. Haber Akışı & Filtreleme ---
+  // --- 9. Haber Akışı & Dinamik Başlık ve Filtreleme ---
   function renderFeedArticles() {
     if (!elements.feedArticlesGrid) return;
 
@@ -445,44 +484,87 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (state.activeCategory !== 'all') {
       list = list.filter(a => a.categorySlug === state.activeCategory);
+    } else {
+      // Tümü seçiliyken haberleri öne al
+      list = list.filter(a => a.categorySlug !== 'yazarlar');
     }
 
     if (state.searchQuery) {
-      list = list.filter(a => 
+      list = headlineArticles.filter(a => 
         a.title.toLowerCase().includes(state.searchQuery) ||
-        a.spot.toLowerCase().includes(state.searchQuery)
+        a.spot.toLowerCase().includes(state.searchQuery) ||
+        (a.location && a.location.toLowerCase().includes(state.searchQuery)) ||
+        (a.author?.name && a.author.name.toLowerCase().includes(state.searchQuery))
       );
+    }
+
+    // Başlığı Güncelle
+    const catObj = portalCategories.find(c => c.slug === state.activeCategory);
+    if (elements.feedSectionTitle) {
+      if (state.searchQuery) {
+        elements.feedSectionTitle.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i> "${state.searchQuery}" Arama Sonuçları`;
+      } else if (catObj && catObj.slug === 'yazarlar') {
+        elements.feedSectionTitle.innerHTML = `<i class="fa-solid fa-pen-nib"></i> GÜNDEM TRAKYA KÖŞE YAZILARI`;
+      } else if (catObj && catObj.slug !== 'all') {
+        elements.feedSectionTitle.innerHTML = `<i class="fa-solid ${catObj.icon || 'fa-newspaper'}"></i> ${catObj.name} GELİŞMELERİ`;
+      } else {
+        elements.feedSectionTitle.innerHTML = `<i class="fa-solid fa-newspaper"></i> GÜNCEL GELİŞMELER`;
+      }
+    }
+
+    if (elements.feedCountBadge) {
+      elements.feedCountBadge.textContent = `${list.length} ${state.activeCategory === 'yazarlar' ? 'Yazı' : 'Haber'}`;
     }
 
     if (list.length === 0) {
       elements.feedArticlesGrid.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-color);">
           <i class="fa-solid fa-magnifying-glass" style="font-size: 2rem; color: var(--news-red); margin-bottom: 0.8rem;"></i>
-          <h3>Sonuç Bulunamadı</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Aradığınız kriterlere uygun haber bulunamadı.</p>
+          <h3>Bu Kategoride Haber Bulunamadı</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">Tüm haberleri görüntülemek için aşağıdaki butona tıklayabilirsiniz.</p>
+          <button class="page-nav-btn" onclick="filterCategory('all')" style="margin-top: 1rem;">
+            <i class="fa-solid fa-border-all"></i> Tüm Haberleri Göster
+          </button>
         </div>
       `;
       return;
     }
 
-    elements.feedArticlesGrid.innerHTML = list.map(art => `
-      <article class="feed-card" data-id="${art.id}">
-        <div class="feed-media">
-          <img src="${art.image}" alt="${art.title}" class="feed-img" loading="lazy" />
-          <span style="position: absolute; top: 8px; left: 8px; background: var(--news-red); color: white; font-size: 0.7rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: var(--radius-sm);">
-            ${art.category}
-          </span>
-        </div>
-        <div class="feed-body">
-          <h3 class="feed-title">${art.title}</h3>
-          <p class="feed-summary">${art.spot}</p>
-          <div class="feed-footer">
-            <span><i class="fa-regular fa-clock"></i> ${art.readTime} okuma</span>
-            <span><i class="fa-regular fa-eye"></i> ${art.views.toLocaleString('tr-TR')}</span>
+    elements.feedArticlesGrid.innerHTML = list.map(art => {
+      const commentCount = (art.comments || []).length;
+      const isWriter = art.categorySlug === 'yazarlar';
+
+      return `
+        <article class="feed-card" data-id="${art.id}">
+          <div class="feed-media">
+            <img src="${art.image}" alt="${art.title}" class="feed-img" loading="lazy" />
+            <span style="position: absolute; top: 8px; left: 8px; background: ${isWriter ? '#8b5cf6' : 'var(--news-red)'}; color: white; font-size: 0.7rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: var(--radius-sm);">
+              ${art.category}
+            </span>
+            <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.75); color: #38bdf8; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.45rem; border-radius: var(--radius-sm);">
+              <i class="fa-solid ${isWriter ? 'fa-user-pen' : 'fa-location-dot'}"></i> ${art.location || 'Trakya'}
+            </span>
           </div>
-        </div>
-      </article>
-    `).join('');
+          <div class="feed-body">
+            ${isWriter ? `
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem;">
+                <img src="${art.author.avatar}" style="width: 1.8rem; height: 1.8rem; border-radius: 50%;" />
+                <span style="font-weight: 800; font-size: 0.85rem; color: var(--news-blue);">${art.author.name}</span>
+              </div>
+            ` : ''}
+            <h3 class="feed-title">${art.title}</h3>
+            <p class="feed-summary">${art.spot}</p>
+            <div class="feed-footer">
+              <div class="feed-footer-tags">
+                <span><i class="fa-regular fa-clock"></i> ${art.readTime}</span>
+                <span><i class="fa-regular fa-comment-dots" style="color: var(--news-blue);"></i> ${commentCount} Yorum</span>
+              </div>
+              <span><i class="fa-regular fa-eye"></i> ${art.views.toLocaleString('tr-TR')}</span>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
 
     elements.feedArticlesGrid.querySelectorAll('.feed-card').forEach(card => {
       card.addEventListener('click', () => {
@@ -507,7 +589,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
-  // --- 11. ÇOK SAYFALI HABER & FOTOĞRAFLI GEÇİŞ MOTORU ---
+  // --- 11. ÇOK SAYFALI HABER, SOSYAL MEDYA PAYLAŞIMLARI & YORUM MOTORU ---
   function openArticleModal(articleId, pageNum = 1) {
     const article = headlineArticles.find(a => a.id === articleId);
     if (!article) return;
@@ -599,9 +681,104 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     }
 
+    // 1. Emoji Duygu / Reaksiyon Barı
+    const r = article.reactions || { like: 1400, heart: 980, clap: 520, thinking: 180, angry: 25 };
+    const userReacted = state.userReactions[article.id];
+
+    const reactionsHtml = `
+      <div class="social-reaction-bar">
+        <span class="reaction-title"><i class="fa-solid fa-chart-pie" style="color: var(--news-red);"></i> Bu Habere / Yazıya Tepkiniz:</span>
+        <div class="reaction-emojis">
+          <button class="reaction-btn ${userReacted === 'like' ? 'active' : ''}" onclick="addReaction(${article.id}, 'like')">👍 Beğendim <span id="react_like_${article.id}">${r.like}</span></button>
+          <button class="reaction-btn ${userReacted === 'heart' ? 'active' : ''}" onclick="addReaction(${article.id}, 'heart')">❤️ Harika <span id="react_heart_${article.id}">${r.heart}</span></button>
+          <button class="reaction-btn ${userReacted === 'clap' ? 'active' : ''}" onclick="addReaction(${article.id}, 'clap')">👏 Tebrikler <span id="react_clap_${article.id}">${r.clap}</span></button>
+          <button class="reaction-btn ${userReacted === 'thinking' ? 'active' : ''}" onclick="addReaction(${article.id}, 'thinking')">🤔 Düşündürücü <span id="react_thinking_${article.id}">${r.thinking}</span></button>
+          <button class="reaction-btn ${userReacted === 'angry' ? 'active' : ''}" onclick="addReaction(${article.id}, 'angry')">😡 Tepkiliyim <span id="react_angry_${article.id}">${r.angry}</span></button>
+        </div>
+      </div>
+    `;
+
+    // 2. Sosyal Medya Canlı Gönderileri / Tweetler & Instagram
+    let socialHtml = '';
+    if (article.socialPosts && article.socialPosts.length > 0) {
+      socialHtml = `
+        <div class="social-pulse-section">
+          <div class="social-pulse-header">
+            <span><i class="fa-solid fa-share-nodes"></i> Trakya Sosyal Medya Nabzı (Instagram & X)</span>
+            <span style="font-size: 0.75rem; color: var(--news-blue); font-weight: 700;">Canlı Alıntılar</span>
+          </div>
+          <div class="social-cards-grid">
+            ${article.socialPosts.map(post => `
+              <div class="social-tweet-card">
+                <div class="tweet-user-row">
+                  <img src="${post.avatar}" alt="${post.user}" class="tweet-avatar" />
+                  <div>
+                    <div class="tweet-name">${post.user} <i class="fa-solid fa-circle-check" style="color: var(--news-blue); font-size: 0.75rem;"></i></div>
+                    <div class="tweet-handle">${post.handle}</div>
+                  </div>
+                  <i class="fa-brands ${post.platform === 'facebook' ? 'fa-facebook' : post.platform === 'instagram' ? 'fa-instagram' : 'fa-x-twitter'}" style="margin-left: auto; color: ${post.platform === 'instagram' ? '#e1306c' : 'var(--news-blue)'}; font-size: 1.1rem;"></i>
+                </div>
+                <p class="tweet-text">${post.text}</p>
+                <div class="tweet-footer">
+                  <span><i class="fa-regular fa-heart"></i> ${post.likes}</span>
+                  <span><i class="fa-solid fa-share"></i> ${post.shares}</span>
+                  <span><i class="fa-regular fa-clock"></i> ${post.time}</span>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // 3. Okuyucu Yorumları & Yorum Yap Kutusu
+    const comments = article.comments || [];
+    const commentsHtml = `
+      <section class="comments-section">
+        <div class="comments-header">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main);"><i class="fa-solid fa-comments" style="color: var(--news-red);"></i> Okuyucu Yorumları (${comments.length})</h3>
+          <span style="font-size: 0.8rem; color: var(--text-light);">Yorum Kurallarına Uygun Yayınlanır</span>
+        </div>
+
+        <div class="comment-input-box">
+          <div class="comment-input-row">
+            <input type="text" id="commentAuthorInput" class="comment-input" placeholder="Adınız Soyadınız" required />
+            <input type="text" id="commentCityInput" class="comment-input" placeholder="Şehir / İlçe (Örn: Çerkezköy / Çorlu)" required />
+          </div>
+          <textarea id="commentTextInput" class="comment-textarea" placeholder="Bu gelişme hakkındaki düşüncelerinizi yazınız..." required></textarea>
+          <button class="page-nav-btn" onclick="submitArticleComment(${article.id})" style="padding: 0.55rem 1.3rem;">
+            <i class="fa-solid fa-paper-plane"></i> Yorumu Gönder
+          </button>
+        </div>
+
+        <div class="comment-list" id="commentList_${article.id}">
+          ${comments.map(c => `
+            <div class="comment-card">
+              <div class="comment-top-row">
+                <div class="comment-user-info">
+                  <i class="fa-solid fa-circle-user" style="font-size: 1.4rem; color: var(--news-blue);"></i>
+                  <span style="font-weight: 800; font-size: 0.95rem;">${c.author}</span>
+                  <span class="comment-city-tag">${c.city}</span>
+                </div>
+                <span class="comment-time">${c.time}</span>
+              </div>
+              <p class="comment-body">${c.content}</p>
+              <div class="comment-actions">
+                <span class="comment-like-btn" onclick="likeComment(this)"><i class="fa-regular fa-thumbs-up"></i> <span>${c.likes || 12}</span> Beğen</span>
+                <span style="cursor: pointer;"><i class="fa-solid fa-reply"></i> Yanıtla</span>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </section>
+    `;
+
     elements.modalArticleText.innerHTML = `
       ${activePage.content}
       ${paginationHtml}
+      ${reactionsHtml}
+      ${socialHtml}
+      ${commentsHtml}
     `;
 
     const modalBody = elements.articleModal.querySelector('.modal-body');
@@ -616,6 +793,66 @@ document.addEventListener('DOMContentLoaded', () => {
         renderArticlePageContent(article, pageNum);
         showToast(`Sayfa ${pageNum} yüklendi`);
       }
+    }
+  };
+
+  window.addReaction = function(articleId, reactionKey) {
+    const article = headlineArticles.find(a => a.id === articleId);
+    if (!article || !article.reactions) return;
+
+    if (state.userReactions[articleId] === reactionKey) {
+      showToast('Bu tepkiyi zaten verdiniz');
+      return;
+    }
+
+    article.reactions[reactionKey] = (article.reactions[reactionKey] || 0) + 1;
+    state.userReactions[articleId] = reactionKey;
+    localStorage.setItem('haber_reactions', JSON.stringify(state.userReactions));
+
+    const spanEl = document.getElementById(`react_${reactionKey}_${articleId}`);
+    if (spanEl) {
+      spanEl.textContent = article.reactions[reactionKey];
+    }
+    showToast('Tepkiniz kaydedildi! 👍');
+    renderArticlePageContent(article, state.currentArticlePage);
+  };
+
+  window.submitArticleComment = function(articleId) {
+    const authorEl = document.getElementById('commentAuthorInput');
+    const cityEl = document.getElementById('commentCityInput');
+    const textEl = document.getElementById('commentTextInput');
+
+    if (!authorEl || !textEl || !authorEl.value.trim() || !textEl.value.trim()) {
+      showToast('Lütfen adınızı ve yorumunuzu giriniz');
+      return;
+    }
+
+    const article = headlineArticles.find(a => a.id === articleId);
+    if (!article) return;
+
+    if (!article.comments) article.comments = [];
+
+    const newComment = {
+      id: Date.now(),
+      author: authorEl.value.trim(),
+      city: cityEl?.value.trim() || 'Trakya',
+      time: 'Az önce',
+      content: textEl.value.trim(),
+      likes: 1
+    };
+
+    article.comments.unshift(newComment);
+    showToast('Yorumunuz başarıyla yayınlandı! 🎉');
+    renderArticlePageContent(article, state.currentArticlePage);
+    renderFeedArticles();
+  };
+
+  window.likeComment = function(btnEl) {
+    const countEl = btnEl.querySelector('span');
+    if (countEl) {
+      countEl.textContent = parseInt(countEl.textContent, 10) + 1;
+      btnEl.style.color = 'var(--news-red)';
+      showToast('Yorum beğenildi');
     }
   };
 
