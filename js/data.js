@@ -15,6 +15,30 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 110, 
+    articleId: 20, 
+    title: "Marmaraereğlisi Belediye Spor küllerinden yeniden doğdu: KaracakılavuzSpor'u 4-2 devirip şampiyon oldu!", 
+    time: "01:30" 
+  },
+  { 
+    id: 109, 
+    articleId: 21, 
+    title: "Trakya'da çamur yağmuru sürprizi: Afrika tozu yağışla birleşti, araçlar çamurla kaplandı!", 
+    time: "01:25" 
+  },
+  { 
+    id: 108, 
+    articleId: 22, 
+    title: "Çerkezköy Kadın Danışma Merkezi'nden 'Birlikte Güçlüyüz' projesi: 8 haftalık ücretsiz atölye başlıyor!", 
+    time: "01:22" 
+  },
+  { 
+    id: 107, 
+    articleId: 19, 
+    title: "Narin Ailesi'nden Çerkezköy'e yeni dev eğitim yatırımı: 8 derslikli Özden Narin Anaokulu için protokol imzalandı!", 
+    time: "01:20" 
+  },
+  { 
     id: 106, 
     articleId: 18, 
     title: "Ergene ve Çorlu'daki 900 dekarlık yangının ardından Başkan Müge Yıldız Topak sahaya indi: 'Üreticimizin yarasını birlikte saracağız!'", 
@@ -121,8 +145,398 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 18,
+    id: 20,
     headlineNumber: 1,
+    title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
+    spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
+    category: "SPOR",
+    categorySlug: "spor",
+    location: "Tekirdağ / Marmaraereğlisi",
+    badgeColor: "emerald",
+    date: "27 Ağustos 2026 - 01:30",
+    readTime: "4 dk",
+    views: 89600,
+    likes: 4720,
+    reactions: { like: 3120, heart: 2450, clap: 1890, thinking: 30, angry: 2 },
+    socialPosts: [
+      {
+        user: "Marmaraereğlisi Belediye Spor",
+        handle: "@marmaraereglisibldspor",
+        avatar: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Küllerimizden doğduk, sözümüzü tuttuk! Sezonu şampiyon olarak tamamlayıp kupamızı ilçemize armağan ettik. O sene bu sene, bundan sonra her sene! 🏆⚽💙💛 #SampiyonEregli",
+        time: "20 dk önce",
+        likes: 1980,
+        shares: 540
+      },
+      {
+        user: "Tekirdağ Amatör Futbol Dünyası",
+        handle: "@TekirdagAmator",
+        avatar: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Kapanma tehlikesi atlatan bir kulübün böyle muazzam bir kenetlenmeyle şampiyon olması Trakya futboluna ilham verdi. Tebrikler Marmaraereğlisi! 👏🔥",
+        time: "45 dk önce",
+        likes: 1450,
+        shares: 310
+      }
+    ],
+    comments: [
+      {
+        id: 2001,
+        author: "Burak Ereğlili",
+        city: "Marmaraereğlisi / Merkez",
+        time: "15 dk önce",
+        content: "Tribünlerde nefes kesen bir 90 dakika yaşadık. Cevdet Hoca ve futbolcularımızın yüreğine sağlık, Başkanımız Onur Bozkurter'e sonsuz teşekkürler.",
+        likes: 138
+      }
+    ],
+    author: {
+      name: "Abdurrahim YILDIRIM",
+      title: "Spor Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/marmaraereglisi-sampiyon.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "4-2'lik Zafer ve Görkemli Kupa Töreni",
+        pageImage: "img/marmaraereglisi-sampiyon.jpg",
+        content: `
+          <p class="lead">Bir dönem Bölgesel Amatör Lig'e (BAL) yükselmesine rağmen belediye yönetiminin desteğini çekmesiyle ligden çekilen ve kaderine terk edilip kapanma noktasına gelen <strong>Marmaraereğlisi Belediye Spor</strong>, muhteşem bir geri dönüşe imza atarak şampiyon oldu!</p>
+          
+          <p>Ligin son haftasında şampiyonluk yolundaki kritik karşılaşmada KaracakılavuzSpor ile karşı karşıya gelen mavi-beyazlılar, 90 dakika boyunca üstün bir futbol sergileyerek sahadan <strong>4-2 galip</strong> ayrıldı ve sezonu şampiyonluk kupasıyla taçlandırdı.</p>
+          
+          <p>Protokol tribünü ve stadı dolduran binlerce taraftarın katıldığı kupa töreninde Tekirdağ Milletvekili İlhami Özcan Aygun, Marmaraereğlisi Kaymakamı Gökhan Gürbüzerol, Çorlu Belediye Başkanı Ahmet Sarıkurt ve Amatör Spor Kulüpleri Federasyonu Başkanı Ersan Karamehmetoğlu şampiyonluk coşkusuna ortak oldu.</p>
+
+          <div class="in-article-ad"><span class="ad-label">REKLAM (SAYFA 1)</span><div class="ad-content-box"><i class="fa-solid fa-rectangle-ad"></i> Google AdSense Spor Sayfa İçi Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Şampiyonluk ve Kulüp Dosyası:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">⚽ Kapanma Noktasından Şampiyonluğa: Teknik Direktör Cevdet Gül'ün Rolü</span><span class="qa-link-badge">Başarı Hikayesi (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">🎙️ Başkan Mustafa Onur Bozkurter: 'O Sene Bu Sene, Bundan Sonra Her Sene!'</span><span class="qa-link-badge">Gelecek Sezon Hedefi (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Kapanma Eşiğinden Şampiyonluk Kürsüsüne",
+        pageImage: "img/marmaraereglisi-sampiyon.jpg",
+        content: `
+          <p class="lead"><strong>Bir Şehrin İnancı ve Teknik Direktör Cevdet Gül'ün Taktik Dehası</strong></p>
+          
+          <p>Yıllarca sahipsiz bırakılan ve genç takımları dağıtılan kulüp, Belediye Başkanı <strong>Mustafa Onur Bozkurter</strong>'in göreve gelmesiyle birlikte yeniden yapılandırıldı. Tesisler yenilendi, altyapı güçlendirildi ve deneyimli teknik adam Cevdet Gül yönetiminde şampiyonluk kadrosu kuruldu.</p>
+          
+          <p>Sezon boyunca oynadığı 18 maçta 15 galibiyet alan Marmaraereğlisi temsilcisi, attığı 54 golle ligin en skorer ve en az gol yiyen takımı unvanını elde etti.</p>
+
+          <div class="in-article-ad" style="border-color: var(--news-green);"><span class="ad-label" style="color: var(--news-green);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Başkan Onur Bozkurter: 'O Sene Bu Sene, Bundan Sonra Her Sene!'",
+        pageImage: "img/marmaraereglisi-sampiyon.jpg",
+        content: `
+          <p class="lead"><strong>'Marmaraereğlisi Halkına Sözümüzü Tuttuk'</strong></p>
+          
+          <p>Kupa töreninde coşkulu kalabalığa hitap eden Marmaraereğlisi Belediye Başkanı Mustafa Onur Bozkurter:</p>
+          
+          <blockquote style="background: var(--bg-elevated); border-left: 4px solid var(--news-green); padding: 1rem 1.2rem; margin: 1.2rem 0; font-style: italic; color: var(--text-main); line-height: 1.7;">
+            "Söz verdiğimiz gibi, Marmaraereğlisi Belediye Spor Kulübümüzü hak ettiği değere kavuşturmanın gururunu yaşıyoruz. Bu başarıda emeği geçen teknik heyetimize, futbolcularımıza ve bizi hiçbir maçta yalnız bırakmayan büyük taraftarımıza teşekkür ediyorum. Bu tarihi zaferi tüm ilçe halkımıza armağan ediyoruz. O sene bu sene, bundan sonra her sene!"
+          </blockquote>
+        `
+      }
+    ]
+  },
+  {
+    id: 21,
+    headlineNumber: 2,
+    title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
+    spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
+    category: "YAŞAM",
+    categorySlug: "yasam",
+    location: "Tekirdağ / Edirne / Çorlu",
+    badgeColor: "yellow",
+    date: "27 Ağustos 2026 - 01:25",
+    readTime: "3 dk",
+    views: 76500,
+    likes: 3120,
+    reactions: { like: 1890, heart: 420, clap: 310, thinking: 640, angry: 80 },
+    socialPosts: [
+      {
+        user: "Trakya Hava & Doğa",
+        handle: "@TrakyaHavaDurumu",
+        avatar: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Trakya'da sabah saatlerinde yağan yağmurla birlikte arabaların üzeri tamamen çamur oldu. Afrika tozu etkisini yarından itibaren kaybedecek. 🌧️🚗💨 #TrakyaHava",
+        time: "1 saat önce",
+        likes: 980,
+        shares: 210
+      }
+    ],
+    comments: [
+      {
+        id: 2101,
+        author: "Şaban Yıldız",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "30 dk önce",
+        content: "Sabah durağa geldiğimizde taksilerin camları tamamen çamur içindeydi. Tüm esnaf temizliğe başladık.",
+        likes: 67
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Çevre & Yaşam Editörü",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/trakya-camur-yagisi.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Afrika Tozu Yağışla Buluştu: Çamur Yağdı",
+        pageImage: "img/trakya-camur-yagisi.jpg",
+        content: `
+          <p class="lead">Tekirdağ, Edirne ve Kırklareli genelinde sabahın erken saatlerinde etkili olan hafif sağanak yağış, atmosferdeki yoğun <strong>toz taşınımı</strong> nedeniyle çamurlu yağışa dönüştü.</p>
+          
+          <p>Özellikle cadde ve sokaklarda park halinde bulunan binlerce otomobil, balkonlar ve tarım makineleri sarı-kahverengi çamur tabakasıyla kaplandı. Sabah araçlarının başına geçen vatandaşlar şaşkınlık yaşarken, camları temizlemek için yoğun çaba sarf etti.</p>
+
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Oto Yıkamacılarda Yoğunluk & Uzman Uyarıları",
+        pageImage: "img/trakya-camur-yagisi.jpg",
+        content: `
+          <p class="lead"><strong>Oto Yıkamacılarda Sıra Oluştu</strong></p>
+          <p>Çamur yağışının ardından oto yıkama istasyonları ve benzinliklerdeki yıkama alanlarında uzun araç kuyrukları oluştu. Sürücüler araçlarının boyasının zarar görmemesi için tazyikli suyla yıkama yaptırdı.</p>
+          <p>Meteoroloji uzmanları, toz taşınımının astım ve solunum yolu rahatsızlığı olan vatandaşlar için hassasiyet oluşturabileceğini belirterek uyarılarda bulundu.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Hafta Sonu Hava Durumu Tahmini",
+        pageImage: "img/trakya-camur-yagisi.jpg",
+        content: `
+          <p class="lead"><strong>Toz Taşınımı Ne Zaman Sona Erecek?</strong></p>
+          <p>Meteoroloji Genel Müdürlüğü 1. Bölge Tahmin Merkezi verilerine göre, Trakya üzerindeki toz tabakasının kuzeyden gelen serin hava dalgasıyla birlikte yarın öğleden sonra bölgeyi terk etmesi bekleniyor.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 22,
+    headlineNumber: 3,
+    title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
+    spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
+    category: "YAŞAM & EĞİTİM",
+    categorySlug: "yasam",
+    location: "Tekirdağ / Çerkezköy",
+    badgeColor: "purple",
+    date: "27 Ağustos 2026 - 01:20",
+    readTime: "4 dk",
+    views: 64200,
+    likes: 3890,
+    reactions: { like: 2450, heart: 1980, clap: 1120, thinking: 40, angry: 0 },
+    socialPosts: [
+      {
+        user: "Tekirdağ Büyükşehir Belediyesi",
+        handle: "@tekirdagbld",
+        avatar: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=100&q=80",
+        platform: "instagram",
+        text: "Çerkezköy Kadın Danışma Merkezimiz 'Birlikte Güçlüyüz' diyerek kadınlarımızın yanında! 8 haftalık ücretsiz atölyelerimize tüm kadınlarımız davetlidir. 🌸💜 #BirlikteGucluyuz #TekirdagKadin",
+        time: "2 saat önce",
+        likes: 1240,
+        shares: 380
+      }
+    ],
+    comments: [
+      {
+        id: 2201,
+        author: "Sevgi Hanım",
+        city: "Çerkezköy / Bağlık",
+        time: "1 saat önce",
+        content: "Kadınların hem psikolojik olarak güçlenmesi hem de haklarını öğrenmesi için çok değerli bir çalışma. Emeği geçenlere teşekkürler.",
+        likes: 84
+      }
+    ],
+    author: {
+      name: "Abdurrahim YILDIRIM",
+      title: "Sosyal Yaşam Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/kadin-calismalari-atolyesi.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Çerkezköy Kadın Danışma Merkezi'nden Anlamlı Proje",
+        pageImage: "img/kadin-calismalari-atolyesi.jpg",
+        content: `
+          <p class="lead">Tekirdağ Büyükşehir Belediyesi Sosyal Hizmetler Dairesi Başkanlığı bünyesinde hizmet veren <strong>Çerkezköy Kadın Danışma Merkezi</strong>, <em>'Birlikte Güçlüyüz'</em> sloganıyla kadın çalışmaları atölyesi projesini hayata geçiriyor.</p>
+          
+          <p>Yoğun sanayi göçü alan bölgeye yeni taşınmış kadınların kente adaptasyonunu kolaylaştırmak, sosyal dayanışmayı artırmak ve kadınların kişisel gelişimlerine katkı sağlamak amacıyla düzenlenen atölyeler <strong>tamamen ücretsiz</strong> olarak gerçekleştirilecek.</p>
+
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "8 Haftalık Eğitim ve Gelişim Müfredatı",
+        pageImage: "img/kadin-calismalari-atolyesi.jpg",
+        content: `
+          <p class="lead"><strong>Atölyede Hangi Konular İşlenecek?</strong></p>
+          <p>Uzman psikologlar ve sosyologlar eşliğinde yürütülecek 8 haftalık program kapsamında:</p>
+          <ul style="margin: 0.8rem 0 1.2rem 1.5rem; line-height: 1.8; color: var(--text-muted);">
+            <li>Etkili İletişim ve Kendini İfade Etme Becerileri</li>
+            <li>Kadın Hakları ve Hukuki Güvenceler</li>
+            <li>Toplumsal Cinsiyet Eşitliği ve Aile İçi Denge</li>
+            <li>Stres ve Öfke Kontrolü Teknikleri</li>
+            <li>Beden Sağlığını Koruyucu Davranışlar ve Psikolojik Dayanıklılık</li>
+          </ul>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Başvuru Şartları ve İletişim Hattı",
+        pageImage: "img/kadin-calismalari-atolyesi.jpg",
+        content: `
+          <p class="lead"><strong>Nasıl Başvuru Yapılır?</strong></p>
+          <p>18 yaş ve üstü tüm kadınların katılabileceği atölye çalışmalarına kayıt yaptırmak isteyen vatandaşlar, Çerkezköy Kadın Danışma Merkezi'ne bizzat müracaat edebilecek veya <strong>0850 459 34 34 (Dahili 3)</strong> numaralı hattan kayıt oluşturabilecek.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 19,
+    headlineNumber: 4,
+    title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
+    spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
+    category: "EĞİTİM & GÜNDEM",
+    categorySlug: "gundem",
+    location: "Tekirdağ / Çerkezköy",
+    badgeColor: "blue",
+    date: "27 Ağustos 2026 - 01:15",
+    readTime: "5 dk",
+    views: 112400,
+    likes: 5420,
+    reactions: { like: 3450, heart: 2890, clap: 1650, thinking: 45, angry: 2 },
+    socialPosts: [
+      {
+        user: "Tekirdağ Valiliği",
+        handle: "@tekirdagvalilik",
+        avatar: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Valimiz Recep Soytürk başkanlığında Çerkezköy ilçemize kazandırılacak 8 derslikli Özden Narin Anaokulu protokolü Narin Grup yöneticileriyle imzalandı. Hayırlı olsun. 🏫🎓 #TekirdagEgitim",
+        time: "30 dk önce",
+        likes: 2150,
+        shares: 610
+      },
+      {
+        user: "Çerkezköy Eğitim Gönüllüleri",
+        handle: "@CerkezkoyEgitim",
+        avatar: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Çerkezköy'ün sanayisinden okul binalarına kadar her taşında emeği olan Narin Ailesi'ne minnettarız. 8 bin gencimizin okuduğu okullara bir yenisi daha ekleniyor. 👏✨",
+        time: "1 saat önce",
+        likes: 1840,
+        shares: 420
+      }
+    ],
+    comments: [
+      {
+        id: 1901,
+        author: "Kemal Öğretmen",
+        city: "Çerkezköy / Kızılpınar",
+        time: "20 dk önce",
+        content: "Çerkezköy'de okul ihtiyacı hızla artan nüfusla birlikte çok kritik bir hal almıştı. Narin Ailesi'nin anaokulu hamlesi evlatlarımız için harika bir kazanım.",
+        likes: 186
+      },
+      {
+        id: 1902,
+        author: "Fatma Yılmaz",
+        city: "Kapaklı",
+        time: "40 dk önce",
+        content: "Nurullah Narin, Pakize Narin ve Halit Narin okullarında binlerce gencimiz yetişti, meslek sahibi oldu. Allah hayırlarını kabul etsin.",
+        likes: 124
+      }
+    ],
+    author: {
+      name: "Abdurrahim YILDIRIM",
+      title: "Trakya Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/narin-ailesi-egitim.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "8 Bin Öğrenciye Ulaşan Eğitim Yatırımlarına Yeni Halka",
+        pageImage: "img/narin-ailesi-egitim.jpg",
+        content: `
+          <p class="lead"><strong>'İnsanlar isimleriyle değil, geride bıraktıkları eserleriyle ölümsüzleşir'</strong> sözünü en iyi şekilde topluma yaşatan <strong>Narin Ailesi</strong>, eğitime verdiği güçlü destekle kamuoyunun ve Trakya halkının takdirini toplamaya devam ediyor.</p>
+          
+          <p>Türkiye sanayi ve turizm sektörlerinin köklü temsilcilerinden Narin Ailesi, Tekirdağ'ın Çerkezköy ilçesine kazandıracağı <strong>8 derslikli yeni anaokuluyla</strong> eğitim yatırımlarına bir yenisini daha ekliyor. Millî Eğitime armağan edilecek eğitim yuvasına <strong>'Özden Narin Anaokulu'</strong> adı verilecek.</p>
+          
+          <p>Tekirdağ Valiliği'nde düzenlenen görkemli protokol imza törenine; <strong>Tekirdağ Valisi Recep Soytürk</strong>, Çerkezköy Kaymakamı Nazmi Günlü, İl Millî Eğitim Müdür Vekili Özgür Parıltı, Çevre, Şehircilik ve İklim Değişikliği İl Müdürü Ali Kemal Atlı, Narin Grup adına Yönetim Kurulu Başkanı <strong>Oya Narin</strong>, Yönetim Kurulu Başkan Yardımcısı <strong>Emre Narin</strong>, Emir Temelli, Eski Devlet Bakanı Ersin Taranoğlu ve İl Millî Eğitim Müdür Yardımcısı Abdullah Nair katıldı.</p>
+
+          <div class="in-article-ad"><span class="ad-label">REKLAM (SAYFA 1)</span><div class="ad-content-box"><i class="fa-solid fa-rectangle-ad"></i> Google AdSense Sayfa İçi Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Çerkezköy ve Eğitim Yatırımları Dosyası:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🏭 1972'den Günümüze: Çerkezköy'ün Sanayi Dönüşümü & 100 Bin m² Arazi</span><span class="qa-link-badge">Tarihçe & Alan (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">🏫 Narin Ailesi ve Türk Tekstil Vakfı'nın Yaptırdığı Tüm Okulların Listesi</span><span class="qa-link-badge">Okul Listesi (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Bir Kasabadan Üretim Üssüne: 100 Bin Metrekarelik Eğitim Alanı",
+        pageImage: "img/narin-ailesi-protokol.jpg",
+        content: `
+          <p class="lead"><strong>1970'lerden Günümüze Uzanan Sanayi ve Sosyal Sorumluluk Vizyonu</strong></p>
+          
+          <p>1970'li yılların başına kadar köyleriyle birlikte toplam nüfusu yalnızca 14 bin civarında olan Çerkezköy'ün sanayileşme sürecinde <strong>Narin Mensucat</strong> lokomotif bir rol üstlendi. 1972 yılında temeli atılan ve iki yıl içinde üretime başlayan fabrika, ilçede sanayileşmeyi başlatan ilk tesislerden biri olarak Çerkezköy'ün Türkiye'nin üretim üssü haline gelmesine öncülük etti.</p>
+          
+          <p>Narin Ailesi'nin uzun yıllara yayılan eğitim katkılarının temelini, Çerkezköy'de eğitim amacıyla bağışlanan ve değerlendirilen <strong>yaklaşık 100 bin metrekarelik dev alan</strong> oluşturuyor. Millî Eğitime kazandırılan bu alanlarda Narin Ailesi'nin katkılarıyla çok sayıda lise, ortaokul ve mesleki eğitim kurumları inşa edildi.</p>
+          
+          <p>Narin Ailesi ayrıca Çerkezköy'e yaklaşık <strong>5.000 kişilik yeni yaşam, sosyal ve ticaret alanları</strong> kazandırmak üzere yeni projelerin hazırlıklarını da sürdürüyor.</p>
+
+          <div class="in-article-ad" style="border-color: var(--news-red);"><span class="ad-label" style="color: var(--news-red);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Oya Narin'in Mesajı & Narin Ailesinin Eğitime Armağan Ettiği 12 Okul",
+        pageImage: "img/narin-ailesi-egitim.jpg",
+        content: `
+          <p class="lead"><strong>Oya Narin: 'Atatürk İlkeleri ve Fırsat Eşitliği ile Gençlerimizi Yarınlara Taşıyoruz'</strong></p>
+          
+          <p>Törende konuşan Narin Grup Yönetim Kurulu Başkanı <strong>Oya Narin</strong>, Cumhuriyet değerlerine bağlılığın altını çizerek şunları vurguladı:</p>
+          
+          <blockquote style="background: var(--bg-elevated); border-left: 4px solid var(--news-blue); padding: 1rem 1.2rem; margin: 1.2rem 0; font-style: italic; color: var(--text-main); line-height: 1.7;">
+            "Narin Ailesi olarak yatırım anlayışımız, bulunduğumuz coğrafyaya ve ülkemize değer katma ilkesi üzerine kuruludur. Bu, 1920'lerde üretim yapan dedemiz Nurullah Narin ile başlayan, Cumhuriyetimizle neredeyse yaşıt, Atatürk ilke ve inkılaplarıyla şekillenen bir aile ve kurum kültürüdür. Babamız Halit Narin ile güçlenen, bugün üçüncü ve dördüncü kuşakların sahiplendiği bu kültür şirketlerimizin temel taşıdır. Türkiye genelinde yaptırdığımız 12 okulda 8 bin gencimiz eğitim görüyor. Çerkezköy'ün kalbimizdeki yeri her zaman apayrıdır."
+          </blockquote>
+
+          <h4 style="color: var(--news-red); margin-top: 1.5rem; font-size: 1.1rem;"><i class="fa-solid fa-graduation-cap"></i> Narin Ailesi Tarafından Eğitime Kazandırılan Okullar:</h4>
+          <ul style="margin: 0.8rem 0 1.2rem 1.5rem; line-height: 1.8; color: var(--text-muted);">
+            <li><strong>Nurullah Narin Ortaokulu</strong> – Tekirdağ, Çerkezköy</li>
+            <li><strong>Pakize Narin Anadolu Lisesi</strong> – Tekirdağ, Çerkezköy</li>
+            <li><strong>Çerkezköy Halit Narin Mesleki ve Teknik Anadolu Lisesi</strong> – Tekirdağ, Çerkezköy</li>
+            <li><strong>İnci Narin Yerlici İlkokulu</strong> – Tekirdağ, Çerkezköy</li>
+            <li><strong>Halit Narin İlköğretim Okulu</strong> – Antalya, Tekirova</li>
+            <li><strong>İnci Narin İlköğretim Okulu</strong> – Muğla, Marmaris / Orhaniye</li>
+            <li><strong>Nurullah-Pakize Narin İlköğretim Okulu</strong> – Kayseri, Germirli</li>
+            <li><strong>Halit Narin Anadolu Turizm Meslek Okulu</strong> – Muğla, Marmaris / İçmeler</li>
+            <li><strong>Çerkezköy Türk Tekstil Vakfı Mesleki ve Teknik Anadolu Lisesi</strong> – Tekirdağ, Çerkezköy</li>
+            <li><strong>Bolluca Türk Tekstil Vakfı İlköğretim Okulu</strong> – İstanbul, Hadımköy</li>
+            <li><strong>T.T.M.İ.S. Halit Narin İlköğretim Okulu</strong> – Adapazarı, Ferizli</li>
+            <li><strong>Yalova Meslek Yüksekokulu</strong> – Yalova</li>
+          </ul>
+        `
+      }
+    ]
+  },
+  {
+    id: 18,
+    headlineNumber: 2,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -1011,407 +1425,8 @@ const headlineArticles = [
     ]
   },
   {
-    id: 6,
-    headlineNumber: 8,
-    title: "Konut Sektöründe Yeni Dönem: İlk Evini Alacaklara 0.99 Kredi Kampanyası",
-    spot: "Kamu bankaları öncülüğünde başlatılan düşük faizli konut kredisi paketi için başvuru şartları açıklandı.",
-    category: "EKONOMİ & TARIM",
-    categorySlug: "ekonomi",
-    location: "Trakya Geneli",
-    badgeColor: "blue",
-    date: "26 Ağustos 2026 - 20:30",
-    readTime: "4 dk",
-    views: 124400,
-    likes: 4750,
-    reactions: { like: 2890, heart: 1650, clap: 920, thinking: 410, angry: 65 },
-    socialPosts: [
-      {
-        user: "Trakya Emlak & Konut Dünyası",
-        handle: "@TrakyaEmlakHaber",
-        avatar: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=100&q=80",
-        platform: "twitter",
-        text: "Tekirdağ, Çorlu ve Edirne'de 0.99 konut kredisi başvuruları banka şubelerinde yoğun ilgi görüyor. Ev sahibi olmak isteyenler için büyük fırsat. 🏠🔑",
-        time: "4 saat önce",
-        likes: 1320,
-        shares: 480
-      }
-    ],
-    comments: [
-      {
-        id: 501,
-        author: "Gülten Yıldız",
-        city: "Süleymanpaşa / Tekirdağ",
-        time: "1 saat önce",
-        content: "Kiraların arttığı bu dönemde genç evliler için çok faydalı bir destek oldu.",
-        likes: 67
-      }
-    ],
-    author: {
-      name: "Murat Çelik",
-      title: "Ekonomi Editörü",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "İlk Evini Alacaklara 0.99 Kredi Desteği",
-        pageImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">Hazine ve Maliye Bakanlığı ile Çevre, Şehircilik ve İklim Değişikliği Bakanlığı koordinasyonunda hazırlanan <strong>İlk Evim Konut Finansmanı Kampanyası</strong> kamu bankaları aracılığıyla resmen yürürlüğe girdi.</p>
-          
-          <p>Konut sahibi olmayan dar ve orta gelirli vatandaşlar için hazırlanan paket kapsamında; aylık <strong>%0.99 faiz oranı</strong> ve 180 aya (15 yıl) varan vade seçenekleri sunuluyor. Başvurular Ziraat Bankası, VakıfBank ve Halkbank şubelerinin yanı sıra e-Devlet kapısı üzerinden alınmaya başlandı.</p>
-          
-          <p>Trakya genelinde özellikle Çorlu, Çerkezköy, Kapaklı, Süleymanpaşa ve Edirne merkezde yeni tamamlanan sıfır konut projelerinde büyük bir hareketlilik yaşanırken, inşaat firmaları da projelerinde %10 ek indirim uygulayacaklarını bildirdi.</p>
-
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
-
-          <div class="interactive-qa-box">
-            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Konut Kredisi Rehberi:</div>
-            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🔑 Başvuru Şartları Neler? Kimler Yararlanabilir?</span><span class="qa-link-badge">Şartları İncele (Sayfa 2) ➡️</span></div>
-            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">📊 Aylık Taksit Tablosu ve Geri Ödeme Planı</span><span class="qa-link-badge">Taksit Hesapla (Sayfa 3) ➡️</span></div>
-          </div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Başvuru Kriterleri ve Gelir Şartı",
-        pageImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Soru 1: Kampanyadan Kimler Faydalanabilir?</strong></p>
-          
-          <ul style="line-height: 1.8; margin-left: 1.5rem; color: var(--text-main);">
-            <li><strong>Konut Sahipliği Şartı:</strong> Başvuran kişinin ve eşinin üzerine kayıtlı herhangi bir konut hissesi bulunmamalıdır.</li>
-            <li><strong>İkametgah ve Satış Kısıtı:</strong> Son 1 yıl içerisinde konut satışı yapmamış olmak ve satın alınan evde en az 5 yıl ikamet etme taahhüdü gerekmektedir.</li>
-            <li><strong>Ekspertiz ve Enerji Kimlik Belgesi:</strong> Alınacak konutun sıfır (ilk el) olması ve A veya B sınıfı Enerji Kimlik Belgesi taşıması şarttır.</li>
-          </ul>
-
-          <div class="in-article-ad" style="border-color: var(--news-blue);"><span class="ad-label" style="color: var(--news-blue);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Örnek Taksit ve Vade Tablosu",
-        pageImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Soru 2: 2 Milyon TL Kredi İçin Aylık Taksit Ne Kadar?</strong></p>
-          
-          <p>180 ay vadeli 2.000.000 TL tutarındaki konut kredisinde Hazine katkısı sayesinde ilk 3 yıl aylık taksitler kademeli olarak düşük tutulacak. 4. yıldan itibaren hane gelirindeki artışa paralel standart ödeme planına geçilecek ve vatandaşlar bütçelerini sarsmadan ev sahibi olabilecek.</p>
-        `
-      }
-    ]
-  },
-  {
-    id: 7,
-    headlineNumber: 9,
-    title: "Tekirdağ Bağ Bozumu ve Gastronomi Festivali Ziyaretçi Akınına Uğradı",
-    spot: "Marmara kıyılarında düzenlenen festivalde yöresel lezzetler ve konserlerle 100 bini aşkın turist ağırlandı.",
-    category: "YAŞAM",
-    categorySlug: "yasam",
-    location: "Tekirdağ / Şarköy",
-    badgeColor: "pink",
-    date: "26 Ağustos 2026 - 19:50",
-    readTime: "3 dk",
-    views: 61300,
-    likes: 2180,
-    reactions: { like: 1450, heart: 980, clap: 640, thinking: 40, angry: 5 },
-    socialPosts: [
-      {
-        user: "Gezgin Trakya",
-        handle: "@GezginTrakya",
-        avatar: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=100&q=80",
-        platform: "instagram",
-        text: "Tekirdağ bağ rotası ve yöresel köfte lezzetleri festivalde birleşti! Marmara Denizi manzarası eşliğinde harika bir hafta sonu. 🍇🍷🌊",
-        time: "5 saat önce",
-        likes: 1840,
-        shares: 610
-      }
-    ],
-    comments: [
-      {
-        id: 601,
-        author: "Ceyda Demir",
-        city: "İstanbul / Ziyaretçi",
-        time: "2 saat önce",
-        content: "İstanbul'dan hafta sonu için geldik, organizasyon ve Trakya insanının misafirperverliği tek kelimeyle harikaydı!",
-        likes: 52
-      }
-    ],
-    author: {
-      name: "Zeynep Kaya",
-      title: "Kültür Yaşam Editörü",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Marmara Kıyısında Festival Coşkusu",
-        pageImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">Tekirdağ'ın Şarköy ve Süleymanpaşa ilçelerinde geleneksel olarak düzenlenen <strong>Uluslararası Bağ Bozumu ve Gastronomi Festivali</strong>, bu yıl 120 bini aşkın yerli ve yabancı ziyaretçiye ev sahipliği yaptı.</p>
-          
-          <p>Marmara Denizi'nin kıyısında uzanan asırlık bağlarda sepetlerle üzüm toplayan konuklar; Tekirdağ köftesi, Hayrabolu tatlısı, peynir helvası ve yöresel zeytinyağlıların sergilendiği stantlarda Trakya mutfağının seçkin tatlarını deneyimledi.</p>
-          
-          <p>Akşam saatlerinde sahil amfi tiyatroda sahne alan ünlü sanatçıların konserleriyle doruğa çıkan festival, bölge turizmine ve esnafına milyonlarca liralık ekonomik canlılık kazandırdı.</p>
-
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Yöresel Lezzet Atölyeleri & Bağ Rotaları",
-        pageImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Masterclass Şefleriyle Trakya Mutfağı</strong></p>
-          <p>Türkiye'nin önde gelen şeflerinin katıldığı gastronomi atölyelerinde coğrafi işaretli Tekirdağ ürünleri modern sunumlarla harmanlandı. Bağ rotasında düzenlenen bisiklet turları ve fotoğraf yarışmaları büyük ilgi gördü.</p>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Bölge Turizmine Dev Katkı",
-        pageImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Şarköy ve Mürefte Otellerinde %100 Doluluk</strong></p>
-          <p>Festival süresince Şarköy, Mürefte, Hoşköy ve Kumbağ sahillerindeki tüm butik oteller ve pansiyonlar tamamen doldu. Belediye Başkanı festivalin her yıl genişletilerek sürdürüleceğini açıkladı.</p>
-        `
-      }
-    ]
-  },
-  {
-    id: 8,
-    headlineNumber: 10,
-    title: "Sağlıkta Çığır Açan Gelişme: Kanser Tedavisinde Kişiselleştirilmiş Aşı Başarısı",
-    spot: "Türk bilim insanlarının geliştirdiği mRNA tabanlı tedavi klinik deneylerde %88 başarı elde etti.",
-    category: "SAĞLIK",
-    categorySlug: "saglik",
-    location: "Sağlık & Tıp",
-    badgeColor: "pink",
-    date: "26 Ağustos 2026 - 19:00",
-    readTime: "5 dk",
-    views: 74100,
-    likes: 3480,
-    reactions: { like: 2100, heart: 1890, clap: 1100, thinking: 150, angry: 8 },
-    socialPosts: [
-      {
-        user: "Tıp Dünyası Güncel",
-        handle: "@TipGundem",
-        avatar: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=100&q=80",
-        platform: "twitter",
-        text: "Kişiye özel tümör genetiğine göre üretilen yerli mRNA aşısında Faz-2 klinik sonuçları açıklandı. Tıp camiası için büyük umut! 🩺🧬",
-        time: "6 saat önce",
-        likes: 2150,
-        shares: 720
-      }
-    ],
-    comments: [
-      {
-        id: 701,
-        author: "Dr. Selim Aras",
-        city: "Edirne Tıp Fakültesi",
-        time: "3 saat önce",
-        content: "Onkolojide hedefe yönelik tedavilerin başarı oranı her geçen yıl katlanarak artıyor. Gurur verici.",
-        likes: 95
-      }
-    ],
-    author: {
-      name: "Prof. Dr. Kaan Aydın",
-      title: "Tıp Danışmanı",
-      avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Onkolojide Kişiye Özel Tedavi Devrimi",
-        pageImage: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">TÜBİTAK ve üniversite onkoloji merkezleri iş birliğiyle yürütülen <strong>Kişiselleştirilmiş Kanser İmmünoterapi Projesi</strong>nde Faz-2 klinik deneme sonuçları tıp dünyasında yankı uyandırdı.</p>
-          
-          <p>Hastadan alınan tümör biyopsisinin yeni nesil gen dizileme yöntemleriyle taranması sonucu, yalnızca kanserli hücreye özgü neoantijenleri hedefleyen özel mRNA aşıları sentezlendi. Akciğer, kolon ve melanom vakalarında uygulanan tedavide hastaların %88'inde tümörün küçüldüğü veya tamamen gerilediği saptandı.</p>
-          
-          <p>Klasik kemoterapinin aksine sağlıklı organ ve dokulara zarar vermeyen akıllı aşı yöntemi, bağışıklık sistemini tümör hücrelerine karşı bir ordu gibi eğitiyor.</p>
-
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Klinik Süreç ve Yan Etkisiz Tedavi",
-        pageImage: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Bağışıklık Hücreleri Kanserle Savaşa Hazırlanıyor</strong></p>
-          <p>Aşı enjekte edildikten sonra T-hücreleri vücuttaki mutasyona uğramış kanserli yapıları tanıyıp yok ediyor. Saç dökülmesi veya bağışıklık çökmesi gibi klasik kemoterapi yan etkileri gözlenmiyor.</p>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Seri Üretim ve SGK Kapsamı",
-        pageImage: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>2027 Yılında Yaygın Kullanıma Girecek</strong></p>
-          <p>Sağlık Bakanlığı onay süreçlerinin tamamlanmasının ardından yerli biyoteknoloji tesislerinde seri aşı üretimine başlanacak ve SGK geri ödeme listesine alınması değerlendirilecek.</p>
-        `
-      }
-    ]
-  },
-  {
-    id: 9,
-    headlineNumber: 11,
-    title: "Yerli Elektrikli Araçlarda Batarya Fabrikası İkinci Etabı Açıldı",
-    spot: "Yılda 100 bin batarya paketi üretim kapasitesine sahip tesis, Avrupa'ya da ihracat yapacak.",
-    category: "TEKNOLOJİ",
-    categorySlug: "teknoloji",
-    location: "Teknoloji & Sanayi",
-    badgeColor: "purple",
-    date: "26 Ağustos 2026 - 18:30",
-    readTime: "4 dk",
-    views: 65900,
-    likes: 2400,
-    reactions: { like: 1450, heart: 890, clap: 670, thinking: 80, angry: 15 },
-    socialPosts: [
-      {
-        user: "Otomotiv & Teknoloji Haber",
-        handle: "@OtoTeknoTurk",
-        avatar: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=100&q=80",
-        platform: "twitter",
-        text: "Yeni batarya hücre teknolojisiyle şarj menzili %25 artıyor. Yerli tedarik zinciri için devasa bir adım. 🔋⚡🚗",
-        time: "6 saat önce",
-        likes: 980,
-        shares: 310
-      }
-    ],
-    comments: [
-      {
-        id: 801,
-        author: "Emre Can",
-        city: "Lüleburgaz",
-        time: "4 saat önce",
-        content: "Mühendislerimizin emeğine sağlık, yerli üretim bataryalar enerji bağımsızlığımız için çok kritik.",
-        likes: 48
-      }
-    ],
-    author: {
-      name: "Kerem Aksu",
-      title: "Teknoloji Editörü",
-      avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Yüksek Teknolojili Hücre Üretimi",
-        pageImage: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">Türkiye'nin elektrikli araç ve temiz enerji depolama vizyonunun kalbinde yer alan <strong>Yerli Batarya Hücresi ve Modül Üretim Tesisi</strong>, yıllık 100 bin araçlık ikinci fazını törenle açtı.</p>
-          
-          <p>Yüksek enerji yoğunluğuna sahip nikel-manganez-kobalt (NMC) ve prizmatik katı hal kimyası kullanılan yeni nesil hücreler, elektrikli otomobillerin tek şarjla menzilini 650 kilometrenin üzerine çıkarıyor ve 15 dakikada %80 hızlı şarj imkanı tanıyor.</p>
-          
-          <p>Tesis sadece yerli otomotiv sanayisinin ihtiyacını karşılamakla kalmayıp, Balkanlar ve Doğu Avrupa'daki otomobil üreticilerine de katma değerli teknoloji ihraç edecek.</p>
-
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Ultra Hızlı Şarj ve Güvenlik Testleri",
-        pageImage: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Aşırı Sıcak ve Darbe Dayanımı Kanıtlandı</strong></p>
-          <p>Uluslararası akredite laboratuvarlarda yapılan testlerde hücrelerin eksi 30 dereceden artı 60 dereceye kadar performans kaybı yaşamadan çalıştığı tescillendi.</p>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "İstihdam ve AR-GE Ekosistemi",
-        pageImage: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>1.200 Nitelikli Mühendis ve Teknisyen</strong></p>
-          <p>Fabrika bünyesinde kurulan İleri Malzeme AR-GE Merkezi, üniversitelerle iş birliği içinde grafen katkılı süper iletken batarya prototipleri üzerinde çalışıyor.</p>
-        `
-      }
-    ]
-  },
-  {
-    id: 10,
-    headlineNumber: 12,
-    title: "Kırklareli İğneada Longoz Ormanları'nda Ekoturizm Sezonu Açıldı",
-    spot: "Dünyanın nadir subasar ormanlarından olan İğneada'da yürüyüş parkurları doğaseverleri bekliyor.",
-    category: "YAŞAM",
-    categorySlug: "yasam",
-    location: "Kırklareli / İğneada",
-    badgeColor: "amber",
-    date: "26 Ağustos 2026 - 17:15",
-    readTime: "3 dk",
-    views: 53200,
-    likes: 1970,
-    reactions: { like: 1320, heart: 1100, clap: 540, thinking: 30, angry: 5 },
-    socialPosts: [
-      {
-        user: "Doğa Rehberi Trakya",
-        handle: "@DogaTrakya",
-        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
-        platform: "instagram",
-        text: "Kano turları, göl çevresi bisiklet yolları ve nilüfer çiçekleriyle İğneada Longozu bu sezon bir masal gibi! 🛶🌲🌸 #LongozOrmanlari #Kirklareli",
-        time: "7 saat önce",
-        likes: 1650,
-        shares: 420
-      }
-    ],
-    comments: [
-      {
-        id: 901,
-        author: "Aylin Özdemir",
-        city: "Kırklareli / Merkez",
-        time: "5 saat önce",
-        content: "Mert Gölü'nde kano yapmak kesinlikle herkesin hayatında bir kez denemesi gereken muazzam bir deneyim.",
-        likes: 61
-      }
-    ],
-    author: {
-      name: "Selin Yılmaz",
-      title: "Gezi & Yaşam Yazarı",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Avrupa'nın En Büyük Subasar Ormanı",
-        pageImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">Karadeniz kıyısında Istranca Dağları'nın eteklerinde yer alan ve dünyanın ender korunan ekosistemlerinden biri olan <strong>Kırklareli İğneada Longoz Ormanları Milli Parkı</strong>, sonbahar ekoturizm sezonunu muhteşem bir doğa şöleniyle açtı.</p>
-          
-          <p>Mert Gölü, Erikli Gölü ve Saka Gölü'nü çevreleyen dişbudak, kızılağaç ve meşe ormanlarında sarı ve kırmızının her tonu doğaseverleri büyülüyor. Parkur boyunca yer alan ahşap seyir kuleleri, 260'tan fazla göçmen kuş türünün gözlemlenmesine imkan tanıyor.</p>
-          
-          <p>Milli Parklar Genel Müdürlüğü tarafından yenilenen eko-yürüyüş patikaları, bisiklet rotaları ve profesyonel rehberli kano turlarıyla doğaya zarar vermeden sürdürülebilir bir turizm deneyimi sunuluyor.</p>
-
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Mert Gölü Kano Safari ve Kuş Gözlemi",
-        pageImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Nilüfer Çiçekleri Arasında Sessiz Bir Yolculuk</strong></p>
-          <p>Motorlu taşıtların yasak olduğu koruma alanında ziyaretçiler can yelekleriyle kano kiralayarak sazlıklar ve su üstünde süzülen nilüfer bahçeleri arasında dingin bir keşfe çıkabiliyor.</p>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Yöresel Gastronomi & Glamping Konaklama",
-        pageImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Meşe Balı, Manda Yoğurdu ve Kalkan Balığı</strong></p>
-          <p>İğneada ve Limanköy balıkçı lokantalarında taze Karadeniz balıkları ve köy kahvaltıları sunulurken, orman içinde lüks çadır (glamping) tesisleri doğa ile lüksü bir arada arayanları ağırlıyor.</p>
-        `
-      }
-    ]
-  },
-  {
     id: 13,
-    headlineNumber: 13,
+    headlineNumber: 11,
     title: "Çerkezköy Belediyesi Kültür ve Sanat Akademisi Kayıtları Başladı",
     spot: "Müzik, tiyatro, resim ve robotik kodlama dallarında binlerce öğrenciye ücretsiz sanat eğitimi verilecek.",
     category: "YAŞAM",
