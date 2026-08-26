@@ -15,6 +15,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 105, 
+    articleId: 17, 
+    title: "Çerkezköy Özel İrmet Hospital Gebe Okulu yeni dönem kayıtları başladı: Anne adaylarına uzman kadro ile ücretsiz eğitim!", 
+    time: "23:40" 
+  },
+  { 
     id: 101, 
     articleId: 1, 
     title: "Halkalı - Kapıkule Hızlı Tren Projesinde Çerkezköy ve Edirne istasyonları test sürüşüne açılıyor!", 
@@ -108,6 +114,143 @@ const pharmacyData = {
 
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
+  {
+    id: 17,
+    headlineNumber: 2,
+    title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
+    spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
+    category: "SAĞLIK",
+    categorySlug: "saglik",
+    location: "Tekirdağ / Çerkezköy",
+    badgeColor: "pink",
+    date: "27 Ağustos 2026 - 00:15",
+    readTime: "4 dk",
+    views: 84600,
+    likes: 4210,
+    reactions: { like: 2650, heart: 2120, clap: 1150, thinking: 80, angry: 5 },
+    socialPosts: [
+      {
+        user: "Özel İrmet Hospital",
+        handle: "@irmethospital_official",
+        avatar: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=100&q=80",
+        platform: "instagram",
+        text: "Bilinçli anne, sağlıklı bebek! 🌸 Gebe Okulumuzun yeni dönem kayıtları başladı. Doğuma hazırlık, nefes teknikleri, emzirme ve bebek masajı eğitimlerimiz tamamen ÜCRETSİZDİR. Detaylı bilgi ve kayıt: 0282 725 44 44 🩺👶 #IrmetHospital #GebeOkulu #Cerkezkoy",
+        time: "25 dk önce",
+        likes: 2140,
+        shares: 620
+      },
+      {
+        user: "Çerkezköy & Kapaklı Anneleri",
+        handle: "@cerkezkoy_anneleri",
+        avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "İrmet Hospital'ın gebe okuluna geçen ay katıldım, ebeler ve doktorlar o kadar ilgili ki doğum korkum tamamen bitti! Tüm hamile arkadaşlara tavsiye ederim. 🤰💕",
+        time: "1 saat önce",
+        likes: 1350,
+        shares: 280
+      }
+    ],
+    comments: [
+      {
+        id: 1701,
+        author: "Büşra Yılmaz",
+        city: "Çerkezköy / Gazi Mustafa Kemal",
+        time: "18 dk önce",
+        content: "İrmet Hastanesi'nde doğum yaptım, gebe okulundaki nefes egzersizleri normal doğumda inanılmaz yardımcı oldu. Emeği geçen tüm sağlık personeline teşekkür ederim.",
+        likes: 124
+      },
+      {
+        id: 1702,
+        author: "Elif Karaca",
+        city: "Kapaklı / Merkez",
+        time: "42 dk önce",
+        content: "Hafta sonu seansları çalışan anne adayları için çok düşünülmüş. Cumartesi grubu için kaydımı hemen yaptırdım.",
+        likes: 79
+      }
+    ],
+    author: {
+      name: "Dr. Elif Nazlı",
+      title: "Kadın Sağlığı & Yaşam Danışmanı",
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/gebe-okulu-irmet.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "İrmet Hospital Gebe Okulunda Neler Var?",
+        pageImage: "img/gebe-okulu-irmet.jpg",
+        content: `
+          <p class="lead">Anne adaylarının hamilelik sürecini sağlıklı, huzurlu ve bilinçli geçirmesi amacıyla <strong>Çerkezköy Özel İrmet Hospital</strong> tarafından hayata geçirilen <strong>"Gebe Okulu"</strong> yeni dönemiyle kapılarını açtı.</p>
+          
+          <div style="background: linear-gradient(135deg, rgba(225, 29, 72, 0.1) 0%, rgba(56, 189, 248, 0.1) 100%); border: 2px solid var(--news-red); border-radius: var(--radius-md); padding: 1.4rem; margin: 1.5rem 0;">
+            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+              <i class="fa-solid fa-hospital" style="font-size: 2rem; color: var(--news-red);"></i>
+              <div>
+                <h4 style="font-size: 1.15rem; font-weight: 900; color: var(--text-main);">ÖZEL İRMET HOSPITAL ÇERKEZKÖY</h4>
+                <p style="font-size: 0.82rem; color: var(--news-blue); font-weight: 700;">Kadın Hastalıkları, Doğum ve Yenidoğan Yoğun Bakım Merkezi</p>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+              Tekirdağ Çerkezköy'ün lider sağlık kuruluşu İrmet Hospital, ileri teknolojik doğumhaneleri, tek kişilik konforlu süit odaları ve tecrübeli kadın doğum hekim kadrosuyla anne ve bebek sağlığında bölgenin referans hastanesidir.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="tel:02827254444" class="page-nav-btn" style="padding: 0.45rem 1rem; font-size: 0.85rem;"><i class="fa-solid fa-phone"></i> 0282 725 44 44</a>
+              <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--news-green); font-weight: 800;"><i class="fa-solid fa-check-double"></i> Gebe Okulu Katılımı Tamamen Ücretsizdir</span>
+            </div>
+          </div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Anne Adaylarının En Çok Sorduğu Sorular:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)">
+              <span class="qa-link-text">❓ Gebe Okulunda hangi eğitimler veriliyor? Eşler katılabilir mi?</span>
+              <span class="qa-link-badge">Ders Programını Gör (Sayfa 2) ➡️</span>
+            </div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)">
+              <span class="qa-link-text">❓ Ağrısız Doğum (Prenses Doğum) ve Epidural seçenekleri nelerdir?</span>
+              <span class="qa-link-badge">Doğum Konforu (Sayfa 3) ➡️</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Eğitim Programı & Pilates Seansları",
+        pageImage: "img/gebe-okulu-irmet.jpg",
+        content: `
+          <p class="lead"><strong>Gebe Okulu Kapsamında Verilen Ücretsiz Eğitimler:</strong></p>
+          
+          <ol style="margin-left: 1.5rem; line-height: 1.8; color: var(--text-main);">
+            <li><strong>Hamilelikte Beslenme ve Kilo Kontrolü:</strong> Diyetisyenler eşliğinde bebeğin gelişimi ve annenin sağlığı için ideal menüler.</li>
+            <li><strong>Doğum Nefes Teknikleri & Hamile Pilatesi:</strong> Kasları güçlendiren, bel ve sırt ağrılarını azaltan fizyoterapist eşliğinde egzersizler.</li>
+            <li><strong>Doğum Eylemi ve Aşamaları:</strong> Normal doğumun avantajları, sancı ile başa çıkma yöntemleri ve doğum korkusunu yenme.</li>
+            <li><strong>Doğru Emzirme ve Anne Sütü:</strong> Meme bakımı, emzirme pozisyonları ve ilk günlerde sütün artırılması teknikleri.</li>
+            <li><strong>Yenidoğan Bebek Bakımı & Göbek Bakımı:</strong> Bebek banyosu, gaz masajı ve acil durum ilk yardım bilgileri.</li>
+          </ol>
+
+          <div class="in-article-ad" style="border-color: var(--news-blue);">
+            <span class="ad-label" style="color: var(--news-blue);">SPONSORLU SAĞLIK REHBERİ</span>
+            <div class="ad-content-box"><i class="fa-solid fa-heart-pulse"></i> Özel İrmet Hospital - 7/24 Acil Kadın Doğum ve Çocuk Sağlığı Kliniği</div>
+          </div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Kayıt & İletişim Bilgileri",
+        pageImage: "img/gebe-okulu-irmet.jpg",
+        content: `
+          <p class="lead"><strong>Nasıl Kayıt Olunur ve Seanslar Ne Zaman?</strong></p>
+          <p>Hamileliğinin 20. haftasını doldurmuş tüm anne adayları İrmet Hospital Gebe Okulu'na hiçbir ücret ödemeden kayıt yaptırabilirler. Baba adaylarının da derslere katılımı özellikle teşvik edilmektedir.</p>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--news-green); border-radius: var(--radius-md); padding: 1.5rem; margin: 1.5rem 0;">
+            <h4 style="color: var(--news-green); font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-clipboard-check"></i> Kayıt & Bilgi İletişim Hattı:</h4>
+            <p style="color: var(--text-main); font-size: 0.95rem; margin-bottom: 0.5rem;">📍 <strong>Adres:</strong> Gazi Mustafa Kemal Paşa Mah. Çerkezköy / Tekirdağ</p>
+            <p style="color: var(--text-main); font-size: 0.95rem; margin-bottom: 0.5rem;">📞 <strong>Telefon / WhatsApp:</strong> 0282 725 44 44</p>
+            <p style="color: var(--text-main); font-size: 0.95rem;">🌐 <strong>Web Sitesi:</strong> www.irmethospital.com</p>
+          </div>
+        `
+      }
+    ]
+  },
   {
     id: 1,
     headlineNumber: 1,
