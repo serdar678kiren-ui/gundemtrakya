@@ -347,9 +347,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function startSliderTimer() {
     if (state.sliderTimer) clearInterval(state.sliderTimer);
+    const maxHeadlines = Math.min(headlineArticles.length, 10) || 1;
     state.sliderTimer = setInterval(() => {
       if (!state.isSliderPaused) {
-        state.currentHeadlineIndex = (state.currentHeadlineIndex + 1) % 10;
+        state.currentHeadlineIndex = (state.currentHeadlineIndex + 1) % maxHeadlines;
         showHeadline(state.currentHeadlineIndex);
       }
     }, 4500);
@@ -357,11 +358,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderSideHeadlines() {
     if (!elements.sideHeadlinesContainer) return;
-    const sideArticles = [headlineArticles[1], headlineArticles[2]];
+    const sideArticles = [headlineArticles[1], headlineArticles[2]].filter(Boolean);
     elements.sideHeadlinesContainer.innerHTML = sideArticles.map(art => `
       <div class="side-card" data-id="${art.id}">
         <div class="side-img-box">
-          <img src="${art.image}" alt="${art.title}" class="side-img" loading="lazy" />
+          <img src="${art.image}" alt="${art.title}" class="side-img" loading="lazy" onerror="this.onerror=null; this.src='img/ataturk-bayrak.jpg';" />
           <span class="side-badge">${art.category}</span>
         </div>
         <div class="side-body">
@@ -380,11 +381,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderSubHeadlines() {
     if (!elements.subHeadlinesGrid) return;
-    const subArticles = headlineArticles.slice(3, 7);
+    const subArticles = headlineArticles.slice(3, 7).filter(Boolean);
     elements.subHeadlinesGrid.innerHTML = subArticles.map(art => `
       <div class="sub-card" data-id="${art.id}">
         <div class="sub-media">
-          <img src="${art.image}" alt="${art.title}" class="sub-img" loading="lazy" />
+          <img src="${art.image}" alt="${art.title}" class="sub-img" loading="lazy" onerror="this.onerror=null; this.src='img/ataturk-bayrak.jpg';" />
         </div>
         <div class="sub-body">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.2rem;">
@@ -409,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!elements.columnistsGrid) return;
     elements.columnistsGrid.innerHTML = columnistsData.map(col => `
       <div class="columnist-card" data-col-id="${col.id}">
-        <img src="${col.avatar}" alt="${col.name}" class="columnist-avatar" />
+        <img src="${col.avatar}" alt="${col.name}" class="columnist-avatar" onerror="this.onerror=null; this.src='img/serdar-tugba.jpg';" />
         <div class="columnist-info">
           <div class="columnist-name">${col.name}</div>
           <div class="columnist-role">${col.title}</div>
@@ -537,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return `
         <article class="feed-card" data-id="${art.id}">
           <div class="feed-media">
-            <img src="${art.image}" alt="${art.title}" class="feed-img" loading="lazy" />
+            <img src="${art.image}" alt="${art.title}" class="feed-img" loading="lazy" onerror="this.onerror=null; this.src='img/ataturk-bayrak.jpg';" />
             <span style="position: absolute; top: 8px; left: 8px; background: ${isWriter ? '#8b5cf6' : 'var(--news-red)'}; color: white; font-size: 0.7rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: var(--radius-sm);">
               ${art.category}
             </span>
@@ -862,6 +863,9 @@ document.addEventListener('DOMContentLoaded', () => {
     state.currentArticleId = null;
     state.currentArticlePage = 1;
   }
+
+  window.openArticleModal = openArticleModal;
+  window.closeArticleModal = closeArticleModal;
 
   elements.modalCloseBtn?.addEventListener('click', closeArticleModal);
   elements.articleModal?.addEventListener('click', (e) => {
