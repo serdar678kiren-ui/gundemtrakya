@@ -7,16 +7,20 @@
   
   <!-- SEO & Meta Bilgileri -->
   <meta name="description" content="Edirne, Tekirdağ, Kırklareli, Çorlu ve Çerkezköy son dakika haberleri, Trakya nöbetçi eczaneler ve ekonomi gündemi.">
-  <meta name="keywords" content="trakya haber, edirne haber, tekirdağ haber, kırklareli haber, çorlu nöbetçi eczane, gündem trakya">
-  <meta name="author" content="Gündem Trakya">
+  <meta name="keywords" content="trakya haber, edirne haber, tekirdağ haber, kırklareli haber, çorlu haber, çerkezköy haber, gündem trakya">
+  <meta name="author" content="Gündem Trakya Medya Grubu">
   <meta name="robots" content="index, follow">
 
-  <!-- Facebook & WhatsApp OpenGraph Paylaşım Etiketleri -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Gündem Trakya - Trakya'nın Nabzı">
-  <meta property="og:description" content="Edirne, Tekirdağ, Kırklareli'den en sıcak gelişmeler ve canlı piyasalar.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80">
-  <meta property="og:site_name" content="Gündem Trakya">
+  <!-- Schema.org NewsMediaOrganization Yapısal Verisi -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Gündem Trakya",
+    "url": "https://gundemtrakya.vercel.app",
+    "logo": "https://gundemtrakya.vercel.app/img/serdar-tugba.jpg"
+  }
+  </script>
 
   <!-- Google Fonts & FontAwesome Simgeleri -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -161,7 +165,7 @@
     <!-- ==========================================================================
          6. KÖŞE YAZARLARI BÖLÜMÜ
          ========================================================================== -->
-    <section class="columnists-section">
+    <section class="columnists-section" id="columnistsSection">
       <div class="columnists-header">
         <h2 class="section-tag-title"><i class="fa-solid fa-pen-nib"></i> GÜNDEM TRAKYA YAZARLARI</h2>
       </div>
@@ -173,13 +177,16 @@
     <!-- ==========================================================================
          7. İKİ KOLONLU ANA YERLEŞİM: HABER AKIŞI & TRAKYA NÖBETÇİ ECZANELER
          ========================================================================== -->
-    <div class="main-content-layout">
+    <div class="main-content-layout" id="feedSection">
       
       <!-- Sol Kolon: Haber Kartları Akışı -->
       <section class="left-content-feed">
-        <h2 class="section-tag-title" style="margin-bottom: 1.2rem;">
-          <i class="fa-solid fa-newspaper"></i> GÜNCEL GELİŞMELER
-        </h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;">
+          <h2 class="section-tag-title" id="feedSectionTitle">
+            <i class="fa-solid fa-newspaper"></i> GÜNCEL GELİŞMELER
+          </h2>
+          <span id="feedCountBadge" style="font-size: 0.8rem; font-weight: 700; color: var(--news-blue); background: var(--bg-elevated); padding: 0.25rem 0.7rem; border-radius: var(--radius-sm);">Tüm Haberler</span>
+        </div>
         
         <div class="feed-articles-grid" id="feedArticlesGrid">
           <!-- JS ile haber kartları render edilir -->
@@ -286,7 +293,7 @@
           </button>
         </div>
 
-        <!-- Çok Sayfalı Haber Metni & Soru Cevaplar -->
+        <!-- Çok Sayfalı Haber Metni, Reaksiyonlar, Sosyal Tweetler & Yorumlar -->
         <div class="modal-article-text" id="modalArticleText">
           <!-- JS ile render edilir -->
         </div>
@@ -295,6 +302,23 @@
     </div>
   </div>
 
+  <!-- ==========================================================================
+       9. ÇEREZ İZİN BİLDİRİMİ (GDPR / GOOGLE ADSENSE ZORUNLU KUTUSU)
+       ========================================================================== -->
+  <aside class="cookie-consent-bar" id="cookieConsentBar">
+    <div class="container cookie-flex">
+      <div class="cookie-text">
+        <i class="fa-solid fa-cookie-bite" style="color: #fbbf24; margin-right: 0.4rem;"></i>
+        Sitemizde sizlere daha iyi bir deneyim sunmak, trafiği analiz etmek ve <strong>Google AdSense</strong> reklamlarını kişiselleştirmek amacıyla çerezler (cookies) kullanılmaktadır. Detaylı bilgi için <a href="gizlilik-politikasi.html" style="color: var(--news-blue); text-decoration: underline;">Gizlilik ve Çerez Politikamızı</a> inceleyebilirsiniz.
+      </div>
+      <div class="cookie-btn-group">
+        <button class="page-nav-btn" id="acceptCookieBtn" style="padding: 0.5rem 1.4rem; font-size: 0.85rem;">
+          <i class="fa-solid fa-check"></i> Kabul Et
+        </button>
+      </div>
+    </div>
+  </aside>
+
   <!-- Toast Bildirim -->
   <div class="toast-box" id="toastBox">
     <i class="fa-solid fa-circle-check" style="color: #34d399;"></i>
@@ -302,7 +326,7 @@
   </div>
 
   <!-- ==========================================================================
-       9. FOOTER & GOOGLE ADSENSE POLİTİKA LİNKLERİ
+       10. FOOTER & GOOGLE ADSENSE POLİTİKA LİNKLERİ
        ========================================================================== -->
   <footer class="portal-footer">
     <div class="container">
@@ -313,18 +337,18 @@
             <span class="logo-text" style="color: #ffffff;">TRAKYA</span>
           </div>
           <p style="font-size: 0.88rem; line-height: 1.6; color: #94a3b8;">
-            Gündem Trakya; Tekirdağ, Edirne ve Kırklareli başta olmak üzere tüm Trakya bölgesinden tarafsız, bağımsız ve anlık son dakika haberlerini okuyucularına sunan dijital haber platformudur.
+            Gündem Trakya; Tekirdağ, Edirne, Kırklareli, Çorlu ve Çerkezköy başta olmak üzere tüm Trakya bölgesinden tarafsız, bağımsız ve anlık son dakika haberlerini okuyucularına sunan dijital haber platformudur.
           </p>
         </div>
 
         <div>
           <h4 class="footer-col-title">Kategoriler</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Trakya Haberleri</a></li>
-            <li><a href="index.html">Ekonomi & Tarım</a></li>
-            <li><a href="index.html">Nöbetçi Eczaneler</a></li>
-            <li><a href="index.html">Spor & Kırkpınar</a></li>
-            <li><a href="index.html">Köşe Yazarları</a></li>
+            <li><a href="#feedSection" onclick="filterCategory('trakya')">Trakya Haberleri</a></li>
+            <li><a href="#feedSection" onclick="filterCategory('ekonomi')">Ekonomi & Tarım</a></li>
+            <li><a href="#feedSection" onclick="filterCategory('spor')">Spor & Kırkpınar</a></li>
+            <li><a href="#feedSection" onclick="filterCategory('teknoloji')">Teknoloji & Sanayi</a></li>
+            <li><a href="#columnistsSection">Köşe Yazarları</a></li>
           </ul>
         </div>
 
@@ -336,13 +360,14 @@
             <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
             <li><a href="gizlilik-politikasi.html">Çerez Politikası (GDPR/KVKK)</a></li>
             <li><a href="iletisim.html">İletişim & Reklam</a></li>
+            <li style="margin-top: 0.5rem; color: #fbbf24; font-size: 0.82rem;"><i class="fa-solid fa-envelope"></i> Reklam: <strong>trakyagundem6@gmail.com</strong></li>
           </ul>
         </div>
 
         <div>
           <h4 class="footer-col-title">Bölgesel Yayıncılık</h4>
           <p style="font-size: 0.85rem; margin-bottom: 1rem; color: #94a3b8;">
-            Edirne, Süleymanpaşa, Çorlu, Çerkezköy, Lüleburgaz, Keşan ve Babaeski haber merkezlerimizle 7/24 hizmetinizdeyiz.
+            Çerkezköy, Çorlu, Süleymanpaşa, Edirne, Lüleburgaz, Keşan ve Babaeski haber merkezlerimizle 7/24 hizmetinizdeyiz.
           </p>
           <div style="font-size: 0.85rem; color: #64748b;">
             <i class="fa-solid fa-shield-halved" style="color: var(--news-red);"></i> Basın Ahlak Yasası İlkelerine Uygundur.
@@ -351,14 +376,16 @@
       </div>
 
       <div class="footer-bottom-bar">
-        <span>&copy; 2026 Gündem Trakya. Tüm Hakları Saklıdır.</span>
+        <span>&copy; 2026 Gündem Trakya. İmtiyaz Sahibi: <strong>Serdar KIREN</strong>. Tüm Hakları Saklıdır.</span>
         <span>Yazılım & Tasarım: Gündem Trakya Dijital Medya Altyapısı</span>
       </div>
     </div>
   </footer>
 
-  <!-- Veri ve Uygulama Betikleri -->
+  <!-- Veri ve Uygulama Betikleri (Hem root hem js/ klasörü uyumlu) -->
   <script src="js/data.js"></script>
+  <script src="data.js"></script>
   <script src="js/app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
