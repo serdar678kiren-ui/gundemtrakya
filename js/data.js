@@ -259,142 +259,7 @@ const headlineArticles = [
       }
     ]
   },
-  {
-    id: 18,
-    headlineNumber: 3,
-    title: "Birlikte Yazılan En Güzel Hikaye: Serdar ve Tuğba Kıren Çiftinden İlham Veren Sevgi Yolculuğu",
-    spot: "Hayatın en büyük zenginliği; aynı ufka aynı inanç, şefkat ve aşkla bakabilmektir. Serdar ve Tuğba Kıren çiftinin birbirine olan derin bağlılığı ve hayat ortaklığı yürekleri ısıtıyor.",
-    category: "YAŞAM",
-    categorySlug: "yasam",
-    location: "Tekirdağ / Çerkezköy",
-    badgeColor: "purple",
-    date: "27 Ağustos 2026 - 00:30",
-    readTime: "3 dk",
-    views: 124500,
-    likes: 7420,
-    reactions: { like: 4120, heart: 3680, clap: 1950, thinking: 30, angry: 0 },
-    socialPosts: [
-      {
-        user: "Trakya Yaşam & Sevgi Durağı",
-        handle: "@trakya_yasam",
-        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-        platform: "instagram",
-        text: "Sevgi; iki kalbin aynı ritimde atması, birlikte yürünen her adımı bir ömre bedel kılmaktır. Serdar & Tuğba Kıren çiftine bir ömür boyu bitmeyen aşk ve huzur dileriz. 🌹✨💑 #SerdarTugba #GercekSevgi #HayatArkadasim",
-        time: "30 dk önce",
-        likes: 3890,
-        shares: 1120
-      },
-      {
-        user: "Gönülden Nağmeler",
-        handle: "@gonulden_sozler",
-        avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80",
-        platform: "facebook",
-        text: "Birbirine bakan değil, birlikte aynı geleceğe bakan gözler hiç solmaz. Serdar ve Tuğba'nın bu asil ve sevgi dolu karesi Trakya'ya ilham veriyor. ❤️✨",
-        time: "1 saat önce",
-        likes: 2450,
-        shares: 630
-      }
-    ],
-    comments: [
-      {
-        id: 1801,
-        author: "Cemalettin Yıldız",
-        city: "Tekirdağ",
-        time: "20 dk önce",
-        content: "Gözlerinizdeki bu samimiyet, yüzünüzdeki bu tebessüm bir ömür boyu hiç eksilmesin. Sevginiz daim olsun kardeşim.",
-        likes: 210
-      },
-      {
-        id: 1802,
-        author: "Sevgi Demir",
-        city: "Edirne",
-        time: "45 dk önce",
-        content: "Aşkın, sadakatin ve zarafetin en güzel tablosu... Rabbim birliğinizi ve huzurunuzu her daim artırsın.",
-        likes: 178
-      }
-    ],
-    author: {
-      name: "Sevgi Demir",
-      title: "Kültür & Yaşam Yazarı",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "img/serdar-tugba.jpg",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "İki Yürek, Tek Bir Hayat",
-        pageImage: "img/serdar-tugba.jpg",
-        content: `
-          <p class="lead">Bazı hikayeler vardır; sadece yaşanmaz, etrafına da huzur, umut ve sevgi saçar. <strong>Serdar ve Tuğba Kıren</strong> çiftinin hayat yolculuğu, sevginin en saf ve güçlü halini gözler önüne seriyor.</p>
-          
-          <div style="background: linear-gradient(135deg, rgba(225, 29, 72, 0.1) 0%, rgba(168, 85, 247, 0.12) 100%); border: 2px solid #e11d48; border-radius: var(--radius-md); padding: 1.8rem; margin: 1.5rem 0; text-align: center; box-shadow: 0 4px 15px rgba(225, 29, 72, 0.15);">
-            <i class="fa-solid fa-heart" style="font-size: 2.4rem; color: #e11d48; margin-bottom: 0.8rem; animation: pulse 2s infinite;"></i>
-            <h3 style="font-size: 1.45rem; font-weight: 900; color: var(--text-main); margin-bottom: 0.6rem; letter-spacing: -0.02em;">Serdar & Tuğba KIREN</h3>
-            <p style="font-size: 1.05rem; color: var(--text-main); font-style: italic; line-height: 1.7; max-width: 650px; margin: 0 auto;">
-              "Sevgi; iki insanın aynı sessizlikte bile birbirini anlaması, aynı tebessümle yarınlara güvenle bakabilmesidir. Birlikte yürünen her yol, sevgiyle güzelleşir."
-            </p>
-          </div>
 
-          <p>Hayatta en değerli zenginlik; yanınızda dağ gibi duran, kalbi kalbinizle çarpan bir hayat arkadaşına sahip olmaktır. Serdar ve Tuğba çiftinin birbirine olan derin saygısı, ortak idealleri ve yürekten bağlılığı, gerçek sevginin ne denli kıymetli olduğunu bir kez daha hatırlatıyor.</p>
-
-          <div class="interactive-qa-box">
-            <div class="qa-box-title"><i class="fa-solid fa-feather"></i> Kalbe Dokunan Satırlar:</div>
-            <div class="qa-link-card" onclick="goToArticlePage(2)">
-              <span class="qa-link-text">🌹 Birlikte yürünen yolun zarafeti ve hayat arkadaşlığı</span>
-              <span class="qa-link-badge">Sevgi Felsefesi (Sayfa 2) ➡️</span>
-            </div>
-            <div class="qa-link-card" onclick="goToArticlePage(3)">
-              <span class="qa-link-text">💌 Serdar ve Tuğba Kıren'den özel yaşam ve sevgi manifestosu</span>
-              <span class="qa-link-badge">Güzel Sözler (Sayfa 3) ➡️</span>
-            </div>
-          </div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Birlikte Yürünen Yolun Zarafeti",
-        pageImage: "img/serdar-tugba.jpg",
-        content: `
-          <p class="lead"><strong>"Aşk; Birlikte Yaşlanmak Değil, Her Günü Birlikte İlk Günkü Heyecanla Yaşamaktır"</strong></p>
-          
-          <p>Hayat fırtınalarla, yoğunluklarla dolu olsa da; bir çift gözün samimiyeti, sıcacık bir 'nasılsın' deyişi tüm dünyayı unutturmaya yeter. Serdar Kıren'in çalışma azmi ve vizyonu, zarif eşi Tuğba Hanım'ın zarafeti ve desteğiyle birleştiğinde ortaya hayranlık uyandıran bir hayat uyumu çıkıyor.</p>
-
-          <blockquote style="border-left: 4px solid #e11d48; padding: 1rem 1.4rem; background: var(--bg-card); font-style: italic; margin: 1.4rem 0; color: var(--text-main); font-size: 1.1rem; line-height: 1.7; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
-            "Sen benim dünümde en güzel başlangıç, bugünümde en büyük huzur, yarınlarımda ise daima şükrettiğim en kıymetli hazinemsin."
-          </blockquote>
-
-          <div class="in-article-ad" style="border-color: #a855f7;">
-            <span class="ad-label" style="color: #a855f7;">GÜNDEM TRAKYA YAŞAM KÖŞESİ</span>
-            <div class="ad-content-box"><i class="fa-solid fa-gem"></i> Gerçek Sevgi ve Sadakat; Zamanın Eskitemediği En Büyük Mirastır</div>
-          </div>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Sevgi Manifestosu & İlham Veren Sözler",
-        pageImage: "img/serdar-tugba.jpg",
-        content: `
-          <p class="lead"><strong>Gönülden Dökülen En Anlamlı Sevgi Sözleri:</strong></p>
-          
-          <div style="display: grid; gap: 1rem; margin: 1.5rem 0;">
-            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1.2rem;">
-              <p style="color: #fbbf24; font-weight: 800; font-size: 0.95rem; margin-bottom: 0.3rem;"><i class="fa-solid fa-quote-left"></i> Güven ve Sadakat Üzerine:</p>
-              <p style="color: var(--text-main); font-size: 0.95rem; font-style: italic;">"Bir eli tutmak kolaydır; mühim olan o eli bir ömür boyu aynı şefkat ve sımsıkı inançla bırakmamaktır."</p>
-            </div>
-
-            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1.2rem;">
-              <p style="color: #e11d48; font-weight: 800; font-size: 0.95rem; margin-bottom: 0.3rem;"><i class="fa-solid fa-quote-left"></i> Hayat Arkadaşlığı Üzerine:</p>
-              <p style="color: var(--text-main); font-size: 0.95rem; font-style: italic;">"Aynı duada buluşan iki yürek için mesafeler, yıllar ve engeller sadece birer ayrıntıdır. Asıl olan kalplerin birliğidir."</p>
-            </div>
-          </div>
-
-          <p style="color: var(--text-muted); font-size: 0.95rem; text-align: center; margin-top: 1.5rem;">
-            <strong>Serdar & Tuğba Kıren</strong> çiftine ömür boyu sağlık, bitmeyen bir muhabbet ve sonsuz mutluluklar dileriz.
-          </p>
-        `
-      }
-    ]
-  },
   {
     id: 1,
     headlineNumber: 1,
@@ -461,9 +326,14 @@ const headlineArticles = [
         pageTitle: "Genel Bakış & Projenin Detayları",
         pageImage: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Ulaştırma ve Altyapı Bakanlığı'nın mega projeleri arasında yer alan <strong>Halkalı-Kapıkule Hızlı Tren Hattı</strong> projesinde tarihi bir eşiğe gelindi. Toplam 229 kilometrelik hattın ray döşeme ve elektrifikasyon çalışmaları tamamlanarak ilk test sürüşleri için geri sayım başladı.</p>
-          <p>Proje tamamlandığında İstanbul ile Edirne arasındaki yolculuk süresi mevcut 4 saatten sadece <strong>1 saat 20 dakikaya</strong> düşecek. Aynı zamanda Çerkezköy ve Çorlu sanayi merkezleri üzerinden geçen hat, yük taşımacılığında da Türkiye'nin Avrupa'ya açılan en güçlü lojistik köprüsü olacak.</p>
+          <p class="lead">Ulaştırma ve Altyapı Bakanlığı'nın mega projeleri arasında yer alan <strong>Halkalı-Kapıkule Hızlı Tren Hattı</strong> projesinde tarihi bir eşiğe gelindi. Toplam 229 kilometrelik hattın ray döşeme, sinyalizasyon ve elektrifikasyon çalışmaları rekor sürede tamamlanarak ilk test sürüşleri için geri sayım başladı.</p>
+          
+          <p>Proje tamamlandığında İstanbul ile Edirne arasındaki yolculuk süresi mevcut 4 saatten sadece <strong>1 saat 20 dakikaya</strong> düşecek. Aynı zamanda Çerkezköy ve Çorlu sanayi merkezleri üzerinden geçen hat, yük taşımacılığında da Türkiye'nin Avrupa'ya açılan en güçlü lojistik koridoru haline gelecek.</p>
+          
+          <p>Trakya'nın kalkınma vizyonunda mihenk taşı kabul edilen hat, çift hatlı, 200 km/s hıza uygun ve en son Avrupa Demiryolu Trafik Yönetim Sistemi (ERTMS) standartlarında inşa edildi. Hattın faaliyete geçmesiyle karayolu trafiğindeki TIR yoğunluğunun %35 oranında raylara kayması ve karbon emisyonlarının ciddi oranda azalması hedefleniyor.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM (SAYFA 1)</span><div class="ad-content-box"><i class="fa-solid fa-rectangle-ad"></i> Google AdSense Sayfa İçi Reklam Alanı (336x280)</div></div>
+          
           <div class="interactive-qa-box">
             <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> En Çok Merak Edilen Başlıklar:</div>
             <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">❓ Hızlı tren hangi il ve ilçelerde duracak? İstasyon listesi açıklandı mı?</span><span class="qa-link-badge">İstasyonları Gör (Sayfa 2) ➡️</span></div>
@@ -477,15 +347,19 @@ const headlineArticles = [
         pageImage: "https://images.unsplash.com/photo-1515165562839-978bbcf18277?auto=format&fit=crop&w=1200&q=80",
         content: `
           <p class="lead"><strong>Soru 1: Hızlı Tren Hattı Hangi İl ve İlçelerden Geçecek?</strong></p>
+          <p>Halkalı-Kapıkule Demiryolu Hattı, Trakya'nın stratejik sanayi, tarım ve üniversite merkezlerini birbirine bağlayacak şekilde tasarlandı.</p>
+          
           <div class="in-article-ad" style="border-color: var(--news-blue);"><span class="ad-label" style="color: var(--news-blue);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+          
           <h3>Kesinleşen Durak ve İstasyon Listesi:</h3>
-          <ol>
-            <li><strong>İstanbul Halkalı Garı:</strong> Marmaray bağlantısı.</li>
-            <li><strong>Çerkezköy İstasyonu:</strong> Sanayi ve bölge aktarma merkezi.</li>
-            <li><strong>Büyükkarıştıran İstasyonu:</strong> Lojistik köy terminali.</li>
-            <li><strong>Lüleburgaz Garı:</strong> Modern yolcu terminali.</li>
-            <li><strong>Babaeski İstasyonu:</strong> Yerel tarım ve ticaret noktası.</li>
-            <li><strong>Edirne Merkez & Kapıkule Garı:</strong> Avrupa sınır kapısı.</li>
+          <ol style="line-height: 1.8; margin-left: 1.5rem; color: var(--text-main);">
+            <li><strong>İstanbul Halkalı Garı:</strong> Marmaray ve İstanbul Havalimanı metro entegrasyonuyla ana transfer merkezi.</li>
+            <li><strong>Çerkezköy İstasyonu:</strong> 350'den fazla fabrikanın bulunduğu ÇOSB ve Kapaklı bölgesinin yolcu ve lojistik aktarma üssü.</li>
+            <li><strong>Büyükkarıştıran İstasyonu:</strong> Trakya'nın yeni Lojistik Köy terminali ve kuru liman bağlantısı.</li>
+            <li><strong>Lüleburgaz Garı:</strong> Kırklareli'nin en büyük ilçesinde modern mimariyle inşa edilen dev yolcu terminali.</li>
+            <li><strong>Babaeski İstasyonu:</strong> Tarım ticareti ve yerel yolcu sirkülasyonu için modern peronlar.</li>
+            <li><strong>Edirne Merkez Garı:</strong> Trakya Üniversitesi ve Selimiye tarihi yarımadasına 10 dakika mesafede ana terminal.</li>
+            <li><strong>Kapıkule Sınır İstasyonu:</strong> Bulgaristan ve Avrupa demiryolu ağına direkt entegrasyon.</li>
           </ol>
         `
       },
@@ -495,8 +369,12 @@ const headlineArticles = [
         pageImage: "https://images.unsplash.com/photo-1532105956626-9569c03602f6?auto=format&fit=crop&w=1200&q=80",
         content: `
           <p class="lead"><strong>Soru 2: Bilet Fiyatları Ne Kadar Olacak ve Seferler Ne Zaman Başlıyor?</strong></p>
+          
+          <p>TCDD Taşımacılık tarafından hazırlanan tarife taslağına göre, hızlı tren biletleri karayolu otobüs fiyatlarıyla son derece rekabetçi bir düzeyde tutulacak. Ayrıca bölgede çalışan işçiler, kamu personeli ve üniversite öğrencileri için avantajlı aylık abonman kartları sunulacak.</p>
+
           <div class="in-article-ad" style="border-color: var(--news-green);"><span class="ad-label" style="color: var(--news-green);">REKLAM (SAYFA 3)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
-          <p>TCDD Taşımacılık tarafından hazırlanan tarife taslağına göre bilet fiyatları karayolu otobüs biletleriyle rekabetçi olacak ve abonman indirimleri uygulanacak.</p>
+          
+          <p>Tren setlerinde yüksek hızlı internet (Wi-Fi), kafeterya vagonu, ergonomik koltuklar ve engelsiz erişim donanımları standart olarak yer alacak. Sabah ve akşam mesai saatlerinde Çerkezköy-İstanbul arasında her 30 dakikada bir sefer düzenlenmesi planlanıyor.</p>
         `
       }
     ]
@@ -549,7 +427,12 @@ const headlineArticles = [
         pageTitle: "İstihdam Hamlesi & Şartlar",
         pageImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Türkiye'nin üretim üssü Çerkezköy Organize Sanayi Bölgesi (ÇOSB), yılın en büyük toplu işe alım protokolüne imza attı.</p>
+          <p class="lead">Türkiye'nin en dinamik üretim üslerinden <strong>Çerkezköy Organize Sanayi Bölgesi (ÇOSB)</strong> ve Kapaklı Sanayi Bölgesi, 2026 yılının en kapsamlı istihdam protokolüne imza attı.</p>
+          
+          <p>Yeni kurulan yüksek teknolojili otomotiv yan sanayi, biyoteknoloji ve teknik tekstil tesislerinin faaliyete geçmesiyle birlikte ilk etapta <strong>5.000 kişilik</strong> yeni kadro açıldı. İşe alımlarda hem vasıflı teknik personel hem de mesleki eğitim kursları aracılığıyla yetiştirilecek genç adaylar öncelikli olacak.</p>
+          
+          <p>İŞKUR Tekirdağ İl Müdürlüğü ve ÇOSB Bölge Müdürlüğü iş birliğiyle yürütülen projede; asgari ücretin üzerinde başlangıç maaşları, özel sağlık sigortası, kreş desteği ve kapsamlı servis olanakları sağlanacağı bildirildi.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
         `
       }
@@ -1533,6 +1416,223 @@ const headlineArticles = [
         `
       }
     ]
+  },
+  {
+    id: 205,
+    title: "Trakya Topraklarında Su Krizi: Kuraklığa Karşı Damla Sulama Devrimi",
+    spot: "İklim değişikliği Trakya tarımını nasıl etkiliyor? Yeraltı sularının korunması ve akıllı tarım teknolojileri neden hayati?",
+    category: "KÖŞE YAZISI",
+    categorySlug: "yazarlar",
+    location: "Tarım & Bilim",
+    badgeColor: "purple",
+    date: "27 Ağustos 2026 - 00:20",
+    readTime: "5 dk",
+    views: 32600,
+    likes: 1840,
+    reactions: { like: 1210, heart: 650, clap: 490, thinking: 180, angry: 5 },
+    socialPosts: [
+      {
+        user: "Trakya Ziraat Odaları Birliği",
+        handle: "@TrakyaZiraat",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Prof. Dr. Ahmet Yılmazer hocamızın Trakya'da kuraklıkla mücadele ve akıllı sulama rehberi her çiftçimizin başucu kaynağı olmalıdır. 🚜🌾 #TrakyaTarim",
+        time: "1 saat önce",
+        likes: 540,
+        shares: 190
+      }
+    ],
+    comments: [
+      {
+        id: 20501,
+        author: "Ahmet Çiftçi",
+        city: "Hayrabolu",
+        time: "30 dk önce",
+        content: "Hocamın dediği gibi vahşi sulamayı tamamen terk edip güneş enerjili damla sulamaya geçtik, elektrik faturası da üçte bire indi.",
+        likes: 47
+      }
+    ],
+    author: {
+      name: "Prof. Dr. Ahmet Yılmazer",
+      title: "Tarım Teknolojileri & Toprak Bilimi",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Kuraklık ve Toprak Sağlığı",
+        pageImage: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Trakya'nın Kara Topraklarını Geleceğe Taşımak Zorundayız!</strong></p>
+          <p>Trakya havzası, Türkiye buğday üretiminin yaklaşık %15'ini, ayçiçeği üretiminin ise %50'den fazlasını tek başına karşılayan bir bereket merkezidir. Ancak son yıllarda yaşanan mevsimsel kuraklıklar ve yeraltı su tablasındaki çekilmeler alarm vermektedir.</p>
+          <p>Artık her damla suyun kıymetini bilmek zorundayız. Sensörlü toprak nem ölçerler, gece sulaması ve kapalı basınçlı boru sistemleri çiftçimize hem verim hem de %40'a varan su tasarrufu sağlayacaktır.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Yazar İçi Reklamı</div></div>
+        `
+      }
+    ]
+  },
+  {
+    id: 206,
+    title: "Çerkezköy ve Çorlu Sanayisinde Sanayi 4.0 ve Yapay Zeka Dönüşümü",
+    spot: "Trakya fabrikalarında robotik otomasyon, yeşil enerji ve dijitalleşme ile küresel rekabet gücü nasıl artıyor?",
+    category: "KÖŞE YAZISI",
+    categorySlug: "yazarlar",
+    location: "Sanayi & İnovasyon",
+    badgeColor: "purple",
+    date: "26 Ağustos 2026 - 23:45",
+    readTime: "4 dk",
+    views: 39100,
+    likes: 1950,
+    reactions: { like: 1420, heart: 780, clap: 610, thinking: 90, angry: 2 },
+    socialPosts: [
+      {
+        user: "Trakya İnovasyon & Teknoloji",
+        handle: "@TrakyaInovasyon",
+        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80",
+        platform: "linkedin",
+        text: "Müh. Selim Varol Çerkezköy OSB'deki akıllı fabrika dönüşümünü çok net analiz etmiş. Trakya ihracatta sınıf atlıyor! 🤖📈 #Sanayi40 #CerkezkoyOSB",
+        time: "2 saat önce",
+        likes: 620,
+        shares: 210
+      }
+    ],
+    comments: [
+      {
+        id: 20601,
+        author: "Mühendis Hakan",
+        city: "Çorlu / Sanayi",
+        time: "1 saat önce",
+        content: "Otomasyona geçen tesislerde fire oranları sıfıra yaklaştı. Trakya gençliği için müthiş bir yazılım ve mühendislik sahası doğuyor.",
+        likes: 38
+      }
+    ],
+    author: {
+      name: "Müh. Selim Varol",
+      title: "Sanayi 4.0 & Yeşil İnovasyon",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Akıllı Üretim Çağı",
+        pageImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Trakya Sanayisi Dijital Çağa Liderlik Ediyor</strong></p>
+          <p>Çerkezköy, Kapaklı ve Çorlu hatlarındaki organize sanayi bölgelerimiz, Türkiye'nin Avrupa'ya açılan üretim üssüdür. Avrupa Birliği'nin Yeşil Mutabakat kriterlerine uyum sağlayan işletmelerimiz, çatı GES yatırımları ve yapay zeka destekli kalite kontrol hatlarıyla dünya devleriyle yarışmaktadır.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Yazar İçi Reklamı</div></div>
+        `
+      }
+    ]
+  },
+  {
+    id: 207,
+    title: "Mimar Sinan'ın Edirne'deki Mühendislik Dehası: Selimiye'nin Bilinmeyen Sırları",
+    spot: "UNESCO Dünya Mirası Selimiye Camii'nin kubbe akustiği, deprem izolatörleri ve Trakya'nın kültürel mirası.",
+    category: "KÖŞE YAZISI",
+    categorySlug: "yazarlar",
+    location: "Tarih & Kültür",
+    badgeColor: "purple",
+    date: "26 Ağustos 2026 - 22:15",
+    readTime: "4 dk",
+    views: 47800,
+    likes: 2650,
+    reactions: { like: 1890, heart: 1420, clap: 890, thinking: 70, angry: 0 },
+    socialPosts: [
+      {
+        user: "Trakya Tarih & Sanat Kulübü",
+        handle: "@TrakyaTarihKulubu",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+        platform: "instagram",
+        text: "Tarihçi Murat Berk hocamızın Selimiye restorasyonu ve Sinan'ın mimari sırları üzerine yazdığı bu yazı büyüleyici! 🕌✨ #EdirneSelimiye #MimarSinan",
+        time: "3 saat önce",
+        likes: 1240,
+        shares: 340
+      }
+    ],
+    comments: [
+      {
+        id: 20701,
+        author: "Zeynep Öğretmen",
+        city: "Edirne / Merkez",
+        time: "2 saat önce",
+        content: "Öğrencilerimle birlikte mutlaka okuyacağımız harika bir tarih ve mimarlık dersi niteliğinde.",
+        likes: 54
+      }
+    ],
+    author: {
+      name: "Murat Berk",
+      title: "Tarihçi & Kültürel Miras Yazarı",
+      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Sinan'ın Ustalık Eseri",
+        pageImage: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Trakya'nın Tacı: Edirne Selimiye</strong></p>
+          <p>Koca Sinan'ın 80 yaşında 'Ustalık eserim' dediği Selimiye Camii, 43 metrelik dev kubbesi ve tek bir sütun kullanılmadan oluşturulan ferah iç mekanıyla yalnızca bir ibadethane değil, asırları aşan bir matematik mucizesidir.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Yazar İçi Reklamı</div></div>
+        `
+      }
+    ]
+  },
+  {
+    id: 208,
+    title: "Trakya'nın Lojistik Üs Olma Potansiyeli ve 2026-2027 Yatırım Fırsatları",
+    spot: "Çorlu Havalimanı, Tekirdağ Asyaport Limanı ve Hızlı Tren aksı bölgeyi Avrupa'nın en büyük aktarma merkezine dönüştürüyor.",
+    category: "KÖŞE YAZISI",
+    categorySlug: "yazarlar",
+    location: "Ekonomi & Finans",
+    badgeColor: "purple",
+    date: "26 Ağustos 2026 - 21:00",
+    readTime: "5 dk",
+    views: 51400,
+    likes: 2890,
+    reactions: { like: 1980, heart: 1100, clap: 920, thinking: 110, angry: 2 },
+    socialPosts: [
+      {
+        user: "Trakya Ekonomi Dünyası",
+        handle: "@TrakyaFinans",
+        avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Ekonomist Berna Aksoy: 'Asyaport Limanı ve hızlı tren birleştiğinde Trakya, Balkanlar ve Akdeniz'in en stratejik ticaret kapısı oluyor.' 🚢🚆📊 #TrakyaEkonomi",
+        time: "4 saat önce",
+        likes: 980,
+        shares: 310
+      }
+    ],
+    comments: [
+      {
+        id: 20801,
+        author: "Ali İhsan Bey",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "3 saat önce",
+        content: "Asyaport Limanı'nın kapasite artışı bölge esnafından lojistik devlerine kadar herkese kazandıracak. Çok isabetli bir yazı.",
+        likes: 62
+      }
+    ],
+    author: {
+      name: "Berna Aksoy",
+      title: "Bölgesel Finans & Strateji Danışmanı",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Trakya'nın Lojistik Gücü",
+        pageImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Deniz, Demiryolu ve Karayolunun Kesiştiği Küresel Kavşak</strong></p>
+          <p>Tekirdağ Asyaport konteyner limanı, Çorlu Havalimanı kargo taşımacılığı ve Halkalı-Kapıkule Hızlı Tren projesiyle Trakya; yalnızca Türkiye'nin değil, tüm Doğu Avrupa'nın en kritik lojistik koridoru haline gelmektedir.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Yazar İçi Reklamı</div></div>
+        `
+      }
+    ]
   }
 ];
 
@@ -1573,6 +1673,42 @@ const columnistsData = [
     articleTitle: "Ergene Havzası Koruma Eylem Planında Son Durum",
     date: "Dün",
     summary: "Arıtma tesisleri ve nehir yatağı temizliğinde gelinen nokta çevre sağlığı açısından neler vadediyor?"
+  },
+  {
+    id: 205,
+    name: "Prof. Dr. Ahmet Yılmazer",
+    title: "Tarım Teknolojileri & Toprak",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+    articleTitle: "Trakya Topraklarında Su Krizi: Damla Sulama Devrimi",
+    date: "Yeni",
+    summary: "Kuraklığa karşı sensörlü sulama ve akıllı tarım teknolojilerinin çiftçimize sağladığı dev tasarruf."
+  },
+  {
+    id: 206,
+    name: "Müh. Selim Varol",
+    title: "Sanayi 4.0 & Yeşil İnovasyon",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+    articleTitle: "Çerkezköy ve Çorlu OSB'de Sanayi 4.0 ve Yapay Zeka",
+    date: "Yeni",
+    summary: "Trakya fabrikalarında robotik otomasyon, yeşil enerji ve dijitalleşme ile küresel rekabet gücü."
+  },
+  {
+    id: 207,
+    name: "Murat Berk",
+    title: "Tarihçi & Kültürel Miras",
+    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80",
+    articleTitle: "Mimar Sinan'ın Edirne'deki Mühendislik Dehası: Selimiye",
+    date: "Yeni",
+    summary: "UNESCO Dünya Mirası Selimiye Camii'nin kubbe akustiği, deprem izolatörleri ve mimari sırları."
+  },
+  {
+    id: 208,
+    name: "Berna Aksoy",
+    title: "Bölgesel Finans & Strateji",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80",
+    articleTitle: "Trakya'nın Lojistik Üs Olma Potansiyeli ve Yatırımlar",
+    date: "Yeni",
+    summary: "Çorlu Havalimanı, Tekirdağ Asyaport Limanı ve Hızlı Tren aksıyla doğan dev yatırım fırsatları."
   }
 ];
 
