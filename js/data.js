@@ -916,6 +916,112 @@ const headlineArticles = [
       }
     ]
   },
+  {
+    id: 15,
+    title: "Edirnespor 3. Lig'de Yeni Sezona Fırtına Gibi Başladı: 25 Kasım Stadyumu Doldu!",
+    spot: "Sarı-kırmızılı ekip taraftarının desteğiyle sahadan 2-0 galip ayrılarak lige 3 puanla merhaba dedi.",
+    category: "SPOR",
+    categorySlug: "spor",
+    location: "Edirne / Merkez",
+    badgeColor: "red",
+    date: "26 Ağustos 2026 - 14:15",
+    readTime: "3 dk",
+    views: 64200,
+    likes: 2950,
+    reactions: { like: 1850, heart: 1200, clap: 750, thinking: 30, angry: 5 },
+    socialPosts: [
+      {
+        user: "Edirnespor Taraftar Grubu",
+        handle: "@Edirnespor1966",
+        avatar: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=100&q=80",
+        platform: "instagram",
+        text: "Edirnemizin gururu 25 Kasım Stadyumu'nda harika bir futbolla 3 puanı kaptı! Yolun sonu şampiyonluk olsun! 🟡🔴⚽ #Edirnespor",
+        time: "10 saat önce",
+        likes: 1650,
+        shares: 410
+      }
+    ],
+    comments: [
+      {
+        id: 1501,
+        author: "Cemil Meriç",
+        city: "Edirne / Kaleiçi",
+        time: "8 saat önce",
+        content: "Yeni forvet transferi çok iyi iş çıkardı, bu sezon 2. Lig'e çıkacağız inşallah!",
+        likes: 82
+      }
+    ],
+    author: {
+      name: "Hakan Güler",
+      title: "Spor Editörü",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Edirnespor Galibiyeti",
+        pageImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead">TFF 3. Lig temsilcimiz Edirnespor, sezonun ilk iç saha maçında ortaya koyduğu üstün futbolla alkış topladı.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
+        `
+      }
+    ]
+  },
+  {
+    id: 16,
+    title: "Kırklarelispor Ziraat Türkiye Kupası'nda Tur Atladı!",
+    spot: "Atatürk Stadyumu'nda oynanan zorlu eleme maçında Kırklarelispor uzatma dakikalarında bulduğu golle bir üst tura yükseldi.",
+    category: "SPOR",
+    categorySlug: "spor",
+    location: "Kırklareli / Merkez",
+    badgeColor: "emerald",
+    date: "26 Ağustos 2026 - 13:40",
+    readTime: "3 dk",
+    views: 58900,
+    likes: 2480,
+    reactions: { like: 1620, heart: 980, clap: 610, thinking: 20, angry: 5 },
+    socialPosts: [
+      {
+        user: "Kırklarelispor Kulübü",
+        handle: "@KirklarelisporFK",
+        avatar: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Ziraat Türkiye Kupası'nda 4. tura yükseldik! Bize inanan ve 90 dakika susmayan yeşil-beyaz sevdalılarına armağan olsun! 🟢⚪🏆 #Kirklarelispor",
+        time: "11 saat önce",
+        likes: 1420,
+        shares: 380
+      }
+    ],
+    comments: [
+      {
+        id: 1601,
+        author: "Metin Kırklarelili",
+        city: "Kırklareli / Yayla",
+        time: "9 saat önce",
+        content: "Kupada büyük takımlardan biri gelsin, Trakya'da futbol şöleni yaşayalım!",
+        likes: 74
+      }
+    ],
+    author: {
+      name: "Hakan Güler",
+      title: "Spor Editörü",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Kupa Zaferi",
+        pageImage: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead">TFF 2. Lig temsilcimiz Kırklarelispor, Ziraat Türkiye Kupası eleme turunda muazzam bir mücadele sergileyerek adını bir üst tura yazdırdı.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
+        `
+      }
+    ]
+  },
 
   // -------------------------------------------------------------
   // KÖŞE YAZARLARI MAKALELERİ (ID: 201, 202, 203, 204)
