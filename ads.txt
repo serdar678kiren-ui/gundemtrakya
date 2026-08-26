@@ -1,0 +1,3 @@
+# Gündem Trakya - Google AdSense Publisher Verification File
+# AdSense hesabınız onaylandığında pub-0000000000000000 yerine kendi yayıncı kimlik numaranızı yazacaksınız.
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

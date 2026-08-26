@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim ve Haber İhbar Hattı - Gündem Trakya</title>
+  
+  <meta name="description" content="Gündem Trakya haber merkezi iletişim, haber ihbar hattı ve reklam rezervasyonu.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .contact-container {
+      max-width: 960px;
+      margin: 2.5rem auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 2rem;
+    }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-md);
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact-icon {
+      font-size: 1.4rem;
+      color: var(--news-red);
+      background: var(--bg-elevated);
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.4rem;
+    }
+    .form-input, .form-textarea {
+      width: 100%;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 1rem;
+      color: var(--text-main);
+      font-size: 0.9rem;
+      transition: border-color 0.2s ease;
+    }
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--news-red);
+    }
+    .form-textarea {
+      height: 120px;
+      resize: vertical;
+    }
+    @media (max-width: 768px) {
+      .contact-container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container header-row">
+      <a href="index.html" class="portal-logo" title="Gündem Trakya Ana Sayfa">
+        <span class="logo-badge">GÜNDEM</span>
+        <span class="logo-text">TRAKYA<span class="logo-sub">.COM</span></span>
+      </a>
+      <div>
+        <a href="index.html" class="page-nav-btn secondary"><i class="fa-solid fa-arrow-left"></i> Ana Sayfaya Dön</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="contact-container">
+      
+      <!-- Sol Taraf: İletişim Bilgileri -->
+      <div class="contact-card">
+        <h1 style="font-size: 1.8rem; font-weight: 900; color: var(--news-red); margin-bottom: 1rem;">İletişim & Haber İhbar</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">
+          Trakya bölgesinden gördüğünüz sıcak gelişmeleri, fotoğraf ve videoları WhatsApp ihbar hattımıza gönderebilir veya kurumsal iletişim için form doldurabilirsiniz.
+        </p>
+
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div>
+            <div style="font-weight: 800; font-size: 1rem; color: #25d366;">WhatsApp Haber İhbar Hattı</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">0542 000 00 00</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div style="font-weight: 800; font-size: 1rem;">E-Posta Adreslerimiz</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">haber@gundemtrakya.com</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">reklam@gundemtrakya.com</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div style="font-weight: 800; font-size: 1rem;">Genel Merkez & Temsilcilik</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">Tekirdağ / Edirne / Kırklareli Bölge Ofisleri</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ Taraf: İletişim Formu -->
+      <div class="contact-card">
+        <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1.5rem;">Bize Mesaj Gönderin</h2>
+        
+        <form id="contactForm" onsubmit="event.preventDefault(); alert('Mesajınız haber merkezimize başarıyla iletildi. Teşekkür ederiz!'); document.getElementById('contactForm').reset();">
+          <div class="form-group">
+            <label class="form-label">Adınız Soyadınız *</label>
+            <input type="text" class="form-input" placeholder="Adınızı giriniz" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">E-Posta Adresiniz *</label>
+            <input type="email" class="form-input" placeholder="ornek@mail.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Konu / Departman</label>
+            <select class="form-input" style="background: var(--bg-elevated); color: var(--text-main);">
+              <option>Haber İhbarı / Gelişme</option>
+              <option>Reklam ve Sponsorluk</option>
+              <option>Teknik Destek / Öneri</option>
+              <option>Basın Bülteni Gönderimi</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Mesajınız *</label>
+            <textarea class="form-textarea" placeholder="Mesajınızı veya haber detaylarını yazınız..." required></textarea>
+          </div>
+
+          <button type="submit" class="page-nav-btn" style="width: 100%; justify-content: center; padding: 0.85rem; font-size: 1rem;">
+            <i class="fa-solid fa-paper-plane"></i> Mesajı Gönder
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="portal-footer">
+    <div class="container" style="text-align: center;">
+      <p style="font-size: 0.85rem; color: #64748b;">&copy; 2026 Gündem Trakya. Tüm Hakları Saklıdır.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
