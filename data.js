@@ -260,6 +260,123 @@ const headlineArticles = [
     ]
   },
   {
+    id: 18,
+    headlineNumber: 3,
+    title: "Trakya Medya Dünyasında Mutlu Gün: Serdar ve Tuğba Çifti Masalsı Bir Düğünle Dünyaevine Girdi!",
+    spot: "Gündem Trakya Medya Grubu İmtiyaz Sahibi Serdar Kıren ile zarif eşi Tuğba Kıren, bölgenin iş, cemiyet ve basın dünyasını bir araya getiren görkemli bir merasimle mutluluğa 'evet' dedi.",
+    category: "YAŞAM",
+    categorySlug: "yasam",
+    location: "Tekirdağ / Çerkezköy",
+    badgeColor: "purple",
+    date: "27 Ağustos 2026 - 00:30",
+    readTime: "3 dk",
+    views: 112400,
+    likes: 6840,
+    reactions: { like: 3890, heart: 3150, clap: 1820, thinking: 40, angry: 2 },
+    socialPosts: [
+      {
+        user: "Trakya Cemiyet & Yaşam",
+        handle: "@trakya_cemiyet",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+        platform: "instagram",
+        text: "Trakya basınının genç ve başarılı ismi Serdar Kıren ile zarif eşi Tuğba Hanım dünyaevine girdi! Çiftimize bir ömür boyu sağlık ve mutluluklar dileriz. 💍✨👰🤵 #SerdarTugba #GundemTrakya #Dugun",
+        time: "1 saat önce",
+        likes: 3420,
+        shares: 980
+      },
+      {
+        user: "Çerkezköy Sosyete & Magazin",
+        handle: "@cerkezkoy_magazin",
+        avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Yılın düğününde Çerkezköy ve Trakya iş dünyası bir araya geldi. Serdar & Tuğba Kıren çiftine ömür boyu mutluluklar! 🥂🎉",
+        time: "2 saat önce",
+        likes: 2190,
+        shares: 450
+      }
+    ],
+    comments: [
+      {
+        id: 1801,
+        author: "Cemalettin Yıldız",
+        city: "Tekirdağ",
+        time: "45 dk önce",
+        content: "Kıymetli kardeşim Serdar ve değerli eşi Tuğba Hanımefendi'yi yürekten kutluyor, iki cihan saadeti diliyorum.",
+        likes: 186
+      },
+      {
+        id: 1802,
+        author: "Sevgi Demir",
+        city: "Edirne",
+        time: "1 saat önce",
+        content: "Çok zarif ve asil bir çift, bir ömür boyu bir yastıkta kocayın inşallah. Tebrikler!",
+        likes: 142
+      }
+    ],
+    author: {
+      name: "Sevgi Demir",
+      title: "Kültür & Yaşam Yazarı",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/serdar-tugba.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Görkemli Düğün & Mutlu Anlar",
+        pageImage: "img/serdar-tugba.jpg",
+        content: `
+          <p class="lead">Gündem Trakya İmtiyaz Sahibi <strong>Serdar Kıren</strong> ile zarif eşi <strong>Tuğba Kıren</strong>, seçkin davetlilerin katıldığı muazzam bir düğün töreniyle dünyaevine girdi.</p>
+          
+          <div style="background: linear-gradient(135deg, rgba(225, 29, 72, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%); border: 2px solid #e11d48; border-radius: var(--radius-md); padding: 1.5rem; margin: 1.5rem 0; text-align: center;">
+            <i class="fa-solid fa-heart" style="font-size: 2.2rem; color: #e11d48; margin-bottom: 0.6rem;"></i>
+            <h3 style="font-size: 1.4rem; font-weight: 900; color: var(--text-main); margin-bottom: 0.4rem;">Serdar & Tuğba KIREN</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+              Trakya medya, iş ve siyaset camiasının önde gelen isimlerinin hazır bulunduğu nikah merasiminde genç çift alkışlar eşliğinde bir ömür boyu sürecek mutluluğa <strong>"Evet"</strong> dedi.
+            </p>
+          </div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-camera-retro"></i> Merasim Detayları & Teşekkür:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)">
+              <span class="qa-link-text">📸 Düğün törenine katılan seçkin konuklar ve cemiyet dünyası</span>
+              <span class="qa-link-badge">Katılımcılar (Sayfa 2) ➡️</span>
+            </div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)">
+              <span class="qa-link-text">💌 Serdar & Tuğba Kıren Çiftinden Teşekkür Mesajı</span>
+              <span class="qa-link-badge">Teşekkür (Sayfa 3) ➡️</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Cemiyet ve Basın Dünyasının Buluşması",
+        pageImage: "img/serdar-tugba.jpg",
+        content: `
+          <p class="lead">Bölgenin önde gelen belediye başkanları, milletvekilleri, oda başkanları ve basın mensuplarının katıldığı düğün merasiminde unutulmaz anlar yaşandı.</p>
+          <p>Şıklıklarıyla göz kamaştıran Serdar ve Tuğba çifti, ilk danslarıyla konuklardan büyük alkış aldı. Gece boyunca canlı müzik eşliğinde devam eden kutlamalarda davetliler genç çiftin mutluluğunu paylaştı.</p>
+          
+          <div class="in-article-ad" style="border-color: #a855f7;">
+            <span class="ad-label" style="color: #a855f7;">GÜNDEM TRAKYA YAŞAM & CEMİYET</span>
+            <div class="ad-content-box"><i class="fa-solid fa-champagne-glasses"></i> Serdar & Tuğba Kıren Çiftine Ömür Boyu Mutluluklar Dileriz</div>
+          </div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Genç Çiftten Teşekkür Mesajı",
+        pageImage: "img/serdar-tugba.jpg",
+        content: `
+          <p class="lead"><strong>"Bu Özel Günümüzde Yanımızda Olan Tüm Dostlarımıza Teşekkür Ederiz"</strong></p>
+          <p>Törenin ardından duygularını dile getiren Gündem Trakya İmtiyaz Sahibi Serdar Kıren:</p>
+          <blockquote style="border-left: 4px solid #e11d48; padding: 0.8rem 1.2rem; background: var(--bg-card); font-style: italic; margin: 1.2rem 0; color: var(--text-main); font-size: 1.05rem;">
+            "Hayatımızın en anlamlı ve özel gününde bizleri yalnız bırakmayan, bizzat katılarak veya tebrik telgrafları ve çiçekleriyle mutluluğumuza ortak olan tüm aile büyüklerimize, dostlarımıza ve meslektaşlarımıza sonsuz teşekkür ederiz."
+          </blockquote>
+        `
+      }
+    ]
+  },
+  {
     id: 1,
     headlineNumber: 1,
     title: "Trakya'nın Ulaşımında Yeni Çağ: Hızlı Tren Hattında Geri Sayım Başladı!",
