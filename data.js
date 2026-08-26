@@ -182,6 +182,14 @@ const headlineArticles = [
         content: `
           <p class="lead">Anne adaylarının hamilelik sürecini sağlıklı, huzurlu ve bilinçli geçirmesi amacıyla <strong>Çerkezköy Özel İrmet Hospital</strong> tarafından hayata geçirilen <strong>"Gebe Okulu"</strong> yeni dönemiyle kapılarını açtı.</p>
           
+          <div style="margin: 1.5rem 0; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+            <img src="img/irmet-hospital-bina.jpg" alt="Çerkezköy Özel İrmet Hospital Hastane Binası" style="width: 100%; height: 340px; object-fit: cover;" />
+            <div style="background: var(--bg-elevated); padding: 0.6rem 1rem; font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; justify-content: space-between;">
+              <span><i class="fa-solid fa-hospital" style="color: var(--news-red); margin-right: 0.3rem;"></i> <strong>Özel İrmet Hospital Çerkezköy</strong> Ana Hizmet Binası</span>
+              <span style="color: var(--news-blue); font-weight: 700;"><i class="fa-solid fa-location-dot"></i> Çerkezköy / Tekirdağ</span>
+            </div>
+          </div>
+
           <div style="background: linear-gradient(135deg, rgba(225, 29, 72, 0.1) 0%, rgba(56, 189, 248, 0.1) 100%); border: 2px solid var(--news-red); border-radius: var(--radius-md); padding: 1.4rem; margin: 1.5rem 0;">
             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
               <i class="fa-solid fa-hospital" style="font-size: 2rem; color: var(--news-red);"></i>
@@ -206,8 +214,8 @@ const headlineArticles = [
               <span class="qa-link-badge">Ders Programını Gör (Sayfa 2) ➡️</span>
             </div>
             <div class="qa-link-card" onclick="goToArticlePage(3)">
-              <span class="qa-link-text">❓ Ağrısız Doğum (Prenses Doğum) ve Epidural seçenekleri nelerdir?</span>
-              <span class="qa-link-badge">Doğum Konforu (Sayfa 3) ➡️</span>
+              <span class="qa-link-text">❓ Ağrısız Doğum (Prenses Doğum) ve Hastane İletişim Bilgileri</span>
+              <span class="qa-link-badge">Hastane & Kayıt (Sayfa 3) ➡️</span>
             </div>
           </div>
         `
@@ -235,8 +243,8 @@ const headlineArticles = [
       },
       {
         pageNum: 3,
-        pageTitle: "Kayıt & İletişim Bilgileri",
-        pageImage: "img/gebe-okulu-irmet.jpg",
+        pageTitle: "Hastane Binası & Kayıt İletişim",
+        pageImage: "img/irmet-hospital-bina.jpg",
         content: `
           <p class="lead"><strong>Nasıl Kayıt Olunur ve Seanslar Ne Zaman?</strong></p>
           <p>Hamileliğinin 20. haftasını doldurmuş tüm anne adayları İrmet Hospital Gebe Okulu'na hiçbir ücret ödemeden kayıt yaptırabilirler. Baba adaylarının da derslere katılımı özellikle teşvik edilmektedir.</p>
