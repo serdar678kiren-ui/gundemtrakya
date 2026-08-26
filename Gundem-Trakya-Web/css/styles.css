@@ -1,0 +1,1594 @@
+/* ==========================================================================
+   GÜNDEM TRAKYA - KOYU TEMA, NÖBETÇİ ECZANELER & KAYAN BORSA BANDI
+   ========================================================================== */
+
+/* --- Tasarım Değişkenleri (Varsayılan Koyu Tema) --- */
+:root {
+  --bg-main: #0a0e17;
+  --bg-card: #121927;
+  --bg-elevated: #1a2336;
+  --border-color: #1f2b42;
+
+  --news-red: #e11d48;
+  --news-red-dark: #be123c;
+  --news-blue: #38bdf8;
+  --news-green: #10b981;
+  --news-dark: #070a10;
+  --news-header-bg: #070a10;
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
+  --text-white: #ffffff;
+
+  --accent-green: #10b981;
+  --accent-red: #ef4444;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 10px rgba(0,0,0,0.5);
+  --shadow-lg: 0 10px 20px rgba(0,0,0,0.6);
+  --shadow-hover: 0 20px 25px rgba(0,0,0,0.7);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+}
+
+/* Açık Tema */
+[data-theme="light"] {
+  --bg-main: #f4f6f9;
+  --bg-card: #ffffff;
+  --bg-elevated: #e9ecef;
+  --border-color: #dee2e6;
+
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --news-header-bg: #1e293b;
+  --news-blue: #0284c7;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08);
+  --shadow-hover: 0 20px 25px -5px rgba(0,0,0,0.15);
+}
+
+/* Sıfırlamalar */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ==========================================================================
+   1. ÜST FİNANS & KESİNTİSİZ KAYAN BORSA ŞERİDİ (MARQUEE)
+   ========================================================================== */
+.top-finance-bar {
+  background-color: var(--news-header-bg);
+  color: #e2e8f0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.45rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.finance-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.finance-marquee-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 1.5%, black 98.5%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 1.5%, black 98.5%, transparent);
+}
+
+.finance-track {
+  display: flex;
+  width: max-content;
+  animation: scrollFinance 26s linear infinite;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.finance-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollFinance {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.finance-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.finance-item.flash-up {
+  background-color: rgba(16, 185, 129, 0.3);
+}
+
+.finance-item.flash-down {
+  background-color: rgba(239, 68, 68, 0.3);
+}
+
+.finance-code {
+  color: #94a3b8;
+}
+
+.finance-val {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.finance-rate.up {
+  color: #34d399;
+}
+
+.finance-rate.down {
+  color: #f87171;
+}
+
+.top-bar-right-fixed {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 0.8rem;
+  background-color: var(--news-header-bg);
+  padding-left: 1.2rem;
+  z-index: 5;
+  white-space: nowrap;
+  box-shadow: -10px 0 15px var(--news-header-bg);
+}
+
+.live-clock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-elevated);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  color: var(--news-blue);
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+}
+
+.weather-widget {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #fbbf24;
+}
+
+/* ==========================================================================
+   2. ANA HEADER & LOGO BÖLÜMÜ
+   ========================================================================== */
+.main-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.portal-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-badge {
+  background: var(--news-red);
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.55rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.logo-text {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+}
+
+.logo-sub {
+  color: var(--news-red);
+}
+
+.header-ad-space {
+  flex: 1;
+  max-width: 728px;
+  height: 90px;
+  background-color: var(--bg-elevated);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-badge {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-light);
+  letter-spacing: 0.05em;
+}
+
+.ad-placeholder-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.header-user-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.theme-toggle-btn, .bookmark-toggle-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-elevated);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.theme-toggle-btn:hover, .bookmark-toggle-btn:hover {
+  background-color: var(--news-red);
+  color: #ffffff;
+  border-color: var(--news-red);
+}
+
+.bookmark-counter {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--news-red);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 800;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   3. KIRMIZI ANA KATEGORİ MENÜSÜ
+   ========================================================================== */
+.category-nav-bar {
+  background-color: var(--news-red);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  box-shadow: var(--shadow-md);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.nav-menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-item-btn {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.75rem 1.1rem;
+  display: inline-block;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.nav-item-btn:hover, .nav-item-btn.active {
+  background-color: var(--news-red-dark);
+}
+
+.nav-search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-md);
+  padding: 0.3rem 0.8rem;
+  margin-left: 1rem;
+}
+
+.nav-search-input {
+  color: #ffffff;
+  font-size: 0.85rem;
+  width: 170px;
+}
+
+.nav-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-search-btn {
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   4. SON DAKİKA (BREAKING NEWS) BANT
+   ========================================================================== */
+.breaking-news-bar {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.5rem 0;
+}
+
+.breaking-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.breaking-label {
+  background: var(--news-red);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.breaking-content {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.15s ease;
+}
+
+.breaking-content:hover {
+  color: var(--news-red);
+}
+
+.breaking-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.ctrl-btn {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.ctrl-btn:hover {
+  background: var(--news-red);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   5. 1'DEN 10'A KLASİK TÜRK MANŞET SLIDER BÖLÜMÜ
+   ========================================================================== */
+.headline-section {
+  padding: 1.2rem 0;
+}
+
+.headline-grid {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 1.2rem;
+}
+
+.main-slider-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-media-box {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  background-color: #000000;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.4s ease;
+}
+
+.main-slider-card:hover .slider-img {
+  transform: scale(1.02);
+}
+
+.slider-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(10,14,23,0.65) 45%, rgba(10,14,23,0.98) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.8rem;
+  color: #ffffff;
+}
+
+.slider-category-badge {
+  display: inline-block;
+  background: var(--news-red);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.slider-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  letter-spacing: -0.02em;
+}
+
+.slider-spot {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.slider-numbers-bar {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: var(--bg-elevated);
+  border-top: 1px solid var(--border-color);
+}
+
+.slider-num-btn {
+  padding: 0.75rem 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  border-right: 1px solid var(--border-color);
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.slider-num-btn:last-child {
+  border-right: none;
+}
+
+.slider-num-btn:hover {
+  background-color: var(--bg-card);
+  color: var(--news-red);
+}
+
+.slider-num-btn.active {
+  background-color: var(--news-red);
+  color: #ffffff;
+}
+
+.side-headlines {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.side-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.side-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--news-red);
+}
+
+.side-img-box {
+  position: relative;
+  height: 155px;
+}
+
+.side-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0,0,0,0.8);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.side-body {
+  padding: 0.9rem;
+}
+
+.side-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text-main);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   6. DÖRT KARTLI ALT MANŞET IZGARASI
+   ========================================================================== */
+.sub-headlines-section {
+  padding-bottom: 1.5rem;
+}
+
+.sub-headlines-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.sub-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sub-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--news-red);
+}
+
+.sub-media {
+  position: relative;
+  height: 150px;
+}
+
+.sub-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub-body {
+  padding: 0.9rem;
+}
+
+.sub-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   7. KÖŞE YAZARLARI BÖLÜMÜ
+   ========================================================================== */
+.columnists-section {
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.columnists-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.section-tag-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--news-red);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.columnists-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.columnist-card {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  padding: 1.1rem;
+  border: 1px solid var(--border-color);
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.columnist-card:hover {
+  border-color: var(--news-red);
+  background: var(--bg-card);
+  transform: translateY(-2px);
+}
+
+.columnist-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--news-red);
+  flex-shrink: 0;
+}
+
+.columnist-info {
+  flex: 1;
+}
+
+.columnist-name {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.columnist-role {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.columnist-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--news-blue);
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   8. TRAKYA NÖBETÇİ ECZANELER MODÜLÜ
+   ========================================================================== */
+.pharmacy-widget {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 1.2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.pharmacy-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--news-green);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.pharmacy-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--news-green);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pharmacy-city-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.pharm-tab-btn {
+  flex: 1;
+  padding: 0.45rem 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  text-align: center;
+  border: 1px solid var(--border-color);
+  transition: all 0.15s ease;
+}
+
+.pharm-tab-btn:hover {
+  color: var(--text-main);
+}
+
+.pharm-tab-btn.active {
+  background: var(--news-green);
+  color: #ffffff;
+  border-color: var(--news-green);
+}
+
+.pharmacy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.pharmacy-item {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem;
+  transition: border-color 0.15s ease;
+}
+
+.pharmacy-item:hover {
+  border-color: var(--news-green);
+}
+
+.pharm-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.pharm-name {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.pharm-district {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--news-green);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.pharm-address {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+
+.pharm-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--border-color);
+}
+
+.pharm-phone {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--news-blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pharm-call-btn {
+  background: var(--news-green);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pharm-call-btn:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   9. ANA İÇERİK & SIDEBAR
+   ========================================================================== */
+.main-content-layout {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.feed-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.feed-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feed-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--news-red);
+}
+
+.feed-media {
+  position: relative;
+  height: 180px;
+}
+
+.feed-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.feed-body {
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.feed-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+.feed-summary {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.feed-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+.middle-ad-banner {
+  grid-column: 1 / -1;
+  margin: 1.5rem 0;
+  height: 110px;
+  background-color: var(--bg-card);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-tower-ad {
+  width: 100%;
+  height: 500px;
+  background-color: var(--bg-card);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.top-read-widget {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 1.2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.top-read-header {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--news-red);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--news-red);
+  padding-bottom: 0.5rem;
+}
+
+.top-read-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.top-read-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.top-read-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.rank-number {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--news-red);
+  line-height: 1;
+  min-width: 1.5rem;
+}
+
+.top-read-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.35;
+  transition: color 0.15s ease;
+}
+
+.top-read-item:hover .top-read-text {
+  color: var(--news-red);
+}
+
+.social-community-card {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.community-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.community-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.community-desc {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.community-btn {
+  background: #ffffff;
+  color: #128c7e;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.community-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   10. FACEBOOK & SOSYAL MEDYA VİRAL PAYLAŞIM ÇUBUĞU
+   ========================================================================== */
+.share-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1.2rem 0;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.share-label {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-right: 0.4rem;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-sm);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.share-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.share-fb { background-color: #1877f2; }
+.share-wa { background-color: #25d366; }
+.share-tw { background-color: #000000; }
+.share-tg { background-color: #24a1de; }
+.share-copy { background-color: #64748b; }
+
+/* ==========================================================================
+   11. ÇOK SAYFALI HABER (PAGINATION) & SORU-CEVAP KARTLARI
+   ========================================================================== */
+.article-pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.2rem;
+  margin: 2rem 0 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pagination-info {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--news-red);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pagination-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-nav-btn {
+  background: var(--news-red);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.page-nav-btn:hover {
+  background: var(--news-red-dark);
+  transform: translateY(-2px);
+}
+
+.page-nav-btn.secondary {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.page-nav-btn.secondary:hover {
+  background: var(--border-color);
+}
+
+.interactive-qa-box {
+  background: linear-gradient(135deg, rgba(225, 29, 72, 0.1) 0%, rgba(56, 189, 248, 0.08) 100%);
+  border: 1px solid var(--news-red);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  margin: 1.8rem 0;
+}
+
+.qa-box-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--news-red);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qa-link-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.qa-link-card:hover {
+  border-color: var(--news-red);
+  background: var(--bg-elevated);
+  transform: translateX(4px);
+}
+
+.qa-link-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.qa-link-badge {
+  background: var(--news-red);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   12. HABER DETAY MODALI
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 10, 16, 0.88);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-container {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.96);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-container {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+}
+
+.modal-body {
+  padding: 2rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.modal-hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.modal-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.modal-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.in-article-ad {
+  background-color: var(--bg-elevated);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  margin: 1.8rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.ad-label {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: var(--text-light);
+}
+
+.ad-content-box {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.modal-article-text {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+.modal-article-text .lead {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #f43f5e;
+}
+
+.modal-article-text h3 {
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 1.8rem 0 0.8rem;
+  color: var(--text-main);
+}
+
+.modal-article-text ul, .modal-article-text ol {
+  margin: 1rem 0 1.5rem 1.8rem;
+}
+
+.modal-article-text li {
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   13. FOOTER & YASAL METİNLER
+   ========================================================================== */
+.portal-footer {
+  background-color: #070a10;
+  color: #94a3b8;
+  border-top: 3px solid var(--news-red);
+  padding: 3rem 0 1.5rem;
+  margin-top: auto;
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-col-title {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+}
+
+/* Toast */
+.toast-box {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #1e293b;
+  color: #ffffff;
+  padding: 0.8rem 1.4rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-hover);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  z-index: 2000;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+
+.toast-box.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ==========================================================================
+   14. RESPONSIVE / MOBİL UYUMLULUK
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .headline-grid, .main-content-layout {
+    grid-template-columns: 1fr;
+  }
+  .sub-headlines-grid, .columnists-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header-ad-space {
+    display: none;
+  }
+  .top-bar-right-fixed {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-headlines-grid, .columnists-grid, .feed-articles-grid {
+    grid-template-columns: 1fr;
+  }
+  .slider-media-box {
+    height: 280px;
+  }
+  .slider-title {
+    font-size: 1.25rem;
+  }
+  .slider-num-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+  }
+  .modal-hero-img {
+    height: 240px;
+  }
+  .modal-title {
+    font-size: 1.4rem;
+  }
+  .article-pagination-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
