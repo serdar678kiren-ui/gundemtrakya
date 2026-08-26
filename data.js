@@ -15,6 +15,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 106, 
+    articleId: 18, 
+    title: "Ergene ve Çorlu'daki 900 dekarlık yangının ardından Başkan Müge Yıldız Topak sahaya indi: 'Üreticimizin yarasını birlikte saracağız!'", 
+    time: "01:05" 
+  },
+  { 
     id: 105, 
     articleId: 17, 
     title: "Çerkezköy Özel İrmet Hospital Gebe Okulu yeni dönem kayıtları başladı: Anne adaylarına uzman kadro ile ücretsiz eğitim!", 
@@ -114,6 +120,119 @@ const pharmacyData = {
 
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
+  {
+    id: 18,
+    headlineNumber: 1,
+    title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
+    spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
+    category: "TRAKYA HABER",
+    categorySlug: "trakya",
+    location: "Tekirdağ / Ergene & Çorlu",
+    badgeColor: "red",
+    date: "27 Ağustos 2026 - 01:00",
+    readTime: "4 dk",
+    views: 94300,
+    likes: 4120,
+    reactions: { like: 2650, heart: 1890, clap: 980, thinking: 70, angry: 25 },
+    socialPosts: [
+      {
+        user: "Ergene Belediyesi",
+        handle: "@ergenebld",
+        avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Başkanımız Müge Yıldız Topak yangından zarar gören üreticilerimizi ziyaret ederek çalışmaları yerinde inceledi. 'Ergene büyük bir aile, yaralarımızı el birliğiyle saracağız.' 🚒🌾 #ErgeneBelediyesi #MugeYildizTopak",
+        time: "15 dk önce",
+        likes: 1840,
+        shares: 512
+      },
+      {
+        user: "Trakya Çiftçi Dayanışması",
+        handle: "@TrakyaCiftciBirligi",
+        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Ergene ve Çorlu sınırında çıkan anız yangınında can kaybı olmaması tek tesellimiz. Belediyemizin hayvanlar için geçici barınak desteği üreticimize can suyu oldu. Geçmiş olsun Ergene! 🙏🔥",
+        time: "45 dk önce",
+        likes: 1250,
+        shares: 340
+      }
+    ],
+    comments: [
+      {
+        id: 1801,
+        author: "Mehmet Çiftçi",
+        city: "Ergene / Ulaş",
+        time: "10 dk önce",
+        content: "Gece boyunca itfaiye ve belediye ekipleri canla başla çalıştı. Başkanımıza bizzat gelip çiftçinin yanında durduğu için teşekkür ederiz.",
+        likes: 142
+      },
+      {
+        id: 1802,
+        author: "Hüseyin Vardar",
+        city: "Çorlu / Sağlık Mah.",
+        time: "25 dk önce",
+        content: "Anız yakmanın ne kadar büyük bir felaket olduğunu bir kez daha gördük. Lütfen tarlalara ateşle yaklaşmayalım, topraklarımızı koruyalım.",
+        likes: 98
+      }
+    ],
+    author: {
+      name: "Abdurrahim YILDIRIM",
+      title: "Trakya Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/ergene-yangin-muge-topak.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "900 Dekar Alanda Yangın & Belediye Seferberliği",
+        pageImage: "img/ergene-yangin-muge-topak.jpg",
+        content: `
+          <p class="lead">Tekirdağ'ın <strong>Ergene ile Çorlu</strong> ilçeleri arasında meydana gelen ve şiddetli rüzgarın etkisiyle geniş bir alanda etkili olan büyük anız yangınının ardından Ergene Belediyesi, yangından zarar gören çiftçiler ve çiftlikler için acil destek ve yardım çalışmalarını başlattı.</p>
+          
+          <p>Ergene ile Çorlu ilçeleri arasındaki çevre yolu yakınlarında henüz belirlenemeyen bir nedenle başlayan anız yangını, saatte 50 kilometre hıza ulaşan poyraz rüzgarının etkisiyle kısa sürede yayıldı. Yaklaşık <strong>900 dekar</strong> tarım arazisinde etkili olduğu belirlenen yangında ekili alanlar, hasat edilmiş tarlalar ve saman balyaları küle dönerken, alevlerin ulaştığı <strong>4 çiftlik evi</strong> ağır hasar görerek kullanılamaz hale geldi.</p>
+          
+          <p>Yangının ilk anından itibaren itfaiye ekipleri, iş makineleri ve su tankerleriyle alevlere müdahale eden Ergene Belediyesi ekipleri, facianın sanayi tesislerine ve yerleşim alanlarına sıçramasını engelledi.</p>
+
+          <div class="in-article-ad"><span class="ad-label">REKLAM (SAYFA 1)</span><div class="ad-content-box"><i class="fa-solid fa-rectangle-ad"></i> Google AdSense Sayfa İçi Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Yangın ve Destek Çalışmaları:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🚜 Hayvanlar İçin Geçici Barınaklar ve Yem Desteği</span><span class="qa-link-badge">Barınak Projesi (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">🎙️ Başkan Müge Yıldız Topak'ın Açıklamaları ve Hasar Tespiti</span><span class="qa-link-badge">Başkanın Mesajı (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Hayvanlar Açıkta Kalmasın: Geçici Barınak ve Yem Desteği",
+        pageImage: "img/ergene-yangin-saha.jpg",
+        content: `
+          <p class="lead"><strong>'Hayvanlarımız Açıkta Kalmasın Diye Geçici Barınaklarımızı Hazırlıyoruz!'</strong></p>
+          
+          <p>Yangında ahırları ve çiftlik binaları zarar gören üreticilerin mağduriyetini gidermek için Ergene Belediyesi Fen İşleri ve Kırsal Hizmetler Müdürlüğü ekipleri sahaya indi. Çiftliklerdeki büyükbaş ve küçükbaş hayvanların güvenli bir şekilde barınabilmesi amacıyla çadır barınaklar ve korunaklı geçici ağıllar kurulmaya başlandı.</p>
+          
+          <p>Ayrıca yangında tonlarca saman balyası yanan yetiştiricilere acil kaba yem ve yonca takviyesi sağlanarak hayvanların beslenme ihtiyacı güvence altına alındı.</p>
+
+          <div class="in-article-ad" style="border-color: var(--news-red);"><span class="ad-label" style="color: var(--news-red);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Başkan Müge Yıldız Topak: 'Biz Ergene'de Büyük Bir Aileyiz'",
+        pageImage: "img/ergene-yangin-muge-topak.jpg",
+        content: `
+          <p class="lead"><strong>'Bugün Üreticimizin Yarasını Birlikte Sarma Günü'</strong></p>
+          
+          <p>Olay yerinde incelemelerde bulunan Ergene Belediye Başkanı <strong>Müge Yıldız Topak</strong>, yaptığı açıklamada şu ifadelere yer verdi:</p>
+          
+          <blockquote style="background: var(--bg-elevated); border-left: 4px solid var(--news-red); padding: 1rem 1.2rem; margin: 1.2rem 0; font-style: italic; color: var(--text-main); line-height: 1.7;">
+            "Gerçekten hepimizin içini acıtan, çok üzücü bir olay yaşadık. Çiftçilerimizin aylarca, hatta yıllarca emek verdiği alanların, çiftliklerin ve saman balyalarının alevlerin arasında kalmasını görmek hepimizi derinden yaraladı. Çok şükür üreticilerimiz hayvanlarını kurtarmak için büyük bir mücadele verdi. Biz de Ergene Belediyesi olarak ilk andan itibaren tüm imkanlarımızla üreticimizin yanında olmaya çalışıyoruz. Böyle zamanlarda 'senin derdin, benim derdim' diyebilmek çok önemli. Çünkü biz Ergene'de büyük bir aileyiz. İyi günde nasıl bir aradaysak zor günde de birbirimizin yanında olacağız."
+          </blockquote>
+
+          <p>Başkan Müge Yıldız Topak, yangına fedakarca müdahale eden tüm itfaiyecilere, belediye personeline ve yardıma koşan vatandaşlara teşekkür ederek, "Can kaybının yaşanmaması en büyük tesellimiz. Ergene'mizin dayanışmasıyla bu zor günleri de birlikte aşacağız." dedi.</p>
+        `
+      }
+    ]
+  },
   {
     id: 17,
     headlineNumber: 2,
@@ -483,11 +602,52 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Çorlu Trafiğine Neşter",
+        pageTitle: "Çorlu Trafiğine Tarihi Neşter & 18 Km Yeni Bulvar",
         pageImage: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Tekirdağ Büyükşehir Belediyesi ve Karayolları Genel Müdürlüğü iş birliğiyle Çorlu çevre yolu projesi resmen start aldı.</p>
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
+          <p class="lead">Tekirdağ Büyükşehir Belediyesi ve Karayolları Genel Müdürlüğü iş birliğiyle hazırlanan <strong>Çorlu Şehir İçi ve Çevre Yolu Entegre Ulaşım Projesi</strong>nde resmi imzalar atıldı. Toplam 18 kilometre uzunluğundaki bölünmüş yeni bulvar ve köprülü kavşak sistemiyle kent içi trafik düğümü tamamen çözülüyor.</p>
+          
+          <p>Sanayi ve nüfus yoğunluğu bakımından Trakya'nın en büyük kenti konumuna gelen Çorlu'da, her gün yaklaşık 70 bin aracın kullandığı Omurtak Caddesi, Orion AVM mevkii ve Eski Sanayi kavşaklarındaki darboğaz tarihe karışacak. Proje, transit tır ve ağır vasıta trafiğini doğrudan çevre yoluna yönlendirerek şehir merkezini rahatlatacak.</p>
+          
+          <p>Belediye Başkanı ve Karayolları Bölge Müdürlüğü yetkililerinin katıldığı imza töreninde; projenin modern yağmur suyu drenaj hatları, LED aydınlatma direkleri, geniş yaya kaldırımları ve kesintisiz bisiklet yollarıyla çevre dostu bir yaklaşımla inşa edileceği vurgulandı.</p>
+
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Çorlu Ulaşım Projesi Hakkında Merak Edilenler:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🚗 3 Katlı Köprülü Kavşaklar Nereye Yapılacak? Güzergah haritası</span><span class="qa-link-badge">Kavşakları Gör (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⏱️ İnşaat Ne Zaman Bitecek? Alternatif bypass yolları nereler?</span><span class="qa-link-badge">Takvim & Yollar (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "3 Katlı Modern Kavşaklar & Akıllı Sinyalizasyon",
+        pageImage: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 1: Köprülü Kavşaklar Hangi Noktalarda İnşa Edilecek?</strong></p>
+          
+          <p>Çorlu trafiğinin en sık kilitlendiği 3 kritik arterde zemin etütleri tamamlandı. Hazırlanan avan projelere göre yapılacak imalatlar:</p>
+          
+          <ul style="line-height: 1.8; margin-left: 1.5rem; color: var(--text-main);">
+            <li><strong>Orion - Emlak Konutları Farklı Seviyeli Kavşağı:</strong> Alipaşa ve Önerler yönünden gelen araçlar sinyalizasyona takılmadan transit geçiş yapabilecek.</li>
+            <li><strong>Yeni Sanayi - Bülent Ecevit Bulvarı Bağlantı Köprüsü:</strong> Sanayi çalışanlarının sabah ve akşam vardiya çıkışlarında yaşadığı 45 dakikalık bekleme süresi 4 dakikaya inecek.</li>
+            <li><strong>Havuzlar - Çorlu Devlet Hastanesi Acil Koridoru:</strong> Ambulans ve toplu taşıma araçları için özel öncelikli akıllı yeşil dalga sistemi entegre edilecek.</li>
+          </ul>
+
+          <div class="in-article-ad" style="border-color: var(--news-blue);"><span class="ad-label" style="color: var(--news-blue);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Proje Takvimi & Alternatif Güzergahlar",
+        pageImage: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 2: Çalışmalar Sırasında Trafik Nasıl İşleyecek?</strong></p>
+          
+          <p>İlçe Emniyet Müdürlüğü Trafik Tescil Şubesi ve Fen İşleri ekipleri koordinasyonunda sürücülerin mağdur olmaması adına genişletilmiş alternatif servis yolları belirlendi. Ağır tonajlı araçlar inşaat süresince Velimeşe ve Ergene bağlantı akslarına yönlendirilecek.</p>
+          
+          <p>Projenin ilk etabı olan köprü ayaklarının 6 ay içinde tamamlanması, çevre yolu asfaltlama ve çevre düzenlemesinin ise 12 ay sonunda teslim edilerek 2027 yazında tam kapasiteyle trafiğe açılması planlanıyor.</p>
         `
       }
     ]
@@ -537,11 +697,48 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Hasat Raporu & Rekolte",
+        pageTitle: "Hasat Raporu & Rekolte Analizi",
         pageImage: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Türkiye'nin bitkisel sıvı yağ ihtiyacının yaklaşık %60'ını tek başına karşılayan Trakya topraklarında, <strong>ayçiçeği hasat sezonu</strong> coşkuyla başladı.</p>
+          <p class="lead">Türkiye'nin bitkisel sıvı yağ ihtiyacının yaklaşık %60'ını tek başına karşılayan Trakya topraklarında, <strong>2026 yılı ayçiçeği hasat sezonu</strong> yüksek rekolte beklentisiyle start aldı.</p>
+          
+          <p>Tekirdağ, Edirne ve Kırklareli genelinde 3.8 milyon dekar arazide çalışan modern biçerdöverler günün ilk ışıklarıyla tarlalara girdi. Bu yıl uygulanan sertifikalı tohum ıslahı, dengeli gübreleme ve akıllı damla sulama projeleri sayesinde dekar başına verimin 220 ila 270 kilogram arasına yükseldiği kaydedildi.</p>
+          
+          <p>Ziraat Odaları koordinasyon kurulunun yayımladığı raporda, iklimsel dalgalanmalara rağmen Trakya üreticisinin bilinçli tarım teknikleri sayesinde Türkiye ortalamasının %30 üzerinde bir randıman elde ettiği belirtildi.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Sayfa İçi Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Ayçiçeği Sezonu Soru & Cevap:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🌻 Trakya Birlik Alım Fiyatı ve Prim Desteği Ne Kadar?</span><span class="qa-link-badge">Fiyat Tablosu (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">🚜 Mazot ve Gübre Destek Ödemeleri Ne Zaman Yatacak?</span><span class="qa-link-badge">Ödeme Takvimi (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Taban Fiyat ve Lisanslı Depoculuk",
+        pageImage: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 1: Trakya Birlik Alım Fiyatı ve Şartları Nelerdir?</strong></p>
+          
+          <p>Trakya Birlik Yönetim Kurulu tarafından yapılan açıklamaya göre, %44 standart yağ oranlı ayçiçeği için ton başına tatmin edici bir avans fiyat belirlendi. Yağ oranındaki her %1'lik artış için üreticiye ilave %1.5 prim verilecek.</p>
+          
+          <p>Bölgede sayıları artan modern lisanslı çelik silolara ürün teslim eden çiftçiler, nakliye desteği ve stopaj muafiyetinden yararlanarak ürünlerini güvenle saklayıp istedikleri zaman Elüs piyasasında satabilecekler.</p>
+
+          <div class="in-article-ad" style="border-color: var(--news-green);"><span class="ad-label" style="color: var(--news-green);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Çiftçiye Mazot ve Gübre Teşvikleri",
+        pageImage: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 2: Tarımsal Destekler Hesaplara Ne Zaman Aktarılacak?</strong></p>
+          
+          <p>Tarım ve Orman Bakanlığı, Trakya havzasındaki yağlı tohum üreticilerine dekar başına nakdi mazot ve gübre desteğinin yanı sıra kilogram başına prim ödemelerinin hasat teslim belgeleri tamamlanır tamamlanmaz Ziraat Bankası Başakkart hesaplarına yatırılacağını duyurdu.</p>
+          
+          <p>Bölge genelinde 45 bini aşkın çiftçi ailesinin bu desteklerle birlikte yeni ekim sezonu için tohum ve girdi maliyetlerini rahatlıkla karşılayabileceği ifade ediliyor.</p>
         `
       }
     ]
@@ -591,11 +788,46 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Çalışma Hayatında Yeni Dönem",
+        pageTitle: "Çalışma Hayatında Yeni Dönem & Esnek Mesai",
         pageImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Çalışma hayatında uzun süredir merakla beklenen kapsamlı reform paketinin detayları kamuoyu ile paylaşıldı.</p>
+          <p class="lead">Çalışma ve Sosyal Güvenlik Bakanlığı tarafından hazırlanan ve milyonlarca çalışanı doğrudan ilgilendiren <strong>Yeni Çalışma Modelleri ve Sosyal Güvenlik Reform Paketi</strong> TBMM gündemine taşındı.</p>
+          
+          <p>Yeni düzenleme ile birlikte özellikle bilişim, finans, çağrı merkezleri ve hizmet sektöründe yaygınlaşan uzaktan (home-office) ve hibrit çalışma modelleri resmi iş kanunu güvencesine kavuşuyor. İşverenlerin uzaktan çalışan personelin ergonomik sandalye, bilgisayar, internet ve yemek giderlerini karşılama zorunluluğu yasal olarak tanımlandı.</p>
+          
+          <p>Ayrıca haftalık 45 saatlik standart çalışma süresinin sanayi ve hizmet kollarında esnekleştirilerek 40 saate indirilmesi ve haftada 4 gün çalışma pilot uygulaması için Trakya ve Marmara bölgesindeki seçili sanayi kuruluşlarında deneme süreci başlatılıyor.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Çalışma Yasası Merak Edilenler:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">💼 Kıdem Tazminatı ve Bireysel Fon Hesabı Nasıl İşleyecek?</span><span class="qa-link-badge">Tazminat Detayı (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⏱️ Esnek Çalışma ve Yemek/İnternet Desteği Tutarları</span><span class="qa-link-badge">Destek Kalemleri (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Kıdem Tazminatı ve Güvence Fonu",
+        pageImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 1: Kıdem Tazminatında Hangi Haklar Korunuyor?</strong></p>
+          
+          <p>Taslak metne göre, işçinin 1 yıl dolmadan işten ayrılması veya iflas eden şirketlerden alacaklarını tahsil edememesi gibi mağduriyetlerin önüne geçmek amacıyla 'Kıdem Güvence Hesabı' kuruluyor.</p>
+          
+          <p>Her ay işveren tarafından yatırılacak primler kamu güvencesindeki bireysel hesapta nemalanacak ve çalışan iş değiştirdiğinde dahi kıdem hakkını kaybetmeden yeni iş yerine devredebilecek.</p>
+
+          <div class="in-article-ad" style="border-color: var(--news-blue);"><span class="ad-label" style="color: var(--news-blue);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Uygulama Takvimi & Yürürlük Tarihi",
+        pageImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 2: Düzenleme Ne Zaman Yürürlüğe Girecek?</strong></p>
+          
+          <p>Sendikalar ve işveren konfederasyonlarıyla yapılan istişareler neticesinde kanun teklifinin yeni yasama yılında Meclis Genel Kurulu'nda oylanarak 1 Ocak 2027 itibarıyla kademeli olarak yürürlüğe girmesi hedefleniyor.</p>
         `
       }
     ]
@@ -645,11 +877,46 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Sanayide Yeşil Dönüşüm",
+        pageTitle: "Sanayide Yeşil Enerji Seferberliği",
         pageImage: "https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Avrupa Birliği sınırda karbon düzenlemesine hazırlanan Trakya sanayisi 10 milyar TL'lik yatırımla çatılarına güneş santralleri kuruyor.</p>
+          <p class="lead">Avrupa Birliği'nin Yeşil Mutabakat ve Sınırda Karbon Düzenleme Mekanizması (SKDM) kurallarına tam uyum sağlamak isteyen Trakya sanayisi, <strong>10 milyar TL'lik öz kaynak ve yeşil finansman paketiyle</strong> fabrikalarını güneş ve rüzgar enerjisi santralleriyle donatıyor.</p>
+          
+          <p>Çerkezköy Organize Sanayi Bölgesi (ÇOSB), Çorlu Deri İhtisas OSB ve Velimeşe OSB bünyesindeki 140'tan fazla sanayi tesisi, fabrika çatılarına yüksek verimli monokristal güneş panelleri monte ederek yıllık elektrik tüketimlerinin en az %70'ini sıfır emisyonlu kaynaklardan karşılayacak.</p>
+          
+          <p>Sanayi ve Teknoloji Bakanlığı ile Enerji Piyasası Düzenleme Kurumu (EPDK) tarafından onaylanan projeler sayesinde yılda yaklaşık 350 bin ton karbon salımının önüne geçilmesi planlanıyor.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Yeşil Sanayi Rehberi:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">☀️ Çatı GES Kurulumu ve İhracatta Karbon Vergisi Muafiyeti</span><span class="qa-link-badge">İhracat Avantajı (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⚡ Enerji Depolama ve Akıllı Şebeke Entegrasyonu</span><span class="qa-link-badge">Teknoloji Detayı (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "İhracatta Karbon Vergisi Avantajı",
+        pageImage: "https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 1: Yeşil Dönüşüm İhracatçımıza Ne Kazandıracak?</strong></p>
+          
+          <p>Tekstil, alüminyum, kimya ve otomotiv sektörlerinde Avrupa pazarına ihracat yapan Trakya firmaları, yeşil enerji sertifikaları (I-REC) sayesinde ton başına 80 Euro'yu bulan sınırda karbon cezasından tamamen muaf tutulacak.</p>
+          
+          <p>Böylece firmalarımızın uluslararası tedarik zincirlerindeki öncelikli konumu korunurken, küresel markaların Türkiye'deki sipariş payı %25 oranında artış gösterecektir.</p>
+
+          <div class="in-article-ad" style="border-color: var(--news-green);"><span class="ad-label" style="color: var(--news-green);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Bataryalı Depolama ve Gelecek Hedefleri",
+        pageImage: "https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 2: Gece Saatlerinde Enerji Nasıl Sağlanacak?</strong></p>
+          
+          <p>Proje kapsamında kurulacak 50 megavat saatlik lityum-demir-fosfat (LiFePO4) endüstriyel batarya depolama merkezleri, gündüz üretilen fazla güneş elektriğini depolayarak gece vardiyalarında fabrikaların kesintisiz ve temiz enerjiyle çalışmasını mümkün kılacaktır.</p>
         `
       }
     ]
@@ -699,11 +966,46 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Er Meydanında Yeni Kurallar",
+        pageTitle: "Er Meydanında Yeni Çağ & 32 Başpehlivan",
         pageImage: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Edirne Sarayiçi Er Meydanı'nda 6 asırdır devam eden efsanevi organizasyonda yeni kurallar açıklandı.</p>
+          <p class="lead">UNESCO Somut Olmayan Kültürel Miras listesinde yer alan ve 660 yılı aşkın köklü bir geçmişe sahip <strong>Tarihi Kırkpınar Yağlı Güreşleri</strong>, güreş severlerin seyir zevkini en üst noktaya taşıyacak yeni lig ve puanlama statüsüyle başlıyor.</p>
+          
+          <p>Türkiye Geleneksel Güreşler Federasyonu (TGGF) tarafından hayata geçirilen Türkiye Yağlı Güreş Ligi finalleri niteliğindeki yeni formatta; sadece sezon boyunca en yüksek puanı toplayan 32 elit başpehlivan doğrudan Sarayiçi Er Meydanı'na davet edilecek.</p>
+          
+          <p>Gereksiz uzatmaların ve pasif güreşin önüne geçmek amacıyla puanlama süresi ve ihtar kuralları sıkılaştırılırken, altın kemer mücadelesinde ilk turdan itibaren adeta final havasında eşleşmeler izlenecek.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Kırkpınar Güreşleri Detayları:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🤼‍♂️ Başpehlivan Eşleşmeleri ve Altın Kemer Favorileri</span><span class="qa-link-badge">Pehlivanlar (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">🕌 Edirne Festival Programı ve Ciğer Şöleni</span><span class="qa-link-badge">Turizm & Bilet (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Altın Kemer Mücadelesi ve Favoriler",
+        pageImage: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 1: Er Meydanında Hangi Pehlivanlar Güreşecek?</strong></p>
+          
+          <p>Lig etabını zirvede tamamlayan son Kırkpınar başpehlivanları Ali Gürbüz, İsmail Balaban, Orhan Okulu ve Yusuf Can Zeybek'in yanı sıra Trakya bölgesinin yetiştirdiği genç yetenekler de er meydanında kol bağlayacak.</p>
+          
+          <p>Yeni kurallara göre kura çekimleri dijital torba sistemiyle yapılarak favori pehlivanların ilk turda birbirleriyle eşleşmesi engellenecek, rekabet heyecanı son güne kadar korunacaktır.</p>
+
+          <div class="in-article-ad" style="border-color: var(--news-red);"><span class="ad-label" style="color: var(--news-red);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Edirne'de Güreş Turizmi ve Şenlikler",
+        pageImage: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 2: Ziyaretçiler İçin Şehirde Neler Hazırlandı?</strong></p>
+          
+          <p>Edirne Valiliği ve Belediyesi ortaklığında Sarayiçi çevresinde 50 bin kişilik modern tribünler, ücretsiz Wi-Fi noktaları, dinlenme çadırları ve geleneksel Edirne tava ciğeri stantları kuruldu. Şehirdeki otel ve pansiyon doluluk oranlarının şimdiden %98'e ulaştığı belirtildi.</p>
         `
       }
     ]
@@ -753,11 +1055,48 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Konut Kredisi Şartları",
+        pageTitle: "İlk Evini Alacaklara 0.99 Kredi Desteği",
         pageImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Ev sahibi olmak isteyen dar ve orta gelirli vatandaşlar için hazırlanan konut kredisi başvuruları başladı.</p>
+          <p class="lead">Hazine ve Maliye Bakanlığı ile Çevre, Şehircilik ve İklim Değişikliği Bakanlığı koordinasyonunda hazırlanan <strong>İlk Evim Konut Finansmanı Kampanyası</strong> kamu bankaları aracılığıyla resmen yürürlüğe girdi.</p>
+          
+          <p>Konut sahibi olmayan dar ve orta gelirli vatandaşlar için hazırlanan paket kapsamında; aylık <strong>%0.99 faiz oranı</strong> ve 180 aya (15 yıl) varan vade seçenekleri sunuluyor. Başvurular Ziraat Bankası, VakıfBank ve Halkbank şubelerinin yanı sıra e-Devlet kapısı üzerinden alınmaya başlandı.</p>
+          
+          <p>Trakya genelinde özellikle Çorlu, Çerkezköy, Kapaklı, Süleymanpaşa ve Edirne merkezde yeni tamamlanan sıfır konut projelerinde büyük bir hareketlilik yaşanırken, inşaat firmaları da projelerinde %10 ek indirim uygulayacaklarını bildirdi.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Konut Kredisi Rehberi:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🔑 Başvuru Şartları Neler? Kimler Yararlanabilir?</span><span class="qa-link-badge">Şartları İncele (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">📊 Aylık Taksit Tablosu ve Geri Ödeme Planı</span><span class="qa-link-badge">Taksit Hesapla (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Başvuru Kriterleri ve Gelir Şartı",
+        pageImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 1: Kampanyadan Kimler Faydalanabilir?</strong></p>
+          
+          <ul style="line-height: 1.8; margin-left: 1.5rem; color: var(--text-main);">
+            <li><strong>Konut Sahipliği Şartı:</strong> Başvuran kişinin ve eşinin üzerine kayıtlı herhangi bir konut hissesi bulunmamalıdır.</li>
+            <li><strong>İkametgah ve Satış Kısıtı:</strong> Son 1 yıl içerisinde konut satışı yapmamış olmak ve satın alınan evde en az 5 yıl ikamet etme taahhüdü gerekmektedir.</li>
+            <li><strong>Ekspertiz ve Enerji Kimlik Belgesi:</strong> Alınacak konutun sıfır (ilk el) olması ve A veya B sınıfı Enerji Kimlik Belgesi taşıması şarttır.</li>
+          </ul>
+
+          <div class="in-article-ad" style="border-color: var(--news-blue);"><span class="ad-label" style="color: var(--news-blue);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Örnek Taksit ve Vade Tablosu",
+        pageImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Soru 2: 2 Milyon TL Kredi İçin Aylık Taksit Ne Kadar?</strong></p>
+          
+          <p>180 ay vadeli 2.000.000 TL tutarındaki konut kredisinde Hazine katkısı sayesinde ilk 3 yıl aylık taksitler kademeli olarak düşük tutulacak. 4. yıldan itibaren hane gelirindeki artışa paralel standart ödeme planına geçilecek ve vatandaşlar bütçelerini sarsmadan ev sahibi olabilecek.</p>
         `
       }
     ]
@@ -807,11 +1146,34 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Festival Coşkusu",
+        pageTitle: "Marmara Kıyısında Festival Coşkusu",
         pageImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Tekirdağ'ın eşsiz bağ rotaları ve mutfak kültürü festival kapsamında binlerce ziyaretçiyi buluşturdu.</p>
+          <p class="lead">Tekirdağ'ın Şarköy ve Süleymanpaşa ilçelerinde geleneksel olarak düzenlenen <strong>Uluslararası Bağ Bozumu ve Gastronomi Festivali</strong>, bu yıl 120 bini aşkın yerli ve yabancı ziyaretçiye ev sahipliği yaptı.</p>
+          
+          <p>Marmara Denizi'nin kıyısında uzanan asırlık bağlarda sepetlerle üzüm toplayan konuklar; Tekirdağ köftesi, Hayrabolu tatlısı, peynir helvası ve yöresel zeytinyağlıların sergilendiği stantlarda Trakya mutfağının seçkin tatlarını deneyimledi.</p>
+          
+          <p>Akşam saatlerinde sahil amfi tiyatroda sahne alan ünlü sanatçıların konserleriyle doruğa çıkan festival, bölge turizmine ve esnafına milyonlarca liralık ekonomik canlılık kazandırdı.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Yöresel Lezzet Atölyeleri & Bağ Rotaları",
+        pageImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Masterclass Şefleriyle Trakya Mutfağı</strong></p>
+          <p>Türkiye'nin önde gelen şeflerinin katıldığı gastronomi atölyelerinde coğrafi işaretli Tekirdağ ürünleri modern sunumlarla harmanlandı. Bağ rotasında düzenlenen bisiklet turları ve fotoğraf yarışmaları büyük ilgi gördü.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Bölge Turizmine Dev Katkı",
+        pageImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Şarköy ve Mürefte Otellerinde %100 Doluluk</strong></p>
+          <p>Festival süresince Şarköy, Mürefte, Hoşköy ve Kumbağ sahillerindeki tüm butik oteller ve pansiyonlar tamamen doldu. Belediye Başkanı festivalin her yıl genişletilerek sürdürüleceğini açıkladı.</p>
         `
       }
     ]
@@ -861,11 +1223,34 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Tıpta Yeni Çağ",
+        pageTitle: "Onkolojide Kişiye Özel Tedavi Devrimi",
         pageImage: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Kişiye özel genetik analizlerle hazırlanan aşılar tıp dünyasında büyük heyecan yarattı.</p>
+          <p class="lead">TÜBİTAK ve üniversite onkoloji merkezleri iş birliğiyle yürütülen <strong>Kişiselleştirilmiş Kanser İmmünoterapi Projesi</strong>nde Faz-2 klinik deneme sonuçları tıp dünyasında yankı uyandırdı.</p>
+          
+          <p>Hastadan alınan tümör biyopsisinin yeni nesil gen dizileme yöntemleriyle taranması sonucu, yalnızca kanserli hücreye özgü neoantijenleri hedefleyen özel mRNA aşıları sentezlendi. Akciğer, kolon ve melanom vakalarında uygulanan tedavide hastaların %88'inde tümörün küçüldüğü veya tamamen gerilediği saptandı.</p>
+          
+          <p>Klasik kemoterapinin aksine sağlıklı organ ve dokulara zarar vermeyen akıllı aşı yöntemi, bağışıklık sistemini tümör hücrelerine karşı bir ordu gibi eğitiyor.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Klinik Süreç ve Yan Etkisiz Tedavi",
+        pageImage: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Bağışıklık Hücreleri Kanserle Savaşa Hazırlanıyor</strong></p>
+          <p>Aşı enjekte edildikten sonra T-hücreleri vücuttaki mutasyona uğramış kanserli yapıları tanıyıp yok ediyor. Saç dökülmesi veya bağışıklık çökmesi gibi klasik kemoterapi yan etkileri gözlenmiyor.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Seri Üretim ve SGK Kapsamı",
+        pageImage: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>2027 Yılında Yaygın Kullanıma Girecek</strong></p>
+          <p>Sağlık Bakanlığı onay süreçlerinin tamamlanmasının ardından yerli biyoteknoloji tesislerinde seri aşı üretimine başlanacak ve SGK geri ödeme listesine alınması değerlendirilecek.</p>
         `
       }
     ]
@@ -915,11 +1300,34 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Batarya Üretimi",
+        pageTitle: "Yüksek Teknolojili Hücre Üretimi",
         pageImage: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Türkiye'nin batarya ve enerji depolama alanındaki stratejik yatırımı yeni fazıyla üretime geçti.</p>
+          <p class="lead">Türkiye'nin elektrikli araç ve temiz enerji depolama vizyonunun kalbinde yer alan <strong>Yerli Batarya Hücresi ve Modül Üretim Tesisi</strong>, yıllık 100 bin araçlık ikinci fazını törenle açtı.</p>
+          
+          <p>Yüksek enerji yoğunluğuna sahip nikel-manganez-kobalt (NMC) ve prizmatik katı hal kimyası kullanılan yeni nesil hücreler, elektrikli otomobillerin tek şarjla menzilini 650 kilometrenin üzerine çıkarıyor ve 15 dakikada %80 hızlı şarj imkanı tanıyor.</p>
+          
+          <p>Tesis sadece yerli otomotiv sanayisinin ihtiyacını karşılamakla kalmayıp, Balkanlar ve Doğu Avrupa'daki otomobil üreticilerine de katma değerli teknoloji ihraç edecek.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Ultra Hızlı Şarj ve Güvenlik Testleri",
+        pageImage: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Aşırı Sıcak ve Darbe Dayanımı Kanıtlandı</strong></p>
+          <p>Uluslararası akredite laboratuvarlarda yapılan testlerde hücrelerin eksi 30 dereceden artı 60 dereceye kadar performans kaybı yaşamadan çalıştığı tescillendi.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "İstihdam ve AR-GE Ekosistemi",
+        pageImage: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>1.200 Nitelikli Mühendis ve Teknisyen</strong></p>
+          <p>Fabrika bünyesinde kurulan İleri Malzeme AR-GE Merkezi, üniversitelerle iş birliği içinde grafen katkılı süper iletken batarya prototipleri üzerinde çalışıyor.</p>
         `
       }
     ]
@@ -969,11 +1377,34 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Ekoturizm ve Doğa",
+        pageTitle: "Avrupa'nın En Büyük Subasar Ormanı",
         pageImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Doğayla baş başa kalmak isteyenler için İğneada Longozu huzurlu bir kaçış noktası sunuyor.</p>
+          <p class="lead">Karadeniz kıyısında Istranca Dağları'nın eteklerinde yer alan ve dünyanın ender korunan ekosistemlerinden biri olan <strong>Kırklareli İğneada Longoz Ormanları Milli Parkı</strong>, sonbahar ekoturizm sezonunu muhteşem bir doğa şöleniyle açtı.</p>
+          
+          <p>Mert Gölü, Erikli Gölü ve Saka Gölü'nü çevreleyen dişbudak, kızılağaç ve meşe ormanlarında sarı ve kırmızının her tonu doğaseverleri büyülüyor. Parkur boyunca yer alan ahşap seyir kuleleri, 260'tan fazla göçmen kuş türünün gözlemlenmesine imkan tanıyor.</p>
+          
+          <p>Milli Parklar Genel Müdürlüğü tarafından yenilenen eko-yürüyüş patikaları, bisiklet rotaları ve profesyonel rehberli kano turlarıyla doğaya zarar vermeden sürdürülebilir bir turizm deneyimi sunuluyor.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Mert Gölü Kano Safari ve Kuş Gözlemi",
+        pageImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Nilüfer Çiçekleri Arasında Sessiz Bir Yolculuk</strong></p>
+          <p>Motorlu taşıtların yasak olduğu koruma alanında ziyaretçiler can yelekleriyle kano kiralayarak sazlıklar ve su üstünde süzülen nilüfer bahçeleri arasında dingin bir keşfe çıkabiliyor.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Yöresel Gastronomi & Glamping Konaklama",
+        pageImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Meşe Balı, Manda Yoğurdu ve Kalkan Balığı</strong></p>
+          <p>İğneada ve Limanköy balıkçı lokantalarında taze Karadeniz balıkları ve köy kahvaltıları sunulurken, orman içinde lüks çadır (glamping) tesisleri doğa ile lüksü bir arada arayanları ağırlıyor.</p>
         `
       }
     ]
@@ -1023,11 +1454,40 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Sanat Kursları Başlıyor",
+        pageTitle: "Sanat ve Kültürde Yeni Dönem",
         pageImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Çerkezköy Belediyesi tarafından gençlerin sanatsal gelişimini desteklemek amacıyla açılan akademi yeni döneme hazır.</p>
+          <p class="lead">Çerkezköy Belediyesi Kültür ve Sosyal İşler Müdürlüğü tarafından çocukların ve gençlerin yeteneklerini keşfetmelerini sağlamak amacıyla kurulan <strong>Kültür ve Sanat Akademisi</strong>, 2026-2027 eğitim-öğretim yılı kayıtlarını başlattı.</p>
+          
+          <p>Çerkezköy Atatürk Kültür Merkezi'nin modern atölyelerinde verilecek eğitimlerde; piyano, keman, bağlama, yan flüt, gitar, halk oyunları, yaratıcı drama, yağlı boya resim ve heykel gibi klasik sanat dallarının yanı sıra robotik kodlama ve dijital çizim kursları da yer alacak.</p>
+          
+          <p>Tamamı alanında uzman konservatuvar mezunu eğitmenler tarafından verilecek dersler haftalık programlar halinde hafta içi akşam ve hafta sonu grupları olarak düzenlendi.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Sanat Akademisi Kayıt Detayları:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🎨 Hangi Yaş Grupları Başvurabilir? Branş Listesi</span><span class="qa-link-badge">Branşları İncele (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">💻 Ücretsiz Kayıt Linki ve Derslikler</span><span class="qa-link-badge">Başvuru Yap (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Açılan Branşlar ve Yaş Kriterleri",
+        pageImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>7'den 70'e Sanat Eğitimi</strong></p>
+          <p>Akademi bünyesinde 6-14 yaş grubu çocuklar için temel sanat ve müzik ritim eğitimi, 15 yaş üzeri gençler ve yetişkinler için ise ileri seviye enstrüman ve tiyatro topluluğu sınıfları oluşturulmuştur.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Kayıt Başvuru Kanalları",
+        pageImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Kontenjanlar Sınırlı, Katılım Ücretsizdir</strong></p>
+          <p>Vatandaşlar Çerkezköy Belediyesi resmi web sitesi veya Atatürk Kültür Merkezi danışma masasından online form doldurarak ücretsiz kayıtlarını tamamlayabilirler.</p>
         `
       }
     ]
@@ -1077,11 +1537,34 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Tribün Coşkusu & Maç Raporu",
+        pageTitle: "General Basri Saran'da Tribün Şöleni & 3 Puan",
         pageImage: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">Bölgesel Amatör Lig temsilcimiz Çorlu Spor, kendi evinde ağırladığı güçlü rakibini 3-1 mağlup ederek zirvedeki yerini korudu.</p>
+          <p class="lead">Bölgesel Amatör Lig (BAL) 2. Grup'ta şampiyonluk mücadelesi veren temsilcimiz <strong>Çorlu Spor</strong>, kendi sahasında ağırladığı grubun güçlü ekibini baskılı ve tempolu oyunuyla 3-1 mağlup ederek liderlik koltuğunu perçinledi.</p>
+          
+          <p>Tarihi General Basri Saran Stadyumu'nda 10 bine yakın kırmızı-şimşek taraftarının tezahüratlarıyla başlayan karşılaşmada; 14. dakikada şık bir frikik golüyle öne geçen ekibimiz, ikinci yarıda kanatlardan geliştirdiği organize ataklarla farkı ikiye çıkardı.</p>
+          
+          <p>Maçın bitiş düdüğüyle birlikte saha içinde ve tribünlerde büyük bir sevinç yumağı oluşurken, taraftarlar futbolcuları tribünlere çağırarak şampiyonluk meşaleleri yaktı.</p>
+
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Teknik Direktör ve Kaptan Değerlendirmeleri",
+        pageImage: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>'Hedefimiz TFF 3. Lig'e Geri Dönmek'</strong></p>
+          <p>Teknik Direktör basın toplantısında: 'Çorlu gibi 300 bin nüfuslu bir sanayi kentinin yeri profesyonel liglerdir. Oyuncularım sahaya yüreklerini koydu, bu şehre şampiyonluğu armağan edeceğiz' ifadelerini kullandı.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Puan Durumu & Gelecek Haftanın Derbisi",
+        pageImage: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Haftaya Trakya Derbisi Heyecanı</strong></p>
+          <p>Grupta 5 puan farkla zirvede bulunan Çorlu Spor, gelecek hafta deplasmanda Kapaklıspor ile karşı karşıya gelecek. Maç biletlerinin satışa çıkar çıkmaz tükeneceği tahmin ediliyor.</p>
         `
       }
     ]
@@ -1130,11 +1613,32 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Edirnespor Galibiyeti",
+        pageTitle: "Edirnespor'dan Net Galibiyet",
         pageImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">TFF 3. Lig temsilcimiz Edirnespor, sezonun ilk iç saha maçında ortaya koyduğu üstün futbolla alkış topladı.</p>
+          <p class="lead">TFF 3. Lig temsilcimiz <strong>Edirnespor</strong>, 2026-2027 futbol sezonunun açılış maçında taraftarı önünde sergilediği baskılı futbolla sahadan 2-0 galip ayrıldı.</p>
+          
+          <p>Tarihi 25 Kasım Stadyumu'nu dolduran binlerce Edirneli sporsever, 90 dakika boyunca takımlarını coşkuyla destekledi. Yeni transferlerin üst düzey uyumu ve orta sahadaki kusursuz pres oyunu camiaya şampiyonluk umudu aşıladı.</p>
+          
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Yeni Transferlerin Göz Dolduran Performansı",
+        pageImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Savunmada ve Forvette Kusursuz Uyum</strong></p>
+          <p>Yaz kampını verimli geçiren sarı-kırmızılı ekipte yeni forvetin ilk maçında kaydettiği gol ve asist performansı tribünlerden tam not aldı.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Kulüp Yönetiminden Birlik Çağrısı",
+        pageImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>'Tüm Şehir El Ele 2. Lig'e'</strong></p>
+          <p>Edirnespor Kulüp Başkanı, maç bitiminde yaptığı açıklamada şehrin dinamiklerini, iş insanlarını ve taraftarları tek yürek olmaya davet etti.</p>
         `
       }
     ]
@@ -1183,11 +1687,32 @@ const headlineArticles = [
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Kupa Zaferi",
+        pageTitle: "Kırklarelispor Kupa Yolculuğuna Devam Ediyor",
         pageImage: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
         content: `
-          <p class="lead">TFF 2. Lig temsilcimiz Kırklarelispor, Ziraat Türkiye Kupası eleme turunda muazzam bir mücadele sergileyerek adını bir üst tura yazdırdı.</p>
+          <p class="lead">TFF 2. Lig temsilcimiz <strong>Kırklarelispor</strong>, Ziraat Türkiye Kupası eleme turunda nefes kesen 120 dakikalık mücadele sonucunda rakibini 2-1 mağlup ederek adını bir üst tura yazdırdı.</p>
+          
+          <p>Kırklareli Atatürk Stadyumu'nda normal süresi 1-1 eşitlikle tamamlanan karşılaşmanın 114. dakikasında köşe vuruşundan gelen topu şık bir kafa vuruşuyla ağlara gönderen yeşil-beyazlılar büyük coşku yaşadı.</p>
+          
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Kupada Dev Takımların Korkulu Rüyası",
+        pageImage: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Trakya'nın Kupa Geleneği</strong></p>
+          <p>Geçmiş yıllarda Süper Lig devlerini kupadan eleyerek Türkiye çapında ses getiren Kırklarelispor, bu sezon da kupada çeyrek final hedefiyle yoluna devam ediyor.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Kura Çekimi ve Rakip Analizi",
+        pageImage: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
+        content: `
+          <p class="lead"><strong>Bir Sonraki Turda Rakip Kim?</strong></p>
+          <p>TFF Riva Hasan Doğan Milli Takımlar Tesisleri'nde gerçekleştirilecek kura çekimi sonrası Kırklarelispor'un 4. turdaki rakibi belli olacak.</p>
         `
       }
     ]
