@@ -1,0 +1,15 @@
+{
+  "name": "gundemtrakya",
+  "version": "1.0.0",
+  "description": "Gündem Trakya - Trakya'nın Nabzı, Son Dakika Haberleri",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": ["trakya", "haber", "news"],
+  "author": "Gündem Trakya Medya Grubu",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1"
+  }
+}
