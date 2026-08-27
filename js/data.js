@@ -165,8 +165,112 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 23,
+    id: 25,
     headlineNumber: 1,
+    title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
+    spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
+    category: "KÜLTÜR & YAŞAM",
+    categorySlug: "yasam",
+    location: "Tekirdağ / Marmaraereğlisi",
+    badgeColor: "red",
+    date: "28 Ağustos 2026 - 01:15",
+    readTime: "3 dk",
+    views: 86400,
+    likes: 6420,
+    reactions: { like: 3400, heart: 2850, clap: 1980, thinking: 120, angry: 10 },
+    socialPosts: [
+      {
+        user: "Marmaraereğlisi Belediyesi",
+        handle: "@MarmaraereglisiBel",
+        avatar: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "30 Ağustos Zafer Bayramımızın 104. yılını Yeniçiftlik'te fener alayı ve Cüneyt Şentürk ile Lerzan Mutlu konserleriyle coşkuyla kutluyoruz! Tüm hemşehrilerimiz davetlidir. 🇹🇷🎉 #30Ağustos #Marmaraereğlisi",
+        time: "30 dk önce",
+        likes: 2450,
+        shares: 890
+      },
+      {
+        user: "Trakya Kültür Sanat",
+        handle: "@TrakyaEtkinlik",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Büyük Zafer'in 104. yılında Trakya sahillerinde bayram coşkusu yaşanacak. Yeniçiftlik Meydanı'ndaki fener alayı ve konserler kaçmaz! 🇹🇷",
+        time: "1 saat önce",
+        likes: 1780,
+        shares: 420
+      }
+    ],
+    comments: [
+      {
+        id: 2501,
+        author: "Merve Çelik",
+        city: "Marmaraereğlisi / Yeniçiftlik",
+        time: "25 dk önce",
+        content: "Yeniçiftlik'te her yıl fener alayı muhteşem geçiyor. Bu sene Cüneyt Şentürk ve Lerzan Mutlu konserleriyle tam bir bayram havası esecek, ailecek oradayız!",
+        likes: 165
+      },
+      {
+        id: 2502,
+        author: "Kemal Yılmaz",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "45 dk önce",
+        content: "Mustafa Onur Bozkurter Başkanımıza ve belediyemize bu anlamlı kutlama programı için teşekkür ederiz. 30 Ağustos ruhu Trakya'da sonsuza dek yaşayacak.",
+        likes: 134
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Kültür, Sanat & Yerel Yönetimler Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/marmaraereglisi-30-agustos.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "30 Ağustos Zafer Bayramı 104. Yıl Dönümü Programı",
+        pageImage: "img/marmaraereglisi-30-agustos.jpg",
+        content: `
+          <p class="lead"><strong>Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü fener alayı ve dev konserlerin yer aldığı muhteşem bir programla kutlamaya hazırlanıyor.</strong></p>
+          <p>Marmaraereğlisi Belediye Başkanı <strong>Mustafa Onur Bozkurter</strong>’in ev sahipliğinde gerçekleştirilecek kutlama programı, 30 Ağustos Cumartesi akşamı ilçenin sahil ve turizm merkezi <strong>Yeniçiftlik</strong>’te düzenlenecek.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Gazi Mustafa Kemal Atatürk ve silah arkadaşlarının milletimize armağan ettiği Büyük Zafer'in 104. gurur yılını Yeniçiftlik sahilimizde omuz omuza, meşalelerle kutlayacağız."</p>
+            <span>- Mustafa Onur Bozkurter, Marmaraereğlisi Belediye Başkanı</span>
+          </div>
+          <p>Kutlama etkinliklerine Tekirdağ, Çorlu, Çerkezköy ve çevre ilçelerden binlerce vatandaşın ve yazlıkçı misafirlerin katılması bekleniyor.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Fener Alayı Güzergahı ve Konser Saatleri",
+        pageImage: "img/marmaraereglisi-30-agustos.jpg",
+        content: `
+          <p class="lead"><strong>Yeniçiftlik Caddelerinde Fener Alayı ve Meydanda Müzik Şöleni</strong></p>
+          <p>Kutlama etkinlikleri kapsamında ilk olarak saat <strong>20.00’de</strong> Yeniçiftlik Mustafa Kemal Atatürk Caddesi Migros önünden başlayacak dev <strong>Fener Alayı</strong> yürüyüşü gerçekleştirilecek. Binlerce vatandaş Türk bayrakları ve meşalelerle marşlar eşliğinde meydana yürüyecek.</p>
+          <p>Fener alayının ardından Yeniçiftlik Meydanı’nda ücretsiz halk konserlerine geçilecek:</p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>🎵 <strong>Saat 21.15:</strong> Balkan ve Trakya ezgileriyle tanınan sevilen sanatçı <strong>Cüneyt Şentürk</strong> sahne alacak.</li>
+            <li>🎤 <strong>Saat 22.15:</strong> Ünlü pop sanatçısı <strong>Lerzan Mutlu</strong> en sevilen şarkılarını Zafer Bayramı coşkusuyla seslendirecek.</li>
+          </ul>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Başkan Bozkurter'den Tüm Trakya Halkına Davet",
+        pageImage: "img/marmaraereglisi-30-agustos.jpg",
+        content: `
+          <p class="lead"><strong>"30 Ağustos Coşkusunu Hep Birlikte Yaşayalım"</strong></p>
+          <p>Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın coşkusunu, birlik ve beraberliğini hep birlikte yaşamak isteyen tüm vatandaşları, sivil toplum kuruluşlarını ve basın mensuplarını Yeniçiftlik'teki kutlama programına davet etti.</p>
+          <p>Program süresince vatandaşların etkinlik alanına rahat ulaşabilmesi için belediye tarafından ilçe merkezinden ve çevre mahallelerden ücretsiz ring seferleri düzenleneceği bildirildi.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 23,
+    headlineNumber: 2,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
