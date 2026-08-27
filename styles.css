@@ -1818,9 +1818,109 @@ button {
   opacity: 1;
 }
 
+/* Akıcı Manşet Geçiş Animasyonları */
+.slider-media-box.slide-next .slider-img,
+.slider-media-box.slide-next .slider-gradient-overlay {
+  animation: slideFromRight 0.32s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.slider-media-box.slide-prev .slider-img,
+.slider-media-box.slide-prev .slider-gradient-overlay {
+  animation: slideFromLeft 0.32s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes slideFromRight {
+  0% { transform: translateX(35px); opacity: 0.6; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideFromLeft {
+  0% { transform: translateX(-35px); opacity: 0.6; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Slider Hızlı Ok Butonları */
+.slider-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background: rgba(10, 14, 23, 0.7);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.slider-arrow-btn:hover {
+  background: var(--news-red);
+  border-color: var(--news-red);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-arrow-prev { left: 1rem; }
+.slider-arrow-next { right: 1rem; }
+
+/* Mobil Alt Gezinme Çubuğu (Native App Bar) */
+.mobile-bottom-app-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  z-index: 9999;
+  padding: 0.4rem 0.5rem;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.mobile-app-link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.3rem 0;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s ease;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-app-link i {
+  font-size: 1.15rem;
+}
+
+.mobile-app-link:hover, .mobile-app-link.active {
+  color: var(--news-red);
+}
+
 /* ==========================================================================
-   16. RESPONSIVE / MOBİL UYUMLULUK
+   16. RESPONSIVE / MOBİL UYUMLULUK & ERGONOMİK FONT ÖLÇEKLERİ
    ========================================================================== */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   .headline-grid, .main-content-layout {
     grid-template-columns: 1fr;
@@ -1834,16 +1934,445 @@ button {
 }
 
 @media (max-width: 768px) {
-  .sub-headlines-grid, .columnists-grid, .feed-articles-grid {
+  body {
+    font-size: 13.5px;
+    padding-bottom: 3.8rem; /* Mobil alt çubuğun içeriği kapatmaması için */
+  }
+
+  .container {
+    padding: 0 0.5rem;
+    max-width: 100%;
+  }
+
+  /* Header & Logo */
+  .main-header {
+    padding: 0.4rem 0;
+  }
+
+  .header-row {
+    padding: 0 0.3rem;
+  }
+
+  .ataturk-header-badge {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .portal-logo .logo-badge {
+    font-size: 0.62rem;
+    padding: 0.15rem 0.35rem;
+  }
+
+  .portal-logo .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .portal-logo .logo-sub {
+    font-size: 0.65rem;
+  }
+
+  .theme-toggle-btn, .bookmark-toggle-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  /* Mobil Alt Gezinme Çubuğu */
+  .mobile-bottom-app-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.3rem 0.4rem;
+  }
+
+  .mobile-app-link {
+    font-size: 0.65rem;
+  }
+
+  .mobile-app-link i {
+    font-size: 1.05rem;
+  }
+
+  /* Kategori Menüsü */
+  .category-nav-bar {
+    padding: 0.2rem 0;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .nav-menu-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.25rem;
+    padding-bottom: 0.15rem;
+  }
+
+  .nav-item-btn {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.76rem;
+    border-radius: 999px;
+  }
+
+  .nav-search-box {
+    margin-left: 0;
+    width: 100%;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .nav-search-input {
+    width: 100%;
+    font-size: 0.78rem;
+  }
+
+  /* Son Dakika Bandı */
+  .breaking-news-bar {
+    padding: 0.35rem 0;
+  }
+
+  .breaking-flex {
+    gap: 0.5rem;
+  }
+
+  .breaking-label {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .breaking-content {
+    font-size: 0.76rem;
+    line-height: 1.25;
+  }
+
+  /* Manşet Slider */
+  .headline-section {
+    padding: 0.6rem 0;
+  }
+
+  .slider-media-box {
+    height: 240px;
+  }
+
+  .slider-gradient-overlay {
+    padding: 1rem 0.8rem;
+    height: 85%;
+  }
+
+  .slider-category-badge {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .slider-title {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin-bottom: 0.25rem;
+  }
+
+  .slider-spot {
+    font-size: 0.75rem;
+    line-height: 1.3;
+    -webkit-line-clamp: 2;
+  }
+
+  .slider-numbers-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+  }
+
+  .slider-num-btn {
+    flex: 1;
+    min-width: 2rem;
+    font-size: 0.82rem;
+    padding: 0.45rem 0;
+  }
+
+  .slider-arrow-btn {
+    width: 1.9rem;
+    height: 1.9rem;
+    font-size: 0.75rem;
+  }
+
+  .slider-arrow-prev { left: 0.4rem; }
+  .slider-arrow-next { right: 0.4rem; }
+
+  /* Alt Manşetler Yatay Kaydırma */
+  .sub-headlines-section {
+    padding-bottom: 0.8rem;
+  }
+
+  .sub-headlines-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.6rem;
+    padding-bottom: 0.4rem;
+    scrollbar-width: none;
+  }
+
+  .sub-headlines-grid::-webkit-scrollbar { display: none; }
+
+  .sub-card {
+    min-width: 76%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .sub-media {
+    height: 120px;
+  }
+
+  .sub-body {
+    padding: 0.6rem;
+  }
+
+  .sub-title {
+    font-size: 0.84rem;
+    line-height: 1.3;
+  }
+
+  /* Nöbetçi Eczaneler */
+  .pharmacy-section {
+    padding: 0.8rem 0;
+  }
+
+  .section-tag-title {
+    font-size: 1rem;
+  }
+
+  .pharmacy-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    gap: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .pharm-tab-btn {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .pharmacy-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .pharm-card {
+    padding: 0.75rem;
+  }
+
+  .pharm-name {
+    font-size: 0.88rem;
+  }
+
+  .pharm-address {
+    font-size: 0.75rem;
+  }
+
+  .pharm-call-btn {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  /* Yazarlar & Akış */
+  .columnists-section {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .columnists-grid, .feed-articles-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .columnist-card {
+    padding: 0.8rem;
+  }
+
+  .columnist-name {
+    font-size: 0.88rem;
+  }
+
+  .columnist-article-title {
+    font-size: 0.8rem;
+  }
+
+  .feed-card {
+    border-radius: var(--radius-sm);
+  }
+
+  .feed-media {
+    height: 150px;
+  }
+
+  .feed-body {
+    padding: 0.8rem;
+  }
+
+  .feed-title {
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin-bottom: 0.35rem;
+  }
+
+  .feed-summary {
+    font-size: 0.78rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .footer-col-title {
+    font-size: 0.92rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .footer-links {
+    font-size: 0.8rem;
+    gap: 0.4rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
+    font-size: 0.72rem;
+  }
+
+  /* Haber Okuma Modalı */
+  .modal-overlay {
+    padding: 0.3rem;
+  }
+
+  .modal-container {
+    max-height: 98vh;
+    border-radius: var(--radius-sm);
+  }
+
+  .modal-header {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .modal-body {
+    padding: 0.8rem;
+  }
+
+  .modal-hero-img {
+    height: 180px;
+  }
+
+  .modal-title {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin: 0.6rem 0;
+  }
+
+  .modal-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    font-size: 0.72rem;
+  }
+
+  .share-bar-container {
+    gap: 0.3rem;
+    margin: 0.8rem 0;
+  }
+
+  .share-label {
+    font-size: 0.72rem;
+  }
+
+  .share-btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.68rem;
+  }
+
+  .modal-article-text p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 0.8rem;
+  }
+
+  .modal-article-text .lead {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .article-pagination-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding-top: 0.8rem;
+  }
+
+  .page-nav-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.78rem;
+  }
+
+  .cookie-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .cookie-text {
+    font-size: 0.75rem;
+  }
+
+  .comment-input-row {
     grid-template-columns: 1fr;
   }
-  .slider-media-box { height: 280px; }
-  .slider-title { font-size: 1.25rem; }
-  .slider-num-btn { font-size: 0.85rem; padding: 0.5rem 0; }
-  .footer-top-grid { grid-template-columns: 1fr; }
-  .modal-hero-img { height: 240px; }
-  .modal-title { font-size: 1.4rem; }
-  .article-pagination-bar { flex-direction: column; align-items: stretch; }
-  .cookie-flex { flex-direction: column; align-items: flex-start; }
-  .comment-input-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  .header-brand-group .portal-logo .logo-text {
+    font-size: 1.15rem;
+  }
+
+  .ataturk-header-badge {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .slider-media-box {
+    height: 210px;
+  }
+
+  .slider-title {
+    font-size: 0.98rem;
+  }
+
+  .slider-spot {
+    font-size: 0.72rem;
+  }
+
+  .breaking-label {
+    font-size: 0.64rem;
+    padding: 0.15rem 0.35rem;
+  }
+
+  .breaking-content {
+    font-size: 0.72rem;
+  }
 }

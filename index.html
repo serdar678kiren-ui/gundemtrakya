@@ -144,6 +144,9 @@
         <div class="main-slider-card">
           <div class="slider-media-box" id="sliderMediaBox">
             <img src="" alt="Manşet Görseli" id="sliderImg" class="slider-img" />
+            <!-- Mobil / Masaüstü Hızlı Manşet Okları -->
+            <button class="slider-arrow-btn slider-arrow-prev" id="sliderPrevBtn" title="Önceki Manşet"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-arrow-btn slider-arrow-next" id="sliderNextBtn" title="Sonraki Manşet"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="slider-gradient-overlay">
               <span class="slider-category-badge" id="sliderCategoryBadge">TRAKYA GÜNDEM</span>
               <h1 class="slider-title" id="sliderTitle">Manşet Başlığı Yükleniyor...</h1>
@@ -391,6 +394,32 @@
       </div>
     </div>
   </footer>
+
+  <!-- ==========================================================================
+       MOBİL HIZLI ERİŞİM VE GEZİNME ÇUBUĞU (APP-STYLE BOTTOM BAR)
+       ========================================================================== -->
+  <nav class="mobile-bottom-app-bar" id="mobileBottomAppBar">
+    <a href="#" class="mobile-app-link active" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">
+      <i class="fa-solid fa-house"></i>
+      <span>Anasayfa</span>
+    </a>
+    <a href="#headlineSection" class="mobile-app-link" onclick="document.querySelector('.headline-section')?.scrollIntoView({behavior:'smooth'}); return false;">
+      <i class="fa-solid fa-newspaper"></i>
+      <span>Manşetler</span>
+    </a>
+    <a href="#pharmacySection" class="mobile-app-link" onclick="document.getElementById('pharmacySection')?.scrollIntoView({behavior:'smooth'}); return false;">
+      <i class="fa-solid fa-prescription-bottle-medical"></i>
+      <span>Eczaneler</span>
+    </a>
+    <a href="#columnistsSection" class="mobile-app-link" onclick="document.getElementById('columnistsSection')?.scrollIntoView({behavior:'smooth'}); return false;">
+      <i class="fa-solid fa-pen-nib"></i>
+      <span>Yazarlar</span>
+    </a>
+    <button class="mobile-app-link" id="mobileThemeBtn" title="Tema Değiştir" onclick="document.getElementById('themeToggleBtn')?.click();">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+      <span>Tema</span>
+    </button>
+  </nav>
 
   <!-- Veri ve Uygulama Betikleri (Hem root hem js/ klasörü uyumlu) -->
   <script src="js/data.js"></script>
