@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gündem Trakya - Trakya'nın Nabzı, Son Dakika Haberleri</title>
+  
+  <!-- SEO & Meta Bilgileri -->
+  <meta name="description" content="Edirne, Tekirdağ, Kırklareli, Çorlu ve Çerkezköy son dakika haberleri, Trakya nöbetçi eczaneler ve ekonomi gündemi.">
+  <meta name="keywords" content="trakya haber, edirne haber, tekirdağ haber, kırklareli haber, çorlu haber, çerkezköy haber, gündem trakya">
+  <meta name="author" content="Gündem Trakya Medya Grubu">
+  <meta name="robots" content="index, follow">
+
+  <!-- Schema.org NewsMediaOrganization Yapısal Verisi -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Gündem Trakya",
+    "url": "https://gundemtrakya.vercel.app",
+    "logo": "https://gundemtrakya.vercel.app/img/serdar-tugba.jpg"
+  }
+  </script>
+
+  <!-- Google Fonts & FontAwesome Simgeleri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google AdSense Resmi Doğrulama & Reklam Kodu (ca-pub-5030743781658996) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5030743781658996"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. ÜST CANLI KAYAN BORSA & CANLI SAAT BANDI
+       ========================================================================== -->
+  <aside class="top-finance-bar">
+    <div class="finance-wrapper">
+      
+      <!-- Kayan Borsa Şeridi (Marquee Ticker) -->
+      <div class="finance-marquee-container">
+        <div class="finance-track" id="financeTrack">
+          <!-- JS ile çift set halinde render edilir -->
+        </div>
+      </div>
+
+      <!-- Sabit Sağ Bilgi Alanı: Canlı Saat, Hava Durumu, Tarih -->
+      <div class="top-bar-right-fixed">
+        <div class="live-clock-badge">
+          <i class="fa-regular fa-clock"></i> <span id="liveClockEl">--:--:--</span>
+        </div>
+        <div class="weather-widget" id="liveWeatherWidget">
+          <i class="fa-solid fa-cloud-sun"></i> <span>Tekirdağ 28°C</span>
+        </div>
+        <span id="currentDateEl" style="color: #cbd5e1;"></span>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       2. ANA HEADER & GOOGLE ADSENSE ALANI (728x90)
+       ========================================================================== -->
+  <header class="main-header">
+    <div class="container header-row">
+      <!-- Atatürk Türk Bayrağı Rozeti & Logo -->
+      <div class="header-brand-group">
+        <div class="ataturk-header-badge" title="Türkiye Cumhuriyeti'nin Kurucusu Gazi Mustafa Kemal Atatürk">
+          <img src="img/ataturk-bayrak.jpg" alt="Gazi Mustafa Kemal Atatürk ve Türk Bayrağı" class="ataturk-header-img" />
+        </div>
+        <a href="index.html" class="portal-logo" title="Gündem Trakya Ana Sayfa">
+          <span class="logo-badge">GÜNDEM</span>
+          <span class="logo-text">TRAKYA<span class="logo-sub">.COM</span></span>
+        </a>
+      </div>
+
+      <!-- 728x90 Google AdSense Header Leaderboard -->
+      <div class="header-ad-space">
+        <span class="ad-badge">REKLAM ALANI</span>
+        <div class="ad-placeholder-text">
+          <i class="fa-solid fa-rectangle-ad" style="color: #fbbf24;"></i>
+          <span>Reklam & İş Birliği: <strong style="color: #ffffff; margin-left: 0.3rem;">trakyagundem6@gmail.com</strong></span>
+        </div>
+      </div>
+
+      <!-- Kullanıcı Aksiyonları -->
+      <div class="header-user-actions">
+        <button class="bookmark-toggle-btn" id="bookmarkToggleBtn" title="Kaydedilen Haberler">
+          <i class="fa-regular fa-bookmark"></i>
+          <span class="bookmark-counter" id="bookmarkCounter" style="display: none;">0</span>
+        </button>
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Koyu / Açık Tema Değiştir">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       3. KIRMIZI ANA KATEGORİ MENÜSÜ & ARAMA
+       ========================================================================== -->
+  <nav class="category-nav-bar">
+    <div class="container nav-container">
+      <ul class="nav-menu-list" id="categoryNavList">
+        <!-- JS ile render edilir -->
+      </ul>
+      <div class="nav-search-box">
+        <input type="text" id="navSearchInput" class="nav-search-input" placeholder="Haber, ilçe veya konu ara..." />
+        <button class="nav-search-btn" id="navSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       4. SON DAKİKA (BREAKING NEWS) BANT
+       ========================================================================== -->
+  <section class="breaking-news-bar">
+    <div class="container breaking-flex">
+      <div class="breaking-label">
+        <span class="pulse-dot"></span>
+        <span>SON DAKİKA</span>
+      </div>
+      <div class="breaking-content" id="breakingContent" title="Haberi okumak için tıklayın">
+        <!-- JS ile döner -->
+      </div>
+      <div class="breaking-controls">
+        <button class="ctrl-btn" id="prevBreakingBtn" title="Önceki Flaş Haber"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="ctrl-btn" id="nextBreakingBtn" title="Sonraki Flaş Haber"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. 1'DEN 10'A KLASİK MANŞET SLIDER & YAN MANŞETLER
+       ========================================================================== -->
+  <main class="container">
+    <section class="headline-section">
+      <div class="headline-grid">
+        <!-- Ana Büyük Manşet -->
+        <div class="main-slider-card">
+          <div class="slider-media-box" id="sliderMediaBox">
+            <img src="" alt="Manşet Görseli" id="sliderImg" class="slider-img" />
+            <!-- Mobil / Masaüstü Hızlı Manşet Okları -->
+            <button class="slider-arrow-btn slider-arrow-prev" id="sliderPrevBtn" title="Önceki Manşet"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-arrow-btn slider-arrow-next" id="sliderNextBtn" title="Sonraki Manşet"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="slider-gradient-overlay">
+              <span class="slider-category-badge" id="sliderCategoryBadge">TRAKYA GÜNDEM</span>
+              <h1 class="slider-title" id="sliderTitle">Manşet Başlığı Yükleniyor...</h1>
+              <p class="slider-spot" id="sliderSpot">Haber spotu yükleniyor...</p>
+            </div>
+          </div>
+          <!-- 1'den 10'a Numaralar Barı -->
+          <div class="slider-numbers-bar" id="sliderNumbersBar">
+            <!-- JS ile 10 buton oluşturulur -->
+          </div>
+        </div>
+
+        <!-- Sağ Taraf: 2 Adet Yan Manşet Kartı -->
+        <div class="side-headlines" id="sideHeadlinesContainer">
+          <!-- JS ile render edilir -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4'lü Alt Manşet Izgarası -->
+    <section class="sub-headlines-section">
+      <div class="sub-headlines-grid" id="subHeadlinesGrid">
+        <!-- JS ile 4 kart render edilir -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. KÖŞE YAZARLARI BÖLÜMÜ
+         ========================================================================== -->
+    <section class="columnists-section" id="columnistsSection">
+      <div class="columnists-header">
+        <h2 class="section-tag-title"><i class="fa-solid fa-pen-nib"></i> GÜNDEM TRAKYA YAZARLARI</h2>
+      </div>
+      <div class="columnists-grid" id="columnistsGrid">
+        <!-- JS ile yazarlar render edilir -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. İKİ KOLONLU ANA YERLEŞİM: HABER AKIŞI & TRAKYA NÖBETÇİ ECZANELER
+         ========================================================================== -->
+    <div class="main-content-layout" id="feedSection">
+      
+      <!-- Sol Kolon: Haber Kartları Akışı -->
+      <section class="left-content-feed">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;">
+          <h2 class="section-tag-title" id="feedSectionTitle">
+            <i class="fa-solid fa-newspaper"></i> GÜNCEL GELİŞMELER
+          </h2>
+          <span id="feedCountBadge" style="font-size: 0.8rem; font-weight: 700; color: var(--news-blue); background: var(--bg-elevated); padding: 0.25rem 0.7rem; border-radius: var(--radius-sm);">Tüm Haberler</span>
+        </div>
+        
+        <div class="feed-articles-grid" id="feedArticlesGrid">
+          <!-- JS ile haber kartları render edilir -->
+        </div>
+
+        <!-- Akış İçi Orta Reklam (970x90 In-Feed Ad) -->
+        <div class="middle-ad-banner">
+          <span class="ad-badge">REKLAM</span>
+          <div class="ad-placeholder-text">
+            <i class="fa-solid fa-rectangle-ad"></i>
+            <span>Google AdSense Akış İçi Yatay Banner (970x90 / Responsive)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sağ Kolon (Sticky Sidebar): Nöbetçi Eczaneler & Çok Okunanlar & Kule Reklam -->
+      <aside class="sidebar-wrapper">
+        
+        <!-- TRAKYA NÖBETÇİ ECZANELER WIDGET -->
+        <div class="pharmacy-widget">
+          <div class="pharmacy-header">
+            <h3 class="pharmacy-title"><i class="fa-solid fa-notes-medical"></i> NÖBETÇİ ECZANELER</h3>
+            <span style="font-size: 0.72rem; color: var(--news-green); font-weight: 800;">CANLI</span>
+          </div>
+          <div class="pharmacy-city-tabs" id="pharmacyTabs">
+            <!-- Tekirdağ, Edirne, Kırklareli sekmeleri -->
+          </div>
+          <div class="pharmacy-list" id="pharmacyListContainer">
+            <!-- JS ile nöbetçi eczaneler listelenir -->
+          </div>
+        </div>
+
+        <!-- 300x600 Half-Page Sticky Kule Reklam -->
+        <div class="sidebar-tower-ad">
+          <span class="ad-badge">SPONSORLU</span>
+          <div class="ad-placeholder-text" style="text-align: center; padding: 1rem;">
+            <i class="fa-solid fa-rectangle-ad" style="font-size: 2rem; color: #fbbf24; margin-bottom: 0.6rem;"></i>
+            <div style="font-size: 0.95rem; font-weight: 800; color: #ffffff;">Reklam & Sponsorluk</div>
+            <div style="font-size: 0.85rem; color: #fbbf24; font-weight: 700; margin-top: 0.3rem;">trakyagundem6@gmail.com</div>
+          </div>
+        </div>
+
+        <!-- Çok Okunanlar (Top 5 Trend) -->
+        <div class="top-read-widget">
+          <div class="top-read-header">
+            <i class="fa-solid fa-fire"></i> GÜNÜN ÇOK OKUNANLARI
+          </div>
+          <ul class="top-read-list" id="topReadList">
+            <!-- JS ile en çok okunanlar listelenir -->
+          </ul>
+        </div>
+
+        <!-- WhatsApp / Topluluk Kanalı Kartı -->
+        <div class="social-community-card">
+          <i class="fa-brands fa-whatsapp community-icon"></i>
+          <h4 class="community-title">Trakya WhatsApp Haber Hattı</h4>
+          <p class="community-desc">Son dakika Trakya haberlerini ilk siz öğrenmek için kanalımıza katılın.</p>
+          <a href="https://whatsapp.com" target="_blank" class="community-btn"><i class="fa-brands fa-whatsapp"></i> Kanala Katıl</a>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       8. HABER DETAY MODALI (ADSENSE & ÇOK SAYFALI SORU-CEVAP)
+       ========================================================================== -->
+  <div class="modal-overlay" id="articleModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <span class="slider-category-badge" id="modalBadge" style="margin-bottom: 0;">GÜNDEM</span>
+        <button class="ctrl-btn" id="modalCloseBtn" style="font-size: 1.1rem; width: 2.2rem; height: 2.2rem;">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <img src="" alt="Haber Fotoğrafı" class="modal-hero-img" id="modalHeroImg" />
+        <h2 class="modal-title" id="modalTitle">Haber Başlığı</h2>
+
+        <div class="modal-meta-row">
+          <div>
+            <i class="fa-solid fa-user-pen" style="color: var(--news-red);"></i> <span id="modalAuthorName">Editör</span>
+            <span style="margin: 0 0.5rem;">•</span>
+            <i class="fa-regular fa-calendar"></i> <span id="modalDate">Tarih</span>
+          </div>
+          <div>
+            <i class="fa-regular fa-clock"></i> <span id="modalReadTime">3 dk</span>
+            <span style="margin: 0 0.5rem;">•</span>
+            <i class="fa-regular fa-eye"></i> <span id="modalViews">0</span>
+          </div>
+        </div>
+
+        <!-- Sosyal Paylaşım Çubuğu (Viral Trafik) -->
+        <div class="share-bar-container">
+          <span class="share-label"><i class="fa-solid fa-share-nodes"></i> Paylaş:</span>
+          <button class="share-btn share-fb" id="modalShareFb"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
+          <button class="share-btn share-wa" id="modalShareWa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          <button class="share-btn share-tw" id="modalShareTw"><i class="fa-brands fa-x-twitter"></i> Paylaş</button>
+          <button class="share-btn share-tg" id="modalShareTg"><i class="fa-brands fa-telegram"></i> Telegram</button>
+          <button class="share-btn share-copy" id="modalShareCopy"><i class="fa-solid fa-link"></i> Kopyala</button>
+          <button class="share-btn" id="modalBookmarkBtn" style="background-color: var(--bg-elevated); color: var(--text-main); margin-left: auto;">
+            <i class="fa-regular fa-bookmark"></i> Kaydet
+          </button>
+        </div>
+
+        <!-- Çok Sayfalı Haber Metni, Reaksiyonlar, Sosyal Tweetler & Yorumlar -->
+        <div class="modal-article-text" id="modalArticleText">
+          <!-- JS ile render edilir -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       9. ÇEREZ İZİN BİLDİRİMİ (GDPR / GOOGLE ADSENSE ZORUNLU KUTUSU)
+       ========================================================================== -->
+  <aside class="cookie-consent-bar" id="cookieConsentBar">
+    <div class="container cookie-flex">
+      <div class="cookie-text">
+        <i class="fa-solid fa-cookie-bite" style="color: #fbbf24; margin-right: 0.4rem;"></i>
+        Sitemizde sizlere daha iyi bir deneyim sunmak, trafiği analiz etmek ve <strong>Google AdSense</strong> reklamlarını kişiselleştirmek amacıyla çerezler (cookies) kullanılmaktadır. Detaylı bilgi için <a href="gizlilik-politikasi.html" style="color: var(--news-blue); text-decoration: underline;">Gizlilik ve Çerez Politikamızı</a> inceleyebilirsiniz.
+      </div>
+      <div class="cookie-btn-group">
+        <button class="page-nav-btn" id="acceptCookieBtn" style="padding: 0.5rem 1.4rem; font-size: 0.85rem;">
+          <i class="fa-solid fa-check"></i> Kabul Et
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast Bildirim -->
+  <div class="toast-box" id="toastBox">
+    <i class="fa-solid fa-circle-check" style="color: #34d399;"></i>
+    <span id="toastMsg">İşlem başarılı</span>
+  </div>
+
+  <!-- ==========================================================================
+       10. FOOTER & GOOGLE ADSENSE POLİTİKA LİNKLERİ
+       ========================================================================== -->
+  <footer class="portal-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="portal-logo" style="margin-bottom: 1rem;">
+            <span class="logo-badge">GÜNDEM</span>
+            <span class="logo-text" style="color: #ffffff;">TRAKYA</span>
+          </div>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: #94a3b8;">
+            Gündem Trakya; Tekirdağ, Edirne, Kırklareli, Çorlu ve Çerkezköy başta olmak üzere tüm Trakya bölgesinden tarafsız, bağımsız ve anlık son dakika haberlerini okuyucularına sunan dijital haber platformudur.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Kategoriler</h4>
+          <ul class="footer-links">
+            <li><a href="#feedSection" onclick="filterCategory('trakya')">Trakya Haberleri</a></li>
+            <li><a href="#feedSection" onclick="filterCategory('ekonomi')">Ekonomi & Tarım</a></li>
+            <li><a href="#feedSection" onclick="filterCategory('spor')">Spor & Kırkpınar</a></li>
+            <li><a href="#feedSection" onclick="filterCategory('teknoloji')">Teknoloji & Sanayi</a></li>
+            <li><a href="#columnistsSection">Köşe Yazarları</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Kurumsal & Yasal</h4>
+          <ul class="footer-links">
+            <li><a href="kunye.html">Künye</a></li>
+            <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+            <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
+            <li><a href="gizlilik-politikasi.html">Çerez Politikası (GDPR/KVKK)</a></li>
+            <li><a href="iletisim.html">İletişim & Reklam</a></li>
+            <li style="margin-top: 0.5rem; color: #fbbf24; font-size: 0.82rem;"><i class="fa-solid fa-envelope"></i> Reklam: <strong>trakyagundem6@gmail.com</strong></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Bölgesel Yayıncılık</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem; color: #94a3b8;">
+            Çerkezköy, Çorlu, Süleymanpaşa, Edirne, Lüleburgaz, Keşan ve Babaeski haber merkezlerimizle 7/24 hizmetinizdeyiz.
+          </p>
+          <div style="font-size: 0.85rem; color: #64748b;">
+            <i class="fa-solid fa-shield-halved" style="color: var(--news-red);"></i> Basın Ahlak Yasası İlkelerine Uygundur.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 Gündem Trakya Medya Grubu. Tüm Hakları Saklıdır.</span>
+        <span>Yazılım & Tasarım: Gündem Trakya Dijital Medya Altyapısı</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MOBİL HIZLI ERİŞİM VE GEZİNME ÇUBUĞU (APP-STYLE BOTTOM BAR)
+       ========================================================================== -->
+  <nav class="mobile-bottom-app-bar" id="mobileBottomAppBar">
+    <a href="#" class="mobile-app-link active" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">
+      <i class="fa-solid fa-house"></i>
+      <span>Anasayfa</span>
+    </a>
+    <a href="#headlineSection" class="mobile-app-link" onclick="document.querySelector('.headline-section')?.scrollIntoView({behavior:'smooth'}); return false;">
+      <i class="fa-solid fa-newspaper"></i>
+      <span>Manşetler</span>
+    </a>
+    <a href="#pharmacySection" class="mobile-app-link" onclick="document.getElementById('pharmacySection')?.scrollIntoView({behavior:'smooth'}); return false;">
+      <i class="fa-solid fa-prescription-bottle-medical"></i>
+      <span>Eczaneler</span>
+    </a>
+    <a href="#columnistsSection" class="mobile-app-link" onclick="document.getElementById('columnistsSection')?.scrollIntoView({behavior:'smooth'}); return false;">
+      <i class="fa-solid fa-pen-nib"></i>
+      <span>Yazarlar</span>
+    </a>
+    <button class="mobile-app-link" id="mobileThemeBtn" title="Tema Değiştir" onclick="document.getElementById('themeToggleBtn')?.click();">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+      <span>Tema</span>
+    </button>
+  </nav>
+
+  <!-- Veri ve Uygulama Betikleri (Hem root hem js/ klasörü uyumlu) -->
+  <script src="js/data.js"></script>
+  <script src="data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

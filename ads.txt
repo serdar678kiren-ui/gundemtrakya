@@ -1,0 +1,3 @@
+# Google AdSense Authorized Digital Sellers (ads.txt)
+# Gündem Trakya - Resmi Reklam Yetkilendirme Dosyası
+google.com, pub-5030743781658996, DIRECT, f08c47fec0942fa0
