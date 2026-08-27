@@ -186,11 +186,31 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = financeData[randomIdx];
       const isUp = Math.random() > 0.45;
       
+      // Canlı mikro fiyat dalgalanması
+      let formattedVal = item.value;
+      if (item.baseVal) {
+        const deltaPercent = (Math.random() * 0.15 - 0.07) / 100;
+        const currentVal = item.baseVal * (1 + deltaPercent);
+        if (item.code.includes('USD') || item.code.includes('EUR')) {
+          formattedVal = currentVal.toFixed(2).replace('.', ',') + (item.unit ? ' ' + item.unit : '');
+        } else if (item.code === 'GAU/TRY' || item.code === 'ONS') {
+          formattedVal = currentVal.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + (item.unit ? ' ' + item.unit : '');
+        } else {
+          formattedVal = Math.round(currentVal).toLocaleString('tr-TR') + (item.unit ? ' ' + item.unit : '');
+        }
+      }
+      
+      const newChange = `${isUp ? '+' : '-'}${(Math.random() * 0.35 + 0.15).toFixed(2)}%`;
+      item.up = isUp;
+      item.change = newChange;
+      item.value = formattedVal;
+
       [1, 2].forEach(setNum => {
         const itemEl = document.getElementById(`financeItem_${setNum}_${randomIdx}`);
+        const valEl = document.getElementById(`financeVal_${setNum}_${randomIdx}`);
         const rateEl = document.getElementById(`financeRate_${setNum}_${randomIdx}`);
 
-        if (itemEl && rateEl) {
+        if (itemEl && valEl && rateEl) {
           itemEl.classList.remove('flash-up', 'flash-down');
           itemEl.classList.add(isUp ? 'flash-up' : 'flash-down');
 
@@ -198,12 +218,12 @@ document.addEventListener('DOMContentLoaded', () => {
             itemEl.classList.remove('flash-up', 'flash-down');
           }, 1200);
 
+          valEl.textContent = formattedVal;
           rateEl.className = `finance-rate ${isUp ? 'up' : 'down'}`;
-          rateEl.innerHTML = `<i class="fa-solid ${isUp ? 'fa-caret-up' : 'fa-caret-down'}"></i> ${isUp ? '+' : '-'}${(Math.random() * 0.4 + 0.1).toFixed(2)}%`;
+          rateEl.innerHTML = `<i class="fa-solid ${isUp ? 'fa-caret-up' : 'fa-caret-down'}"></i> ${newChange}`;
         }
       });
-      item.up = isUp;
-    }, 4000);
+    }, 3500);
   }
 
   // --- 4. Son Dakika Şeridi & Tıklama ile Habere Gitme ---

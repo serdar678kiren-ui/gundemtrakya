@@ -2,14 +2,22 @@
  * GÜNDEM TRAKYA - Zengin Çerkezköy, Çorlu, Trakya Haberleri, Köşe Yazarları & Sosyal Medya Veri Seti
  */
 
-// 1. Canlı Piyasa & Finans Verileri
+// 1. Canlı Piyasa & Finans Verileri (Milliyet Uzmanpara Birebir Verileri)
 const financeData = [
-  { code: "USD/TRY", name: "Dolar", value: "34.18", change: "+0.24%", up: true },
-  { code: "EUR/TRY", name: "Euro", value: "37.42", change: "+0.18%", up: true },
-  { code: "GAU/TRY", name: "Gram Altın", value: "2.795", change: "+0.65%", up: true },
-  { code: "BIST 100", name: "Borsa İst.", value: "9.840", change: "-0.42%", up: false },
-  { code: "BTC/USD", name: "Bitcoin", value: "64.320$", change: "+2.15%", up: true },
-  { code: "BUGDAY", name: "Buğday/Ton", value: "9.450₺", change: "+1.10%", up: true }
+  { code: "GAU/TRY", name: "Gram Altın", baseVal: 7127.15, unit: "₺", value: "7.127,15 ₺", change: "+0.31%", up: true },
+  { code: "CEYREK", name: "Çeyrek Altın", baseVal: 11652.99, unit: "₺", value: "11.652,99 ₺", change: "+0.31%", up: true },
+  { code: "YARIM", name: "Yarım Altın", baseVal: 23305.99, unit: "₺", value: "23.305,99 ₺", change: "+0.31%", up: true },
+  { code: "CUMHURIYET", name: "Cumhuriyet", baseVal: 47372.00, unit: "₺", value: "47.372 ₺", change: "+0.31%", up: true },
+  { code: "BILEZIK22", name: "22 Ayar Bilezik", baseVal: 6420.82, unit: "₺", value: "6.420,82 ₺", change: "+0.28%", up: true },
+  { code: "ONS", name: "Ons Altın", baseVal: 4604.00, unit: "$", value: "4.604 $", change: "+0.22%", up: true },
+  { code: "USD/TRY", name: "Dolar", baseVal: 48.14, unit: "₺", value: "48,14 ₺", change: "+0.08%", up: true },
+  { code: "EUR/TRY", name: "Euro", baseVal: 56.22, unit: "₺", value: "56,22 ₺", change: "+0.21%", up: true },
+  { code: "BIST 100", name: "BIST 100", baseVal: 14576.00, unit: "", value: "14.576", change: "-0.24%", up: false },
+  { code: "PETROL", name: "Brent Petrol", baseVal: 88.56, unit: "$", value: "88,56 $", change: "+1.86%", up: true },
+  { code: "BONO", name: "Bono / Faiz", baseVal: 40.14, unit: "%", value: "%40,14", change: "+0.58%", up: true },
+  { code: "BTC/USD", name: "Bitcoin", baseVal: 3844224.00, unit: "₺", value: "3.844.224 ₺", change: "+2.02%", up: true },
+  { code: "BUGDAY", name: "Trakya Buğday", baseVal: 12450.00, unit: "₺/Ton", value: "12.450 ₺", change: "+1.10%", up: true },
+  { code: "AYCICEK", name: "Trakya Ayçiçeği", baseVal: 24850.00, unit: "₺/Ton", value: "24.850 ₺", change: "+1.35%", up: true }
 ];
 
 // 2. Son Dakika (Breaking News) Başlıkları
