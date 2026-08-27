@@ -15,6 +15,18 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 112, 
+    articleId: 23, 
+    title: "Ergene'de ortak kullanım alanlarına çirkin saldırı: Sağlık Mahallesi çocuk parkı tahrip edildi!", 
+    time: "22:58" 
+  },
+  { 
+    id: 111, 
+    articleId: 24, 
+    title: "Tekirdağ Süleymanpaşa'da ana içme suyu borusu patladı: Hükümet Caddesi'nde tonlarca su boşa aktı!", 
+    time: "22:52" 
+  },
+  { 
     id: 110, 
     articleId: 20, 
     title: "Marmaraereğlisi Belediye Spor küllerinden yeniden doğdu: KaracakılavuzSpor'u 4-2 devirip şampiyon oldu!", 
@@ -145,8 +157,196 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 20,
+    id: 23,
     headlineNumber: 1,
+    title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
+    spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
+    category: "GÜNDEM & ASAYİŞ",
+    categorySlug: "gundem",
+    location: "Tekirdağ / Ergene",
+    badgeColor: "red",
+    date: "27 Ağustos 2026 - 22:58",
+    readTime: "4 dk",
+    views: 94100,
+    likes: 5120,
+    reactions: { like: 2100, heart: 320, clap: 180, thinking: 450, angry: 2890 },
+    socialPosts: [
+      {
+        user: "Ergene Haberleri",
+        handle: "@ErgeneGundem",
+        avatar: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Sağlık Mahallesi'ndeki çocuk parkına yapılan bu vandallık kabul edilemez! Çocuklarımızın oyun alanlarına zarar verenler bir an önce tespit edilmeli. 🛑🚸 #Ergene",
+        time: "15 dk önce",
+        likes: 1840,
+        shares: 620
+      },
+      {
+        user: "Trakya Çevre ve Yaşam",
+        handle: "@TrakyaCevre",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Kamusal alanlar hepimizin ortak malıdır. Parklara sahip çıkalım, şüpheli durumları hemen güvenlik güçlerine bildirelim. 🌳🚨",
+        time: "40 dk önce",
+        likes: 1250,
+        shares: 310
+      }
+    ],
+    comments: [
+      {
+        id: 2301,
+        author: "Fatma Teyze",
+        city: "Ergene / Sağlık Mah.",
+        time: "20 dk önce",
+        content: "Torunlarımızı her gün bu parka getiriyoruz. Salıncakları kırmışlar, kauçuk zeminleri sökmüşler. Bunu yapanların vicdanı yok mu?",
+        likes: 142
+      },
+      {
+        id: 2302,
+        author: "Ahmet Demir",
+        city: "Ergene / Yeşiltepe",
+        time: "35 dk önce",
+        content: "Belediyemizin ve emniyetimizin güvenlik kameralarını inceleyip sorumlulara en ağır cezayı vermesini bekliyoruz.",
+        likes: 98
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Asayiş & Yerel Yönetim Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/ergene-park-vandalizm.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Sağlık Mahallesi Çocuk Parkında Büyük Hasar",
+        pageImage: "img/ergene-park-vandalizm.jpg",
+        content: `
+          <p class="lead">Tekirdağ'ın Ergene ilçesinde vatandaşların ve çocukların güvenli şekilde kullanabilmesi amacıyla oluşturulan ortak kullanım alanlarına yönelik <strong>çirkin saldırılar ve vandalizm</strong> devam ediyor.</p>
+          
+          <p>Son olarak Sağlık Mahallesi'nde yer alan ve mahalle çocuklarının en uğrak noktası olan çocuk oyun parkında; kaydıraklar kırıldı, salıncak zincirleri koparıldı ve darbe emici kauçuk zemin kaplamaları yerinden sökülerek kullanılamaz hale getirildi.</p>
+          
+          <p>Sabah saatlerinde çocuklarıyla parka gelen mahalle sakinleri karşılaştıkları manzara karşısında büyük üzüntü ve öfke yaşadı.</p>
+
+          <div class="in-article-ad"><span class="ad-label">REKLAM (SAYFA 1)</span><div class="ad-content-box"><i class="fa-solid fa-rectangle-ad"></i> Google AdSense Sayfa İçi Reklam Alanı (336x280)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Olay Dosyası ve Güvenlik Tedbirleri:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">📹 Güvenlik Kameraları ve Emniyetin Başlattığı Hukuki Süreç</span><span class="qa-link-badge">İnceleme Detayı (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">🛠️ Ergene Belediyesi'nden Onarım ve Koruma Seferberliği</span><span class="qa-link-badge">Yenileme Planı (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Kameralar İnceleniyor: Hukuki Süreç Başlatıldı",
+        pageImage: "img/ergene-park-vandalizm.jpg",
+        content: `
+          <p class="lead"><strong>'Kamusal Mala Zarar Vermek Suçtur'</strong></p>
+          
+          <p>Yaşanan olayın ardından Ergene Belediyesi Park ve Bahçeler Müdürlüğü ile Zabıta ekipleri parkta kapsamlı hasar tespit çalışması gerçekleştirdi. Emniyet güçleri, park çevresindeki KGYS ve güvenlik kamera kayıtlarını mercek altına aldı.</p>
+          
+          <p>Belediye yetkilileri, tüyü bitmemiş yetimin hakkıyla yapılan kamu yatırımlarına zarar veren şahısların tespit edilerek haklarında <strong>Kamu Malına Zarar Verme</strong> suçundan Cumhuriyet Savcılığı'na suç duyurusunda bulunulacağını bildirdi.</p>
+
+          <div class="in-article-ad" style="border-color: var(--news-red);"><span class="ad-label" style="color: var(--news-red);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Ergene Halkına Birlik ve Dayanışma Çağrısı",
+        pageImage: "img/ergene-park-vandalizm.jpg",
+        content: `
+          <p class="lead"><strong>Parklar En Kısa Sürede Yenilenecek</strong></p>
+          
+          <p>Ergene Belediyesi ekipleri, çocukların mağduriyet yaşamaması adına tahrip edilen oyun gruplarının bakım, onarım ve yenileme çalışmalarını derhal başlattı. Mahalle muhtarları ve sivil toplum kuruluşları da ortak bir açıklama yaparak tüm vatandaşları ortak yaşam alanlarına sahip çıkmaya davet etti.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 24,
+    headlineNumber: 2,
+    title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
+    spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
+    category: "YAŞAM & GÜNDEM",
+    categorySlug: "yasam",
+    location: "Tekirdağ / Süleymanpaşa",
+    badgeColor: "blue",
+    date: "27 Ağustos 2026 - 22:50",
+    readTime: "4 dk",
+    views: 88700,
+    likes: 4210,
+    reactions: { like: 1890, heart: 240, clap: 110, thinking: 740, angry: 2150 },
+    socialPosts: [
+      {
+        user: "Tekirdağ Yerel Ses",
+        handle: "@TekirdagHaber",
+        avatar: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Hükümet Caddesi'nde 2 gündür şebeke suyu boşa akıyor. Barajlardaki su seviyesinin kritik olduğu günlerde bu israf can yakıyor! 🚰💧 #Tekirdag #TESKI",
+        time: "30 dk önce",
+        likes: 1420,
+        shares: 480
+      }
+    ],
+    comments: [
+      {
+        id: 2401,
+        author: "Mehmet Usta",
+        city: "Süleymanpaşa / Hükümet Cad.",
+        time: "15 dk önce",
+        content: "Dükkanımızın önünden nehir gibi su aktı. Kaç kez bildirdik ama ekiplerin acil müdahale etmesi gerekirdi.",
+        likes: 112
+      }
+    ],
+    author: {
+      name: "Murat Çelik",
+      title: "Haber Müdürü",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/tekirdag-su-patlagi.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Şehrin Kalbinde Su İsrafı: Hükümet Caddesi Göle Döndü",
+        pageImage: "img/tekirdag-su-patlagi.jpg",
+        content: `
+          <p class="lead">Tekirdağ'ın merkez ilçesi Süleymanpaşa'da kentin en işlek noktalarından biri olan <strong>Hükümet Caddesi</strong>'nde yer altından geçen içme suyu ana iletim hattında patlama meydana geldi.</p>
+          
+          <p>Tekirdağ Büyükşehir Belediyesi'ne ait Tek Kafe'nin hemen yanında kaldırım altındaki patlak nedeniyle caddeye oluk oluk temiz içme suyu taştı. Yaklaşık 2 gündür kontrol altına alınamayan sızıntı sonucu tonlarca su kanalizasyona akıp heba oldu.</p>
+          
+          <p>Caddeden geçen araçlar ve yayalar göle dönen yolda yürümekte güçlük çekerken, çevre esnafı duruma sert tepki gösterdi.</p>
+
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklam Alanı (336x280)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Kuraklık Tehdidi Altında Su İsrafına Tepki",
+        pageImage: "img/tekirdag-su-patlagi.jpg",
+        content: `
+          <p class="lead"><strong>'Her Damla Su Altın Değerindeyken Bu Görüntü Kabul Edilemez'</strong></p>
+          
+          <p>Trakya genelinde ve Tekirdağ barajlarında su doluluk oranlarının düşüş gösterdiği ve uzmanların tasarruf çağrısı yaptığı bir dönemde yaşanan arıza, bölge halkını isyan ettirdi.</p>
+          
+          <p>Vatandaşlar, Tekirdağ Su ve Kanalizasyon İdaresi'ne (TESKİ) çağrıda bulunarak şehrin merkezindeki bu kronik arızaların kalıcı olarak onarılmasını istedi.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Altyapı Yenileme ve Acil Eylem Çağrısı",
+        pageImage: "img/tekirdag-su-patlagi.jpg",
+        content: `
+          <p class="lead"><strong>Kayıp-Kaçak Oranının Düşürülmesi Şart</strong></p>
+          
+          <p>Uzmanlar, Trakya'nın yeraltı ve yerüstü su rezervlerinin korunması için eskiyen şebeke borularının modern basınç kontrollü borularla yenilenmesi ve akıllı sayaç sistemlerine geçilmesi gerektiğini vurguladı.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 20,
+    headlineNumber: 3,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -1580,154 +1780,6 @@ const headlineArticles = [
         content: `
           <p class="lead"><strong>Haftaya Trakya Derbisi Heyecanı</strong></p>
           <p>Grupta 5 puan farkla zirvede bulunan Çorlu Spor, gelecek hafta deplasmanda Kapaklıspor ile karşı karşıya gelecek. Maç biletlerinin satışa çıkar çıkmaz tükeneceği tahmin ediliyor.</p>
-        `
-      }
-    ]
-  },
-  {
-    id: 15,
-    title: "Edirnespor 3. Lig'de Yeni Sezona Fırtına Gibi Başladı: 25 Kasım Stadyumu Doldu!",
-    spot: "Sarı-kırmızılı ekip taraftarının desteğiyle sahadan 2-0 galip ayrılarak lige 3 puanla merhaba dedi.",
-    category: "SPOR",
-    categorySlug: "spor",
-    location: "Edirne / Merkez",
-    badgeColor: "red",
-    date: "26 Ağustos 2026 - 14:15",
-    readTime: "3 dk",
-    views: 64200,
-    likes: 2950,
-    reactions: { like: 1850, heart: 1200, clap: 750, thinking: 30, angry: 5 },
-    socialPosts: [
-      {
-        user: "Edirnespor Taraftar Grubu",
-        handle: "@Edirnespor1966",
-        avatar: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=100&q=80",
-        platform: "instagram",
-        text: "Edirnemizin gururu 25 Kasım Stadyumu'nda harika bir futbolla 3 puanı kaptı! Yolun sonu şampiyonluk olsun! 🟡🔴⚽ #Edirnespor",
-        time: "10 saat önce",
-        likes: 1650,
-        shares: 410
-      }
-    ],
-    comments: [
-      {
-        id: 1501,
-        author: "Cemil Meriç",
-        city: "Edirne / Kaleiçi",
-        time: "8 saat önce",
-        content: "Yeni forvet transferi çok iyi iş çıkardı, bu sezon 2. Lig'e çıkacağız inşallah!",
-        likes: 82
-      }
-    ],
-    author: {
-      name: "Hakan Güler",
-      title: "Spor Editörü",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Edirnespor'dan Net Galibiyet",
-        pageImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">TFF 3. Lig temsilcimiz <strong>Edirnespor</strong>, 2026-2027 futbol sezonunun açılış maçında taraftarı önünde sergilediği baskılı futbolla sahadan 2-0 galip ayrıldı.</p>
-          
-          <p>Tarihi 25 Kasım Stadyumu'nu dolduran binlerce Edirneli sporsever, 90 dakika boyunca takımlarını coşkuyla destekledi. Yeni transferlerin üst düzey uyumu ve orta sahadaki kusursuz pres oyunu camiaya şampiyonluk umudu aşıladı.</p>
-          
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Yeni Transferlerin Göz Dolduran Performansı",
-        pageImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Savunmada ve Forvette Kusursuz Uyum</strong></p>
-          <p>Yaz kampını verimli geçiren sarı-kırmızılı ekipte yeni forvetin ilk maçında kaydettiği gol ve asist performansı tribünlerden tam not aldı.</p>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Kulüp Yönetiminden Birlik Çağrısı",
-        pageImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>'Tüm Şehir El Ele 2. Lig'e'</strong></p>
-          <p>Edirnespor Kulüp Başkanı, maç bitiminde yaptığı açıklamada şehrin dinamiklerini, iş insanlarını ve taraftarları tek yürek olmaya davet etti.</p>
-        `
-      }
-    ]
-  },
-  {
-    id: 16,
-    title: "Kırklarelispor Ziraat Türkiye Kupası'nda Tur Atladı!",
-    spot: "Atatürk Stadyumu'nda oynanan zorlu eleme maçında Kırklarelispor uzatma dakikalarında bulduğu golle bir üst tura yükseldi.",
-    category: "SPOR",
-    categorySlug: "spor",
-    location: "Kırklareli / Merkez",
-    badgeColor: "emerald",
-    date: "26 Ağustos 2026 - 13:40",
-    readTime: "3 dk",
-    views: 58900,
-    likes: 2480,
-    reactions: { like: 1620, heart: 980, clap: 610, thinking: 20, angry: 5 },
-    socialPosts: [
-      {
-        user: "Kırklarelispor Kulübü",
-        handle: "@KirklarelisporFK",
-        avatar: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=100&q=80",
-        platform: "twitter",
-        text: "Ziraat Türkiye Kupası'nda 4. tura yükseldik! Bize inanan ve 90 dakika susmayan yeşil-beyaz sevdalılarına armağan olsun! 🟢⚪🏆 #Kirklarelispor",
-        time: "11 saat önce",
-        likes: 1420,
-        shares: 380
-      }
-    ],
-    comments: [
-      {
-        id: 1601,
-        author: "Metin Kırklarelili",
-        city: "Kırklareli / Yayla",
-        time: "9 saat önce",
-        content: "Kupada büyük takımlardan biri gelsin, Trakya'da futbol şöleni yaşayalım!",
-        likes: 74
-      }
-    ],
-    author: {
-      name: "Hakan Güler",
-      title: "Spor Editörü",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Kırklarelispor Kupa Yolculuğuna Devam Ediyor",
-        pageImage: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">TFF 2. Lig temsilcimiz <strong>Kırklarelispor</strong>, Ziraat Türkiye Kupası eleme turunda nefes kesen 120 dakikalık mücadele sonucunda rakibini 2-1 mağlup ederek adını bir üst tura yazdırdı.</p>
-          
-          <p>Kırklareli Atatürk Stadyumu'nda normal süresi 1-1 eşitlikle tamamlanan karşılaşmanın 114. dakikasında köşe vuruşundan gelen topu şık bir kafa vuruşuyla ağlara gönderen yeşil-beyazlılar büyük coşku yaşadı.</p>
-          
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Kupada Dev Takımların Korkulu Rüyası",
-        pageImage: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Trakya'nın Kupa Geleneği</strong></p>
-          <p>Geçmiş yıllarda Süper Lig devlerini kupadan eleyerek Türkiye çapında ses getiren Kırklarelispor, bu sezon da kupada çeyrek final hedefiyle yoluna devam ediyor.</p>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Kura Çekimi ve Rakip Analizi",
-        pageImage: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Bir Sonraki Turda Rakip Kim?</strong></p>
-          <p>TFF Riva Hasan Doğan Milli Takımlar Tesisleri'nde gerçekleştirilecek kura çekimi sonrası Kırklarelispor'un 4. turdaki rakibi belli olacak.</p>
         `
       }
     ]

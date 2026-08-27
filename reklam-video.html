@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gündem Trakya - Video Reklam Stüdyosu (9:16 Reels & Story)</title>
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --panel-bg: #131b2e;
+      --card-bg: #1e293b;
+      --primary-red: #dc2626;
+      --primary-red-glow: rgba(220, 38, 38, 0.4);
+      --accent-gold: #fbbf24;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 1rem 3rem 1rem;
+    }
+
+    .top-header {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .brand-title {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .logo-badge {
+      background: var(--primary-red);
+      color: #fff;
+      font-weight: 900;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .brand-title h1 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff 40%, var(--accent-gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s;
+    }
+
+    .back-btn:hover {
+      color: #fff;
+      border-color: var(--primary-red);
+    }
+
+    .studio-container {
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .studio-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+
+    .video-preview-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 380px;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      border-radius: 36px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(220, 38, 38, 0.25);
+      border: 4px solid #2d3748;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .phone-notch {
+      position: absolute;
+      top: 0.6rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 18px;
+      background: #111;
+      border-radius: 12px;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .notch-camera {
+      width: 8px;
+      height: 8px;
+      background: #222;
+      border-radius: 50%;
+    }
+
+    #videoCanvas {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: #050811;
+    }
+
+    .reels-overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2.2rem 1.2rem 1.2rem 1.2rem;
+      z-index: 10;
+    }
+
+    .reels-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .reels-actions {
+      position: absolute;
+      right: 1rem;
+      bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    .action-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+      font-size: 1.3rem;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.9);
+    }
+
+    .action-icon span {
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .reels-bottom-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      max-width: 80%;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.9);
+    }
+
+    .user-tag {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .user-tag img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1.5px solid var(--primary-red);
+    }
+
+    .reel-caption {
+      font-size: 0.8rem;
+      line-height: 1.3;
+      color: #e2e8f0;
+    }
+
+    .controls-panel {
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1rem;
+    }
+
+    .panel-header h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #fff;
+    }
+
+    .time-badge {
+      background: var(--card-bg);
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+      border: 1px solid var(--border-color);
+    }
+
+    .timeline-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .progress-bar-wrapper {
+      position: relative;
+      width: 100%;
+      height: 10px;
+      background: var(--card-bg);
+      border-radius: 5px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary-red), var(--accent-gold));
+      border-radius: 5px;
+      transition: width 0.05s linear;
+    }
+
+    .timeline-markers {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .marker-item {
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .marker-item:hover, .marker-item.active {
+      color: var(--accent-gold);
+      font-weight: 700;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .btn {
+      flex: 1;
+      min-width: 130px;
+      padding: 0.85rem 1.2rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      transition: all 0.2s;
+      border: none;
+    }
+
+    .btn-play {
+      background: var(--primary-red);
+      color: #fff;
+      box-shadow: 0 4px 15px var(--primary-red-glow);
+    }
+
+    .btn-play:hover {
+      background: #b91c1c;
+      transform: translateY(-2px);
+    }
+
+    .btn-download {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-download:hover {
+      background: #047857;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--card-bg);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      background: #334155;
+      color: #fff;
+    }
+
+    .settings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      background: var(--card-bg);
+      padding: 1.2rem;
+      border-radius: 14px;
+    }
+
+    .setting-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .setting-item label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 44px;
+      height: 24px;
+      background: #475569;
+      border-radius: 12px;
+      transition: background 0.3s;
+    }
+
+    .toggle-switch::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    input[type="checkbox"]:checked + .toggle-switch {
+      background: var(--primary-red);
+    }
+
+    input[type="checkbox"]:checked + .toggle-switch::after {
+      transform: translateX(20px);
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .scene-guide-box {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+
+    .guide-title {
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .voiceover-text {
+      font-style: italic;
+      color: #cbd5e1;
+      line-height: 1.4;
+      background: rgba(255,255,255,0.05);
+      padding: 0.6rem;
+      border-radius: 6px;
+      border-left: 3px solid var(--primary-red);
+      margin-top: 0.4rem;
+    }
+
+    .recording-status {
+      display: none;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(220, 38, 38, 0.2);
+      border: 1px solid var(--primary-red);
+      color: #fca5a5;
+      padding: 0.8rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-header">
+    <div class="brand-title">
+      <span class="logo-badge">GÜNDEM</span>
+      <h1>TRAKYA VIDEO REKLAM STÜDYOSU</h1>
+    </div>
+    <a href="index.html" class="back-btn">
+      <i class="fa-solid fa-arrow-left"></i> Ana Sayfaya Dön
+    </a>
+  </header>
+
+  <main class="studio-container">
+    
+    <div class="video-preview-wrapper" id="playerWrapper">
+      <div class="phone-notch">
+        <div class="notch-camera"></div>
+      </div>
+
+      <canvas id="videoCanvas" width="1080" height="1920"></canvas>
+
+      <div class="reels-overlay">
+        <div class="reels-top-bar">
+          <span><i class="fa-solid fa-bolt" style="color: #fbbf24;"></i> Reels</span>
+          <i class="fa-solid fa-camera"></i>
+        </div>
+
+        <div class="reels-actions">
+          <div class="action-icon">
+            <i class="fa-solid fa-heart" style="color: #ef4444;"></i>
+            <span>8.4K</span>
+          </div>
+          <div class="action-icon">
+            <i class="fa-solid fa-comment"></i>
+            <span>342</span>
+          </div>
+          <div class="action-icon">
+            <i class="fa-solid fa-share"></i>
+            <span>Paylaş</span>
+          </div>
+          <div class="action-icon">
+            <i class="fa-solid fa-bookmark"></i>
+            <span>Kaydet</span>
+          </div>
+        </div>
+
+        <div class="reels-bottom-info">
+          <div class="user-tag">
+            <img src="img/ataturk-bayrak.jpg" alt="Logo" />
+            <span>gundemtrakya</span>
+            <i class="fa-solid fa-circle-check" style="color: #38bdf8; font-size: 0.8rem;"></i>
+          </div>
+          <p class="reel-caption">Trakya'nın en güncel son dakika haberleri, nöbetçi eczaneler ve canlı piyasalar! 📍 #Trakya #Haber</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-panel">
+      
+      <div class="panel-header">
+        <h2><i class="fa-solid fa-film" style="color: var(--primary-red);"></i> 15sn Video Oynatıcı & Kaydedici</h2>
+        <div class="time-badge" id="timeDisplay">00:00 / 00:15</div>
+      </div>
+
+      <div class="recording-status" id="recordingBadge">
+        <i class="fa-solid fa-circle-dot fa-fade" style="color: #dc2626;"></i>
+        <span>Video HD Kalitede Kaydediliyor ve İndirmeye Hazırlanıyor...</span>
+      </div>
+
+      <div class="timeline-container">
+        <div class="progress-bar-wrapper" id="progressWrapper">
+          <div class="progress-fill" id="progressBar"></div>
+        </div>
+        <div class="timeline-markers">
+          <span class="marker-item active" onclick="seekTo(0)">0s: Kanca 🚨</span>
+          <span class="marker-item" onclick="seekTo(4)">4s: Manşetler 📱</span>
+          <span class="marker-item" onclick="seekTo(8.5)">8.5s: Eczaneler 💊</span>
+          <span class="marker-item" onclick="seekTo(11.5)">11.5s: Çağrı (CTA) 🔔</span>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-play" id="playBtn" onclick="togglePlay()">
+          <i class="fa-solid fa-play" id="playIcon"></i> Oynat
+        </button>
+        <button class="btn btn-secondary" onclick="restartVideo()">
+          <i class="fa-solid fa-rotate-left"></i> Başa Sar
+        </button>
+        <button class="btn btn-download" id="downloadBtn" onclick="startExport()">
+          <i class="fa-solid fa-file-video"></i> Videoyu İndir (.webm)
+        </button>
+      </div>
+
+      <div class="settings-grid">
+        <div class="setting-item">
+          <label>Yapay Zeka Türkçe Seslendirme (TTS)</label>
+          <label class="toggle-row">
+            <span>Otomatik Seslendir</span>
+            <input type="checkbox" id="voiceoverToggle" checked>
+            <div class="toggle-switch"></div>
+          </label>
+        </div>
+        <div class="setting-item">
+          <label>Ses Efektleri (SFX Siren & Whoosh)</label>
+          <label class="toggle-row">
+            <span>Efektler Aktif</span>
+            <input type="checkbox" id="sfxToggle" checked>
+            <div class="toggle-switch"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="scene-guide-box">
+        <div class="guide-title" id="guideSceneTitle">
+          <i class="fa-solid fa-bullhorn"></i> 1. Sahne: Açılış Kancası (0 - 4 sn)
+        </div>
+        <div class="voiceover-text" id="guideVoiceText">
+          "Eğer Tekirdağ, Edirne veya Kırklareli'nde yaşıyorsan, bu platformu mutlaka kaydetmelisin!"
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+    const canvas = document.getElementById('videoCanvas');
+    const ctx = canvas.getContext('2d');
+    const DURATION = 15.0;
+    
+    let isPlaying = false;
+    let currentTime = 0.0;
+    let lastTimestamp = 0;
+    let animationFrameId = null;
+    let isExporting = false;
+    let mediaRecorder = null;
+    let recordedChunks = [];
+
+    let audioCtx = null;
+    function initAudio() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function playSfx(type) {
+      if (!document.getElementById('sfxToggle').checked) return;
+      initAudio();
+      const now = audioCtx.currentTime;
+
+      if (type === 'whoosh') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(450, now);
+        osc.frequency.exponentialRampToValueAtTime(80, now + 0.35);
+        gain.gain.setValueAtTime(0.4, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.35);
+      } else if (type === 'siren') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(700, now);
+        osc.frequency.linearRampToValueAtTime(950, now + 0.2);
+        osc.frequency.linearRampToValueAtTime(700, now + 0.4);
+        gain.gain.setValueAtTime(0.15, now);
+        gain.gain.linearRampToValueAtTime(0.01, now + 0.4);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.4);
+      } else if (type === 'ping') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(880, now);
+        gain.gain.setValueAtTime(0.3, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.5);
+      } else if (type === 'chime') {
+        [523.25, 659.25, 783.99, 1046.50].forEach((freq, i) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, now + (i * 0.08));
+          gain.gain.setValueAtTime(0.2, now + (i * 0.08));
+          gain.gain.exponentialRampToValueAtTime(0.001, now + (i * 0.08) + 0.6);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now + (i * 0.08));
+          osc.stop(now + (i * 0.08) + 0.6);
+        });
+      }
+    }
+
+    let lastSpokenScene = -1;
+    function speakText(text) {
+      if (!document.getElementById('voiceoverToggle').checked) return;
+      if (!('speechSynthesis' in window)) return;
+      
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'tr-TR';
+      utterance.rate = 1.15;
+      utterance.pitch = 1.05;
+      
+      const voices = window.speechSynthesis.getVoices();
+      const trVoice = voices.find(v => v.lang.includes('tr') || v.lang.includes('TR'));
+      if (trVoice) utterance.voice = trVoice;
+      
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function drawFrame(t) {
+      const W = canvas.width;
+      const H = canvas.height;
+
+      ctx.clearRect(0, 0, W, H);
+
+      if (t < 4.0) {
+        if (lastSpokenScene !== 1) {
+          lastSpokenScene = 1;
+          speakText("Eğer Tekirdağ, Edirne veya Kırklareli'nde yaşıyorsan, bu platformu mutlaka kaydetmelisin!");
+          playSfx('siren');
+          playSfx('whoosh');
+        }
+        drawScene1(t, W, H);
+      } else if (t < 8.5) {
+        if (lastSpokenScene !== 2) {
+          lastSpokenScene = 2;
+          speakText("Trakya'nın en sıcak son dakika gelişmeleri, asayiş haberleri ve canlı piyasalar anında parmaklarının ucunda.");
+          playSfx('whoosh');
+        }
+        drawScene2(t - 4.0, W, H);
+      } else if (t < 11.5) {
+        if (lastSpokenScene !== 3) {
+          lastSpokenScene = 3;
+          speakText("Gece nöbetçi eczane aramakla uğraşma; tek tıkla sana en yakın eczaneyi ve yol tarifini bul!");
+          playSfx('ping');
+        }
+        drawScene3(t - 8.5, W, H);
+      } else {
+        if (lastSpokenScene !== 4) {
+          lastSpokenScene = 4;
+          speakText("Trakya'nın nabzını tutmak için hemen profildeki linke tıkla ve bizi takip et!");
+          playSfx('chime');
+        }
+        drawScene4(t - 11.5, W, H);
+      }
+
+      ctx.fillStyle = "rgba(255, 255, 255, 0.2)";
+      ctx.fillRect(40, 60, W - 80, 10);
+      ctx.fillStyle = "#fbbf24";
+      ctx.fillRect(40, 60, (W - 80) * (t / DURATION), 10);
+    }
+
+    function drawScene1(t, W, H) {
+      const strobe = Math.sin(t * 12);
+      const bgGrad = ctx.createRadialGradient(W/2, H/2, 100, W/2, H/2, 1100);
+      if (strobe > 0) {
+        bgGrad.addColorStop(0, '#3b0707');
+        bgGrad.addColorStop(1, '#090303');
+      } else {
+        bgGrad.addColorStop(0, '#071b3b');
+        bgGrad.addColorStop(1, '#020617');
+      }
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, W, H);
+
+      ctx.save();
+      ctx.globalAlpha = 0.25 * Math.abs(strobe);
+      ctx.fillStyle = strobe > 0 ? '#ef4444' : '#38bdf8';
+      ctx.beginPath();
+      ctx.arc(strobe > 0 ? 150 : W - 150, 400, 350, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+
+      const scale1 = Math.min(1, t * 4);
+      ctx.save();
+      ctx.translate(W/2, 500);
+      ctx.scale(scale1, scale1);
+      
+      ctx.fillStyle = "#dc2626";
+      ctx.shadowColor = "rgba(220, 38, 38, 0.8)";
+      ctx.shadowBlur = 30;
+      roundRect(ctx, -260, -60, 520, 120, 24);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "900 58px 'Plus Jakarta Sans'";
+      ctx.textAlign = "center";
+      ctx.fillText("🚨 SON DAKİKA", 0, 18);
+      ctx.restore();
+
+      const pulse = 1 + Math.sin(t * 8) * 0.03;
+      ctx.save();
+      ctx.translate(W/2, 850);
+      ctx.scale(pulse, pulse);
+
+      ctx.fillStyle = "#fbbf24";
+      ctx.font = "900 82px 'Montserrat', sans-serif";
+      ctx.textAlign = "center";
+      ctx.shadowColor = "rgba(251, 191, 36, 0.6)";
+      ctx.shadowBlur = 40;
+      ctx.fillText("TRAKYA'DA", 0, 0);
+
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "900 78px 'Montserrat', sans-serif";
+      ctx.shadowColor = "rgba(255, 255, 255, 0.5)";
+      ctx.fillText("YAŞIYORSAN", 0, 100);
+
+      ctx.fillStyle = "#ef4444";
+      ctx.font = "900 96px 'Montserrat', sans-serif";
+      ctx.shadowColor = "rgba(239, 68, 68, 0.8)";
+      ctx.fillText("DİKKAT! ⚠️", 0, 220);
+      ctx.restore();
+
+      ctx.fillStyle = "#94a3b8";
+      ctx.font = "700 44px 'Plus Jakarta Sans'";
+      ctx.textAlign = "center";
+      ctx.fillText("EDİRNE • TEKİRDAĞ • KIRKLARELİ • ÇORLU", W/2, 1300);
+
+      ctx.fillStyle = "#e2e8f0";
+      ctx.font = "600 38px 'Plus Jakarta Sans'";
+      ctx.fillText("Bölgenin En Hızlı Dijital Haber Portalı", W/2, 1420);
+    }
+
+    function drawScene2(t, W, H) {
+      const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+      bgGrad.addColorStop(0, '#090d16');
+      bgGrad.addColorStop(0.5, '#0f172a');
+      bgGrad.addColorStop(1, '#090d16');
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, W, H);
+
+      ctx.fillStyle = "#1e293b";
+      ctx.fillRect(0, 200, W, 90);
+      ctx.fillStyle = "#fbbf24";
+      ctx.font = "700 34px 'Plus Jakarta Sans'";
+      ctx.textAlign = "left";
+      const tickerOffset = (t * 180) % 900;
+      ctx.fillText("📈 DOLAR: 36.42 ₺   |   EURO: 39.85 ₺   |   ALTIN (Gr): 2.960 ₺   |   BIST 100: 9.850   |   TEKİRDAĞ: 28°C ☀️", 100 - tickerOffset, 258);
+
+      ctx.save();
+      ctx.translate(W/2, 950);
+      ctx.fillStyle = "#131c31";
+      ctx.shadowColor = "rgba(0, 0, 0, 0.8)";
+      ctx.shadowBlur = 40;
+      roundRect(ctx, -460, -580, 920, 1160, 40);
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
+      ctx.lineWidth = 4;
+      ctx.stroke();
+
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "900 48px 'Plus Jakarta Sans'";
+      ctx.textAlign = "center";
+      ctx.fillText("GÜNDEM TRAKYA", 0, -480);
+      ctx.fillStyle = "#dc2626";
+      ctx.font = "800 32px 'Plus Jakarta Sans'";
+      ctx.fillText("ANLIK SICAK HABER AKIŞI", 0, -430);
+
+      const cards = [
+        { city: "EDİRNE", title: "Meriç Nehri Taşkın Uyarısı!", time: "12:40", col: "#ef4444" },
+        { city: "TEKİRDAĞ", title: "E-5 Karayolu Trafik Akışı Normale Döndü", time: "12:15", col: "#38bdf8" },
+        { city: "ÇORLU", title: "Sanayi Bölgesinde Yeni İstihdam Atağı", time: "11:50", col: "#fbbf24" }
+      ];
+
+      cards.forEach((c, idx) => {
+        const cardY = -340 + (idx * 270);
+        const cardSlide = Math.min(1, Math.max(0, (t - idx * 0.4) * 3));
+        
+        ctx.save();
+        ctx.translate((1 - cardSlide) * 300, cardY);
+        ctx.globalAlpha = cardSlide;
+
+        ctx.fillStyle = "#1e293b";
+        roundRect(ctx, -400, 0, 800, 220, 20);
+        ctx.fill();
+        ctx.strokeStyle = c.col;
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        ctx.fillStyle = c.col;
+        roundRect(ctx, -370, 25, 170, 48, 10);
+        ctx.fill();
+        ctx.fillStyle = "#000";
+        ctx.font = "900 26px 'Plus Jakarta Sans'";
+        ctx.textAlign = "center";
+        ctx.fillText(c.city, -285, 58);
+
+        ctx.fillStyle = "#94a3b8";
+        ctx.font = "600 24px 'Plus Jakarta Sans'";
+        ctx.textAlign = "right";
+        ctx.fillText(c.time, 370, 58);
+
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "700 34px 'Plus Jakarta Sans'";
+        ctx.textAlign = "left";
+        wrapText(ctx, c.title, -370, 125, 740, 42);
+
+        ctx.restore();
+      });
+
+      ctx.restore();
+    }
+
+    function drawScene3(t, W, H) {
+      const bgGrad = ctx.createRadialGradient(W/2, H/2, 50, W/2, H/2, 1000);
+      bgGrad.addColorStop(0, '#042f2e');
+      bgGrad.addColorStop(1, '#021214');
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, W, H);
+
+      const ripple = (t * 2) % 1;
+      ctx.save();
+      ctx.strokeStyle = `rgba(16, 185, 129, ${1 - ripple})`;
+      ctx.lineWidth = 8;
+      ctx.beginPath();
+      ctx.arc(W/2, 600, 100 + (ripple * 250), 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.restore();
+
+      ctx.save();
+      ctx.translate(W/2, 600);
+      const pulse = 1 + Math.sin(t * 8) * 0.05;
+      ctx.scale(pulse, pulse);
+
+      ctx.fillStyle = "#dc2626";
+      ctx.shadowColor = "rgba(220, 38, 38, 0.9)";
+      ctx.shadowBlur = 50;
+      roundRect(ctx, -140, -140, 280, 280, 40);
+      ctx.fill();
+
+      ctx.fillStyle = "#ffffff";
+      ctx.shadowBlur = 0;
+      roundRect(ctx, -35, -95, 70, 190, 16);
+      ctx.fill();
+      roundRect(ctx, -95, -35, 190, 70, 16);
+      ctx.fill();
+      ctx.restore();
+
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "900 68px 'Plus Jakarta Sans'";
+      ctx.textAlign = "center";
+      ctx.fillText("TRAKYA NÖBETÇİ", W/2, 900);
+      ctx.fillStyle = "#10b981";
+      ctx.font = "900 78px 'Montserrat', sans-serif";
+      ctx.fillText("ECZANELER 📍", W/2, 990);
+
+      const features = [
+        "🗺️ İlçe İlçe Güncel Liste",
+        "📍 Tek Dokunuşla Yol Tarifi",
+        "📞 Doğrudan Eczaneyi Ara"
+      ];
+
+      features.forEach((feat, idx) => {
+        ctx.fillStyle = "#134e4a";
+        roundRect(ctx, 140, 1100 + (idx * 110), W - 280, 85, 20);
+        ctx.fill();
+        ctx.strokeStyle = "rgba(52, 211, 153, 0.4)";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "700 38px 'Plus Jakarta Sans'";
+        ctx.textAlign = "center";
+        ctx.fillText(feat, W/2, 1158 + (idx * 110));
+      });
+    }
+
+    function drawScene4(t, W, H) {
+      const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+      bgGrad.addColorStop(0, '#1c0a0a');
+      bgGrad.addColorStop(0.5, '#0a0d14');
+      bgGrad.addColorStop(1, '#1c0a0a');
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, W, H);
+
+      ctx.save();
+      ctx.translate(W/2, 520);
+      
+      ctx.fillStyle = "#dc2626";
+      ctx.shadowColor = "rgba(220, 38, 38, 0.6)";
+      ctx.shadowBlur = 30;
+      roundRect(ctx, -240, -60, 480, 120, 24);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "900 62px 'Montserrat', sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("GÜNDEM", 0, 20);
+      ctx.restore();
+
+      ctx.fillStyle = "#fbbf24";
+      ctx.font = "900 88px 'Montserrat', sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("TRAKYA.COM", W/2, 700);
+
+      ctx.fillStyle = "#94a3b8";
+      ctx.font = "700 42px 'Plus Jakarta Sans'";
+      ctx.fillText("Trakya'nın Dijital Gücü", W/2, 770);
+
+      const pulseBtn = 1 + Math.sin(t * 8) * 0.04;
+      ctx.save();
+      ctx.translate(W/2, 1050);
+      ctx.scale(pulseBtn, pulseBtn);
+
+      const btnGrad = ctx.createLinearGradient(-380, 0, 380, 0);
+      btnGrad.addColorStop(0, '#dc2626');
+      btnGrad.addColorStop(1, '#b91c1c');
+      ctx.fillStyle = btnGrad;
+      ctx.shadowColor = "rgba(220, 38, 38, 0.8)";
+      ctx.shadowBlur = 40;
+      roundRect(ctx, -380, -75, 760, 150, 30);
+      ctx.fill();
+      ctx.strokeStyle = "#fbbf24";
+      ctx.lineWidth = 4;
+      ctx.stroke();
+
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "900 48px 'Plus Jakarta Sans'";
+      ctx.textAlign = "center";
+      ctx.fillText("HEMEN TAKİP ET & KEŞFET ➔", 0, 18);
+      ctx.restore();
+
+      ctx.fillStyle = "#e2e8f0";
+      ctx.font = "700 40px 'Plus Jakarta Sans'";
+      ctx.textAlign = "center";
+      ctx.fillText("📸 @gundemtrakya   |   📘 @gundemtrakya", W/2, 1300);
+
+      ctx.fillStyle = "#38bdf8";
+      ctx.font = "800 44px 'Plus Jakarta Sans'";
+      ctx.fillText("🌐 gundemtrakya.vercel.app", W/2, 1400);
+    }
+
+    function roundRect(ctx, x, y, width, height, radius) {
+      ctx.beginPath();
+      ctx.moveTo(x + radius, y);
+      ctx.lineTo(x + width - radius, y);
+      ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+      ctx.lineTo(x + width, y + height - radius);
+      ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+      ctx.lineTo(x + radius, y + height);
+      ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+      ctx.lineTo(x, y + radius);
+      ctx.quadraticCurveTo(x, y, x + radius, y);
+      ctx.closePath();
+    }
+
+    function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+      const words = text.split(' ');
+      let line = '';
+      for (let n = 0; n < words.length; n++) {
+        const testLine = line + words[n] + ' ';
+        const metrics = ctx.measureText(testLine);
+        if (metrics.width > maxWidth && n > 0) {
+          ctx.fillText(line, x, y);
+          line = words[n] + ' ';
+          y += lineHeight;
+        } else {
+          line = testLine;
+        }
+      }
+      ctx.fillText(line, x, y);
+    }
+
+    function updateTimelineUI() {
+      const progressPercent = (currentTime / DURATION) * 100;
+      document.getElementById('progressBar').style.width = `${progressPercent}%`;
+      
+      const curSec = Math.floor(currentTime);
+      document.getElementById('timeDisplay').innerText = 
+        `00:${curSec < 10 ? '0' + curSec : curSec} / 00:15`;
+
+      const guideTitle = document.getElementById('guideSceneTitle');
+      const guideText = document.getElementById('guideVoiceText');
+      if (currentTime < 4.0) {
+        guideTitle.innerHTML = `<i class="fa-solid fa-bullhorn"></i> 1. Sahne: Açılış Kancası (0 - 4 sn)`;
+        guideText.innerText = `"Eğer Tekirdağ, Edirne veya Kırklareli'nde yaşıyorsan, bu platformu mutlaka kaydetmelisin!"`;
+      } else if (currentTime < 8.5) {
+        guideTitle.innerHTML = `<i class="fa-solid fa-mobile-screen"></i> 2. Sahne: Manşetler & Canlı Borsa (4 - 8.5 sn)`;
+        guideText.innerText = `"Trakya'nın en sıcak son dakika gelişmeleri, asayiş haberleri ve canlı piyasalar anında parmaklarının ucunda."`;
+      } else if (currentTime < 11.5) {
+        guideTitle.innerHTML = `<i class="fa-solid fa-notes-medical"></i> 3. Sahne: Nöbetçi Eczaneler & Harita (8.5 - 11.5 sn)`;
+        guideText.innerText = `"Gece nöbetçi eczane aramakla uğraşma; tek tıkla sana en yakın eczaneyi ve yol tarifini bul!"`;
+      } else {
+        guideTitle.innerHTML = `<i class="fa-solid fa-bell"></i> 4. Sahne: Outro & Takip Çağrısı (11.5 - 15 sn)`;
+        guideText.innerText = `"Trakya'nın nabzını tutmak için hemen profildeki linke tıkla ve bizi takip et!"`;
+      }
+    }
+
+    function animate(timestamp) {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      const delta = (timestamp - lastTimestamp) / 1000;
+      lastTimestamp = timestamp;
+
+      if (isPlaying) {
+        currentTime += delta;
+        if (currentTime >= DURATION) {
+          currentTime = DURATION;
+          isPlaying = false;
+          updatePlayButton();
+          if (isExporting) finishExport();
+        }
+      }
+
+      drawFrame(currentTime);
+      updateTimelineUI();
+
+      if (isPlaying || isExporting) {
+        animationFrameId = requestAnimationFrame(animate);
+      }
+    }
+
+    function togglePlay() {
+      initAudio();
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        if (currentTime >= DURATION) {
+          currentTime = 0;
+          lastSpokenScene = -1;
+        }
+        lastTimestamp = performance.now();
+        animationFrameId = requestAnimationFrame(animate);
+      } else {
+        cancelAnimationFrame(animationFrameId);
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }
+      updatePlayButton();
+    }
+
+    function updatePlayButton() {
+      const playIcon = document.getElementById('playIcon');
+      const playBtn = document.getElementById('playBtn');
+      if (isPlaying) {
+        playIcon.className = "fa-solid fa-pause";
+        playBtn.innerHTML = `<i class="fa-solid fa-pause"></i> Duraklat`;
+      } else {
+        playIcon.className = "fa-solid fa-play";
+        playBtn.innerHTML = `<i class="fa-solid fa-play"></i> Oynat`;
+      }
+    }
+
+    function restartVideo() {
+      currentTime = 0;
+      lastSpokenScene = -1;
+      drawFrame(0);
+      updateTimelineUI();
+      if (!isPlaying) togglePlay();
+    }
+
+    function seekTo(sec) {
+      currentTime = sec;
+      lastSpokenScene = -1;
+      drawFrame(currentTime);
+      updateTimelineUI();
+    }
+
+    document.getElementById('progressWrapper').addEventListener('click', (e) => {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const ratio = clickX / rect.width;
+      seekTo(ratio * DURATION);
+    });
+
+    function startExport() {
+      initAudio();
+      if (isExporting) return;
+      isExporting = true;
+      recordedChunks = [];
+
+      document.getElementById('recordingBadge').style.display = 'flex';
+      document.getElementById('downloadBtn').disabled = true;
+      document.getElementById('downloadBtn').innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Kaydediliyor...`;
+
+      currentTime = 0;
+      lastSpokenScene = -1;
+      isPlaying = true;
+      lastTimestamp = performance.now();
+
+      const stream = canvas.captureStream(60);
+
+      let options = { mimeType: 'video/webm; codecs=vp9' };
+      if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+        options = { mimeType: 'video/webm' };
+      }
+
+      mediaRecorder = new MediaRecorder(stream, options);
+      mediaRecorder.ondataavailable = (event) => {
+        if (event.data.size > 0) {
+          recordedChunks.push(event.data);
+        }
+      };
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(recordedChunks, { type: 'video/webm' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = `gundem-trakya-reels-reklam-${Date.now()}.webm`;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => {
+          document.body.removeChild(a);
+          window.URL.revokeObjectURL(url);
+        }, 100);
+
+        document.getElementById('recordingBadge').style.display = 'none';
+        document.getElementById('downloadBtn').disabled = false;
+        document.getElementById('downloadBtn').innerHTML = `<i class="fa-solid fa-check"></i> İndirildi!`;
+        isExporting = false;
+      };
+
+      mediaRecorder.start();
+      animationFrameId = requestAnimationFrame(animate);
+    }
+
+    function finishExport() {
+      if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+        mediaRecorder.stop();
+      }
+    }
+
+    window.addEventListener('load', () => {
+      drawFrame(0);
+      updateTimelineUI();
+    });
+  </script>
+</body>
+</html>
