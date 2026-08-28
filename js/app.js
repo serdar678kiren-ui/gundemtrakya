@@ -546,8 +546,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 8. Trakya Nöbetçi Eczaneler Modülü ---
+  // --- 8. Trakya Nöbetçi Eczaneler & Resmi Eczacı Odaları Canlı Modülü ---
   function initPharmacies() {
+    if (!state.activePharmDistrict) state.activePharmDistrict = 'Tümü';
     renderPharmacyTabs();
     renderPharmacyList();
   }
@@ -555,20 +556,21 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderPharmacyTabs() {
     if (!elements.pharmacyTabs) return;
     const cities = [
-      { id: 'tekirdag', name: 'Tekirdağ / Çorlu / Çerkezköy' },
+      { id: 'tekirdag', name: 'Tekirdağ' },
       { id: 'edirne', name: 'Edirne' },
       { id: 'kirklareli', name: 'Kırklareli' }
     ];
 
     elements.pharmacyTabs.innerHTML = cities.map(c => `
       <button class="pharm-tab-btn ${state.activePharmCity === c.id ? 'active' : ''}" data-city="${c.id}">
-        ${c.name}
+        <i class="fa-solid fa-map-pin"></i> ${c.name}
       </button>
     `).join('');
 
     elements.pharmacyTabs.querySelectorAll('.pharm-tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         state.activePharmCity = btn.getAttribute('data-city');
+        state.activePharmDistrict = 'Tümü';
         renderPharmacyTabs();
         renderPharmacyList();
       });
@@ -577,23 +579,85 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderPharmacyList() {
     if (!elements.pharmacyListContainer) return;
-    const list = pharmacyData[state.activePharmCity] || [];
+    const cityData = pharmacyData[state.activePharmCity] || { list: [], chamberName: 'Eczacı Odası', chamberUrl: 'https://www.teo.org.tr/', districts: [] };
+    let list = cityData.list || [];
 
-    elements.pharmacyListContainer.innerHTML = list.map(item => `
+    if (state.activePharmDistrict && state.activePharmDistrict !== 'Tümü') {
+      list = list.filter(item => item.district.toLowerCase() === state.activePharmDistrict.toLowerCase());
+    }
+
+    const districts = cityData.districts || [];
+
+    const districtPillsHtml = districts.length > 0 ? `
+      <div class="pharm-district-pills">
+        ${districts.map(d => `
+          <button class="pharm-dist-pill ${state.activePharmDistrict === d ? 'active' : ''}" data-dist="${d}">
+            ${d}
+          </button>
+        `).join('')}
+      </div>
+    ` : '';
+
+    const officialBannerHtml = `
+      <div class="pharm-official-banner">
+        <div class="pharm-official-header">
+          <span class="pulse-dot"></span>
+          <span class="pharm-official-title">Resmi Canlı Nöbet Çizelgesi</span>
+        </div>
+        <p class="pharm-official-desc">Eczacı Odası onaylı 7/24 anlık nöbetçi listesini sorgulayın:</p>
+        <a href="${cityData.chamberUrl}" target="_blank" rel="noopener" class="pharm-official-btn">
+          <i class="fa-solid fa-shield-halved"></i> ${cityData.chamberName} Canlı Listesi ➡️
+        </a>
+      </div>
+    `;
+
+    const itemsHtml = list.length > 0 ? list.map(item => `
       <div class="pharmacy-item">
         <div class="pharm-top">
           <span class="pharm-name">${item.name}</span>
-          <span class="pharm-district">${item.district}</span>
+          <span class="pharm-district"><i class="fa-solid fa-location-dot"></i> ${item.district}</span>
         </div>
-        <p class="pharm-address"><i class="fa-solid fa-location-dot" style="color: var(--news-red); margin-right: 0.2rem;"></i> ${item.address}</p>
+        <p class="pharm-address">${item.address}</p>
+        <div class="pharm-time-badge"><i class="fa-solid fa-clock"></i> ${item.time || '24 Saat Açık'}</div>
         <div class="pharm-actions">
-          <span class="pharm-phone"><i class="fa-solid fa-phone"></i> ${item.phone}</span>
-          <a href="tel:${item.phone.replace(/\\s+/g, '')}" class="pharm-call-btn">
-            <i class="fa-solid fa-phone-volume"></i> Ara
+          <a href="tel:${item.phone.replace(/\s+/g, '')}" class="pharm-phone-link">
+            <i class="fa-solid fa-phone"></i> ${item.phone}
           </a>
+          <div class="pharm-btn-group">
+            <a href="${item.mapUrl || 'https://maps.google.com'}" target="_blank" rel="noopener" class="pharm-map-btn" title="Yol Tarifi">
+              <i class="fa-solid fa-diamond-turn-right"></i> Tarif
+            </a>
+            <a href="tel:${item.phone.replace(/\s+/g, '')}" class="pharm-call-btn">
+              <i class="fa-solid fa-phone-volume"></i> Ara
+            </a>
+          </div>
         </div>
       </div>
-    `).join('');
+    `).join('') : `
+      <div style="text-align:center; padding:1.2rem; background:var(--bg-elevated); border-radius:var(--radius-sm);">
+        <p style="color:var(--text-muted); font-size:0.85rem;">Bu ilçe için resmi canlı nöbetçi listesini inceleyin.</p>
+        <a href="${cityData.chamberUrl}" target="_blank" rel="noopener" class="pharm-official-btn" style="margin-top:0.6rem; display:inline-block;">
+          Oda Sisteminden Canlı Bak ➡️
+        </a>
+      </div>
+    `;
+
+    const emergencyBoxHtml = `
+      <div class="pharm-emergency-box">
+        <a href="tel:112" class="emergency-chip em-112"><i class="fa-solid fa-truck-medical"></i> 112 Acil</a>
+        <a href="tel:184" class="emergency-chip em-184"><i class="fa-solid fa-headset"></i> 184 Sağlık Danışma</a>
+      </div>
+    `;
+
+    elements.pharmacyListContainer.innerHTML = districtPillsHtml + officialBannerHtml + itemsHtml + emergencyBoxHtml;
+
+    // İlçe hapları tıklama olayları
+    elements.pharmacyListContainer.querySelectorAll('.pharm-dist-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        state.activePharmDistrict = pill.getAttribute('data-dist');
+        renderPharmacyList();
+      });
+    });
   }
 
   // --- 9. Haber Akışı & Dinamik Başlık ve Filtreleme ---

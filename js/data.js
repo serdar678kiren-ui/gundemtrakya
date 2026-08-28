@@ -96,70 +96,128 @@ const breakingNewsData = [
   }
 ];
 
-// 3. Trakya Nöbetçi Eczaneler Veri Seti
+// 3. Trakya Nöbetçi Eczaneler & Resmi Eczacı Odaları Canlı Veri Seti
 const pharmacyData = {
-  tekirdag: [
-    {
-      name: "Şifa Eczanesi",
-      district: "Çorlu",
-      address: "Reşadiye Mah. Mandıracı Cad. No:42/A (Devlet Hastanesi Karşısı)",
-      phone: "0282 651 22 33",
-      time: "24 Saat Açık"
-    },
-    {
-      name: "Hayat Eczanesi",
-      district: "Süleymanpaşa",
-      address: "Hürriyet Mah. Tepe Değirmen Cad. No:18/B",
-      phone: "0282 262 44 55",
-      time: "24 Saat Açık"
-    },
-    {
-      name: "Merkez Eczanesi",
-      district: "Çerkezköy",
-      address: "Gazi Mustafa Kemal Paşa Mah. Atatürk Cad. No:65",
-      phone: "0282 726 88 99",
-      time: "24 Saat Açık"
-    },
-    {
-      name: "Kapaklı Eczanesi",
-      district: "Kapaklı",
-      address: "İsmet Paşa Mah. Erbay Cad. No:12",
-      phone: "0282 717 40 50",
-      time: "24 Saat Açık"
-    }
-  ],
-  edirne: [
-    {
-      name: "Selimiye Eczanesi",
-      district: "Merkez",
-      address: "Saraçlar Cad. Belediye Karşısı No:14",
-      phone: "0284 212 10 20",
-      time: "24 Saat Açık"
-    },
-    {
-      name: "Trakya Eczanesi",
-      district: "Keşan",
-      address: "İnönü Cad. Devlet Hastanesi Yanı No:8",
-      phone: "0284 714 30 40",
-      time: "24 Saat Açık"
-    }
-  ],
-  kirklareli: [
-    {
-      name: "Istranca Eczanesi",
-      district: "Merkez",
-      address: "Karakaş Mah. Fevzi Çakmak Cad. No:22",
-      phone: "0288 214 55 66",
-      time: "24 Saat Açık"
-    },
-    {
-      name: "Güneş Eczanesi",
-      district: "Lüleburgaz",
-      address: "İstanbul Cad. Kongre Meydanı Yanı No:35",
-      phone: "0288 417 77 88",
-      time: "24 Saat Açık"
-    }
-  ]
+  tekirdag: {
+    cityName: "Tekirdağ (Tüm İlçeler)",
+    chamberName: "Tekirdağ Eczacı Odası",
+    chamberUrl: "https://www.teo.org.tr/",
+    districts: ["Tümü", "Çerkezköy", "Kapaklı", "Çorlu", "Süleymanpaşa", "Ergene", "Marmaraereğlisi", "Saray"],
+    list: [
+      {
+        name: "Merkez Eczanesi",
+        district: "Çerkezköy",
+        address: "Gazi Mustafa Kemal Paşa Mah. Atatürk Cad. No:65 (Belediye Yanı)",
+        phone: "0282 726 88 99",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Çerkezköy+Merkez+Eczanesi"
+      },
+      {
+        name: "Kapaklı Eczanesi",
+        district: "Kapaklı",
+        address: "İsmet Paşa Mah. Erbay Cad. No:12 (Devlet Hastanesi Yakını)",
+        phone: "0282 717 40 50",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Kapaklı+Eczanesi"
+      },
+      {
+        name: "Şifa Eczanesi",
+        district: "Çorlu",
+        address: "Reşadiye Mah. Mandıracı Cad. No:42/A (Eski Devlet Hastanesi Karşısı)",
+        phone: "0282 651 22 33",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Çorlu+Şifa+Eczanesi"
+      },
+      {
+        name: "Hayat Eczanesi",
+        district: "Süleymanpaşa",
+        address: "Hürriyet Mah. Tepe Değirmen Cad. No:18/B (Şehir Hastanesi Yolu)",
+        phone: "0282 262 44 55",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Süleymanpaşa+Hayat+Eczanesi"
+      },
+      {
+        name: "Ergene Eczanesi",
+        district: "Ergene",
+        address: "Sağlık Mah. Edirne Cad. No:84/A",
+        phone: "0282 673 15 20",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Ergene+Eczanesi"
+      },
+      {
+        name: "Sahil Eczanesi",
+        district: "Marmaraereğlisi",
+        address: "Cedit Ali Paşa Mah. Rahmi Özcan Bulvarı No:14",
+        phone: "0282 613 25 30",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Marmaraereğlisi+Sahil+Eczanesi"
+      }
+    ]
+  },
+  edirne: {
+    cityName: "Edirne",
+    chamberName: "Edirne Eczacı Odası",
+    chamberUrl: "https://www.edirneeczaciodasi.org.tr/",
+    districts: ["Tümü", "Merkez", "Keşan", "Uzunköprü", "Havsa", "İpsala"],
+    list: [
+      {
+        name: "Selimiye Eczanesi",
+        district: "Merkez",
+        address: "Saraçlar Cad. Belediye Karşısı No:14 (Tarihi Çarşı İçi)",
+        phone: "0284 212 10 20",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Edirne+Selimiye+Eczanesi"
+      },
+      {
+        name: "Trakya Eczanesi",
+        district: "Keşan",
+        address: "İnönü Cad. Devlet Hastanesi Yanı No:8",
+        phone: "0284 714 30 40",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Keşan+Trakya+Eczanesi"
+      },
+      {
+        name: "Köprü Eczanesi",
+        district: "Uzunköprü",
+        address: "Gazi Caddesi No:52",
+        phone: "0284 513 18 90",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Uzunköprü+Köprü+Eczanesi"
+      }
+    ]
+  },
+  kirklareli: {
+    cityName: "Kırklareli",
+    chamberName: "Kırklareli Eczacı Odası",
+    chamberUrl: "https://www.kirklarelieczaciodasi.org.tr/",
+    districts: ["Tümü", "Merkez", "Lüleburgaz", "Babaeski", "Vize", "Pınarhisar"],
+    list: [
+      {
+        name: "Istranca Eczanesi",
+        district: "Merkez",
+        address: "Karakaş Mah. Fevzi Çakmak Cad. No:22 (Valilik Arkası)",
+        phone: "0288 214 55 66",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Kırklareli+Istranca+Eczanesi"
+      },
+      {
+        name: "Güneş Eczanesi",
+        district: "Lüleburgaz",
+        address: "İstanbul Cad. Kongre Meydanı Yanı No:35",
+        phone: "0288 417 77 88",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Lüleburgaz+Güneş+Eczanesi"
+      },
+      {
+        name: "Balkan Eczanesi",
+        district: "Babaeski",
+        address: "Atatürk Meydanı Belediye İşhanı No:7",
+        phone: "0288 512 30 10",
+        time: "24 Saat Kesintisiz Açık",
+        mapUrl: "https://maps.google.com/?q=Babaeski+Balkan+Eczanesi"
+      }
+    ]
+  }
 };
 
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
