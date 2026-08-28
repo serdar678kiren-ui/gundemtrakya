@@ -165,8 +165,121 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 27,
+    id: 28,
     headlineNumber: 1,
+    title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
+    spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
+    category: "SAĞLIK & YAŞAM",
+    categorySlug: "saglik",
+    location: "Trakya / Çerkezköy",
+    badgeColor: "red",
+    date: "28 Ağustos 2026 - 21:55",
+    readTime: "4 dk",
+    views: 84300,
+    likes: 5920,
+    reactions: { like: 3600, heart: 1400, clap: 1250, thinking: 780, angry: 25 },
+    socialPosts: [
+      {
+        user: "Trakya Sağlık & Tüketici",
+        handle: "@TrakyaSaglik",
+        avatar: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Peynir ve süt ürünlerinde Listeria tehlikesine dikkat! Prof. Dr. Davut Özdemir: 'Buzdolabı soğuğu bakteriyi durdurmaz, 70 derece üzeri pişirme şart.' 🧀🥛 #Sağlık #Listeria",
+        time: "15 dk önce",
+        likes: 2240,
+        shares: 810
+      },
+      {
+        user: "Gıda Güvenliği Platformu",
+        handle: "@GidaGuvenligi",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Özellikle gebeler, yaşlılar ve bebekler için Listeria çok tehlikeli. Çiğ süt ürünlerinden uzak durulmalı ve sebzeler bol suyla yıkanmalı! 🛡️",
+        time: "30 dk önce",
+        likes: 1750,
+        shares: 460
+      }
+    ],
+    comments: [
+      {
+        id: 2801,
+        author: "Zeliha Hanım",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "10 dk önce",
+        content: "Buzdolabında bile bakterinin üreyebildiğini bilmiyordum. Hocamız çok önemli bilgiler vermiş, peynir alırken ve saklarken artık çok daha dikkat edeceğiz.",
+        likes: 142
+      },
+      {
+        id: 2802,
+        author: "Ecz. Burak",
+        city: "Çorlu / Reşadiye",
+        time: "20 dk önce",
+        content: "Özellikle bağışıklığı zayıf olanlar ve hamileler için hayati bir uyarı. Bilgilendirme için teşekkürler.",
+        likes: 98
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Sağlık Masası",
+      title: "Medikal & Halk Sağlığı Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/listeria-besin-zehirlenmesi.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Peynirde Listeria Tehlikesi ve Buzdolabı Faktörü",
+        pageImage: "img/listeria-besin-zehirlenmesi.jpg",
+        content: `
+          <p class="lead"><strong>Tarım ve Orman Bakanlığı tarafından ünlü bir markanın beyaz peynir ürününde Listeria bakterisinin tespit edilmesi, gıda güvenliğini yeniden ülke gündemine taşıdı.</strong></p>
+          <p>Özel İrmet Hospital Enfeksiyon Hastalıkları ve Klinik Mikrobiyoloji Uzmanı <strong>Prof. Dr. Davut Özdemir</strong>, Listeria bakterisinin neden olduğu 'listeriyoz' hastalığına ilişkin kritik uyarılarda bulundu.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Listeria'yı diğer bakterilerden ayıran en tehlikeli özellik buzdolabı sıcaklığında (+4 derece) bile kolayca çoğalabilmesidir. Yok edilmesi için gıdanın 70 derece ve üzerinde tam pişirilmesi veya pastörize edilmesi gerekir."</p>
+            <span>- Prof. Dr. Davut Özdemir, İrmet Hospital Enfeksiyon Hastalıkları Uzmanı</span>
+          </div>
+          <p>Listeria; çiğ süt, pastörize edilmemiş peynirler, iyi pişmemiş etler, sosis/salam gibi şarküteri ürünleri ve iyi yıkanmamış çiğ sebzelerden bulaşabiliyor.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Kimler Yüksek Risk Altında? Menenjit ve Sepsis Tehlikesi",
+        pageImage: "img/listeria-besin-zehirlenmesi.jpg",
+        content: `
+          <p class="lead"><strong>Gebeler, Yeni Doğanlar ve Yaşlılar İçin Ölümcül Olabilir</strong></p>
+          <p>Prof. Dr. Davut Özdemir, sağlıklı bireylerde hafif ateş ve ishal ile geçen enfeksiyonun risk gruplarında ağır tablolara yol açtığını vurguladı:</p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>🤰 <strong>Gebelerde Sinsi Seyir:</strong> Grip benzeri belirtiler veya idrar yolu enfeksiyonu gibi başlayıp bebekte erken doğum veya düşüğe neden olabilir.</li>
+            <li>👶 <strong>Yeni Doğanlarda:</strong> Doğum sırasında anneden geçerek ölümcül menenjit ve sepsise yol açabilir.</li>
+            <li>👴 <strong>Yaşlılar ve Kanser Hastalarında:</strong> Bilinç bulanıklığı, şiddetli baş ağrısı, karaciğer ve kemik iltihapları görülebilir.</li>
+          </ul>
+          <p>Hastalığın tedavisinde vücudun tutulan bölgesine göre 2 ila 4 haftalık hedefe yönelik antibiyotik protokolü uygulanıyor.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Prof. Dr. Özdemir'den Altın Kural: 'Kaynat, Pişir, Soy'",
+        pageImage: "img/listeria-besin-zehirlenmesi.jpg",
+        content: `
+          <p class="lead"><strong>Gıda Zehirlenmelerine Karşı Alınması Gereken 7 Temel Önlem</strong></p>
+          <p>Prof. Dr. Davut Özdemir, mutfakta uygulanacak basit ama hayati hijyen kurallarını şöyle sıraladı:</p>
+          <ol style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>Eller yemek hazırlamadan önce ve sonra en az 20 saniye sabunla yıkanmalı.</li>
+            <li>Açıkta veya kaynağı belirsiz çiğ süt ve peynir tüketilmemeli, güvenilir ambalajlı ürünler seçilmeli.</li>
+            <li>Çiğ sebze ve meyveler kesilmeden ve soyulmadan önce bol akan su altında yıkanmalı.</li>
+            <li>Et ve tavuk ürünleri pembe kalmayacak şekilde tam pişirilmeli.</li>
+            <li>Buzdolabına dökülen et ve süt suları bekletilmeden sıcak sabunlu suyla temizlenmeli.</li>
+            <li>Kapalı ambalajlı veya kaynatılmış içme suları tercih edilmeli.</li>
+          </ol>
+          <p>Özdemir, <strong>"Kaynat, pişir, soy"</strong> kuralının tüm gıda kaynaklı enfeksiyonlara karşı en güçlü kalkan olduğunu belirtti.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 27,
+    headlineNumber: 2,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
