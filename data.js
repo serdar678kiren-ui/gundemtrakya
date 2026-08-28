@@ -23,6 +23,36 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 118, 
+    articleId: 30, 
+    title: "ÇOSB itfaiye filosuna 32 metrelik mafsallı merdivenli dev itfaiye aracı kazandırıldı!", 
+    time: "22:35" 
+  },
+  { 
+    id: 117, 
+    articleId: 29, 
+    title: "Çerkezköy 1911 Spor ile MBA Okulları arasında kadın futboluna güçlü destek protokolü!", 
+    time: "22:00" 
+  },
+  { 
+    id: 116, 
+    articleId: 28, 
+    title: "Beyaz peynirde Listeria tehlikesi: İrmet Hospital uzmanı uyardı, buzdolabında bile çoğalabiliyor!", 
+    time: "21:55" 
+  },
+  { 
+    id: 115, 
+    articleId: 27, 
+    title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin başarılı ameliyat sonrası sağlığına kavuştu!", 
+    time: "21:50" 
+  },
+  { 
+    id: 114, 
+    articleId: 26, 
+    title: "ÇOSB Kapaklı Devlet Hastanesi bölgenin sağlık yükünü omuzluyor: 115 yatak, 38 poliklinik ve 5 ameliyathane!", 
+    time: "21:45" 
+  },
+  { 
     id: 112, 
     articleId: 23, 
     title: "Ergene'de ortak kullanım alanlarına çirkin saldırı: Sağlık Mahallesi çocuk parkı tahrip edildi!", 
@@ -223,8 +253,109 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 29,
+    id: 30,
     headlineNumber: 1,
+    title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
+    spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
+    category: "SANAYİ & GÜNDEM",
+    categorySlug: "gundem",
+    location: "Tekirdağ / Çerkezköy OSB",
+    badgeColor: "red",
+    date: "28 Ağustos 2026 - 22:35",
+    readTime: "3 dk",
+    views: 84200,
+    likes: 5640,
+    reactions: { like: 3400, heart: 1850, clap: 1600, thinking: 40, angry: 2 },
+    socialPosts: [
+      {
+        user: "Çerkezköy OSB Sanayicileri",
+        handle: "@CerkezkoyOSB",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Bölge Müdürlüğümüzde düzenlenen törenle 32 metrelik mafsallı merdivenli yeni itfaiye aracımızı filomuza kattık. Sanayimizin ve çalışanlarımızın can ve mal güvenliği her zaman önceliğimizdir. 🚒🛡️ #ÇOSB #SanayiGüvenliği",
+        time: "15 dk önce",
+        likes: 2450,
+        shares: 720
+      },
+      {
+        user: "Trakya Sanayi Haber",
+        handle: "@TrakyaSanayi",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Yüksek katlı fabrikalar ve kimya tesisleri için devasa bir yatırım. ÇOSB İtfaiyesi bölgenin en donanımlı teşkilatlarından biri oldu! 👏",
+        time: "30 dk önce",
+        likes: 1640,
+        shares: 390
+      }
+    ],
+    comments: [
+      {
+        id: 3001,
+        author: "Fabrika Müdürü Selçuk",
+        city: "Çerkezköy / OSB 3. Kısım",
+        time: "10 dk önce",
+        content: "Sanayiciler olarak içimiz çok daha rahat. Yüksek binalarımıza ve bacalarımıza müdahale için 32 metrelik merdiven harika bir takviye. Emeği geçenlere teşekkürler.",
+        likes: 172
+      },
+      {
+        id: 3002,
+        author: "İş Güvenliği Uzmanı Burcu",
+        city: "Kapaklı / Sanayi Yolu",
+        time: "20 dk önce",
+        content: "Allah kullanmayı nasip etmesin ama varlığı can simidi gibi. ÇOSB yönetimine tebrikler.",
+        likes: 118
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Sanayi & Güvenlik Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/cosb-itfaiye-yeni-arac.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "ÇOSB İtfaiyesi'ne 32 Metrelik Yeni Araç",
+        pageImage: "img/cosb-itfaiye-yeni-arac.jpg",
+        content: `
+          <p class="lead"><strong>Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki sanayi tesislerinin güvenliğini artırmaya yönelik yatırımlarına bir yenisini daha ekledi.</strong></p>
+          <p>Yüksek katlı binalar ile ulaşılması güç endüstriyel noktalara hızlı ve etkili müdahale edebilme kapasitesine sahip <strong>32 metre mafsallı merdivenli</strong> yeni itfaiye aracı, düzenlenen törenle ÇOSB İtfaiye Amirliği envanterine katıldı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"En büyük dileğimiz bu araca hiçbir zaman ihtiyaç duyulmamasıdır; ancak olası acil durumlarda bölge sanayisinin can ve mal güvenliğini en üst seviyede koruyacak teknik donanıma sahibiz."</p>
+            <span>- ÇOSB Yönetim Kurulu Başkanlığı</span>
+          </div>
+          <p>Yeni araçla birlikte ÇOSB İtfaiyesi'nin yangın ve kurtarma operasyonlarında müdahale kabiliyeti bölge genelinde zirveye ulaştı.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Bölge Müdürlüğü'nde Teslim Töreni Düzenlendi",
+        pageImage: "img/cosb-itfaiye-yeni-arac.jpg",
+        content: `
+          <p class="lead"><strong>Sanayi Yönetimi ve Teknik Ekipler Törende Buluştu</strong></p>
+          <p>ÇOSB Bölge Müdürlüğü'nde gerçekleştirilen teslim törenine ÇOSB Yönetim Kurulu Başkanı <strong>Eyüp Sözdinler</strong>, Yönetim Kurulu Üyeleri M. Gürdal Adal, Mete Han Pekol, Levent Şişman, Bölge Müdürü <strong>F. Çiğdem Baykal</strong> ile yedek yönetim kurulu üyeleri ve direktörler katıldı.</p>
+          <p>Dualar eşliğinde kurban kesilerek hizmete alınan itfaiye aracının teknik özellikleri katılımcılara ayrıntılı şekilde tanıtıldı.</p>
+          <p>Aracın mafsallı merdiven sistemi sayesinde dar sokaklar, fabrika çatıları ve kimyasal depolama alanlarında yüksek manevra kabiliyeti sağladığı kaydedildi.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Yüksek Katlı Tesislerde Üstün Yangın Güvenliği",
+        pageImage: "img/cosb-itfaiye-yeni-arac.jpg",
+        content: `
+          <p class="lead"><strong>Teknolojik Donanım ve Kesintisiz Müdahale Hazırlığı</strong></p>
+          <p>Modern teknolojik ekipmanlarla donatılan 32 metrelik merdivenli itfaiye aracı; su, köpük ve kimyasal yangın söndürme modülleriyle yüksek basınçlı müdahale imkanı sunuyor.</p>
+          <p>ÇOSB İtfaiye Amirliği yetkilileri, eğitimli personeli ve yenilenen güçlü filosuyla 7 gün 24 saat sanayi bölgesinin güvenliği için teyakkuzda olduğunu bildirdi.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 29,
+    headlineNumber: 2,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
