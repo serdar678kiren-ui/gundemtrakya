@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 119, 
+    articleId: 31, 
+    title: "Tekirdağ'da dev huzur ve asayiş operasyonu: Çorlu ve Çerkezköy'de çok sayıda tutuklama!", 
+    time: "22:45" 
+  },
+  { 
     id: 118, 
     articleId: 30, 
     title: "ÇOSB itfaiye filosuna 32 metrelik mafsallı merdivenli dev itfaiye aracı kazandırıldı!", 
@@ -253,8 +259,109 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 30,
+    id: 31,
     headlineNumber: 1,
+    title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
+    spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
+    category: "ASAYİŞ & GÜVENLİK",
+    categorySlug: "gundem",
+    location: "Tekirdağ / Çorlu & Çerkezköy",
+    badgeColor: "red",
+    date: "28 Ağustos 2026 - 22:45",
+    readTime: "3 dk",
+    views: 96800,
+    likes: 6720,
+    reactions: { like: 4150, heart: 2100, clap: 1980, thinking: 55, angry: 8 },
+    socialPosts: [
+      {
+        user: "Tekirdağ Asayiş & Haber",
+        handle: "@TekirdagAsayis",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Emniyet ve Jandarma güçlerimizin Çorlu ve Çerkezköy merkezli huzur operasyonunda çok sayıda suç unsuru ele geçirildi, aranan şahıslar adalete teslim edildi. Tebrikler Türk Polisi ve Jandarması! 🚔🇹🇷 #TekirdağAsayiş",
+        time: "10 dk önce",
+        likes: 3120,
+        shares: 890
+      },
+      {
+        user: "Çorlu Güvenlik Platformu",
+        handle: "@CorluGuvenlik",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Sokaklarımızın güvenliği ve çocuklarımızın huzuru için denetimlerin artarak devam etmesini diliyoruz. Emniyet güçlerimizin eline sağlık. 👮‍♂️👏",
+        time: "25 dk önce",
+        likes: 1980,
+        shares: 440
+      }
+    ],
+    comments: [
+      {
+        id: 3101,
+        author: "Kemal Bey",
+        city: "Çorlu / Şeyhsinan",
+        time: "8 dk önce",
+        content: "Akşam saatlerinde yapılan denetimleri bizzat gördük, polisimiz çok titiz çalıştı. Huzurumuz için teşekkürler.",
+        likes: 214
+      },
+      {
+        id: 3102,
+        author: "Meryem Öğretmen",
+        city: "Çerkezköy / Kızılpınar",
+        time: "18 dk önce",
+        content: "Okul çevreleri ve parklarda yapılan bu uygulamalar aileler olarak bize büyük güven veriyor. Allah polisimizi korusun.",
+        likes: 186
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Asayiş & Güvenlik Editörü",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/gundem-trakya-tekirdag-asayis-post.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Tekirdağ Genelinde Geniş Çaplı Asayiş Uygulaması",
+        pageImage: "img/gundem-trakya-tekirdag-asayis-post.jpg",
+        content: `
+          <p class="lead"><strong>Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekipleri, halkın huzur ve sükununu sağlamak amacıyla il genelinde dev bir asayiş ve güvenlik operasyonu gerçekleştirdi.</strong></p>
+          <p>Özellikle sanayi kenti <strong>Çorlu, Çerkezköy ve Kapaklı</strong> ilçelerinde yoğunlaştırılan operasyonlarda; önceden belirlenen stratejik noktalarda, ana arterlerde ve umuma açık yerlerde kapsamlı Genel Bilgi Toplama (GBT) kontrolleri ve arama faaliyetleri icra edildi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Vatandaşlarımızın sokaklarda güvenle yürüyebilmesi, kamu düzeninin korunması ve suçluların adalete teslim edilmesi için denetimlerimiz 7 gün 24 saat aralıksız devam edecektir."</p>
+            <span>- Tekirdağ Emniyet ve Asayiş Şube Müdürlüğü</span>
+          </div>
+          <p>Operasyon kapsamında yüzlerce araç ve şahıs titizlikle sorgulandı.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Aranan Firariler Yakalandı, Çok Sayıda Tutuklama",
+        pageImage: "img/gundem-trakya-tekirdag-asayis-post.jpg",
+        content: `
+          <p class="lead"><strong>Kesinleşmiş Cezası Bulunan Şahıslar Cezaevine Gönderildi</strong></p>
+          <p>Denetimler sırasında; hırsızlık, dolandırıcılık, kasten yaralama ve çeşitli asayiş suçlarından haklarında kesinleşmiş hapis cezası ve yakalama kararı bulunan firari şahıslar emniyet güçlerinin dikkati sayesinde kıskıvrak yakalandı.</p>
+          <p>Yapılan aramalarda ele geçirilen ruhsatsız tabancalar, kurusıkı silahlar, mühimmat ve uyuşturucu maddelere el konuldu.</p>
+          <p>Emniyetteki sorgu ve adli işlemleri tamamlanan şüpheliler adliyeye sevk edilirken, çıkarıldıkları mahkemece tutuklanan şahıslar Kapalı Ceza İnfaz Kurumu'na teslim edildi.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Trafik Denetimleri ve Sıfır Tolerans Vurgusu",
+        pageImage: "img/gundem-trakya-tekirdag-asayis-post.jpg",
+        content: `
+          <p class="lead"><strong>Trafik ve Kamu Güvenliği Ekipleri Sahada</strong></p>
+          <p>Asayiş ekiplerinin yanı sıra Trafik Denetleme Şube Müdürlüğü ekipleri de alkol, ehliyetsiz araç kullanımı, abartı egzoz ve hız ihlallerine karşı sıfır tolerans prensibiyle denetimlerini sürdürdü.</p>
+          <p>Yetkililer, bölge genelinde huzur ve güven ortamının pekiştirilmesi için bu tür şok uygulamaların kararlılıkla devam edeceğini açıkladı.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 30,
+    headlineNumber: 2,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
