@@ -310,29 +310,32 @@ const headlineArticles = [
       {
         id: 3301,
         author: "Murat Demir",
-        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80",
-        date: "15 dk önce",
-        text: "Neyse ki canına bir zarar gelmeden ikna edilmiş. Polisimize ve itfaiyemize helal olsun.",
-        likes: 112,
-        replies: []
+        city: "Çerkezköy / Bağlık",
+        time: "15 dk önce",
+        content: "Neyse ki canına bir zarar gelmeden ikna edilmiş. Polisimize ve itfaiyemize helal olsun.",
+        likes: 112
       },
       {
         id: 3302,
         author: "Gülseren Hanım",
-        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80",
-        date: "5 dk önce",
-        text: "İnsanlar alın teriyle çalışıyor, haklarını zamanında verin ki kimse bu yollara başvurmak zorunda kalmasın.",
-        likes: 84,
-        replies: []
+        city: "Çorlu / Reşadiye",
+        time: "5 dk önce",
+        content: "İnsanlar alın teriyle çalışıyor, haklarını zamanında verin ki kimse bu yollara başvurmak zorunda kalmasın.",
+        likes: 84
       }
     ],
-    image: "images/cerkezkoy-elektrik-diregi-eylem.jpg",
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Asayiş & Güncel Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/cerkezkoy-elektrik-diregi-eylem.jpg",
     tags: ["Çerkezköy", "Asayiş", "Elektrik Direği", "İşçi Eylemi", "İtfaiye", "Polis", "Tekirdağ", "Son Dakika"],
-    slides: [
+    pages: [
       {
-        pageNumber: 1,
-        title: "İnşaat Önündeki Elektrik Direğine Çıkarak Eylem Başlattı",
-        image: "images/cerkezkoy-elektrik-diregi-eylem.jpg",
+        pageNum: 1,
+        pageTitle: "İnşaat Önündeki Elektrik Direğine Çıkarak Eylem Başlattı",
+        pageImage: "img/cerkezkoy-elektrik-diregi-eylem.jpg",
         content: `
           <p class="lead-p"><strong>Tekirdağ’ın Çerkezköy ilçesinde</strong> yapımı devam eden bir inşaatta çalıştığı öğrenilen işçi, uzun süredir hak ettiği parasını tahsil edemediğini iddia ederek inşaat yakınındaki elektrik direğine tırmandı.</p>
           <div class="news-highlight-box">
@@ -346,9 +349,9 @@ const headlineArticles = [
         `
       },
       {
-        pageNumber: 2,
-        title: "İtfaiye Hava Çadırı Açtı, Ekipler 2 Saat Boyunca Dil Döktü",
-        image: "images/cerkezkoy-elektrik-diregi-eylem.jpg",
+        pageNum: 2,
+        pageTitle: "İtfaiye Hava Çadırı Açtı, Ekipler 2 Saat Boyunca Dil Döktü",
+        pageImage: "img/cerkezkoy-elektrik-diregi-eylem.jpg",
         content: `
           <p>Olay yerine hızla intikal eden Tekirdağ Büyükşehir Belediyesi İtfaiye Daire Başkanlığı ekipleri, şahsın atlama ya da düşme ihtimaline karşı direğin altına özel hava yastığı (atlama çadırı) kurdu.</p>
           <div class="news-quote-box border-warning">
@@ -359,9 +362,9 @@ const headlineArticles = [
         `
       },
       {
-        pageNumber: 3,
-        title: "İkna Edilerek Aşağı İndirildi, Soruşturma Başlatıldı",
-        image: "images/cerkezkoy-elektrik-diregi-eylem.jpg",
+        pageNum: 3,
+        pageTitle: "İkna Edilerek Aşağı İndirildi, Soruşturma Başlatıldı",
+        pageImage: "img/cerkezkoy-elektrik-diregi-eylem.jpg",
         content: `
           <p>Polis ve yetkililerin yaklaşık <strong>2 saat süren yoğun ikna ve güvence verme çabalarının</strong> ardından, işçi ikna edilerek itfaiye merdiveni yardımıyla güvenli bir şekilde aşağıya indirildi.</p>
           <div class="news-stat-grid">
@@ -423,29 +426,32 @@ const headlineArticles = [
       {
         id: 3201,
         author: "Ahmet Vatansever",
-        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80",
-        date: "20 dk önce",
-        text: "Gencecik bir fidan, 15 yaşında stajyer evladımız... Yüreğimiz yandı. Ailesine ve tüm Çerkezköy'e sabırlar diliyorum.",
-        likes: 184,
-        replies: []
+        city: "Çerkezköy / Kızılpınar",
+        time: "20 dk önce",
+        content: "Gencecik bir fidan, 15 yaşında stajyer evladımız... Yüreğimiz yandı. Ailesine ve tüm Çerkezköy'e sabırlar diliyorum.",
+        likes: 184
       },
       {
         id: 3202,
         author: "Sevgi Çelik",
-        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80",
-        date: "10 dk önce",
-        text: "Mekanı cennet olsun, ailesine sonsuz sabır versin Allahım. Denetimlerin ihmal edilmemesi gerekiyor.",
-        likes: 92,
-        replies: []
+        city: "Kapaklı / Atatürk",
+        time: "10 dk önce",
+        content: "Mekanı cennet olsun, ailesine sonsuz sabır versin Allahım. Denetimlerin ihmal edilmemesi gerekiyor.",
+        likes: 92
       }
     ],
-    image: "images/cerkezkoy-stajyer-olay.jpg",
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Asayiş Editörü",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/cerkezkoy-stajyer-olay.jpg",
     tags: ["Çerkezköy", "Kızılpınar", "Asayiş", "Eren Gündoğdu", "İş Kazası", "Tekirdağ", "Son Dakika"],
-    slides: [
+    pages: [
       {
-        pageNumber: 1,
-        title: "Kızılpınar'da Feci Olay: 15 Yaşındaki Stajyer Akıma Kapıldı",
-        image: "images/cerkezkoy-stajyer-olay.jpg",
+        pageNum: 1,
+        pageTitle: "Kızılpınar'da Feci Olay: 15 Yaşındaki Stajyer Akıma Kapıldı",
+        pageImage: "img/cerkezkoy-stajyer-olay.jpg",
         content: `
           <p class="lead-p"><strong>Tekirdağ’ın Çerkezköy ilçesinde</strong> yapımı devam eden bir inşaatta stajyer olarak çalıştığı belirtilen 15 yaşındaki <strong>Eren Gündoğdu</strong>, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti.</p>
           <div class="news-highlight-box">
@@ -459,9 +465,9 @@ const headlineArticles = [
         `
       },
       {
-        pageNumber: 2,
-        title: "Hastanede Tüm Müdahalelere Rağmen Kurtarılamadı",
-        image: "images/cerkezkoy-stajyer-olay.jpg",
+        pageNum: 2,
+        pageTitle: "Hastanede Tüm Müdahalelere Rağmen Kurtarılamadı",
+        pageImage: "img/cerkezkoy-stajyer-olay.jpg",
         content: `
           <p>Olay yerine ulaşan sağlık ekiplerinin inşaat alanında yaptığı ilk kalp masajı ve acil müdahalenin ardından, ağır yaralı durumdaki 15 yaşındaki Eren Gündoğdu ambulansla <strong>Çerkezköy Devlet Hastanesi Acil Servisi'ne</strong> kaldırıldı.</p>
           <div class="news-quote-box border-danger">
@@ -472,9 +478,9 @@ const headlineArticles = [
         `
       },
       {
-        pageNumber: 3,
-        title: "Cenaze Adli Tıp'a Sevk Edildi, Jandarma Soruşturma Başlattı",
-        image: "images/cerkezkoy-stajyer-olay.jpg",
+        pageNum: 3,
+        pageTitle: "Cenaze Adli Tıp'a Sevk Edildi, Jandarma Soruşturma Başlattı",
+        pageImage: "img/cerkezkoy-stajyer-olay.jpg",
         content: `
           <p>Hayatını kaybeden 15 yaşındaki Eren Gündoğdu’nun cenazesi, kesin ölüm nedeninin ve elektrik akımının teknik detaylarının tespit edilmesi amacıyla otopsi yapılmak üzere <strong>Tekirdağ Adli Tıp Kurumu’na</strong> gönderildi.</p>
           <div class="news-stat-grid">
@@ -498,7 +504,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -599,7 +605,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 2,
+    headlineNumber: 4,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -700,7 +706,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 2,
+    headlineNumber: 5,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -801,7 +807,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 2,
+    headlineNumber: 6,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -914,7 +920,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 3,
+    headlineNumber: 7,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -1015,7 +1021,7 @@ const headlineArticles = [
   },
   {
     id: 26,
-    headlineNumber: 4,
+    headlineNumber: 8,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
