@@ -165,8 +165,109 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 28,
+    id: 29,
     headlineNumber: 1,
+    title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
+    spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
+    category: "SPOR & EĞİTİM",
+    categorySlug: "spor",
+    location: "Tekirdağ / Çerkezköy",
+    badgeColor: "red",
+    date: "28 Ağustos 2026 - 22:00",
+    readTime: "3 dk",
+    views: 69400,
+    likes: 4890,
+    reactions: { like: 2850, heart: 1640, clap: 1200, thinking: 30, angry: 2 },
+    socialPosts: [
+      {
+        user: "Çerkezköy 1911 Spor Kulübü",
+        handle: "@Cerkezkoy1911SK",
+        avatar: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "MBA Okulları ile gerçekleştirdiğimiz iş birliği protokolü kapsamında Kurumsal Tanıtım Müdürü Sayın Fikriye Gülverin Bayan Futbol Takımımızın antrenmanını ziyaret etti. Kadın futboluna ve genç sporcularımıza desteklerinden dolayı teşekkür ederiz. ⚽🔴⚪ #Çerkezköy1911 #MBAOkulları",
+        time: "15 dk önce",
+        likes: 2150,
+        shares: 640
+      },
+      {
+        user: "Trakya Amatör Spor",
+        handle: "@TrakyaSporHaber",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Kızlarımızın spora kazandırılması ve kadın futbolunun gelişimi için harika bir dayanışma. Tebrikler Çerkezköy 1911 ve MBA Okulları! 👏⚽",
+        time: "35 dk önce",
+        likes: 1420,
+        shares: 280
+      }
+    ],
+    comments: [
+      {
+        id: 2901,
+        author: "Meltem Yılmaz",
+        city: "Çerkezköy / Gazi Mustafa Kemal Paşa",
+        time: "12 dk önce",
+        content: "Kızım takımda oynuyor, bu tarz kurumsal eğitim kurumlarının spora el atması kız çocuklarımızın geleceği için çok kıymetli. Teşekkürler MBA ve 1911 Spor.",
+        likes: 138
+      },
+      {
+        id: 2902,
+        author: "Serkan Hoca",
+        city: "Kapaklı / Merkez",
+        time: "25 dk önce",
+        content: "Trakya'da kadın futbolunun gelişmesi adına atılmış örnek bir adım. Başarılar diliyorum genç sporcularımıza.",
+        likes: 94
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Spor Masası",
+      title: "Amatör & Altyapı Spor Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/cerkezkoy-1911-kadin-futbolu-mba.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "MBA Okulları ve 1911 Spor Güçlerini Birleştirdi",
+        pageImage: "img/cerkezkoy-1911-kadin-futbolu-mba.jpg",
+        content: `
+          <p class="lead"><strong>Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında gerçekleştirilen iş birliği protokolü kapsamında, kadın futboluna ve genç sporcuların geleceğine güçlü bir destek sağlandı.</strong></p>
+          <p>İş birliği çerçevesinde MBA Okulları Kurumsal Tanıtım Müdürü <strong>Sayın Fikriye Gülverin</strong>, Çerkezköy 1911 Spor Kulübü bünyesinde faaliyet gösteren Kadın Futbol Takımlarının antrenmanını sahada ziyaret etti.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Genç sporcularımızın geleceğine katkı sunmak ve kadın futbolunun bölgemizde hak ettiği güçlü konuma ulaşmasını sağlamak için eğitim ve sporu bir araya getiriyoruz."</p>
+            <span>- Çerkezköy 1911 Spor Kulübü & MBA Okulları Ortak Bildirisi</span>
+          </div>
+          <p>Çerkezköy 1911 Spor Kulübü yönetimi, nazik ziyareti ve kadın futboluna sunduğu değerli katkılar dolayısıyla Fikriye Gülverin’e teşekkürlerini sundu.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Antrenman Sahasında Genç Yıldızlara Moral Ziyareti",
+        pageImage: "img/cerkezkoy-1911-kadin-futbolu-mba.jpg",
+        content: `
+          <p class="lead"><strong>Fikriye Gülverin Çalışmaları Yerinde İnceledi</strong></p>
+          <p>Genç kadın futbolcuların gerçekleştirdiği yoğun antrenmanı saha kenarından ilgiyle takip eden MBA Okulları Kurumsal Tanıtım Müdürü Fikriye Gülverin, teknik ekip ve sporculardan yürütülen çalışmalar hakkında bilgi aldı.</p>
+          <p>Ziyaret sırasında, gençlerin erken yaşta spora yönlendirilmesi, sporda fırsat eşitliği ve kadın futbolcuların altyapı olanaklarının güçlendirilmesinin önemi vurgulandı.</p>
+          <p>Genç futbolcular, ziyaret dolayısıyla büyük moral bulurken, yeni sezon hedefleri doğrultusunda antrenman temposunu artırdı.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "'Birlikte Daha Güçlü, Birlikte Geleceğe'",
+        pageImage: "img/cerkezkoy-1911-kadin-futbolu-mba.jpg",
+        content: `
+          <p class="lead"><strong>Trakya Sporunda Örnek Sosyal Sorumluluk Adımı</strong></p>
+          <p>Gerçekleştirilen iş birliğinin, yalnızca sportif başarıyı değil, aynı zamanda genç kızların özgüven ve liderlik becerilerini geliştirmeyi amaçladığı belirtildi.</p>
+          <p><strong>"Birlikte Daha Güçlü, Birlikte Geleceğe"</strong> sloganıyla yürütülen bu anlamlı ortaklığın önümüzdeki süreçte yeni sosyal ve sportif projelerle devam edeceği ifade edildi.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 28,
+    headlineNumber: 2,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
