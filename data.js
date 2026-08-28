@@ -165,8 +165,109 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 26,
+    id: 27,
     headlineNumber: 1,
+    title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
+    spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
+    category: "GÜNDEM & SAĞLIK",
+    categorySlug: "gundem",
+    location: "Tekirdağ / Çerkezköy",
+    badgeColor: "red",
+    date: "28 Ağustos 2026 - 21:50",
+    readTime: "3 dk",
+    views: 78900,
+    likes: 5420,
+    reactions: { like: 3200, heart: 1850, clap: 1620, thinking: 45, angry: 2 },
+    socialPosts: [
+      {
+        user: "Çerkezköy Gündem",
+        handle: "@CerkezkoyHaber",
+        avatar: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Çerkezköy Belediye Başkan Yardımcımız Yunus Erçin'e geçmiş olsun dileklerimizi iletiyor, başarılı operasyonu gerçekleştiren İrmet Hastanesi hekimlerine teşekkür ediyoruz. 💐🏥 #Çerkezköy",
+        time: "15 dk önce",
+        likes: 1950,
+        shares: 540
+      },
+      {
+        user: "Trakya Yerel Yönetimler",
+        handle: "@TrakyaBelediye",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Başarılı ameliyat sonrası sağlığına kavuşan Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin'e geçmiş olsun diyor, en kısa sürede görevinin başında görmeyi diliyoruz. 🍀",
+        time: "35 dk önce",
+        likes: 1480,
+        shares: 290
+      }
+    ],
+    comments: [
+      {
+        id: 2701,
+        author: "Murat Güven",
+        city: "Çerkezköy / Bağlık Mah.",
+        time: "10 dk önce",
+        content: "Yunus Başkanımıza çok büyük geçmiş olsun. İrmet Hastanesi'nin tecrübeli cerrahları sayesinde sağlığına kavuşmasına çok sevindik. Allah şifalar versin.",
+        likes: 156
+      },
+      {
+        id: 2702,
+        author: "Selma Aydın",
+        city: "Çerkezköy / Gazi Mustafa Kemal Paşa",
+        time: "25 dk önce",
+        content: "Belediyemizin çalışkan başkan yardımcısına acil şifalar diliyorum. Dualarımız sizinle.",
+        likes: 112
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Yerel Yönetim & Sağlık Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/yunus-ercin-irmet-hastanesi.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "İrmet Hastanesi'nde Başarılı Operasyon",
+        pageImage: "img/yunus-ercin-irmet-hastanesi.jpg",
+        content: `
+          <p class="lead"><strong>Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi’nde gerçekleştirilen başarılı cerrahi operasyonun ardından sağlığına kavuştu.</strong></p>
+          <p>Genel Cerrahi Uzmanı <strong>Dr. Hüsamettin Bayraktar</strong> tarafından gerçekleştirilen ameliyatın ardından gerekli tedavi ve takip süreci tamamlanan Yunus Erçin’in genel sağlık durumunun oldukça iyi olduğu öğrenildi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Başarılı bir operasyon geçiren Başkan Yardımcımız Yunus Erçin'in sağlık durumu gayet iyi, tedavi süreci tamamlandı ve taburcu aşamasına gelindi."</p>
+            <span>- Özel İrmet Hastanesi Başhekimliği Açıklaması</span>
+          </div>
+          <p>Erçin'in ameliyat haberinin ardından siyaset, iş dünyası ve sivil toplum kuruluşlarından çok sayıda geçmiş olsun mesajı iletildi.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Op. Dr. İrfan Tombalak'tan Ziyaret",
+        pageImage: "img/yunus-ercin-irmet-hastanesi.jpg",
+        content: `
+          <p class="lead"><strong>Hastane Yönetiminden Anlamlı Geçmiş Olsun Ziyareti</strong></p>
+          <p>İrmet Hastanesi Yönetim Kurulu Başkanı <strong>Op. Dr. İrfan Tombalak</strong> ve hastane üst düzey yöneticileri, tedavi sürecinin ardından Yunus Erçin’i odasında ziyaret etti.</p>
+          <p>Gerçekleştirilen samimi ziyarette Başkan Yardımcısı Erçin’e geçmiş olsun dilekleri iletilirken, taburcu süreci ve istirahat dönemi hakkında detaylı bilgi paylaşıldı.</p>
+          <p>Op. Dr. İrfan Tombalak ve hastane yönetimi, Erçin'e sağlıklı, uzun ve başarılı bir çalışma hayatı temennisinde bulundu.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Yunus Erçin'den Teşekkür Mesajı",
+        pageImage: "img/yunus-ercin-irmet-hastanesi.jpg",
+        content: `
+          <p class="lead"><strong>"Tüm Sağlık Çalışanlarımıza ve Arayan Hemşehrilerime Teşekkür Ederim"</strong></p>
+          <p>Başarılı geçen cerrahi müdahalenin ardından yeniden sağlığına kavuşan Çerkezköy Belediye Başkan Yardımcısı <strong>Yunus Erçin</strong>, ameliyatı gerçekleştiren Dr. Hüsamettin Bayraktar'a, nazik ziyaretlerinden ötürü Op. Dr. İrfan Tombalak ve tüm İrmet Hastanesi sağlık personeline teşekkürlerini sundu.</p>
+          <p>Erçin, kısa bir istirahat sürecinin ardından Çerkezköy halkına hizmet etmek üzere görevinin başına döneceğini belirtti.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 26,
+    headlineNumber: 2,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
