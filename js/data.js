@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 121, 
+    articleId: 33, 
+    title: "Çerkezköy'de sıcak saatler: Alacağını tahsil edemediğini öne süren işçi elektrik direğine çıktı, 2 saatte ikna edildi!", 
+    time: "01:12" 
+  },
+  { 
     id: 120, 
     articleId: 32, 
     title: "Çerkezköy'de feci olay: 15 yaşındaki stajyer Eren Gündoğdu inşaatta elektrik akımına kapılarak hayatını kaybetti!", 
@@ -265,8 +271,121 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 32,
+    id: 33,
     headlineNumber: 1,
+    title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
+    spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
+    category: "ASAYİŞ & GÜNDEM",
+    categorySlug: "asayis",
+    location: "Tekirdağ / Çerkezköy",
+    badgeColor: "red",
+    date: "29 Ağustos 2026 - 01:12",
+    readTime: "3 dk",
+    views: 94200,
+    likes: 6310,
+    reactions: { like: 1980, heart: 420, clap: 850, thinking: 1820, angry: 2100 },
+    socialPosts: [
+      {
+        user: "Çerkezköy Haber Merkezi",
+        handle: "@CerkezkoyHaber",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Çerkezköy'de yürekleri ağza getiren dakikalar. Alacağını alamadığı için direğe çıkan işçi kardeşimiz 2 saatlik ikna sonucu indirildi. Emeğin ve alın terinin karşılığı geciktirilmemeli. ⚠️🏗️ #Çerkezköy",
+        time: "10 dk önce",
+        likes: 3120,
+        shares: 640
+      },
+      {
+        user: "Trakya Emek Platformu",
+        handle: "@TrakyaEmek",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Çalışanların hak edişlerinin zamanında ödenmesi konusunda yetkililerin inşaat sektöründe denetimleri artırması elzemdir.",
+        time: "20 dk önce",
+        likes: 1850,
+        shares: 420
+      }
+    ],
+    comments: [
+      {
+        id: 3301,
+        author: "Murat Demir",
+        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80",
+        date: "15 dk önce",
+        text: "Neyse ki canına bir zarar gelmeden ikna edilmiş. Polisimize ve itfaiyemize helal olsun.",
+        likes: 112,
+        replies: []
+      },
+      {
+        id: 3302,
+        author: "Gülseren Hanım",
+        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80",
+        date: "5 dk önce",
+        text: "İnsanlar alın teriyle çalışıyor, haklarını zamanında verin ki kimse bu yollara başvurmak zorunda kalmasın.",
+        likes: 84,
+        replies: []
+      }
+    ],
+    image: "images/cerkezkoy-elektrik-diregi-eylem.jpg",
+    tags: ["Çerkezköy", "Asayiş", "Elektrik Direği", "İşçi Eylemi", "İtfaiye", "Polis", "Tekirdağ", "Son Dakika"],
+    slides: [
+      {
+        pageNumber: 1,
+        title: "İnşaat Önündeki Elektrik Direğine Çıkarak Eylem Başlattı",
+        image: "images/cerkezkoy-elektrik-diregi-eylem.jpg",
+        content: `
+          <p class="lead-p"><strong>Tekirdağ’ın Çerkezköy ilçesinde</strong> yapımı devam eden bir inşaatta çalıştığı öğrenilen işçi, uzun süredir hak ettiği parasını tahsil edemediğini iddia ederek inşaat yakınındaki elektrik direğine tırmandı.</p>
+          <div class="news-highlight-box">
+            <i class="fas fa-exclamation-triangle highlight-icon text-warning"></i>
+            <div>
+              <h4>Çevrede Büyük Panik ve Hareketlilik</h4>
+              <p>Direğin tepesine kadar çıkan şahsı gören çevredeki vatandaşlar ve diğer işçiler durumu derhal 112 Acil Çağrı Merkezi'ne bildirdi.</p>
+            </div>
+          </div>
+          <p>İhbar üzerine olay yerine çok sayıda polis, itfaiye ve sağlık ekibi sevk edilirken, polis ekipleri çevrede geniş güvenlik şeridi oluşturdu.</p>
+        `
+      },
+      {
+        pageNumber: 2,
+        title: "İtfaiye Hava Çadırı Açtı, Ekipler 2 Saat Boyunca Dil Döktü",
+        image: "images/cerkezkoy-elektrik-diregi-eylem.jpg",
+        content: `
+          <p>Olay yerine hızla intikal eden Tekirdağ Büyükşehir Belediyesi İtfaiye Daire Başkanlığı ekipleri, şahsın atlama ya da düşme ihtimaline karşı direğin altına özel hava yastığı (atlama çadırı) kurdu.</p>
+          <div class="news-quote-box border-warning">
+            <i class="fas fa-user-shield quote-icon text-primary"></i>
+            <p>Müzakereci polisler ve jandarma ekipleri, metrelerce yükseklikteki direğin tepesindeki işçiyle kesintisiz iletişim kurarak sakinleştirmeye çalıştı.</p>
+          </div>
+          <p>TEDAŞ/TREDAŞ ekipleri ise olası bir elektrik faciasını önlemek amacıyla bölgedeki hattın enerjisini kontrollü olarak kesti.</p>
+        `
+      },
+      {
+        pageNumber: 3,
+        title: "İkna Edilerek Aşağı İndirildi, Soruşturma Başlatıldı",
+        image: "images/cerkezkoy-elektrik-diregi-eylem.jpg",
+        content: `
+          <p>Polis ve yetkililerin yaklaşık <strong>2 saat süren yoğun ikna ve güvence verme çabalarının</strong> ardından, işçi ikna edilerek itfaiye merdiveni yardımıyla güvenli bir şekilde aşağıya indirildi.</p>
+          <div class="news-stat-grid">
+            <div class="stat-card">
+              <span class="stat-val text-primary">2 Saat</span>
+              <span class="stat-lbl">İkna Süreci</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-val text-success">Güvenli</span>
+              <span class="stat-lbl">Tahliye Edildi</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-val text-danger">TREDAŞ</span>
+              <span class="stat-lbl">Enerji Kesintisi</span>
+            </div>
+          </div>
+          <p>Sağlık ekipleri tarafından ilk kontrolleri yapılan şahıs, ifadesi alınmak ve mağduriyetinin tespiti amacıyla polis merkezine götürüldü. Olayla ilgili adli tahkikat başlatıldı.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 32,
+    headlineNumber: 2,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
