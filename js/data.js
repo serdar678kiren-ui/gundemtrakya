@@ -331,21 +331,31 @@ const headlineArticles = [
     },
     image: "img/cerkezkoy-elektrik-diregi-eylem.jpg",
     tags: ["Çerkezköy", "Asayiş", "Elektrik Direği", "İşçi Eylemi", "İtfaiye", "Polis", "Tekirdağ", "Son Dakika"],
+    content: `
+      <p class="lead"><strong>Tekirdağ’ın Çerkezköy ilçesinde çalıştığı inşaattan uzun süredir hak edişini tahsil edemediğini öne süren bir işçi, cadde üzerindeki yüksek gerilim elektrik direğine çıkarak eylem yaptı.</strong></p>
+      <p>Olayı gören vatandaşların panikle 112 Acil Çağrı Merkezi'ne haber vermesi üzerine bölgeye çok sayıda polis, itfaiye, sağlık ve TREDAŞ ekibi sevk edildi. İtfaiye ekipleri şahsın düşme ihtimaline karşı hava yastığı açarken, TREDAŞ olası bir akım faciasını engellemek için bölgenin elektriğini kesti.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Müzakereci polis ekiplerimizin yaklaşık 2 saat süren titiz ikna çalışmaları neticesinde işçi sağ salim indirildi."</p>
+        <span>- Çerkezköy İlçe Emniyet Müdürlüğü</span>
+      </div>
+      <p>Sağlık kontrolleri yapılan işçi, ifadesi alınmak ve alacak mağduriyetinin tespiti amacıyla polis merkezine götürüldü. Olayla ilgili geniş çaplı inceleme başlatıldı.</p>
+    `,
     pages: [
       {
         pageNum: 1,
         pageTitle: "İnşaat Önündeki Elektrik Direğine Çıkarak Eylem Başlattı",
         pageImage: "img/cerkezkoy-elektrik-diregi-eylem.jpg",
         content: `
-          <p class="lead-p"><strong>Tekirdağ’ın Çerkezköy ilçesinde</strong> yapımı devam eden bir inşaatta çalıştığı öğrenilen işçi, uzun süredir hak ettiği parasını tahsil edemediğini iddia ederek inşaat yakınındaki elektrik direğine tırmandı.</p>
-          <div class="news-highlight-box">
-            <i class="fas fa-exclamation-triangle highlight-icon text-warning"></i>
-            <div>
-              <h4>Çevrede Büyük Panik ve Hareketlilik</h4>
-              <p>Direğin tepesine kadar çıkan şahsı gören çevredeki vatandaşlar ve diğer işçiler durumu derhal 112 Acil Çağrı Merkezi'ne bildirdi.</p>
-            </div>
+          <p class="lead"><strong>Tekirdağ’ın Çerkezköy ilçesinde yapımı süren bir inşaatta çalıştığı öğrenilen işçi, uzun süredir hak ettiği maaş ve alacaklarını tahsil edemediğini iddia ederek metrelerce yükseklikteki elektrik direğine tırmandı.</strong></p>
+          <p>Cadde üzerindeki elektrik direğinin tepesine çıkan şahsı gören mahalle sakinleri ve çevredeki işçiler büyük panik yaşadı. Durumun 112 Acil Çağrı Merkezi’ne bildirilmesi üzerine olay yerine polis, itfaiye, sağlık ve elektrik dağıtım şirketi (TREDAŞ) ekipleri yönlendirildi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Direğin tepesinden seslenen işçi, alın terinin karşılığını alamadığını ve mağdur edildiğini belirterek yetkililerden yardım istedi."</p>
+            <span>- Görgü Tanıkları ve Olay Yeri Tutanakları</span>
           </div>
-          <p>İhbar üzerine olay yerine çok sayıda polis, itfaiye ve sağlık ekibi sevk edilirken, polis ekipleri çevrede geniş güvenlik şeridi oluşturdu.</p>
+          <p>Polis ekipleri güvenlik gerekçesiyle caddeyi araç ve yaya trafiğine kapatarak çevrede geniş bir güvenlik kordonu oluşturdu.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
         `
       },
       {
@@ -353,12 +363,16 @@ const headlineArticles = [
         pageTitle: "İtfaiye Hava Çadırı Açtı, Ekipler 2 Saat Boyunca Dil Döktü",
         pageImage: "img/cerkezkoy-elektrik-diregi-eylem.jpg",
         content: `
-          <p>Olay yerine hızla intikal eden Tekirdağ Büyükşehir Belediyesi İtfaiye Daire Başkanlığı ekipleri, şahsın atlama ya da düşme ihtimaline karşı direğin altına özel hava yastığı (atlama çadırı) kurdu.</p>
-          <div class="news-quote-box border-warning">
-            <i class="fas fa-user-shield quote-icon text-primary"></i>
-            <p>Müzakereci polisler ve jandarma ekipleri, metrelerce yükseklikteki direğin tepesindeki işçiyle kesintisiz iletişim kurarak sakinleştirmeye çalıştı.</p>
+          <p class="lead"><strong>İtfaiye Ekipleri Atlama Yastığı Kurdu, TREDAŞ Elektriği Kesti</strong></p>
+          <p>Olay yerine ulaşan Tekirdağ Büyükşehir Belediyesi İtfaiye Daire Başkanlığı ekipleri, şahsın atlama veya dengesini kaybedip düşme riskine karşı direğin alt tabanına derhal özel şişme hava yastığı kurdu.</p>
+          <p>Olası bir elektrik çarpması faciasını önlemek amacıyla TREDAŞ ekipleri bölgedeki ana elektrik hatlarının enerjisini kontrollü olarak kesti.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Müzakereci polis memurları ve zabıta ekipleri, direğin tepesindeki şahısla megafon ve merdiven yardımıyla kesintisiz iletişim kurarak sakinleştirmeye çalıştı."</p>
+            <span>- Çerkezköy Asayiş Büro Amirliği</span>
           </div>
-          <p>TEDAŞ/TREDAŞ ekipleri ise olası bir elektrik faciasını önlemek amacıyla bölgedeki hattın enerjisini kontrollü olarak kesti.</p>
+          <p>İşçinin mağduriyetinin çözüleceği yönünde verilen güvencelerle ikna süreci dakikalarca devam etti.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
         `
       },
       {
@@ -366,22 +380,15 @@ const headlineArticles = [
         pageTitle: "İkna Edilerek Aşağı İndirildi, Soruşturma Başlatıldı",
         pageImage: "img/cerkezkoy-elektrik-diregi-eylem.jpg",
         content: `
-          <p>Polis ve yetkililerin yaklaşık <strong>2 saat süren yoğun ikna ve güvence verme çabalarının</strong> ardından, işçi ikna edilerek itfaiye merdiveni yardımıyla güvenli bir şekilde aşağıya indirildi.</p>
-          <div class="news-stat-grid">
-            <div class="stat-card">
-              <span class="stat-val text-primary">2 Saat</span>
-              <span class="stat-lbl">İkna Süreci</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-val text-success">Güvenli</span>
-              <span class="stat-lbl">Tahliye Edildi</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-val text-danger">TREDAŞ</span>
-              <span class="stat-lbl">Enerji Kesintisi</span>
-            </div>
+          <p class="lead"><strong>2 Saatlik Çaba Sonuç Verdi, Şahıs Güvenle Tahliye Edildi</strong></p>
+          <p>Polis ve itfaiye ekiplerinin yaklaşık <strong>2 saat süren titiz ikna görüşmelerinin</strong> ardından, eylemini sonlandıran işçi itfaiye merdiveni sepetine alınarak güvenli bir şekilde yere indirildi.</p>
+          <p>Aşağıya indirilen işçiye ilk müdahale ve sağlık kontrolü olay yerinde hazır bekletilen 112 Acil Sağlık ambulansında yapıldı. Genel sağlık durumunun iyi olduğu belirlenen şahıs, ifadesi alınmak ve inşaat firmasıyla olan alacak uyuşmazlığının adli kayda geçirilmesi amacıyla polis merkezine götürüldü.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Olayın ardından cadde yeniden kontrollü şekilde trafiğe açıldı, bölgeye elektrik enerjisi verildi. Olayla ilgili adli tahkikat sürüyor."</p>
+            <span>- İlçe Emniyet Müdürlüğü Basın Bilgilendirmesi</span>
           </div>
-          <p>Sağlık ekipleri tarafından ilk kontrolleri yapılan şahıs, ifadesi alınmak ve mağduriyetinin tespiti amacıyla polis merkezine götürüldü. Olayla ilgili adli tahkikat başlatıldı.</p>
+          <p>Çerkezköy Kaymakamlığı ve Çalışma ve İş Kurumu yetkililerinin de inşaat sektöründeki işçi hak edişlerine yönelik denetimleri sıkılaştıracağı kaydedildi.</p>
         `
       }
     ]
@@ -447,21 +454,31 @@ const headlineArticles = [
     },
     image: "img/cerkezkoy-stajyer-olay.jpg",
     tags: ["Çerkezköy", "Kızılpınar", "Asayiş", "Eren Gündoğdu", "İş Kazası", "Tekirdağ", "Son Dakika"],
+    content: `
+      <p class="lead"><strong>Tekirdağ’ın Çerkezköy ilçesinde yapımı süren bir inşaatta stajyer olarak çalıştığı belirtilen 15 yaşındaki Eren Gündoğdu, elektrik tesisatı kablo çekimi sırasında akıma kapılarak hayatını kaybetti.</strong></p>
+      <p>Olay, Kızılpınar Namık Kemal Mahallesi'nde bulunan çok katlı bir inşaatta meydana geldi. Edinilen bilgilere göre, elektrik kablolarını çekerken aniden yüksek akıma maruz kalan genç stajyer ağır yaralandı. Çevredekilerin ihbarı üzerine olay yerine intikal eden sağlık ekiplerince Çerkezköy Devlet Hastanesi'ne kaldırılan Gündoğdu, tüm müdahalelere rağmen kurtarılamadı.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"15 yaşındaki Eren Gündoğdu'nun vefatı Çerkezköy'ü yasa boğdu. Cenaze otopsi için Adli Tıp Kurumu'na sevk edilirken, Jandarma inşaatta geniş çaplı adli soruşturma başlattı."</p>
+        <span>- Çerkezköy İlçe Jandarma Komutanlığı</span>
+      </div>
+      <p>Olayda ihmal iddiaları araştırılırken, inşaat yetkililerinin ifadelerine başvuruluyor.</p>
+    `,
     pages: [
       {
         pageNum: 1,
         pageTitle: "Kızılpınar'da Feci Olay: 15 Yaşındaki Stajyer Akıma Kapıldı",
         pageImage: "img/cerkezkoy-stajyer-olay.jpg",
         content: `
-          <p class="lead-p"><strong>Tekirdağ’ın Çerkezköy ilçesinde</strong> yapımı devam eden bir inşaatta stajyer olarak çalıştığı belirtilen 15 yaşındaki <strong>Eren Gündoğdu</strong>, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti.</p>
-          <div class="news-highlight-box">
-            <i class="fas fa-bolt highlight-icon text-danger"></i>
-            <div>
-              <h4>Olay Yeri: Kızılpınar Namık Kemal Mahallesi</h4>
-              <p>Edinilen bilgilere göre, inşaatta elektrik tesisatı kablo çekimi yapıldığı sırada Eren Gündoğdu, henüz belirlenemeyen bir nedenle yüksek akıma kapılarak ağır yaralandı.</p>
-            </div>
+          <p class="lead"><strong>Tekirdağ’ın Çerkezköy ilçesinde yapımı devam eden bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi yaptığı sırada elektrik akımına kapılarak ağır yaralandı.</strong></p>
+          <p>Olay, Çerkezköy'e bağlı <strong>Kızılpınar Namık Kemal Mahallesi’nde</strong> bulunan inşaat şantiyesinde meydana geldi. Edinilen ilk bilgilere göre, elektrik tesisatında kablo döşeme ve çekim çalışması yürüten Eren Gündoğdu, henüz belirlenemeyen bir teknik arıza veya kaçak nedeniyle yüksek elektrik akımına kapıldı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Genç stajyerin akıma kapıldığını gören inşaattaki diğer ustalar ve çevredekiler derhal şalterleri kapatıp 112 Acil Sağlık ve Jandarma ekiplerine haber verdi."</p>
+            <span>- Olay Yeri İlk İnceleme Raporu</span>
           </div>
-          <p>Çevredekilerin ve inşaattaki diğer çalışanların büyük panikle 112 Acil Çağrı Merkezi'ne ihbarda bulunması üzerine olay yerine hızla sağlık ve jandarma ekipleri sevk edildi.</p>
+          <p>Kısa sürede şantiye alanına ulaşan sağlık personeli, kalbi duran genç stajyere olay yerinde dakikalarca kalp masajı uyguladı.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
         `
       },
       {
@@ -469,12 +486,16 @@ const headlineArticles = [
         pageTitle: "Hastanede Tüm Müdahalelere Rağmen Kurtarılamadı",
         pageImage: "img/cerkezkoy-stajyer-olay.jpg",
         content: `
-          <p>Olay yerine ulaşan sağlık ekiplerinin inşaat alanında yaptığı ilk kalp masajı ve acil müdahalenin ardından, ağır yaralı durumdaki 15 yaşındaki Eren Gündoğdu ambulansla <strong>Çerkezköy Devlet Hastanesi Acil Servisi'ne</strong> kaldırıldı.</p>
-          <div class="news-quote-box border-danger">
-            <i class="fas fa-heart-broken quote-icon text-danger"></i>
-            <p>Hastanede doktorların ve acil tıp uzmanlarının tüm yoğun çabalarına ve müdahalelerine rağmen genç stajyer kurtarılamayarak hayatını kaybetti.</p>
+          <p class="lead"><strong>Çerkezköy Devlet Hastanesi'nde Yaşam Mücadelesini Kaybetti</strong></p>
+          <p>Sağlık ekiplerinin ilk müdahalesinin ardından ambulansla hızla <strong>Çerkezköy Devlet Hastanesi Acil Servisi’ne</strong> sevk edilen 15 yaşındaki Eren Gündoğdu, kırmızı alanda acil ameliyata ve yoğun bakıma alındı.</p>
+          <p>Hastanede görevli uzman hekimlerin ve acil tıp ekiplerinin tüm yoğun çabalarına ve elektroşok müdahalelerine rağmen gencecik stajyer kurtarılamayarak hayatını kaybetti.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Acı haberi alarak hastane bahçesine koşan Gündoğdu ailesi, okul arkadaşları ve yakınları gözyaşlarına boğuldu, hastane önünde derin bir hüzün yaşandı."</p>
+            <span>- Çerkezköy Gündem Muhabiri</span>
           </div>
-          <p>Acı haberi alarak hastane bahçesine koşan Gündoğdu'nun ailesi, yakınları ve okul arkadaşları derin bir üzüntü ve gözyaşına boğuldu.</p>
+          <p>Gencecik yaşta iş kazası kurbanı olan Eren Gündoğdu'nun vefatı tüm Çerkezköy ve Tekirdağ kamuoyunda büyük bir üzüntü ve tepki yarattı.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
         `
       },
       {
@@ -482,22 +503,15 @@ const headlineArticles = [
         pageTitle: "Cenaze Adli Tıp'a Sevk Edildi, Jandarma Soruşturma Başlattı",
         pageImage: "img/cerkezkoy-stajyer-olay.jpg",
         content: `
-          <p>Hayatını kaybeden 15 yaşındaki Eren Gündoğdu’nun cenazesi, kesin ölüm nedeninin ve elektrik akımının teknik detaylarının tespit edilmesi amacıyla otopsi yapılmak üzere <strong>Tekirdağ Adli Tıp Kurumu’na</strong> gönderildi.</p>
-          <div class="news-stat-grid">
-            <div class="stat-card">
-              <span class="stat-val text-danger">15</span>
-              <span class="stat-lbl">Yaşındaki Stajyer</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-val text-primary">Jandarma</span>
-              <span class="stat-lbl">Adli Soruşturma</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-val text-warning">Adli Tıp</span>
-              <span class="stat-lbl">Otopsi İncelemesi</span>
-            </div>
+          <p class="lead"><strong>Adli Tıp Otopsi İncelemesi Başlattı, İhmaller Araştırılıyor</strong></p>
+          <p>Hayatını kaybeden 15 yaşındaki Eren Gündoğdu’nun cenazesi, kesin ölüm nedeninin ve elektrik akımının vücuttaki tahribatının tespiti amacıyla otopsi yapılmak üzere <strong>Tekirdağ Adli Tıp Kurumu Morgu’na</strong> gönderildi.</p>
+          <p>Kızılpınar Jandarma Karakol Komutanlığı ve Olay Yeri İnceleme ekipleri, inşaat sahasında detaylı inceleme yaparak elektrik panoları, kablo hatları ve kaçak akım rölelerini teknik teste tabi tuttu.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"İnşaatta stajyer olarak çalıştırılan 15 yaşındaki bir çocuğun iş sağlığı ve güvenliği şartlarının tam sağlanıp sağlanmadığı, ihmal olup olmadığı adli ve idari soruşturmayla aydınlatılacaktır."</p>
+            <span>- Çerkezköy Cumhuriyet Başsavcılığı</span>
           </div>
-          <p>Jandarma ekipleri ve olay yeri inceleme uzmanları, inşaat alanında elektrik tesisatının uygunluğu, güvenlik şartları ve ihmal iddialarının aydınlatılması amacıyla geniş çaplı adli ve idari soruşturma başlattı.</p>
+          <p>İnşaat firması yetkilileri ve şantiye şefinin ifadelerine başvurulurken, adli tahkikat çok yönlü olarak sürdürülüyor.</p>
         `
       }
     ]
