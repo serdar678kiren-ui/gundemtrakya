@@ -165,8 +165,114 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 25,
+    id: 26,
     headlineNumber: 1,
+    title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
+    spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
+    category: "SAĞLIK & HİZMET",
+    categorySlug: "saglik",
+    location: "Tekirdağ / Kapaklı",
+    badgeColor: "blue",
+    date: "28 Ağustos 2026 - 21:45",
+    readTime: "4 dk",
+    views: 91200,
+    likes: 6840,
+    reactions: { like: 4100, heart: 2400, clap: 1850, thinking: 90, angry: 8 },
+    socialPosts: [
+      {
+        user: "Kapaklı Sağlık Gündemi",
+        handle: "@KapakliSaglik",
+        avatar: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "ÇOSB Kapaklı Devlet Hastanesi'nin modern altyapısı ve yeni branşları Kapaklı ve Çerkezköy halkı için dev bir kazanım oldu. Emeği geçen ÇOSB yönetimine ve hekimlerimize teşekkürler. 🏥🩺 #Kapaklı #ÇOSB",
+        time: "20 dk önce",
+        likes: 2150,
+        shares: 730
+      },
+      {
+        user: "Trakya Sanayi & Sağlık",
+        handle: "@TrakyaGuncel",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Sanayi kenti Kapaklı'da 64 bin metrekarelik dev hastane kompleksiyle sağlık hizmetlerine erişim kolaylaştı. 5 ameliyathane ve 38 poliklinik 7/24 hizmette! 💉",
+        time: "45 dk önce",
+        likes: 1620,
+        shares: 380
+      }
+    ],
+    comments: [
+      {
+        id: 2601,
+        author: "Hasan Çetin",
+        city: "Kapaklı / İsmetpaşa",
+        time: "15 dk önce",
+        content: "Eskiden muayene ve ameliyat için çevre il ve ilçelere gitmek zorunda kalıyorduk. Yeni binada doktorlarımız çok ilgili, randevular çok rahat. Kapaklı'mıza çok yakıştı.",
+        likes: 184
+      },
+      {
+        id: 2602,
+        author: "Ayşe Demirkan",
+        city: "Çerkezköy / Kızılpınar",
+        time: "30 dk önce",
+        content: "Gebe okulu ve doğumhane hizmetleri harika. ÇOSB sanayicilerine ve Sağlık Bakanlığı'na bu devasa eser için teşekkür ederiz.",
+        likes: 142
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Sağlık, Sanayi & Bölge Muhabiri",
+      avatar: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=150&q=80"
+    },
+    image: "img/cosb-kapakli-devlet-hastanesi.jpg",
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "ÇOSB'den Kapaklı'ya Dev Sağlık Kompleksi",
+        pageImage: "img/cosb-kapakli-devlet-hastanesi.jpg",
+        content: `
+          <p class="lead"><strong>Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi, yeni modern hizmet binasında bölge halkına geniş bir yelpazede sağlık hizmeti sunmaya devam ediyor.</strong></p>
+          <p>Toplam <strong>64 bin 636 metrekare arsa alanı</strong> ve <strong>19 bin 708 metrekare kapalı alanı</strong> bulunan hastane; geniş otopark kapasitesi, modern mimarisi ve güçlü tıbbi kadrosuyla Tekirdağ'ın en önemli sağlık merkezlerinden biri haline geldi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"115 yatak kapasitesi, 38 polikliniği ve 5 tam donanımlı ameliyathanesiyle ÇOSB Kapaklı Devlet Hastanesi, yalnızca Kapaklı'nın değil tüm bölgenin sağlık yükünü omuzluyor."</p>
+            <span>- Sağlık Bakanlığı & Tekirdağ İl Sağlık Müdürlüğü Raporu</span>
+          </div>
+          <p>Hastanenin kurumsal kadrosunda Dahiliye'den Kardiyoloji'ye, Genel Cerrahi'den Ortopedi'ye kadar <strong>39 uzman hekim</strong> kesintisiz görev yapıyor.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "24 Saat Acil Müdahale ve Cerrahi Kapasite",
+        pageImage: "img/cosb-kapakli-devlet-hastanesi.jpg",
+        content: `
+          <p class="lead"><strong>38 Poliklinik ve 5 Ameliyathanede İleri Tıp Hizmetleri</strong></p>
+          <p>Hastanede Dahiliye, Fiziksel Tıp ve Rehabilitasyon, Ortopedi, Nöroloji, Kardiyoloji, KBB, Enfeksiyon, Genel Cerrahi, Dermatoloji, Çocuk Sağlığı, Diş, Üroloji, Göz ve Göğüs Hastalıkları branşlarında hasta kabulü yapılıyor.</p>
+          <p><strong>24 Saat Kesintisiz Acil Servis:</strong></p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>🚑 <strong>16 Yataklı Yetişkin & 6 Yataklı Çocuk</strong> Müşahede Alanı</li>
+            <li>🩺 Resüsitasyon (Yeniden Canlandırma) ve Acil Müdahale Odası</li>
+            <li>💉 Alçı, Aşı, Psikoteknik ve Acil Obstetri Üniteleri</li>
+          </ul>
+          <p>Hastanede bulunan <strong>5 tam donanımlı ameliyathanede</strong> Genel Cerrahi, Ortopedi ve Kadın Doğum operasyonları başarıyla gerçekleştiriliyor.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Yoğun Bakım, Endoskopi ve Anne Dostu Doğumhane",
+        pageImage: "img/cosb-kapakli-devlet-hastanesi.jpg",
+        content: `
+          <p class="lead"><strong>Yoğun Bakımdan Palyatife Özellikli Sağlık Hizmetleri</strong></p>
+          <p>ÇOSB Kapaklı Devlet Hastanesi bünyesinde 1. ve 2. seviye erişkin yoğun bakım, <strong>yenidoğan yoğun bakım</strong>, palyatif bakım merkezi, diyaliz ünitesi, evde sağlık hizmetleri ve KBRN birimi aktif olarak hizmet veriyor.</p>
+          <p>Ayrıca 2026 yılı itibarıyla hizmete giren <strong>Endoskopi Ünitesi</strong>'nde gastroskopi ve kolonoskopi işlemleri ileri teknoloji cihazlarla uygulanıyor. "Anne Dostu Hastane" vizyonuyla hizmet veren doğumhanede son aylarda yüzlerce sağlıklı doğum gerçekleştirildi.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 25,
+    headlineNumber: 2,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
