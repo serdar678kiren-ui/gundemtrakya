@@ -23,6 +23,13 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 123, 
+    articleId: 35, 
+    title: "Gündem Trakya resmi Instagram hesabı @gundemtrakya59 yayında: Anlık Trakya haberleri, Reels bültenleri ve özel içerikler için bizi takip edin!", 
+    time: "00:45" 
+  },
+
+  { 
     id: 122, 
     articleId: 34, 
     title: "Trakya siyasetinde tarihi deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer ve 4 ilçe başkanı CHP'den istifa edip Yeni Parti'ye geçti!", 
@@ -285,131 +292,156 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 34,
+    id: 35,
     headlineNumber: 1,
-    title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
-    spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
-    category: "SİYASET & GÜNDEM",
+    title: "Trakya'nın En Güçlü Dijital Haber Ağı: @gundemtrakya59 Instagram'da Yayında!",
+    spot: "Tekirdağ, Edirne ve Kırklareli'nin tüm sıcak gelişmeleri, canlı video bültenleri, son dakika flaş haberleri ve özel röportajlar anında cebinizde! Resmi Instagram hesabımızı takip edin, Trakya'dan habersiz kalmayın.",
+    category: "TOPLULUK & DUYURU",
     categorySlug: "gundem",
-    location: "Tekirdağ / Bölge Geneli",
+    location: "Trakya / Bölge Geneli",
     badgeColor: "red",
-    date: "30 Ağustos 2026 - 00:30",
-    readTime: "4 dk",
-    views: 142800,
-    likes: 9850,
-    reactions: { like: 4320, heart: 1980, clap: 2450, thinking: 3120, angry: 960 },
+    date: "30 Ağustos 2026 - 00:45",
+    readTime: "2 dk",
+    views: 215400,
+    likes: 18900,
+    reactions: { like: 8200, heart: 6400, clap: 3500, thinking: 400, angry: 50 },
     socialPosts: [
       {
-        user: "Tekirdağ Siyaset Kulisi",
-        handle: "@TekirdagKulis",
-        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-        platform: "twitter",
-        text: "Trakya'da taşlar yerinden oynadı! Candan Yüceer ve 4 ilçe belediye başkanının istifası bölge dengelerini baştan aşağı değiştirecek. #Tekirdağ #CandanYüceer #YeniParti",
-        time: "15 dk önce",
-        likes: 3820,
-        shares: 790
+        user: "Gündem Trakya Dijital Medya",
+        handle: "@gundemtrakya59",
+        avatar: "img/gundem-trakya-avatar-red.jpg",
+        platform: "instagram",
+        text: "Trakya'nın en dinamik haber topluluğuna sen de katıl! En sıcak gelişmeler, 60 saniyelik Reels bültenleri ve özel çekimlerle her an yanınızdayız. Takip etmeyi ve bildirimleri açmayı unutmayın! 📲🇹🇷 #gundemtrakya",
+        time: "5 dk önce",
+        likes: 5420,
+        shares: 1280
       },
       {
-        user: "Trakya Gündem Masası",
-        handle: "@TrakyaGundemi",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
-        platform: "facebook",
-        text: "Tekirdağ Büyükşehir Belediyesi ve Trakya siyasetinde yeni bir dönem başlıyor. Seçmen tabanındaki yankıları ve belediye projelerinin gidişatı çok konuşulacak.",
-        time: "30 dk önce",
-        likes: 2410,
-        shares: 510
+        user: "Trakya Gençlik & Haber Kulübü",
+        handle: "@TrakyaGenc",
+        avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Trakya'da haberleri en hızlı ve en kaliteli şekilde takip ettiğimiz sayfa @gundemtrakya59. Hem web sitesi hem Instagram sayfası muazzam çalışıyor. Kesinlikle takip edin! 👏🔥",
+        time: "15 dk önce",
+        likes: 3180,
+        shares: 640
       }
     ],
     comments: [
       {
-        id: 3401,
-        author: "Ahmet Kurt",
-        city: "Çorlu / Reşadiye",
-        time: "10 dk önce",
-        content: "Bölge siyasetinde gerçekten tarihi bir kırılma noktası. Tekirdağ için hayırlısı olsun, yatırımların ve hizmetlerin aksamaması en büyük temennimiz.",
-        likes: 148
+        id: 3501,
+        author: "Emre Can",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "5 dk önce",
+        content: "Instagram hesabınızı uzun süredir takip ediyorum, özellikle Reels video bültenleri ve anlık trafik/hava durumu hikayeleri harika!",
+        likes: 215
       },
       {
-        id: 3402,
-        author: "Selin Tokgöz",
-        city: "Süleymanpaşa / Hürriyet",
+        id: 3502,
+        author: "Ayşe Yılmaz",
+        city: "Çorlu / Orion Çevresi",
+        time: "12 dk önce",
+        content: "Trakya'da yerel haberciliğe seviye atlattınız. İhbar hattından da anında dönüş yapıyorsunuz, tebrikler!",
+        likes: 184
+      },
+      {
+        id: 3503,
+        author: "Kaan Demirtaş",
+        city: "Edirne / Merkez",
         time: "20 dk önce",
-        content: "18 yıllık emeğin ve milletvekilliğinin ardından alınan çok radikal ve cesur bir karar. Süreci ve Trakya'ya etkilerini yakından izleyeceğiz.",
-        likes: 96
-      },
-      {
-        id: 3403,
-        author: "Mehmet Varol",
-        city: "Çerkezköy / Gazi Mustafa Kemal Paşa",
-        time: "25 dk önce",
-        content: "Trakya'nın siyasi haritası yeniden çiziliyor. 4 ilçe belediye başkanının da aynı anda geçmesi çok güçlü bir mesaj.",
-        likes: 82
+        content: "Sınır kapıları ve yerel asayiş haberlerini ilk sizden duyuyoruz. Takipteyiz!",
+        likes: 142
       }
     ],
     author: {
-      name: "Gündem Trakya Haber Merkezi",
-      title: "Siyaset & Bölge Masası",
+      name: "Gündem Trakya Sosyal Medya Masası",
+      title: "Dijital Yayın Yönetmeni",
       avatar: "img/gundem-trakya-avatar-red.jpg"
     },
-    image: "img/candan-yuceer-chp-istifa.jpg",
-    tags: ["Candan Yüceer", "Tekirdağ Büyükşehir Belediyesi", "CHP", "Yeni Parti", "İstifa", "Siyaset", "Tekirdağ", "Son Dakika"],
+    image: "img/gundem-trakya-instagram-reklam.jpg",
+    tags: ["Instagram", "@gundemtrakya59", "Gündem Trakya", "Sosyal Medya", "Trakya Haber", "Reels", "Canlı Yayın", "Tekirdağ", "Edirne", "Kırklareli"],
     content: `
-      <p class="lead"><strong>Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır çatısı altında siyaset yaptığı Cumhuriyet Halk Partisi'nden (CHP) istifa ederek YENİ Parti saflarına katıldığını kamuoyuna açıkladı.</strong></p>
-      <p>Sosyal medya hesaplarından kapsamlı bir yazılı açıklama yapan Dr. Candan Yüceer, bu kararı hayatının en zor kararlarından biri olarak nitelendirdi. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarının da Yüceer ile birlikte hareket ederek partilerinden istifa edip YENİ Parti'ye geçtikleri açıklandı.</p>
-      <div class="article-quote">
-        <i class="fa-solid fa-quote-left"></i>
-        <p>"Butlan anlayışıyla örgütümüzün iradesine, üyelerimizin tercihine ve seçilmişlerin meşruiyetine gölge düşürülmesine sessiz kalmayacağım. Tekirdağ halkının bize emanet ettiği iradeyi korumak için yeni bir yola çıkıyorum."</p>
-        <span>- Dr. Candan Yüceer, Tekirdağ Büyükşehir Belediye Başkanı</span>
+      <p class="lead"><strong>Trakya’nın bağımsız ve ilkeli haber portalı Gündem Trakya, sosyal medyada da bölgenin en aktif ve en hızlı dijital topluluğu olmayı sürdürüyor!</strong></p>
+      <p>Tekirdağ, Edirne, Kırklareli, Çorlu, Çerkezköy ve tüm Trakya coğrafyasındaki en sıcak gelişmeler, asayiş olayları, ekonomi, tarım, kültür-sanat ve hava durumu raporları anbean resmi Instagram hesabımız <strong>@gundemtrakya59</strong> üzerinden takipçilerimizle buluşuyor.</p>
+      
+      <div class="instagram-cta-container">
+        <div class="instagram-cta-title">
+          <i class="fa-brands fa-instagram"></i>
+          <span>@gundemtrakya59 Resmi Instagram Kanalı</span>
+        </div>
+        <p class="instagram-cta-desc">Haberin en hızlı ve en güvenilir adresiyle tanışın. 60 saniyelik video bültenler, anlık son dakika hikayeleri ve canlı yayınlar için hemen takip edin!</p>
+        <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Hemen Takip Et 👉 @gundemtrakya59</span>
+        </a>
       </div>
-      <p>Trakya ve Türkiye siyasetinde geniş yankı uyandıran bu gelişmenin ardından Tekirdağ'da belediye meclis dengeleri ve bölge siyasetinin yeniden şekilleneceği belirtiliyor.</p>
+
+      <p>Trakya sokaklarındaki gelişmeleri ilk öğrenen siz olun. Siz de bölgenizdeki önemli olayları, yol durumlarını ve asayiş gelişmelerini bize DM yoluyla ulaştırabilir, sesinizi tüm Trakya'ya duyurabilirsiniz.</p>
     `,
     pages: [
       {
         pageNum: 1,
-        pageTitle: "18 Yıllık CHP Üyeliğine Son: 'Yeni Bir Yola Çıkıyorum'",
-        pageImage: "img/candan-yuceer-chp-istifa.jpg",
+        pageTitle: "Neden @gundemtrakya59? Trakya'nın Nabzı Anlık Hikayelerle Cebinizde!",
+        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
         content: `
-          <p class="lead"><strong>Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır gururla taşıdığı CHP rozetini çıkararak istifa kararını kamuoyuyla paylaştı.</strong></p>
-          <p>Yüceer, açıklamasında uzun yıllar Tekirdağ Milletvekili olarak görev yaptığını, 31 Mart Yerel Seçimlerinde ise Tekirdağ halkının rekor oyuyla Büyükşehir Belediye Başkanlığı görevine seçildiğini hatırlattı. Alınan istifa kararının kişisel bir tercih değil, ilke ve demokrasi mücadelesinin bir sonucu olduğunu vurguladı.</p>
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"18 yıldır ter döktüğüm, her kademesinde onurla mücadele ettiğim partimden, seçilmiş iradenin ve halkın kararlarının yok sayılması nedeniyle ayrılmak zorunda kaldım."</p>
-            <span>- Dr. Candan Yüceer</span>
+          <p class="lead"><strong>Gündem Trakya, modern habercilik vizyonuyla sosyal medyanın gücünü Trakya halkıyla buluşturuyor.</strong></p>
+          <p>Her gün yüz binlerce okuyucunun ziyaret ettiği portalımızın resmi Instagram hesabı <strong>@gundemtrakya59</strong>, Trakya'da yerel haberciliğin yeni nesil yüzü haline geldi. Sadece haber metinleri değil; olay yeri görüntüleri, canlı yayınlar, röportajlar ve özel dosya haberleri anlık hikayelerle takipçilerimize sunuluyor.</p>
+          
+          <div class="instagram-features-grid">
+            <div class="instagram-feat-item"><i class="fa-solid fa-bolt"></i> Anlık Son Dakika Bildirimleri</div>
+            <div class="instagram-feat-item"><i class="fa-solid fa-video"></i> 60 Saniyede Özet Reels Bülteni</div>
+            <div class="instagram-feat-item"><i class="fa-solid fa-car"></i> Sınır Kapıları & Canlı Trafik</div>
+            <div class="instagram-feat-item"><i class="fa-solid fa-cloud-sun"></i> Trakya Canlı Hava Durumu</div>
           </div>
-          <p>Yüceer'in istifa duyurusu sosyal medyada dakikalar içinde yüz binlerce etkileşim alarak Türkiye gündeminin ilk sıralarına yerleşti.</p>
+
+          <div class="instagram-cta-container">
+            <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
+              <i class="fa-brands fa-instagram"></i>
+              <span>@gundemtrakya59 Profiline Git & Takip Et</span>
+            </a>
+          </div>
           <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
         `
       },
       {
         pageNum: 2,
-        pageTitle: "4 İlçe Belediye Başkanı da Katıldı: Trakya'da Taşlar Yerinden Oynadı",
-        pageImage: "img/candan-yuceer-chp-istifa.jpg",
+        pageTitle: "Reels Bültenleri & Bölgesel DM İhbar Hattı: 'Sizden Gelenler'",
+        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
         content: `
-          <p class="lead"><strong>Tekirdağ'ın 4 Kritik İlçesinin Belediye Başkanları da Yüceer ile Birlikte YENİ Parti'ye Geçti</strong></p>
-          <p>Gelişmenin boyutunu artıran en kritik detay ise ilçelerden gelen toplu istifalar oldu. Edinilen bilgilere göre, Tekirdağ'ın merkezi ve önemli ilçeleri olan <strong>Süleymanpaşa, Çorlu, Şarköy ve Malkara belediye başkanları</strong> da eş zamanlı olarak CHP'den istifa ederek YENİ Parti saflarına katıldıklarını duyurdu.</p>
+          <p class="lead"><strong>Zamanınız Değerli: 60 Saniyede Tüm Trakya Gündemine Hakim Olun!</strong></p>
+          <p>Günün yoğun temposunda haberleri takip etmekte zorlanan vatandaşlarımız için özel olarak kurgulanan <strong>Dikey Reels Bültenlerimiz</strong> sayesinde, günün en kritik 5 haberini spiker anlatımı ve dinamik kurgularla sadece 1 dakikada izleyebilirsiniz.</p>
+          
           <div class="article-quote">
             <i class="fa-solid fa-quote-left"></i>
-            <p>"Tekirdağ yerel yönetimlerinde yaşanan bu toplu geçiş, Trakya siyasetinde son 20 yılın en büyük kırılma noktalarından biri olarak kaydedildi."</p>
-            <span>- Gündem Trakya Siyaset Masası Özel Analizi</span>
+            <p>"Trakya'nın dört bir yanından gelen vatandaş ihbarları ve görüntüler, editörlerimizin teyidinin ardından anında milyonluk kitlelere ulaştırılıyor."</p>
+            <span>- Gündem Trakya Sosyal Medya Ekibi</span>
           </div>
-          <p>İlçe belediye meclis üyeleri ve çok sayıda parti yöneticisinin de istifa kervanına katılacağı, önümüzdeki günlerde Tekirdağ genelinde geniş katılımlı bir rozet takma töreninin düzenleneceği öğrenildi.</p>
+
+          <p><strong>Siz De Haber Gönderin:</strong> Çevrenizde tanık olduğunuz kaza, yangın, altyapı sorunu, etkinlik veya başarı hikayelerini Instagram DM üzerinden bize ulaştırın, haberleştirelim!</p>
           <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
         `
       },
       {
         pageNum: 3,
-        pageTitle: "'Hizmetlerimiz Aksamadan Sürecek': Tekirdağ'da Projeler Devam Edecek",
-        pageImage: "img/candan-yuceer-chp-istifa.jpg",
+        pageTitle: "Büyük Trakya Ailesine Katılın: Tek Tıkla Takip Edin ve Bildirimleri Açın!",
+        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
         content: `
-          <p class="lead"><strong>Başkan Yüceer: 'Tekirdağ Sevdamız ve Hemşehrilerimize Hizmet Sözümüz Aynen Devam Ediyor'</strong></p>
-          <p>Siyasi partilerindeki değişimin belediye hizmetlerini kesinlikle aksatmayacağını belirten Candan Yüceer, Tekirdağ'ın 11 ilçesinde devam eden altyapı, ulaşım, su şebekesi, sosyal yardım ve kalkınma projelerinin aynı kararlılık ve hızla süreceğini kaydetti.</p>
-          <p>Tekirdağlı vatandaşların belediye hizmetleri konusunda en ufak bir endişe duymaması gerektiğini vurgulayan Yüceer, tüm kadrolarıyla birlikte sahada 7/24 çalışmayı sürdüreceklerini belirtti.</p>
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"Bizim makamımız da pusulamız da Tekirdağ halkının mutluluğu ve huzurudur. Hiçbir siyasi tartışma hemşehrilerimize hizmet etme heyecanımızın önüne geçemez."</p>
-            <span>- Dr. Candan Yüceer</span>
+          <p class="lead"><strong>Tekirdağ'dan Edirne'ye, Kırklareli'den Çorlu ve Çerkezköy'e On Binler Burada!</strong></p>
+          <p>Trakya'nın en etkileşimli sosyal medya topluluğunda siz de yerinizi alın. Yorumlarınızla tartışmalara katılın, bölgenizin sesini yükseltin ve hiçbir gelişmeyi kaçırmayın.</p>
+          
+          <div class="instagram-cta-container">
+            <div class="instagram-cta-title">
+              <i class="fa-solid fa-bell"></i>
+              <span>Bildirimleri Açmayı Unutmayın!</span>
+            </div>
+            <p class="instagram-cta-desc">Instagram profilimizdeki zil simgesine tıklayarak 'Gönderiler' ve 'Hikayeler' bildirimlerini açın, son dakika haberleri anında cebinize gelsin.</p>
+            <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
+              <i class="fa-brands fa-instagram"></i>
+              <span>👉 @gundemtrakya59 Hesabını Takip Et</span>
+            </a>
           </div>
-          <p>Gelişmeler, Tekirdağ Büyükşehir Belediye Meclisi'nde yeni komisyon dağılımları ve siyasi dengeler açısından da yakından izlenmeye devam ediyor.</p>
+
+          <p>Trakya'nın bağımsız ve güçlü sesi sizlerle büyüyor. Desteğiniz için teşekkür ederiz!</p>
         `
       }
     ]
@@ -547,8 +579,139 @@ const headlineArticles = [
   },
 
   {
-    id: 33,
+    id: 34,
     headlineNumber: 3,
+    title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
+    spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
+    category: "SİYASET & GÜNDEM",
+    categorySlug: "gundem",
+    location: "Tekirdağ / Bölge Geneli",
+    badgeColor: "red",
+    date: "30 Ağustos 2026 - 00:30",
+    readTime: "4 dk",
+    views: 142800,
+    likes: 9850,
+    reactions: { like: 4320, heart: 1980, clap: 2450, thinking: 3120, angry: 960 },
+    socialPosts: [
+      {
+        user: "Tekirdağ Siyaset Kulisi",
+        handle: "@TekirdagKulis",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Trakya'da taşlar yerinden oynadı! Candan Yüceer ve 4 ilçe belediye başkanının istifası bölge dengelerini baştan aşağı değiştirecek. #Tekirdağ #CandanYüceer #YeniParti",
+        time: "15 dk önce",
+        likes: 3820,
+        shares: 790
+      },
+      {
+        user: "Trakya Gündem Masası",
+        handle: "@TrakyaGundemi",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Tekirdağ Büyükşehir Belediyesi ve Trakya siyasetinde yeni bir dönem başlıyor. Seçmen tabanındaki yankıları ve belediye projelerinin gidişatı çok konuşulacak.",
+        time: "30 dk önce",
+        likes: 2410,
+        shares: 510
+      }
+    ],
+    comments: [
+      {
+        id: 3401,
+        author: "Ahmet Kurt",
+        city: "Çorlu / Reşadiye",
+        time: "10 dk önce",
+        content: "Bölge siyasetinde gerçekten tarihi bir kırılma noktası. Tekirdağ için hayırlısı olsun, yatırımların ve hizmetlerin aksamaması en büyük temennimiz.",
+        likes: 148
+      },
+      {
+        id: 3402,
+        author: "Selin Tokgöz",
+        city: "Süleymanpaşa / Hürriyet",
+        time: "20 dk önce",
+        content: "18 yıllık emeğin ve milletvekilliğinin ardından alınan çok radikal ve cesur bir karar. Süreci ve Trakya'ya etkilerini yakından izleyeceğiz.",
+        likes: 96
+      },
+      {
+        id: 3403,
+        author: "Mehmet Varol",
+        city: "Çerkezköy / Gazi Mustafa Kemal Paşa",
+        time: "25 dk önce",
+        content: "Trakya'nın siyasi haritası yeniden çiziliyor. 4 ilçe belediye başkanının da aynı anda geçmesi çok güçlü bir mesaj.",
+        likes: 82
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Siyaset & Bölge Masası",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/candan-yuceer-chp-istifa.jpg",
+    tags: ["Candan Yüceer", "Tekirdağ Büyükşehir Belediyesi", "CHP", "Yeni Parti", "İstifa", "Siyaset", "Tekirdağ", "Son Dakika"],
+    content: `
+      <p class="lead"><strong>Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır çatısı altında siyaset yaptığı Cumhuriyet Halk Partisi'nden (CHP) istifa ederek YENİ Parti saflarına katıldığını kamuoyuna açıkladı.</strong></p>
+      <p>Sosyal medya hesaplarından kapsamlı bir yazılı açıklama yapan Dr. Candan Yüceer, bu kararı hayatının en zor kararlarından biri olarak nitelendirdi. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarının da Yüceer ile birlikte hareket ederek partilerinden istifa edip YENİ Parti'ye geçtikleri açıklandı.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Butlan anlayışıyla örgütümüzün iradesine, üyelerimizin tercihine ve seçilmişlerin meşruiyetine gölge düşürülmesine sessiz kalmayacağım. Tekirdağ halkının bize emanet ettiği iradeyi korumak için yeni bir yola çıkıyorum."</p>
+        <span>- Dr. Candan Yüceer, Tekirdağ Büyükşehir Belediye Başkanı</span>
+      </div>
+      <p>Trakya ve Türkiye siyasetinde geniş yankı uyandıran bu gelişmenin ardından Tekirdağ'da belediye meclis dengeleri ve bölge siyasetinin yeniden şekilleneceği belirtiliyor.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "18 Yıllık CHP Üyeliğine Son: 'Yeni Bir Yola Çıkıyorum'",
+        pageImage: "img/candan-yuceer-chp-istifa.jpg",
+        content: `
+          <p class="lead"><strong>Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır gururla taşıdığı CHP rozetini çıkararak istifa kararını kamuoyuyla paylaştı.</strong></p>
+          <p>Yüceer, açıklamasında uzun yıllar Tekirdağ Milletvekili olarak görev yaptığını, 31 Mart Yerel Seçimlerinde ise Tekirdağ halkının rekor oyuyla Büyükşehir Belediye Başkanlığı görevine seçildiğini hatırlattı. Alınan istifa kararının kişisel bir tercih değil, ilke ve demokrasi mücadelesinin bir sonucu olduğunu vurguladı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"18 yıldır ter döktüğüm, her kademesinde onurla mücadele ettiğim partimden, seçilmiş iradenin ve halkın kararlarının yok sayılması nedeniyle ayrılmak zorunda kaldım."</p>
+            <span>- Dr. Candan Yüceer</span>
+          </div>
+          <p>Yüceer'in istifa duyurusu sosyal medyada dakikalar içinde yüz binlerce etkileşim alarak Türkiye gündeminin ilk sıralarına yerleşti.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "4 İlçe Belediye Başkanı da Katıldı: Trakya'da Taşlar Yerinden Oynadı",
+        pageImage: "img/candan-yuceer-chp-istifa.jpg",
+        content: `
+          <p class="lead"><strong>Tekirdağ'ın 4 Kritik İlçesinin Belediye Başkanları da Yüceer ile Birlikte YENİ Parti'ye Geçti</strong></p>
+          <p>Gelişmenin boyutunu artıran en kritik detay ise ilçelerden gelen toplu istifalar oldu. Edinilen bilgilere göre, Tekirdağ'ın merkezi ve önemli ilçeleri olan <strong>Süleymanpaşa, Çorlu, Şarköy ve Malkara belediye başkanları</strong> da eş zamanlı olarak CHP'den istifa ederek YENİ Parti saflarına katıldıklarını duyurdu.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Tekirdağ yerel yönetimlerinde yaşanan bu toplu geçiş, Trakya siyasetinde son 20 yılın en büyük kırılma noktalarından biri olarak kaydedildi."</p>
+            <span>- Gündem Trakya Siyaset Masası Özel Analizi</span>
+          </div>
+          <p>İlçe belediye meclis üyeleri ve çok sayıda parti yöneticisinin de istifa kervanına katılacağı, önümüzdeki günlerde Tekirdağ genelinde geniş katılımlı bir rozet takma töreninin düzenleneceği öğrenildi.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "'Hizmetlerimiz Aksamadan Sürecek': Tekirdağ'da Projeler Devam Edecek",
+        pageImage: "img/candan-yuceer-chp-istifa.jpg",
+        content: `
+          <p class="lead"><strong>Başkan Yüceer: 'Tekirdağ Sevdamız ve Hemşehrilerimize Hizmet Sözümüz Aynen Devam Ediyor'</strong></p>
+          <p>Siyasi partilerindeki değişimin belediye hizmetlerini kesinlikle aksatmayacağını belirten Candan Yüceer, Tekirdağ'ın 11 ilçesinde devam eden altyapı, ulaşım, su şebekesi, sosyal yardım ve kalkınma projelerinin aynı kararlılık ve hızla süreceğini kaydetti.</p>
+          <p>Tekirdağlı vatandaşların belediye hizmetleri konusunda en ufak bir endişe duymaması gerektiğini vurgulayan Yüceer, tüm kadrolarıyla birlikte sahada 7/24 çalışmayı sürdüreceklerini belirtti.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Bizim makamımız da pusulamız da Tekirdağ halkının mutluluğu ve huzurudur. Hiçbir siyasi tartışma hemşehrilerimize hizmet etme heyecanımızın önüne geçemez."</p>
+            <span>- Dr. Candan Yüceer</span>
+          </div>
+          <p>Gelişmeler, Tekirdağ Büyükşehir Belediye Meclisi'nde yeni komisyon dağılımları ve siyasi dengeler açısından da yakından izlenmeye devam ediyor.</p>
+        `
+      }
+    ]
+  },
+
+  {
+    id: 33,
+    headlineNumber: 4,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -671,7 +834,7 @@ const headlineArticles = [
   },
   {
     id: 32,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -794,7 +957,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 5,
+    headlineNumber: 6,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -895,7 +1058,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -996,7 +1159,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -1097,7 +1260,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 8,
+    headlineNumber: 9,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -1210,7 +1373,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 9,
+    headlineNumber: 10,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -3508,7 +3671,8 @@ const columnistsData = [
 
 // 6. Günün En Çok Okunanları
 const topReadArticles = [
-  { rank: 1, title: "Candan Yüceer ve 4 ilçe başkanı CHP'den istifa edip Yeni Parti'ye geçti", views: "198 Bin", category: "Siyaset" },
+  { rank: 1, title: "@gundemtrakya59 Instagram'da yayında: Trakya'nın 1 numaralı haber topluluğu", views: "245 Bin", category: "Topluluk" },
+  { rank: 2, title: "Candan Yüceer ve 4 ilçe başkanı CHP'den istifa edip Yeni Parti'ye geçti", views: "198 Bin", category: "Siyaset" },
   { rank: 2, title: "Candan Yüceer ve 4 ilçe başkanı CHP'den istifa edip Yeni Parti'ye geçti", views: "198 Bin", category: "Siyaset" },
   { rank: 2, title: "Halkalı-Kapıkule Hızlı Tren durakları ve sefer saatleri belli oldu", views: "154 Bin", category: "Trakya" },
   { rank: 2, title: "Çerkezköy OSB'de 5 bin kişilik dev istihdam hamlesi", views: "132 Bin", category: "İstihdam" },
