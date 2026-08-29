@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 122, 
+    articleId: 34, 
+    title: "Gülistan Doku soruşturmasında sıcak gelişme: 5. dalga operasyonda 10 şüpheli daha gözaltına alındı!", 
+    time: "16:15" 
+  },
+  { 
     id: 121, 
     articleId: 33, 
     title: "Çerkezköy'de sıcak saatler: Alacağını tahsil edemediğini öne süren işçi elektrik direğine çıktı, 2 saatte ikna edildi!", 
@@ -271,8 +277,131 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 33,
+    id: 34,
     headlineNumber: 1,
+    title: "Gülistan Doku Soruşturmasında 5. Dalga Operasyonu: 10 Şüpheli Daha Gözaltına Alındı!",
+    spot: "Yıllardır Türkiye gündeminden düşmeyen üniversite öğrencisi Gülistan Doku'nun kaybolmasına ilişkin yürütülen çok yönlü adli soruşturmada yeni bir dönüm noktasına gelindi. Cumhuriyet Başsavcılığı koordinesinde düzenlenen 5. dalga eş zamanlı şafak operasyonunda 10 şüpheli daha gözaltına alındı.",
+    category: "GÜNDEM & ASAYİŞ",
+    categorySlug: "gundem",
+    location: "Türkiye Gündemi / Adli Soruşturma",
+    badgeColor: "red",
+    date: "29 Ağustos 2026 - 16:15",
+    readTime: "4 dk",
+    views: 118400,
+    likes: 8950,
+    reactions: { like: 2650, heart: 620, clap: 1450, thinking: 3100, angry: 1130 },
+    socialPosts: [
+      {
+        user: "Gündem Trakya Özel Haber Masası",
+        handle: "@GundemTrakya",
+        avatar: "img/gundem-trakya-avatar-red.jpg",
+        platform: "twitter",
+        text: "SON DAKİKA 🔴 Gülistan Doku dosyasında 5. dalga operasyon! Başsavcılık talimatıyla 10 şüpheli daha gözaltına alındı. Dosyada yeni HTS ve dijital delillerin incelendiği bildirildi. ⚖️🔍 #GülistanDoku #SonDakika",
+        time: "15 dk önce",
+        likes: 4850,
+        shares: 1240
+      },
+      {
+        user: "Adalet ve Kadın Hakları Platformu",
+        handle: "@KadinHaklariPlatformu",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Gülistan Doku için adaletin tecelli etmesi ve tüm karanlık noktaların aydınlatılması adına atılan her adımı yakından takip ediyoruz.",
+        time: "30 dk önce",
+        likes: 2950,
+        shares: 780
+      }
+    ],
+    comments: [
+      {
+        id: 3401,
+        author: "Zeynep Aksoy",
+        city: "Tekirdağ / Çorlu",
+        time: "10 dk önce",
+        content: "Yıllardır beklenen adaletin nihayet yerini bulmasını ve olayın tüm yönleriyle aydınlatılmasını temenni ediyoruz.",
+        likes: 142
+      },
+      {
+        id: 3402,
+        author: "Kemal Yılmaz",
+        city: "Edirne / Merkez",
+        time: "20 dk önce",
+        content: "Yeni dijital incelemeler ve teknolojik imkanlar sayesinde karanlıkta hiçbir şey kalmamalı. Emniyet güçlerimize kolaylıklar diliyorum.",
+        likes: 98
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Asayiş & Güncel Masası",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/gulistan-doku-operasyon.jpg",
+    tags: ["Gülistan Doku", "Soruşturma", "Son Dakika", "Operasyon", "Gözaltı", "Asayiş", "Adalet", "Emniyet", "Jandarma"],
+    content: `
+      <p class="lead"><strong>Türkiye'nin uzun süredir yakından takip ettiği Gülistan Doku soruşturmasında sıcak gelişmeler yaşanıyor. Cumhuriyet Başsavcılığı koordinesinde yürütülen 5. dalga operasyon kapsamında 10 kişi daha gözaltına alındı.</strong></p>
+      <p>Özel harekat polisleri ve jandarma ekiplerinin katılımıyla sabahın erken saatlerinde eş zamanlı olarak belirlenen adreslere baskın düzenlendi. Şüphelilerin ev ve iş yerlerinde yapılan aramalarda çok sayıda dijital materyal ve belgelere el konuldu.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Cumhuriyet Başsavcılığımız tarafından titizlikle yürütülen soruşturma kapsamında elde edilen yeni deliller doğrultusunda 10 şüpheli hakkında gözaltı kararı verilmiş ve eş zamanlı operasyonla yakalanmışlardır."</p>
+        <span>- Cumhuriyet Başsavcılığı Basın Açıklaması</span>
+      </div>
+      <p>Gözaltına alınan şüphelilerin emniyetteki sorgu ve ifade işlemleri devam ederken, soruşturmanın seyrine ilişkin yeni detayların kamuoyuyla paylaşılacağı bildirildi.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Şafak Vakti Eş Zamanlı 5. Dalga Operasyonu",
+        pageImage: "img/gulistan-doku-operasyon.jpg",
+        content: `
+          <p class="lead"><strong>Cumhuriyet Başsavcılığı koordinesinde yürütülen Gülistan Doku soruşturmasında çok önemli bir aşamaya geçildi.</strong></p>
+          <p>Soruşturmayı derinleştiren özel inceleme ekiplerinin raporları doğrultusunda, sabah saatlerinde çok sayıda adrese eş zamanlı baskınlar düzenlendi. Jandarma ve Emniyet birimlerinin koordineli yürüttüğü operasyonlarda 10 şüpheli kıskıvrak yakalandı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Dosyaya giren yeni tanık ifadeleri, baz istasyonu (HTS) kayıtları ve teknik takip raporları doğrultusunda operasyon düğmesine basıldı."</p>
+            <span>- Soruşturma Kaynakları</span>
+          </div>
+          <p>Operasyonun yapıldığı noktalarda güvenlik önlemleri en üst seviyeye çıkarıldı.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Dijital Materyaller ve HTS Kayıtları Mercek Altında",
+        pageImage: "img/gulistan-doku-operasyon.jpg",
+        content: `
+          <p class="lead"><strong>Siber Suçlarla Mücadele ve Kriminal Ekipler Görevde</strong></p>
+          <p>Operasyon kapsamında gözaltına alınan şahısların ikametgahlarında yapılan aramalarda el konulan cep telefonları, bilgisayarlar, harici bellekler ve güvenlik kamerası kayıtları kriminal laboratuvarına gönderildi.</p>
+          <p>Ekipler, silinmiş olabilecek verilerin ve geçmişe dönük dijital ayak izlerinin kurtarılması amacıyla özel yazılımlarla kapsamlı bir inceleme başlattı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Kriminal ve siber incelemelerin ardından elde edilecek bulgular, adli dosyadaki düğümlerin çözülmesinde kilit rol oynayacak."</p>
+            <span>- Adli Bilişim Uzmanları</span>
+          </div>
+          <p>Gözaltındaki şüphelilerin çapraz sorgusunun titizlikle sürdürüldüğü aktarıldı.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Hukuki Süreç ve Ailenin Adalet Bekleyişi",
+        pageImage: "img/gulistan-doku-operasyon.jpg",
+        content: `
+          <p class="lead"><strong>Şüphelilerin Adliyeye Sevk Edilmesi Bekleniyor</strong></p>
+          <p>Emniyet ve jandarmadaki sorgu işlemleri tamamlanan şüphelilerin, geniş güvenlik önlemleri altında sağlık kontrolünden geçirilerek Cumhuriyet Başsavcılığı'na sevk edileceği öğrenildi.</p>
+          <p>Doku ailesi ve avukatları da soruşturmadaki yeni operasyon dalgasını yakından takip ederken, adli makamların titiz çalışmasının olayın tüm yönleriyle aydınlatılması açısından hayati önem taşıdığı vurgulandı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Adaletin tecellisi için devletimizin tüm kurumları koordineli bir şekilde çalışmalarını aralıksız sürdürmektedir."</p>
+            <span>- Adli Makamlar</span>
+          </div>
+          <p>Soruşturmanın seyrine göre yeni gözaltı kararlarının çıkabileceği ifade ediliyor.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 33,
+    headlineNumber: 2,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
