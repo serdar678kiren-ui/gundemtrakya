@@ -376,7 +376,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 36,
     headlineNumber: 2,
@@ -515,7 +515,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 37,
     headlineNumber: 3,
@@ -654,7 +654,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 34,
     headlineNumber: 4,
@@ -784,7 +784,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 33,
     headlineNumber: 5,
@@ -907,7 +907,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 32,
     headlineNumber: 6,
@@ -1030,7 +1030,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 31,
     headlineNumber: 7,
@@ -1131,7 +1131,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 30,
     headlineNumber: 8,
@@ -1232,7 +1232,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 29,
     headlineNumber: 9,
@@ -1333,7 +1333,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 28,
     headlineNumber: 10,
@@ -1446,7 +1446,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 27,
     headlineNumber: 11,
@@ -1547,7 +1547,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 26,
     headlineNumber: 12,
@@ -1653,7 +1653,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 25,
     headlineNumber: 13,
@@ -1757,7 +1757,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 23,
     headlineNumber: 14,
@@ -1864,7 +1864,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 24,
     headlineNumber: 15,
@@ -1945,7 +1945,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 20,
     headlineNumber: 16,
@@ -2048,7 +2048,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 21,
     headlineNumber: 17,
@@ -2124,7 +2124,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 22,
     headlineNumber: 18,
@@ -2206,7 +2206,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 19,
     headlineNumber: 19,
@@ -2335,7 +2335,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 18,
     headlineNumber: 20,
@@ -2448,7 +2448,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 17,
     headlineNumber: 21,
@@ -2593,7 +2593,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 1,
     headlineNumber: 22,
@@ -2712,7 +2712,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 11,
     headlineNumber: 23,
@@ -2771,7 +2771,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 12,
     headlineNumber: 24,
@@ -2866,7 +2866,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 2,
     headlineNumber: 25,
@@ -2957,7 +2957,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 4,
     headlineNumber: 26,
@@ -3049,7 +3049,7 @@ const headlineArticles = [
   },
   // -------------------------------------------------------------
   // KÖŞE YAZARLARI MAKALELERİ (ID: 201, 202, 203, 204)
-  // -------------------------------------------------------------,
+  // -------------------------------------------------------------,,
   {
     id: 201,
     title: "Hızlı Tren Hattı Trakya'nın Çehresini ve Sanayisini Nasıl Değiştirecek?",
@@ -3105,7 +3105,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 202,
     title: "Trakya Çiftçisinin Geleceği: Modern Sulama ve Lisanslı Depoculuk",
@@ -3160,7 +3160,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 203,
     title: "Sanayi Bölgelerinde İş Güvenliği ve Çalışan Hakları",
@@ -3215,7 +3215,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 204,
     title: "Ergene Havzası Koruma Eylem Planında Son Durum",
@@ -3270,7 +3270,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 205,
     title: "Trakya Topraklarında Su Krizi: Kuraklığa Karşı Damla Sulama Devrimi",
@@ -3325,7 +3325,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 206,
     title: "Çerkezköy ve Çorlu Sanayisinde Sanayi 4.0 ve Yapay Zeka Dönüşümü",
@@ -3379,7 +3379,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 207,
     title: "Mimar Sinan'ın Edirne'deki Mühendislik Dehası: Selimiye'nin Bilinmeyen Sırları",
@@ -3433,7 +3433,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },,,
   {
     id: 208,
     title: "Trakya'nın Lojistik Üs Olma Potansiyeli ve 2026-2027 Yatırım Fırsatları",
