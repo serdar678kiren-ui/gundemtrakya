@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 125, 
+    articleId: 37, 
+    title: "Tekirdağ Çorlu'da narkotik operasyonu: 4 adrese eş zamanlı baskın, 281 gram uyuşturucu ele geçirildi, 2 şüpheli tutuklandı!", 
+    time: "19:15" 
+  },
+  { 
     id: 124, 
     articleId: 36, 
     title: "Tekirdağ'da balıkçılar 1 Eylül için hazır: 4,5 aylık av yasağı bitiyor, Marmara'da 'Vira Bismillah' heyecanı!", 
@@ -356,8 +362,147 @@ const headlineArticles = [
     ]
   },
   {
-    id: 35,
+    id: 37,
     headlineNumber: 2,
+    title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
+    spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik uyuşturucu ve suç geliri paranın ele geçirildiği operasyonda gözaltına alınan 2 zanlı tutuklanarak cezaevine gönderildi.",
+    category: "ASAYİŞ & GÜNDEM",
+    categorySlug: "trakya",
+    location: "Tekirdağ / Çorlu",
+    badgeColor: "red",
+    date: "30 Ağustos 2026 - 19:15",
+    readTime: "3 dk",
+    views: 142300,
+    likes: 9800,
+    reactions: { like: 6100, heart: 1200, clap: 4200, thinking: 410, angry: 890 },
+    socialPosts: [
+      {
+        user: "Tekirdağ Asayiş & Güvenlik Bülteni",
+        handle: "@TekirdagAsayis",
+        avatar: "img/gundem-trakya-avatar-red.jpg",
+        platform: "twitter",
+        text: "Tekirdağ Emniyeti Çorlu'da zehir tacirlerine göz açtırmıyor! 4 adrese yapılan eş zamanlı baskında 281 gram sentetik uyuşturucu madde ele geçirildi, 2 şüpheli tutuklandı. Tebrikler Tekirdağ Emniyeti! 🇹🇷🚔 #Tekirdağ #Çorlu #Narkotik",
+        time: "20 dk önce",
+        likes: 3120,
+        shares: 780
+      },
+      {
+        user: "Çorlu Haber & Güncel",
+        handle: "@CorluHaberGuncel",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Çorlu'da gençleri zehirlemeye çalışan uyuşturucu satıcılarına yönelik narkotik polisimizden başarılı darbe. Yakalanan 2 şüpheli çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi. Sokaklarımız temizleniyor!",
+        time: "45 dk önce",
+        likes: 2150,
+        shares: 430
+      }
+    ],
+    comments: [
+      {
+        id: 3701,
+        author: "Ahmet Yılmaz",
+        city: "Çorlu / Reşadiye",
+        time: "15 dk önce",
+        content: "Polis ekiplerimizin eline, emeğine sağlık. Gençlerimizi bu zehirden korumak hepimizin görevi. Çorlu'da uyuşturucuya asla geçit verilmemeli.",
+        likes: 184
+      },
+      {
+        id: 3702,
+        author: "Meltem Özdemir",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "30 dk önce",
+        content: "Narkotik şubeyi tebrik ediyorum. Denetimlerin ve operasyonların aralıksız sürmesi çok önemli. Emniyet güçlerimize teşekkür ederiz.",
+        likes: 142
+      },
+      {
+        id: 3703,
+        author: "Serkan Taş",
+        city: "Kapaklı / Merkez",
+        time: "50 dk önce",
+        content: "Zehir tacirlerine verilen en ağır cezalar az bile kalır. Adli makamlarımızın tutuklama kararı yüreğimize su serpti.",
+        likes: 98
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Asayiş Masası",
+      title: "Asayiş & Adliye Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+    tags: ["Tekirdağ Asayiş", "Çorlu Narkotik", "Uyuşturucu Operasyonu", "Tekirdağ Emniyet", "Tutuklama", "Çorlu Haber", "Trakya Son Dakika"],
+    content: `
+      <p class="lead"><strong>Tekirdağ'da polis ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen operasyonda gözaltına alınan 2 şüpheli çıkarıldıkları nöbetçi hakimlikçe tutuklandı.</strong></p>
+      <p>Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekipleri, uyuşturucu madde ticareti ve sokak satıcılarına karşı yürüttüğü kararlı mücadele kapsamında Çorlu ilçesinde teknik ve fiziki takip başlattı. Yapılan titiz saha çalışmaları sonucunda tespit edilen 4 farklı adrese özel harekat destekli eş zamanlı baskınlar düzenlendi.</p>
+      
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Gençlerimizin geleceğini karartan zehir tacirlerine karşı operasyonlarımız il genelinde tavizsiz ve kararlılıkla devam edecektir."</p>
+        <span>- Tekirdağ Emniyet Müdürlüğü Güvenlik Kaynakları</span>
+      </div>
+
+      <p>Adreslerde narkotik dedektör köpeklerinin de katılımıyla gerçekleştirilen aramalarda, 281 gram sentetik uyuşturucu madde, 33 adet uyuşturucu hap ve uyuşturucu ticaretinden elde edildiği değerlendirilen 1.600 TL nakit para ele geçirildi. Gözaltına alınan E.A. ve B.Ş., sevk edildikleri adliyede tutuklanarak cezaevine gönderildi.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Tekirdağ Narkotik Ekiplerinden Çorlu'da 4 Adrese Eş Zamanlı Uyuşturucu Baskını",
+        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        content: `
+          <p class="lead"><strong>Çorlu İlçesinde Zehir Tacirlerine Ağır Darbe: 2 Zanlı Yakalandı</strong></p>
+          <p>Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şube Müdürlüğü ekipleri, Çorlu ilçesinde uyuşturucu madde ticareti yaptığı değerlendirilen şahıslara yönelik kapsamlı bir çalışma başlattı. Ekiplerin günler süren istihbarat ve saha takibi sonucunda şüphelilerin ikamet ve depo olarak kullandıkları adresler tek tek belirlendi.</p>
+          
+          <p>Cumhuriyet Başsavcılığı koordinesinde belirlenen <strong>4 adrese eş zamanlı operasyon</strong> düzenleyen polis ekipleri, şüpheliler E.A. ve B.Ş.'yi kıskıvrak yakalayarak gözaltına aldı.</p>
+
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Operasyonun Ayrıntıları ve Ele Geçirilenler:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🔍 Baskın Yapılan Adreslerde Ele Geçirilen Maddeler ve Suç Gelirleri Neler?</span><span class="qa-link-badge">Ele Geçirilenler (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⚖️ Adli Süreç ve Nöbetçi Hakimlik Kararı: 2 Zanlı Tutuklandı</span><span class="qa-link-badge">Mahkeme Kararı (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Baskın Yapılan Adreslerde Ele Geçirilen Maddeler ve Suç Gelirleri Neler?",
+        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        content: `
+          <p class="lead"><strong>Narkotik Dedektör Köpekleriyle Yapılan Aramalarda Sentetik Uyuşturucu ve Nakit Para Ele Geçirildi</strong></p>
+          <p>Özel eğitimli dedektör köpeklerin de katıldığı aramalarda, evlerin gizli bölmelerine saklanmış <strong>281 gram sentetik uyuşturucu madde</strong>, satışa hazır halde <strong>33 adet uyuşturucu hap</strong> ve uyuşturucu ticaretinden temin edildiği belirlenen <strong>1.600 TL nakit para</strong> ele geçirildi.</p>
+          
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Sokak satıcılarına ve uyuşturucu şebekelerine yönelik nokta operasyonlarımız aralıksız sürdürülecektir."</p>
+            <span>- Çorlu İlçe Emniyet Müdürlüğü</span>
+          </div>
+
+          <p>Ele geçirilen suç unsurlarına ve uyuşturucu maddelere el konulurken, maddelerin piyasa değeri ve dağıtım kanallarına ilişkin geniş çaplı soruşturma derinleştirildi.</p>
+          
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Adli Süreç ve Nöbetçi Hakimlik Kararı: 2 Zanlı Tutuklandı",
+        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        content: `
+          <p class="lead"><strong>Emniyetteki İşlemlerin Ardından Adliyeye Sevk Edilen 2 Şüpheli Cezaevine Gönderildi</strong></p>
+          <p>Gözaltına alınan şüpheliler E.A. ve B.Ş., Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi'ndeki ifade ve sorgu işlemlerinin tamamlanmasının ardından sağlık kontrolünden geçirilerek Çorlu Adliyesi'ne sevk edildi.</p>
+          
+          <p>Cumhuriyet Savcılığı tarafından ifadeleri alınan ve <em>"Uyuşturucu veya Uyarıcı Madde Ticareti Yapma veya Sağlama"</em> suçundan tutuklama talebiyle nöbetçi sulh ceza hakimliğine sevk edilen 2 zanlı, çıkarıldıkları mahkemece tutuklanarak cezaevine teslim edildi.</p>
+          
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Trakya'nın huzuru ve güvenliği için güvenlik güçlerimizin gece gündüz yürüttüğü başarılı operasyonları tebrik ediyoruz."</p>
+            <span>- Gündem Trakya Asayiş Servisi</span>
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    id: 35,
+    headlineNumber: 3,
     title: "Trakya'nın En Güçlü Dijital Haber Ağı: @gundemtrakya59 Instagram'da Yayında!",
     spot: "Tekirdağ, Edirne ve Kırklareli'nin tüm sıcak gelişmeleri, canlı video bültenleri, son dakika flaş haberleri ve özel röportajlar anında cebinizde! Resmi Instagram hesabımızı takip edin, Trakya'dan habersiz kalmayın.",
     category: "TOPLULUK & DUYURU",
@@ -513,7 +658,7 @@ const headlineArticles = [
 
   {
     id: 34,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
     spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
     category: "SİYASET & GÜNDEM",
@@ -644,7 +789,7 @@ const headlineArticles = [
 
   {
     id: 33,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -767,7 +912,7 @@ const headlineArticles = [
   },
   {
     id: 32,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -890,7 +1035,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 5,
+    headlineNumber: 6,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -991,7 +1136,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -1092,7 +1237,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -1193,7 +1338,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 8,
+    headlineNumber: 9,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -1306,7 +1451,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 9,
+    headlineNumber: 10,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -1407,7 +1552,7 @@ const headlineArticles = [
   },
   {
     id: 26,
-    headlineNumber: 10,
+    headlineNumber: 11,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
@@ -1513,7 +1658,7 @@ const headlineArticles = [
   },
   {
     id: 25,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
@@ -1617,7 +1762,7 @@ const headlineArticles = [
   },
   {
     id: 23,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
@@ -1724,7 +1869,7 @@ const headlineArticles = [
   },
   {
     id: 24,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
     spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
     category: "YAŞAM & GÜNDEM",
@@ -1805,7 +1950,7 @@ const headlineArticles = [
   },
   {
     id: 20,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -1908,7 +2053,7 @@ const headlineArticles = [
   },
   {
     id: 21,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
     spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
     category: "YAŞAM",
@@ -1984,7 +2129,7 @@ const headlineArticles = [
   },
   {
     id: 22,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
     spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
     category: "YAŞAM & EĞİTİM",
@@ -2066,7 +2211,7 @@ const headlineArticles = [
   },
   {
     id: 19,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
     spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
     category: "EĞİTİM & GÜNDEM",
@@ -2195,7 +2340,7 @@ const headlineArticles = [
   },
   {
     id: 18,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -2308,7 +2453,7 @@ const headlineArticles = [
   },
   {
     id: 17,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
     spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
     category: "SAĞLIK",
@@ -2573,7 +2718,7 @@ const headlineArticles = [
   },
   {
     id: 11,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Çerkezköy ve Kapaklı OSB'de 5 Bin Kişiye İstihdam Müjdesi!",
     spot: "Trakya'nın en büyük sanayi kümelenmesinde otomotiv, kimya ve tekstil sektörlerinde dev yatırımlar üretime geçiyor.",
     category: "TRAKYA HABER",
@@ -2632,7 +2777,7 @@ const headlineArticles = [
   },
   {
     id: 12,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Çorlu'da Yeni Altyapı ve Çevre Yolu Projesinde İmzalar Atıldı",
     spot: "Çorlu şehir içi trafiğini rahatlatacak 18 kilometrelik yeni bulvar ve köprülü kavşak inşaatı haftaya başlıyor.",
     category: "TRAKYA HABER",
@@ -2727,7 +2872,7 @@ const headlineArticles = [
   },
   {
     id: 2,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Trakya Çiftçisinin Yüzü Gülüyor: Ayçiçeğinde Rekor Verim ve Alım Fiyatları",
     spot: "Sarı gelin tarlalarında hasat mesaisi başladı. Birlik temsilcileri bu yıl rekoltenin yüksek olduğunu ve prim desteğinin artırıldığını açıkladı.",
     category: "EKONOMİ & TARIM",
@@ -2818,7 +2963,7 @@ const headlineArticles = [
   },
   {
     id: 4,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "Çerkezköy ve Çorlu Sanayisine 10 Milyar Liralık Dev Yeşil Enerji Yatırımı",
     spot: "Trakya'nın sanayi devleri çatı GES ve rüzgar enerjisi santralleri ile karbon ayak izini sıfırlamaya hazırlanıyor.",
     category: "EKONOMİ & TARIM",
