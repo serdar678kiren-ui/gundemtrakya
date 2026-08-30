@@ -22,6 +22,12 @@ const financeData = [
 
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
+  {
+  "id": 126,
+  "articleId": 38,
+  "title": "KKTC Girne açıklarında 267 kişilik yolcu gemisi battı: 8 can kaybı, 17 kayıp, kaptan dahil 8 kişi gözaltında!",
+  "time": "21:15"
+},
   { 
     id: 125, 
     articleId: 37, 
@@ -378,8 +384,113 @@ const headlineArticles = [
     ]
   },
   {
+  "id": 38,
+  "headlineNumber": 2,
+  "title": "Girne Açıklarında 267 Kişilik Yolcu Gemisi Battı: Faciada Can Kaybı 8'e Yükseldi, Kaptan Dahil 8 Kişi Gözaltında!",
+  "spot": "Kuzey Kıbrıs Türk Cumhuriyeti Girne Limanı'ndan Mersin Taşucu'na hareket eden Filo Denizcilik'e ait yolcu gemisi, fırtına sebebiyle limanın 2 kilometre açığında alabora olarak 514 metre derinliğe battı. Arama kurtarma ekipleri 237 kişiyi sağ kurtarırken, 8 kişinin cansız bedenine ulaşıldı, 17 kayıp aranıyor. Facianın ardından gemi kaptanı dahil 8 kişi gözaltına alındı.",
+  "category": "SON DAKİKA & GÜNCEL",
+  "categorySlug": "gundem",
+  "location": "KKTC / Girne - Akdeniz",
+  "badgeColor": "red",
+  "date": "30 Ağustos 2026 - 21:15",
+  "readTime": "4 dk",
+  "image": "img/girne-gemi-faciasi.jpg",
+  "author": {
+    "name": "Gündem Trakya Haber Merkezi",
+    "role": "Flaş Haber & Asayiş Masası",
+    "avatar": "img/gundem-trakya-avatar-red.jpg"
+  },
+  "views": 198400,
+  "likes": 12450,
+  "reactions": {
+    "like": 1850,
+    "heart": 320,
+    "clap": 110,
+    "thinking": 4200,
+    "angry": 7600
+  },
+  "socialPosts": [
+    {
+      "user": "Kıbrıs & Akdeniz Denizcilik Bülteni",
+      "handle": "@KibrisDenizHaber",
+      "avatar": "img/gundem-trakya-avatar-red.jpg",
+      "platform": "twitter",
+      "text": "Girne Diana Beach açıklarında fırtına nedeniyle batan 267 kişilik yolcu gemisinde can kaybı 8'e yükseldi. Sahil Güvenlik, Skorsky helikopterler ve sivil balıkçı tekneleri 514 metre derinlikteki batık çevresinde 17 kayıp için gece boyunca arama kurtarma sürdürüyor. Dualarımız kayıp canlarımızla! 🙏🌊 #Girne #GemiKazası #KKTC",
+      "time": "10 dk önce",
+      "likes": 5840,
+      "shares": 1920
+    },
+    {
+      "user": "Gündem Trakya Dijital Medya",
+      "handle": "@gundemtrakya59",
+      "avatar": "img/gundem-trakya-avatar-red.jpg",
+      "platform": "instagram",
+      "text": "Akdeniz'de can pazarı: KKTC Girne'den Mersin'e giden yolcu gemisi fırtınada alabora oldu. 237 vatandaşımız kurtarılırken 8 kişi hayatını kaybetti. Milli Savunma Bakanlığı, şehitlerimizin ve kayıplarımızın acısı nedeniyle 30 Ağustos Zafer Bayramı bando konserlerinin tamamını iptal etti. Başımız sağ olsun Türkiyem. 🇹🇷💔 #gundemtrakya #girne #kktc #akdeniz",
+      "time": "20 dk önce",
+      "likes": 8420,
+      "shares": 2310
+    },
+    {
+      "user": "Deniz Emniyeti & Kurtarma Ağı",
+      "handle": "@DenizGuvenlikTR",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80",
+      "platform": "facebook",
+      "text": "Kurtulan yolcuların ifadeleri şok etkisi yarattı: 'Gemi su alırken siz alışkın değilsiniz bir şey olmaz dediler, ön taraf patlayınca yolcuları bırakıp can yeleklerine koştular.' Savcılık talimatıyla gemi kaptanı dahil 8 personel gözaltına alındı. İhmallerin hesabı sonuna kadar sorulmalı!",
+      "time": "40 dk önce",
+      "likes": 3950,
+      "shares": 890
+    }
+  ],
+  "comments": [
+    {
+      "id": 3801,
+      "author": "Kaptan Murat Yıldırım",
+      "city": "Tekirdağ / Süleymanpaşa",
+      "time": "15 dk önce",
+      "content": "Deniz şakaya gelmez! Fırtına uyarısı varken 267 kişiyle o geminin limandan çıkışına nasıl izin verildi? 514 metre derinlikte can pazarı yaşanmış. İhmali olan her kimse en ağır cezayı almalıdır. Hayatını kaybeden kardeşlerimize Allah'tan rahmet diliyorum.",
+      "likes": 64
+    },
+    {
+      "id": 3802,
+      "author": "Büşra Çelik",
+      "city": "Çorlu / Tekirdağ",
+      "time": "25 dk önce",
+      "content": "MSB'nin 30 Ağustos bando konserlerini Kıbrıs'taki acı nedeniyle iptal etmesi çok asil ve yerinde bir karar. Millet olarak yüreğimiz yandı. İnşallah kayıp 17 kişiden sağ salim iyi haberler gelir, dualarımız onlarla.",
+      "likes": 48
+    },
+    {
+      "id": 3803,
+      "author": "Erkan Demir",
+      "city": "Çerkezköy / Tekirdağ",
+      "time": "35 dk önce",
+      "content": "Yolcuların 'Gemi su alırken bizi oyaladılar' iddiaları korkunç. Kaptanın ve mürettebatın gözaltına alınması doğru adım. Ailelerin acısını paylaşıyoruz, tüm KKTC ve milletimizin başı sağ olsun.",
+      "likes": 37
+    }
+  ],
+  "pages": [
+    {
+      "pageNum": 1,
+      "pageTitle": "Akdeniz'de Can Pazarı: Gemi 2 Kilometre Açıkta Alabora Oldu",
+      "pageImage": "img/girne-gemi-faciasi.jpg",
+      "content": "\n          <p class=\"lead\"><strong>Kuzey Kıbrıs Türk Cumhuriyeti'nden (KKTC) Mersin'e gitmek üzere Girne Limanı'ndan ayrılan yolcu gemisi, fırtına nedeniyle limanın 2 kilometre açığında alabora olarak battı.</strong></p>\n          \n          <p>Edinilen son dakika bilgilere göre; KKTC Girne Limanı'ndan Mersin Taşucu istikametine sefer düzenleyen <strong>Filo Denizcilik</strong> şirketine ait yolcu ve yük gemisi, limandan ayrıldıktan kısa bir süre sonra Diana Beach açıklarında aniden patlak veren şiddetli fırtınaya yakalandı.</p>\n\n          <p>İçerisinde 259 yolcu ve 8 mürettebat olmak üzere toplam <strong>267 kişinin</strong> bulunduğu gemi, dalgaların gövdeye vurması ve su alması sonucu dengesini kaybederek alabora oldu. Olayın bildirilmesi üzerine bölgeye çok sayıda Sahil Güvenlik botu, Skorsky arama-kurtarma helikopterleri, ambulanslar ve çevredeki sivil tekneler sevk edildi.</p>\n\n          <h3>Arama Kurtarma Operasyonunda Son Durum</h3>\n          <p>KKTC Cumhurbaşkanı Tufan Erhürman ve Bayındırlık ve Ulaştırma Bakanı Erhan Arıklı tarafından yapılan açıklamalarda şu ifadelere yer verildi:</p>\n          <ul>\n            <li><strong>237 Kişi Sağ Kurtarıldı:</strong> Sahil Güvenlik ve sivil balıkçı teknelerinin yoğun çabasıyla 237 yolcu ve mürettebat denizden sağ olarak çıkarıldı ve hastanelere nakledildi.</li>\n            <li><strong>Can Kaybı 8'e Yükseldi:</strong> Denizden 8 vatandaşımızın cansız bedenine ulaşıldı.</li>\n            <li><strong>17 Kayıp Aranıyor:</strong> Dalış timleri ve helikopterler, 514 metre derinlikte deniz tabanına oturduğu tespit edilen batık gemi ve çevresinde kayıp 17 kişiyi arama çalışmalarını gece boyu aralıksız sürdürüyor.</li>\n          </ul>\n\n          <div class=\"in-article-ad\">\n            <span class=\"ad-label\">HABER DETAYI</span>\n            <div class=\"ad-content-box\">\n              <i class=\"fa-solid fa-triangle-exclamation\" style=\"color: var(--news-red); font-size: 1.3rem; margin-bottom: 0.3rem;\"></i>\n              <div>Kurtarma çalışmalarına katılmak üzere Mersin ve KKTC'den tüm deniz unsurları bölgeye sevk edildi.</div>\n            </div>\n          </div>\n\n          <p>Kriz masasının 7/24 esasıyla çalıştığı bildirilirken, Girne Devlet Hastanesi ve bölgedeki tüm sağlık kuruluşları teyakkuza geçirildi.</p>\n            "
+    },
+    {
+      "pageNum": 2,
+      "pageTitle": "Kurtulan Yolcuların Şok İddiaları ve Kaptan Dahil 8 Gözaltı",
+      "pageImage": "img/girne-gemi-faciasi.jpg",
+      "content": "\n          <p class=\"lead\"><strong>Faciadan sağ kurtulan yolcuların dehşet verici iddiaları üzerine savcılık talimatıyla gemi kaptanı dahil 8 mürettebat gözaltına alındı.</strong></p>\n\n          <p>Denizden sağ olarak tahliye edilen yolcular, geminin limandan çıkış anından itibaren ciddi şekilde su almaya başladığını ancak personelin yolcuları sakinleştirmek adına durumu gizlediğini öne sürdü.</p>\n\n          <h3>'Siz Alışkın Değilsiniz Dediler, Ön Taraf Patlayınca Kaçtılar!'</h3>\n          <p>Kurtulan bir yolcu yaşadığı dehşet anlarını şu sözlerle aktardı:</p>\n          <p style=\"background: var(--bg-card); border-left: 4px solid var(--news-red); padding: 1rem; border-radius: var(--radius-sm); font-style: italic; color: var(--text-main);\">\n            \"Gemi su almaya başlayınca personeli uyardık. Bize 'Deniz tutmasıdır, siz dalgalara alışkın değilsiniz bir şey olmaz, içeri geçin' dediler. Ancak dakikalar sonra geminin ön burun tarafında büyük bir patlama sesi duyuldu ve sular hızla içeri doldu. O an görevliler 'Hemen çıkıyoruz' diyerek can yeleklerine koştular ve yolcuları arkalarında bırakıp filikalara yöneldiler.\"\n          </p>\n\n          <h3>Gemi Kaptanı ve Personel Gözaltında</h3>\n          <p>KKTC Güvenlik Kuvvetleri Komutanlığı ve Polis Genel Müdürlüğü, yaşanan büyük facia ve gelen ağır ihmal iddiaları doğrultusunda geniş çaplı adli soruşturma başlattı:</p>\n          <ul>\n            <li><strong>8 Şüpheli Gözaltında:</strong> Gemi kaptanı, başçarkçı ve vardiya zabitlerinin aralarında bulunduğu 8 kişi polis tarafından gözaltına alınarak sorguya çekildi.</li>\n            <li><strong>Teknik İnceleme ve 514 Metre Derinlik:</strong> Sonar ve deniz altı cihazlarıyla yapılan taramalarda batan geminin 514 metre derinlikte deniz tabanına oturduğu tespit edildi. Kara kutu ve seyir kayıt cihazlarına ulaşılması hedefleniyor.</li>\n          </ul>\n\n          <p>Liman Başkanlığı'nın fırtına uyarısına rağmen geminin kalkışına neden izin verildiği ve geminin denize elverişlilik belgeleri de müfettişler tarafından titizlikle inceleniyor.</p>\n            "
+    },
+    {
+      "pageNum": 3,
+      "pageTitle": "Cumhurbaşkanı Erdoğan'dan Mesaj ve MSB'den Zafer Konserleri İptali",
+      "pageImage": "img/girne-gemi-faciasi.jpg",
+      "content": "\n          <p class=\"lead\"><strong>Cumhurbaşkanı Recep Tayyip Erdoğan taziye mesajı yayımlarken, Milli Savunma Bakanlığı Kıbrıs'taki acı nedeniyle 30 Ağustos bando konserlerini iptal etti.</strong></p>\n\n          <p>Cumhurbaşkanı Erdoğan, Milli Savunma Üniversitesi Harp Okulları Diploma ve Sancak Devir Teslim Töreni'nde yaptığı konuşmada Akdeniz'deki faciaya değindi:</p>\n\n          <p style=\"background: var(--bg-card); border-left: 4px solid var(--news-blue); padding: 1rem; border-radius: var(--radius-sm); font-weight: 600; color: var(--text-main);\">\n            \"Bugün Girne'den Mersin'e seyir halinde iken alabora olan yolcu gemisi dolayısıyla milletimize geçmiş olsun dileklerimi iletiyorum. KKTC makamlarıyla tam bir koordinasyon halinde arama kurtarma çalışmalarını yürütüyoruz. 237 yolcu ve mürettebat sağ kurtarılırken, 8 kardeşimiz hayatını kaybetti. Kayıplara ulaşılması için devletimizin tüm imkanları seferber edilmiştir.\"\n          </p>\n\n          <h3>MSB: '30 Ağustos Bando Konserlerinin Tamamı İptal Edildi'</h3>\n          <p>Milli Savunma Bakanlığı (MSB), sosyal medya hesaplarından yaptığı resmi duyuruda, Kıbrıs Türkü kardeşlerimizin acısını paylaşmak amacıyla Zafer Bayramı kutlama konserlerinin iptal edildiğini bildirdi:</p>\n          <ul>\n            <li>Hava Kuvvetleri Bando Komutanlığınca Ankara'da,</li>\n            <li>Güney Deniz Saha Bando Komutanlığınca Muğla'da,</li>\n            <li>Deniz ve Hava Kuvvetleri Bando Komutanlıkları ile Armoni Mızıkası Komutanlığından müteşekkil Karma Bando ve Mehteran Birlik Komutanlığınca planlanan tüm konser programları iptal edilmiştir.</li>\n          </ul>\n\n          <div class=\"interactive-qa-box\">\n            <div class=\"qa-box-title\">\n              <i class=\"fa-solid fa-circle-question\"></i>\n              <span>Girne Gemi Faciası Hakkında Merak Edilenler</span>\n            </div>\n            <div class=\"qa-link-card\" onclick=\"goToArticlePage(1)\">\n              <span class=\"qa-link-text\">Gemi nerede ve nasıl battı?</span>\n              <span class=\"qa-link-badge\">Sayfa 1'e Git</span>\n            </div>\n            <div class=\"qa-link-card\" onclick=\"goToArticlePage(2)\">\n              <span class=\"qa-link-text\">Yolcuların ihmal iddiaları ve gözaltılar neler?</span>\n              <span class=\"qa-link-badge\">Sayfa 2'ye Git</span>\n            </div>\n          </div>\n\n          <p>Gündem Trakya olarak Akdeniz'deki bu elim faciada hayatını kaybeden vatandaşlarımıza Allah'tan rahmet, yaralılarımıza acil şifalar, kayıp 17 canımızdan ise en kısa sürede umutlu haberler almayı temenni ediyoruz. Milletimizin başı sağ olsun.</p>\n            "
+    }
+  ]
+},
+  {
     id: 36,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
     spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
     category: "DENİZCİLİK & GÜNDEM",
@@ -518,7 +629,7 @@ const headlineArticles = [
   },
   {
     id: 37,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik kannabinoid ele geçirilirken, gözaltına alınan 2 zanlı çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -628,7 +739,7 @@ const headlineArticles = [
   },
   {
     id: 34,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
     spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
     category: "SİYASET & GÜNDEM",
@@ -758,7 +869,7 @@ const headlineArticles = [
   },
   {
     id: 33,
-    headlineNumber: 5,
+    headlineNumber: 6,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -881,7 +992,7 @@ const headlineArticles = [
   },
   {
     id: 32,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -1004,7 +1115,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -1105,7 +1216,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 8,
+    headlineNumber: 9,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -1206,7 +1317,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 9,
+    headlineNumber: 10,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -1307,7 +1418,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 10,
+    headlineNumber: 11,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -1420,7 +1531,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 11,
+    headlineNumber: 12,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -1521,7 +1632,7 @@ const headlineArticles = [
   },
   {
     id: 26,
-    headlineNumber: 12,
+    headlineNumber: 13,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
@@ -1627,7 +1738,7 @@ const headlineArticles = [
   },
   {
     id: 25,
-    headlineNumber: 13,
+    headlineNumber: 14,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
@@ -1731,7 +1842,7 @@ const headlineArticles = [
   },
   {
     id: 23,
-    headlineNumber: 14,
+    headlineNumber: 15,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
@@ -1838,7 +1949,7 @@ const headlineArticles = [
   },
   {
     id: 24,
-    headlineNumber: 15,
+    headlineNumber: 16,
     title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
     spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
     category: "YAŞAM & GÜNDEM",
@@ -1919,7 +2030,7 @@ const headlineArticles = [
   },
   {
     id: 20,
-    headlineNumber: 16,
+    headlineNumber: 17,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -2022,7 +2133,7 @@ const headlineArticles = [
   },
   {
     id: 21,
-    headlineNumber: 17,
+    headlineNumber: 18,
     title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
     spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
     category: "YAŞAM",
@@ -2098,7 +2209,7 @@ const headlineArticles = [
   },
   {
     id: 22,
-    headlineNumber: 18,
+    headlineNumber: 19,
     title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
     spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
     category: "YAŞAM & EĞİTİM",
@@ -2180,7 +2291,7 @@ const headlineArticles = [
   },
   {
     id: 19,
-    headlineNumber: 19,
+    headlineNumber: 20,
     title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
     spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
     category: "EĞİTİM & GÜNDEM",
@@ -2309,7 +2420,7 @@ const headlineArticles = [
   },
   {
     id: 18,
-    headlineNumber: 20,
+    headlineNumber: 21,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -2422,7 +2533,7 @@ const headlineArticles = [
   },
   {
     id: 17,
-    headlineNumber: 21,
+    headlineNumber: 22,
     title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
     spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
     category: "SAĞLIK",
@@ -2567,7 +2678,7 @@ const headlineArticles = [
   },
   {
     id: 1,
-    headlineNumber: 22,
+    headlineNumber: 23,
     title: "Trakya'nın Ulaşımında Yeni Çağ: Hızlı Tren Hattında Geri Sayım Başladı!",
     spot: "İstanbul ile Edirne arasını 1 saat 20 dakikaya indirecek dev projede ray montajı tamamlandı. Ticaret, sanayi ve turizmde büyük canlanma bekleniyor.",
     category: "TRAKYA HABER",
@@ -2686,7 +2797,7 @@ const headlineArticles = [
   },
   {
     id: 11,
-    headlineNumber: 23,
+    headlineNumber: 24,
     title: "Çerkezköy ve Kapaklı OSB'de 5 Bin Kişiye İstihdam Müjdesi!",
     spot: "Trakya'nın en büyük sanayi kümelenmesinde otomotiv, kimya ve tekstil sektörlerinde dev yatırımlar üretime geçiyor.",
     category: "TRAKYA HABER",
@@ -2745,7 +2856,7 @@ const headlineArticles = [
   },
   {
     id: 12,
-    headlineNumber: 24,
+    headlineNumber: 25,
     title: "Çorlu'da Yeni Altyapı ve Çevre Yolu Projesinde İmzalar Atıldı",
     spot: "Çorlu şehir içi trafiğini rahatlatacak 18 kilometrelik yeni bulvar ve köprülü kavşak inşaatı haftaya başlıyor.",
     category: "TRAKYA HABER",
@@ -2840,7 +2951,7 @@ const headlineArticles = [
   },
   {
     id: 2,
-    headlineNumber: 25,
+    headlineNumber: 26,
     title: "Trakya Çiftçisinin Yüzü Gülüyor: Ayçiçeğinde Rekor Verim ve Alım Fiyatları",
     spot: "Sarı gelin tarlalarında hasat mesaisi başladı. Birlik temsilcileri bu yıl rekoltenin yüksek olduğunu ve prim desteğinin artırıldığını açıkladı.",
     category: "EKONOMİ & TARIM",
@@ -2931,7 +3042,7 @@ const headlineArticles = [
   },
   {
     id: 4,
-    headlineNumber: 26,
+    headlineNumber: 27,
     title: "Çerkezköy ve Çorlu Sanayisine 10 Milyar Liralık Dev Yeşil Enerji Yatırımı",
     spot: "Trakya'nın sanayi devleri çatı GES ve rüzgar enerjisi santralleri ile karbon ayak izini sıfırlamaya hazırlanıyor.",
     category: "EKONOMİ & TARIM",
@@ -3023,7 +3134,7 @@ const headlineArticles = [
   // -------------------------------------------------------------,
   {
     id: 201,
-    headlineNumber: 27,
+    headlineNumber: 28,
     title: "Hızlı Tren Hattı Trakya'nın Çehresini ve Sanayisini Nasıl Değiştirecek?",
     spot: "İstanbul ile Trakya arasındaki entegrasyon bölgedeki sanayi, turizm ve arsa değerlerini doğrudan etkileyecek.",
     category: "KÖŞE YAZISI",
@@ -3080,7 +3191,7 @@ const headlineArticles = [
   },
   {
     id: 202,
-    headlineNumber: 28,
+    headlineNumber: 29,
     title: "Trakya Çiftçisinin Geleceği: Modern Sulama ve Lisanslı Depoculuk",
     spot: "İklim krizine karşı Trakya havzasında suyun doğru yönetimi ve üretici kooperatiflerinin önemi.",
     category: "KÖŞE YAZISI",
@@ -3136,7 +3247,7 @@ const headlineArticles = [
   },
   {
     id: 203,
-    headlineNumber: 29,
+    headlineNumber: 30,
     title: "Sanayi Bölgelerinde İş Güvenliği ve Çalışan Hakları",
     spot: "Çorlu ve Çerkezköy aksında büyüyen sanayi tesislerinde yeni hukuki standartlar ve denetimler.",
     category: "KÖŞE YAZISI",
@@ -3192,7 +3303,7 @@ const headlineArticles = [
   },
   {
     id: 204,
-    headlineNumber: 30,
+    headlineNumber: 31,
     title: "Ergene Havzası Koruma Eylem Planında Son Durum",
     spot: "Arıtma tesisleri ve nehir yatağı temizliğinde gelinen nokta çevre sağlığı açısından neler vadediyor?",
     category: "KÖŞE YAZISI",
@@ -3248,7 +3359,7 @@ const headlineArticles = [
   },
   {
     id: 205,
-    headlineNumber: 31,
+    headlineNumber: 32,
     title: "Trakya Topraklarında Su Krizi: Kuraklığa Karşı Damla Sulama Devrimi",
     spot: "İklim değişikliği Trakya tarımını nasıl etkiliyor? Yeraltı sularının korunması ve akıllı tarım teknolojileri neden hayati?",
     category: "KÖŞE YAZISI",
@@ -3304,7 +3415,7 @@ const headlineArticles = [
   },
   {
     id: 206,
-    headlineNumber: 32,
+    headlineNumber: 33,
     title: "Çerkezköy ve Çorlu Sanayisinde Sanayi 4.0 ve Yapay Zeka Dönüşümü",
     spot: "Trakya fabrikalarında robotik otomasyon, yeşil enerji ve dijitalleşme ile küresel rekabet gücü nasıl artıyor?",
     category: "KÖŞE YAZISI",
@@ -3359,7 +3470,7 @@ const headlineArticles = [
   },
   {
     id: 207,
-    headlineNumber: 33,
+    headlineNumber: 34,
     title: "Mimar Sinan'ın Edirne'deki Mühendislik Dehası: Selimiye'nin Bilinmeyen Sırları",
     spot: "UNESCO Dünya Mirası Selimiye Camii'nin kubbe akustiği, deprem izolatörleri ve Trakya'nın kültürel mirası.",
     category: "KÖŞE YAZISI",
@@ -3414,7 +3525,7 @@ const headlineArticles = [
   },
   {
     id: 208,
-    headlineNumber: 34,
+    headlineNumber: 35,
     title: "Trakya'nın Lojistik Üs Olma Potansiyeli ve 2026-2027 Yatırım Fırsatları",
     spot: "Çorlu Havalimanı, Tekirdağ Asyaport Limanı ve Hızlı Tren aksı bölgeyi Avrupa'nın en büyük aktarma merkezine dönüştürüyor.",
     category: "KÖŞE YAZISI",
