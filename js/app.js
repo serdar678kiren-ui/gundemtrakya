@@ -869,15 +869,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const r = article.reactions || { like: 1400, heart: 980, clap: 520, thinking: 180, angry: 25 };
     const userReacted = state.userReactions[article.id];
 
+    const formatReactCount = (num) => {
+      if (num >= 1000) return (num / 1000).toFixed(1).replace('.0', '') + 'k';
+      return num || 0;
+    };
+
     const reactionsHtml = `
       <div class="social-reaction-bar">
         <span class="reaction-title"><i class="fa-solid fa-chart-pie" style="color: var(--news-red);"></i> Bu Habere / Yazıya Tepkiniz:</span>
         <div class="reaction-emojis">
-          <button class="reaction-btn ${userReacted === 'like' ? 'active' : ''}" onclick="addReaction(${article.id}, 'like')">👍 Beğendim <span id="react_like_${article.id}">${r.like}</span></button>
-          <button class="reaction-btn ${userReacted === 'heart' ? 'active' : ''}" onclick="addReaction(${article.id}, 'heart')">❤️ Harika <span id="react_heart_${article.id}">${r.heart}</span></button>
-          <button class="reaction-btn ${userReacted === 'clap' ? 'active' : ''}" onclick="addReaction(${article.id}, 'clap')">👏 Tebrikler <span id="react_clap_${article.id}">${r.clap}</span></button>
-          <button class="reaction-btn ${userReacted === 'thinking' ? 'active' : ''}" onclick="addReaction(${article.id}, 'thinking')">🤔 Düşündürücü <span id="react_thinking_${article.id}">${r.thinking}</span></button>
-          <button class="reaction-btn ${userReacted === 'angry' ? 'active' : ''}" onclick="addReaction(${article.id}, 'angry')">😡 Tepkiliyim <span id="react_angry_${article.id}">${r.angry}</span></button>
+          <button class="reaction-btn ${userReacted === 'like' ? 'active' : ''}" onclick="addReaction(${article.id}, 'like')" title="Beğendim">
+            <span class="react-emoji">👍</span>
+            <span class="react-text">Beğendim</span>
+            <span class="react-count" id="react_like_${article.id}">${formatReactCount(r.like)}</span>
+          </button>
+          <button class="reaction-btn ${userReacted === 'heart' ? 'active' : ''}" onclick="addReaction(${article.id}, 'heart')" title="Harika">
+            <span class="react-emoji">❤️</span>
+            <span class="react-text">Harika</span>
+            <span class="react-count" id="react_heart_${article.id}">${formatReactCount(r.heart)}</span>
+          </button>
+          <button class="reaction-btn ${userReacted === 'clap' ? 'active' : ''}" onclick="addReaction(${article.id}, 'clap')" title="Tebrikler">
+            <span class="react-emoji">👏</span>
+            <span class="react-text">Tebrikler</span>
+            <span class="react-count" id="react_clap_${article.id}">${formatReactCount(r.clap)}</span>
+          </button>
+          <button class="reaction-btn ${userReacted === 'thinking' ? 'active' : ''}" onclick="addReaction(${article.id}, 'thinking')" title="Düşündürücü">
+            <span class="react-emoji">🤔</span>
+            <span class="react-text">Düşündürücü</span>
+            <span class="react-count" id="react_thinking_${article.id}">${formatReactCount(r.thinking)}</span>
+          </button>
+          <button class="reaction-btn ${userReacted === 'angry' ? 'active' : ''}" onclick="addReaction(${article.id}, 'angry')" title="Tepkiliyim">
+            <span class="react-emoji">😡</span>
+            <span class="react-text">Tepkiliyim</span>
+            <span class="react-count" id="react_angry_${article.id}">${formatReactCount(r.angry)}</span>
+          </button>
         </div>
       </div>
     `;
@@ -928,6 +953,15 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="comment-input-row">
             <input type="text" id="commentAuthorInput" class="comment-input" placeholder="Adınız Soyadınız" required />
             <input type="text" id="commentCityInput" class="comment-input" placeholder="Şehir / İlçe (Örn: Çerkezköy / Çorlu)" required />
+          </div>
+          <div class="comment-quick-emojis">
+            <span class="quick-emoji-label">Hızlı Emoji:</span>
+            <button type="button" class="quick-emoji-btn" onclick="insertCommentEmoji('👍')">👍</button>
+            <button type="button" class="quick-emoji-btn" onclick="insertCommentEmoji('👏')">👏</button>
+            <button type="button" class="quick-emoji-btn" onclick="insertCommentEmoji('❤️')">❤️</button>
+            <button type="button" class="quick-emoji-btn" onclick="insertCommentEmoji('🇹🇷')">🇹🇷</button>
+            <button type="button" class="quick-emoji-btn" onclick="insertCommentEmoji('🔥')">🔥</button>
+            <button type="button" class="quick-emoji-btn" onclick="insertCommentEmoji('💯')">💯</button>
           </div>
           <textarea id="commentTextInput" class="comment-textarea" placeholder="Bu gelişme hakkındaki düşüncelerinizi yazınız..." required></textarea>
           <button class="page-nav-btn" onclick="submitArticleComment(${article.id})" style="padding: 0.55rem 1.3rem;">
@@ -1029,6 +1063,14 @@ document.addEventListener('DOMContentLoaded', () => {
     showToast('Yorumunuz başarıyla yayınlandı! 🎉');
     renderArticlePageContent(article, state.currentArticlePage);
     renderFeedArticles();
+  };
+
+  window.insertCommentEmoji = function(emoji) {
+    const textEl = document.getElementById('commentTextInput');
+    if (textEl) {
+      textEl.value = (textEl.value ? textEl.value + ' ' : '') + emoji + ' ';
+      textEl.focus();
+    }
   };
 
   window.likeComment = function(btnEl) {

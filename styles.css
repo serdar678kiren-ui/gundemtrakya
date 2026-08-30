@@ -1631,15 +1631,15 @@ button {
   background: var(--bg-elevated);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 1rem 1.2rem;
-  margin: 2rem 0 1.5rem;
+  padding: 0.9rem 1.1rem;
+  margin: 1.8rem 0 1.2rem;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .reaction-title {
   font-weight: 800;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-main);
   display: flex;
   align-items: center;
@@ -1649,26 +1649,28 @@ button {
 .reaction-emojis {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .reaction-btn {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 999px;
-  padding: 0.35rem 0.8rem;
-  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.82rem;
   color: var(--text-main);
   font-weight: 700;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.35rem;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .reaction-btn:hover {
   border-color: var(--news-red);
-  transform: scale(1.08);
+  transform: translateY(-2px);
   background: var(--bg-elevated);
 }
 
@@ -1676,6 +1678,25 @@ button {
   background: var(--news-red);
   color: #ffffff;
   border-color: var(--news-red);
+}
+
+.react-emoji {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.react-text {
+  font-size: 0.8rem;
+}
+
+.react-count {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--news-blue);
+}
+
+.reaction-btn.active .react-count {
+  color: #ffffff;
 }
 
 /* Sosyal Medya Paylaşımları & Canlı Tweetler */
@@ -1788,6 +1809,38 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
   margin-bottom: 0.8rem;
+}
+
+.comment-quick-emojis {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.quick-emoji-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: 700;
+  margin-right: 0.2rem;
+}
+
+.quick-emoji-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.45rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.quick-emoji-btn:hover {
+  border-color: var(--news-red);
+  transform: scale(1.15);
+  background: var(--bg-elevated);
 }
 
 .comment-input {
@@ -2088,7 +2141,7 @@ button {
 }
 
 /* ==========================================================================
-   16. RESPONSIVE / MOBİL UYUMLULUK & ERGONOMİK FONT ÖLÇEKLERİ
+   16. RESPONSIVE / MOBİL UYUMLULUK & ERGONOMİK FONT VE BOYUTLANDIRMA
    ========================================================================== */
 html, body {
   overflow-x: hidden;
@@ -2096,36 +2149,102 @@ html, body {
   width: 100%;
 }
 
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 1024px) {
   .headline-grid, .main-content-layout {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
-  .sub-headlines-grid, .columnists-grid {
+  .slider-media-box {
+    height: 380px;
+  }
+  .sub-headlines-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .columnists-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .header-ad-space { display: none; }
   .top-bar-right-fixed { display: none; }
   .social-cards-grid { grid-template-columns: 1fr; }
+  .social-reaction-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    padding: 0.85rem 0.9rem;
+  }
+  .reaction-emojis {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .reaction-btn {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 0.2rem;
+    border-radius: var(--radius-sm);
+    gap: 0.15rem;
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .react-emoji {
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 0.15rem;
+  }
+  .react-text {
+    font-size: 0.68rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  .react-count {
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
 }
 
 @media (max-width: 768px) {
   body {
     font-size: 13.5px;
-    padding-bottom: 3.8rem; /* Mobil alt çubuğun içeriği kapatmaması için */
+    padding-bottom: calc(4.2rem + env(safe-area-inset-bottom, 0px)); /* Mobil alt çubuğun içeriği kapatmaması için */
   }
 
   .container {
-    padding: 0 0.5rem;
+    padding: 0 0.6rem;
     max-width: 100%;
+  }
+
+  /* Üst Finans & Borsa Şeridi */
+  .top-finance-bar {
+    padding: 0.35rem 0;
+    font-size: 0.76rem;
+  }
+
+  .finance-wrapper {
+    padding: 0 0.5rem;
+  }
+
+  .finance-track {
+    gap: 1.5rem;
   }
 
   /* Header & Logo */
   .main-header {
-    padding: 0.4rem 0;
+    padding: 0.45rem 0;
   }
 
   .header-row {
-    padding: 0 0.3rem;
+    padding: 0 0.2rem;
   }
 
   .ataturk-header-badge {
@@ -2134,8 +2253,8 @@ html, body {
   }
 
   .portal-logo .logo-badge {
-    font-size: 0.62rem;
-    padding: 0.15rem 0.35rem;
+    font-size: 0.68rem;
+    padding: 0.15rem 0.4rem;
   }
 
   .portal-logo .logo-text {
@@ -2147,37 +2266,46 @@ html, body {
   }
 
   .theme-toggle-btn, .bookmark-toggle-btn {
-    width: 2rem;
-    height: 2rem;
-    font-size: 0.8rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    font-size: 0.82rem;
   }
 
-  /* Mobil Alt Gezinme Çubuğu */
+  /* Mobil Alt Gezinme Çubuğu (Native App Bar) */
   .mobile-bottom-app-bar {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0.3rem 0.4rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    z-index: 9999;
+    padding: 0.35rem 0.5rem calc(0.35rem + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 
   .mobile-app-link {
-    font-size: 0.65rem;
+    font-size: 0.66rem;
+    padding: 0.25rem 0;
   }
 
   .mobile-app-link i {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
   /* Kategori Menüsü */
   .category-nav-bar {
-    padding: 0.2rem 0;
+    padding: 0.25rem 0;
   }
 
   .nav-container {
     flex-direction: column;
     align-items: stretch;
     gap: 0.35rem;
-    padding: 0.2rem 0.4rem;
+    padding: 0.15rem 0.4rem;
   }
 
   .nav-menu-list {
@@ -2189,15 +2317,15 @@ html, body {
   }
 
   .nav-item-btn {
-    padding: 0.35rem 0.65rem;
-    font-size: 0.76rem;
+    padding: 0.38rem 0.75rem;
+    font-size: 0.78rem;
     border-radius: 999px;
   }
 
   .nav-search-box {
     margin-left: 0;
     width: 100%;
-    padding: 0.25rem 0.6rem;
+    padding: 0.25rem 0.65rem;
   }
 
   .nav-search-input {
@@ -2224,64 +2352,146 @@ html, body {
     line-height: 1.25;
   }
 
-  /* Manşet Slider */
+  /* ==========================================================================
+     Ana Manşet Slider (Mobil Uyumlu Orantılı Boyutlandırma)
+     ========================================================================== */
   .headline-section {
-    padding: 0.6rem 0;
+    padding: 0.5rem 0 0.8rem;
+  }
+
+  .headline-grid {
+    gap: 0.75rem;
+  }
+
+  .main-slider-card {
+    border-radius: var(--radius-md);
   }
 
   .slider-media-box {
-    height: 240px;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    min-height: 250px;
+    max-height: 330px;
+    height: auto;
   }
 
   .slider-gradient-overlay {
-    padding: 1rem 0.8rem;
-    height: 85%;
+    height: auto;
+    min-height: 52%;
+    max-height: 80%;
+    padding: 0.85rem 0.85rem 0.75rem;
+    background: linear-gradient(0deg, rgba(7,10,16,0.98) 0%, rgba(7,10,16,0.72) 55%, rgba(7,10,16,0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .slider-category-badge {
-    font-size: 0.65rem;
+    font-size: 0.68rem;
     padding: 0.2rem 0.5rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.35rem;
   }
 
   .slider-title {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
+    font-weight: 800;
     line-height: 1.25;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .slider-spot {
-    font-size: 0.75rem;
-    line-height: 1.3;
+    font-size: 0.8rem;
+    line-height: 1.35;
+    color: #cbd5e1;
+    display: -webkit-box;
     -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .slider-numbers-bar {
+    display: flex;
     overflow-x: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    display: flex;
+    scrollbar-width: none;
+    background: var(--bg-elevated);
+    height: 38px;
+    align-items: stretch;
+    border-top: 1px solid var(--border-color);
   }
 
+  .slider-numbers-bar::-webkit-scrollbar { display: none; }
+
   .slider-num-btn {
-    flex: 1;
-    min-width: 2rem;
-    font-size: 0.82rem;
-    padding: 0.45rem 0;
+    flex: 1 0 auto;
+    min-width: 2.4rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 800;
+    padding: 0;
   }
 
   .slider-arrow-btn {
-    width: 1.9rem;
-    height: 1.9rem;
-    font-size: 0.75rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.85rem;
+    top: calc(50% - 15px);
   }
 
   .slider-arrow-prev { left: 0.4rem; }
   .slider-arrow-next { right: 0.4rem; }
 
-  /* Alt Manşetler Yatay Kaydırma */
+  /* Yan Manşetler (Mobil 2'li Izgara) */
+  .side-headlines {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+    margin-top: 0.5rem;
+  }
+
+  .side-card {
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .side-img-box {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    height: auto;
+    min-height: 95px;
+  }
+
+  .side-body {
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .side-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Alt Manşetler Yatay Kaydırma Kartları */
   .sub-headlines-section {
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.9rem;
   }
 
   .sub-headlines-grid {
@@ -2289,30 +2499,35 @@ html, body {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    gap: 0.6rem;
-    padding-bottom: 0.4rem;
+    gap: 0.7rem;
+    padding-bottom: 0.5rem;
     scrollbar-width: none;
   }
 
   .sub-headlines-grid::-webkit-scrollbar { display: none; }
 
   .sub-card {
-    min-width: 76%;
+    min-width: 72%;
+    max-width: 270px;
     flex-shrink: 0;
     scroll-snap-align: start;
+    border-radius: var(--radius-sm);
   }
 
   .sub-media {
-    height: 120px;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 130px;
   }
 
   .sub-body {
-    padding: 0.6rem;
+    padding: 0.65rem;
   }
 
   .sub-title {
-    font-size: 0.84rem;
-    line-height: 1.3;
+    font-size: 0.86rem;
+    line-height: 1.32;
   }
 
   /* Nöbetçi Eczaneler */
@@ -2321,7 +2536,7 @@ html, body {
   }
 
   .section-tag-title {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .pharmacy-tabs {
@@ -2329,19 +2544,22 @@ html, body {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     display: flex;
-    gap: 0.3rem;
-    padding-bottom: 0.3rem;
+    gap: 0.35rem;
+    padding-bottom: 0.35rem;
+    scrollbar-width: none;
   }
 
+  .pharmacy-tabs::-webkit-scrollbar { display: none; }
+
   .pharm-tab-btn {
-    padding: 0.35rem 0.65rem;
-    font-size: 0.75rem;
+    padding: 0.38rem 0.75rem;
+    font-size: 0.76rem;
     flex-shrink: 0;
   }
 
   .pharmacy-grid {
     grid-template-columns: 1fr;
-    gap: 0.6rem;
+    gap: 0.65rem;
   }
 
   .pharm-card {
@@ -2361,19 +2579,37 @@ html, body {
     padding: 0.25rem 0.6rem;
   }
 
-  /* Yazarlar & Akış */
+  /* Köşe Yazarları (Yatay Kaydırma Şeridi) */
   .columnists-section {
     padding: 1rem 0;
     margin-bottom: 1rem;
   }
 
-  .columnists-grid, .feed-articles-grid {
-    grid-template-columns: 1fr;
-    gap: 0.8rem;
+  .columnists-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.7rem;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
   }
 
+  .columnists-grid::-webkit-scrollbar { display: none; }
+
   .columnist-card {
+    min-width: 250px;
+    max-width: 280px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
     padding: 0.8rem;
+    gap: 0.75rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .columnist-avatar {
+    width: 2.8rem;
+    height: 2.8rem;
   }
 
   .columnist-name {
@@ -2384,27 +2620,60 @@ html, body {
     font-size: 0.8rem;
   }
 
+  /* Ana Haber Akışı */
+  .main-content-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .feed-articles-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
   .feed-card {
     border-radius: var(--radius-sm);
   }
 
   .feed-media {
-    height: 150px;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 180px;
+    max-height: 230px;
   }
 
   .feed-body {
-    padding: 0.8rem;
+    padding: 0.9rem;
   }
 
   .feed-title {
-    font-size: 0.95rem;
-    line-height: 1.3;
-    margin-bottom: 0.35rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 0.4rem;
   }
 
   .feed-summary {
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .middle-ad-banner {
+    height: 80px;
+    margin: 1rem 0;
     font-size: 0.78rem;
-    margin-bottom: 0.6rem;
+  }
+
+  .sidebar-tower-ad {
+    height: 90px;
+    min-height: 80px;
+    max-height: 100px;
+    padding: 0.6rem;
   }
 
   .footer-top-grid {
@@ -2429,76 +2698,105 @@ html, body {
     font-size: 0.72rem;
   }
 
-  /* Haber Okuma Modalı */
+  /* Haber Okuma Modalı (Mobil Bottom Sheet / Tam Ekran Görünümü) */
   .modal-overlay {
-    padding: 0.3rem;
+    padding: 0;
+    align-items: flex-end;
   }
 
   .modal-container {
-    max-height: 98vh;
-    border-radius: var(--radius-sm);
+    max-height: 93dvh;
+    height: 93dvh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-bottom: none;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.6);
   }
 
   .modal-header {
-    padding: 0.6rem 0.8rem;
+    padding: 0.65rem 0.9rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--bg-card);
   }
 
   .modal-body {
-    padding: 0.8rem;
+    padding: 0.9rem;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
 
   .modal-hero-img {
-    height: 180px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 180px;
+    max-height: 240px;
+    margin-bottom: 0.8rem;
+    border-radius: var(--radius-sm);
   }
 
   .modal-title {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     line-height: 1.3;
-    margin: 0.6rem 0;
+    margin: 0.5rem 0;
   }
 
   .modal-meta-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.3rem;
+    gap: 0.35rem;
     font-size: 0.72rem;
+    padding-bottom: 0.75rem;
   }
 
   .share-bar-container {
-    gap: 0.3rem;
-    margin: 0.8rem 0;
+    gap: 0.35rem;
+    margin: 0.75rem 0;
+    padding: 0.6rem 0;
   }
 
   .share-label {
     font-size: 0.72rem;
+    width: 100%;
+    margin-bottom: 0.2rem;
   }
 
   .share-btn {
-    padding: 0.3rem 0.5rem;
-    font-size: 0.68rem;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .modal-article-text {
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   .modal-article-text p {
-    font-size: 0.88rem;
-    line-height: 1.55;
+    font-size: 0.92rem;
+    line-height: 1.6;
     margin-bottom: 0.8rem;
   }
 
   .modal-article-text .lead {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
     line-height: 1.5;
+    margin-bottom: 0.8rem;
   }
 
   .article-pagination-bar {
     flex-direction: column;
     align-items: stretch;
-    gap: 0.5rem;
-    padding-top: 0.8rem;
+    gap: 0.6rem;
+    padding: 0.8rem;
+    margin: 1.5rem 0 1rem;
   }
 
   .page-nav-btn {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.78rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.8rem;
+    justify-content: center;
   }
 
   .cookie-flex {
@@ -2513,6 +2811,120 @@ html, body {
 
   .comment-input-row {
     grid-template-columns: 1fr;
+  }
+
+  /* Duygu & Reaksiyon Emojileri Mobil Uyumu (Taşmayı Önleyen 5'li Izgara) */
+  .social-reaction-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+    padding: 0.75rem 0.65rem;
+    margin: 1.2rem 0;
+    border-radius: var(--radius-sm);
+  }
+
+  .reaction-title {
+    font-size: 0.82rem;
+  }
+
+  .reaction-emojis {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.35rem;
+    width: 100%;
+  }
+
+  .reaction-btn {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.15rem;
+    border-radius: var(--radius-sm);
+    gap: 0.15rem;
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .react-emoji {
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+
+  .react-text {
+    font-size: 0.62rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    line-height: 1.1;
+  }
+
+  .react-count {
+    font-size: 0.65rem;
+    line-height: 1.1;
+  }
+
+  /* Yorumlar ve Hızlı Emoji Seçici */
+  .comment-input-box {
+    padding: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .comment-quick-emojis {
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .quick-emoji-label {
+    font-size: 0.72rem;
+  }
+
+  .quick-emoji-btn {
+    padding: 0.2rem 0.35rem;
+    font-size: 0.9rem;
+  }
+
+  .comment-card {
+    padding: 0.85rem;
+  }
+
+  .comment-user-info {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .comment-top-row {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  /* Kurumsal ve Yasal Sayfalar */
+  .legal-container, .contact-container {
+    margin: 1rem auto;
+    padding: 1.2rem;
+    border-radius: var(--radius-md);
+  }
+
+  .founder-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    padding: 1.4rem;
+    margin: 1.2rem 0;
+  }
+
+  .founder-contacts {
+    justify-content: center;
+  }
+
+  .kunye-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .contact-card {
+    padding: 1.4rem;
   }
 }
 
@@ -2531,15 +2943,20 @@ html, body {
   }
 
   .slider-media-box {
-    height: 210px;
+    aspect-ratio: 16 / 10;
+    min-height: 240px;
+    max-height: 300px;
+    height: auto;
   }
 
   .slider-title {
-    font-size: 0.98rem;
+    font-size: 1.05rem;
+    line-height: 1.25;
   }
 
   .slider-spot {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
+    line-height: 1.3;
   }
 
   .breaking-label {
@@ -2550,89 +2967,29 @@ html, body {
   .breaking-content {
     font-size: 0.72rem;
   }
-}
 
-/* ==========================================================================
-   ÖZEL INSTAGRAM PROMOSYON & SOSYAL MEDYA BUTONLARI
-   ========================================================================== */
-.instagram-cta-container {
-  background: linear-gradient(135deg, rgba(225, 48, 108, 0.12), rgba(131, 58, 180, 0.15));
-  border: 2px solid rgba(225, 48, 108, 0.4);
-  border-radius: var(--radius-md);
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  text-align: center;
-  box-shadow: 0 10px 25px -5px rgba(225, 48, 108, 0.2);
-}
+  .reaction-emojis {
+    gap: 0.2rem;
+  }
 
-.instagram-cta-title {
-  font-size: 1.35rem;
-  font-weight: 900;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-}
+  .reaction-btn {
+    padding: 0.35rem 0.1rem;
+  }
 
-.instagram-cta-title i {
-  color: #e1306c;
-  font-size: 1.6rem;
-}
+  .react-emoji {
+    font-size: 1.05rem;
+  }
 
-.instagram-cta-desc {
-  font-size: 0.92rem;
-  color: #cbd5e1;
-  max-width: 600px;
-  margin: 0 auto 1.25rem auto;
-  line-height: 1.6;
-}
+  .react-text {
+    font-size: 0.58rem;
+  }
 
-.instagram-follow-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.65rem;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: #ffffff !important;
-  font-size: 1.05rem;
-  font-weight: 800;
-  padding: 0.85rem 2rem;
-  border-radius: 9999px;
-  text-decoration: none;
-  box-shadow: 0 4px 15px rgba(225, 48, 108, 0.4);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .react-count {
+    font-size: 0.62rem;
+  }
 
-.instagram-follow-btn:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 8px 25px rgba(225, 48, 108, 0.6);
-  color: #ffffff !important;
+  .quick-emoji-btn {
+    font-size: 0.82rem;
+    padding: 0.15rem 0.3rem;
+  }
 }
-
-.instagram-features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.8rem;
-  margin: 1.25rem 0;
-}
-
-.instagram-feat-item {
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.84rem;
-  font-weight: 700;
-  color: #f1f5f9;
-}
-
-.instagram-feat-item i {
-  color: #38bdf8;
-  font-size: 1.1rem;
-}
-
