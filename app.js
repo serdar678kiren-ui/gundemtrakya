@@ -1143,17 +1143,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
 
-  // --- Başlatıcı ---
-  initHeaderAndClock();
-  initLiveWeather();
-  renderFinance();
-  startLiveFinanceTicker();
-  renderBreakingNews();
-  renderCategoryNav();
-  initHeadlineSlider();
-  renderColumnists();
-  initPharmacies();
-  renderFeedArticles();
-  renderTopRead();
-  updateBookmarkCounter();
+  // --- Başlatıcı (Sağlam & Hata Korumalı) ---
+  const safeRun = (name, fn) => {
+    try {
+      fn();
+    } catch (e) {
+      console.error(`[GundemTrakya Init Error] in ${name}:`, e);
+    }
+  };
+
+  safeRun('initHeaderAndClock', initHeaderAndClock);
+  safeRun('initLiveWeather', initLiveWeather);
+  safeRun('renderFinance', renderFinance);
+  safeRun('startLiveFinanceTicker', startLiveFinanceTicker);
+  safeRun('renderBreakingNews', renderBreakingNews);
+  safeRun('renderCategoryNav', renderCategoryNav);
+  safeRun('initHeadlineSlider', initHeadlineSlider);
+  safeRun('renderColumnists', renderColumnists);
+  safeRun('initPharmacies', initPharmacies);
+  safeRun('renderFeedArticles', renderFeedArticles);
+  safeRun('renderTopRead', renderTopRead);
+  safeRun('updateBookmarkCounter', updateBookmarkCounter);
 });
