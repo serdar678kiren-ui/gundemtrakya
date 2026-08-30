@@ -376,7 +376,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 36,
     headlineNumber: 2,
@@ -515,7 +515,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 37,
     headlineNumber: 3,
@@ -654,7 +654,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 34,
     headlineNumber: 4,
@@ -784,7 +784,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 33,
     headlineNumber: 5,
@@ -907,7 +907,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 32,
     headlineNumber: 6,
@@ -1030,7 +1030,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 31,
     headlineNumber: 7,
@@ -1131,7 +1131,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 30,
     headlineNumber: 8,
@@ -1232,7 +1232,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 29,
     headlineNumber: 9,
@@ -1333,7 +1333,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 28,
     headlineNumber: 10,
@@ -1446,7 +1446,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 27,
     headlineNumber: 11,
@@ -1547,7 +1547,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 26,
     headlineNumber: 12,
@@ -1653,7 +1653,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 25,
     headlineNumber: 13,
@@ -1757,7 +1757,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 23,
     headlineNumber: 14,
@@ -1864,7 +1864,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 24,
     headlineNumber: 15,
@@ -1945,7 +1945,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 20,
     headlineNumber: 16,
@@ -2048,7 +2048,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 21,
     headlineNumber: 17,
@@ -2124,7 +2124,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 22,
     headlineNumber: 18,
@@ -2206,7 +2206,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 19,
     headlineNumber: 19,
@@ -2335,7 +2335,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 18,
     headlineNumber: 20,
@@ -2448,7 +2448,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 17,
     headlineNumber: 21,
@@ -2593,7 +2593,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 1,
     headlineNumber: 22,
@@ -2712,7 +2712,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 11,
     headlineNumber: 23,
@@ -2771,7 +2771,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 12,
     headlineNumber: 24,
@@ -2866,7 +2866,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 2,
     headlineNumber: 25,
@@ -2957,7 +2957,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 4,
     headlineNumber: 26,
@@ -3052,6 +3052,7 @@ const headlineArticles = [
   // -------------------------------------------------------------,,
   {
     id: 201,
+    headlineNumber: 27,
     title: "Hızlı Tren Hattı Trakya'nın Çehresini ve Sanayisini Nasıl Değiştirecek?",
     spot: "İstanbul ile Trakya arasındaki entegrasyon bölgedeki sanayi, turizm ve arsa değerlerini doğrudan etkileyecek.",
     category: "KÖŞE YAZISI",
@@ -3078,6 +3079,7 @@ const headlineArticles = [
     comments: [
       {
         id: 20101,
+    headlineNumber: 27,
         author: "Mehmet K.",
         city: "Tekirdağ / Merkez",
         time: "2 saat önce",
@@ -3105,9 +3107,10 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 202,
+    headlineNumber: 28,
     title: "Trakya Çiftçisinin Geleceği: Modern Sulama ve Lisanslı Depoculuk",
     spot: "İklim krizine karşı Trakya havzasında suyun doğru yönetimi ve üretici kooperatiflerinin önemi.",
     category: "KÖŞE YAZISI",
@@ -3134,6 +3137,7 @@ const headlineArticles = [
     comments: [
       {
         id: 20201,
+    headlineNumber: 28,
         author: "Hasan Çavuş",
         city: "Babaeski",
         time: "3 saat önce",
@@ -3160,9 +3164,10 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 203,
+    headlineNumber: 29,
     title: "Sanayi Bölgelerinde İş Güvenliği ve Çalışan Hakları",
     spot: "Çorlu ve Çerkezköy aksında büyüyen sanayi tesislerinde yeni hukuki standartlar ve denetimler.",
     category: "KÖŞE YAZISI",
@@ -3189,6 +3194,7 @@ const headlineArticles = [
     comments: [
       {
         id: 20301,
+    headlineNumber: 29,
         author: "Kemal U.",
         city: "Kapaklı",
         time: "18 saat önce",
@@ -3215,9 +3221,10 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 204,
+    headlineNumber: 30,
     title: "Ergene Havzası Koruma Eylem Planında Son Durum",
     spot: "Arıtma tesisleri ve nehir yatağı temizliğinde gelinen nokta çevre sağlığı açısından neler vadediyor?",
     category: "KÖŞE YAZISI",
@@ -3244,6 +3251,7 @@ const headlineArticles = [
     comments: [
       {
         id: 20401,
+    headlineNumber: 30,
         author: "Fikret Bey",
         city: "Muratlı",
         time: "1 gün önce",
@@ -3270,9 +3278,10 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 205,
+    headlineNumber: 31,
     title: "Trakya Topraklarında Su Krizi: Kuraklığa Karşı Damla Sulama Devrimi",
     spot: "İklim değişikliği Trakya tarımını nasıl etkiliyor? Yeraltı sularının korunması ve akıllı tarım teknolojileri neden hayati?",
     category: "KÖŞE YAZISI",
@@ -3299,6 +3308,7 @@ const headlineArticles = [
     comments: [
       {
         id: 20501,
+    headlineNumber: 31,
         author: "Ahmet Çiftçi",
         city: "Hayrabolu",
         time: "30 dk önce",
@@ -3325,9 +3335,10 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 206,
+    headlineNumber: 32,
     title: "Çerkezköy ve Çorlu Sanayisinde Sanayi 4.0 ve Yapay Zeka Dönüşümü",
     spot: "Trakya fabrikalarında robotik otomasyon, yeşil enerji ve dijitalleşme ile küresel rekabet gücü nasıl artıyor?",
     category: "KÖŞE YAZISI",
@@ -3354,6 +3365,7 @@ const headlineArticles = [
     comments: [
       {
         id: 20601,
+    headlineNumber: 32,
         author: "Mühendis Hakan",
         city: "Çorlu / Sanayi",
         time: "1 saat önce",
@@ -3379,9 +3391,10 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 207,
+    headlineNumber: 33,
     title: "Mimar Sinan'ın Edirne'deki Mühendislik Dehası: Selimiye'nin Bilinmeyen Sırları",
     spot: "UNESCO Dünya Mirası Selimiye Camii'nin kubbe akustiği, deprem izolatörleri ve Trakya'nın kültürel mirası.",
     category: "KÖŞE YAZISI",
@@ -3408,6 +3421,7 @@ const headlineArticles = [
     comments: [
       {
         id: 20701,
+    headlineNumber: 33,
         author: "Zeynep Öğretmen",
         city: "Edirne / Merkez",
         time: "2 saat önce",
@@ -3433,9 +3447,10 @@ const headlineArticles = [
         `
       }
     ]
-  },,,
+  },,
   {
     id: 208,
+    headlineNumber: 34,
     title: "Trakya'nın Lojistik Üs Olma Potansiyeli ve 2026-2027 Yatırım Fırsatları",
     spot: "Çorlu Havalimanı, Tekirdağ Asyaport Limanı ve Hızlı Tren aksı bölgeyi Avrupa'nın en büyük aktarma merkezine dönüştürüyor.",
     category: "KÖŞE YAZISI",
@@ -3462,6 +3477,7 @@ const headlineArticles = [
     comments: [
       {
         id: 20801,
+    headlineNumber: 34,
         author: "Ali İhsan Bey",
         city: "Tekirdağ / Süleymanpaşa",
         time: "3 saat önce",
