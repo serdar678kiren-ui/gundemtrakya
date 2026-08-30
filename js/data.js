@@ -25,7 +25,7 @@ const breakingNewsData = [
   { 
     id: 125, 
     articleId: 37, 
-    title: "Tekirdağ Çorlu'da narkotik operasyonu: 4 adrese eş zamanlı baskın, 281 gram uyuşturucu ele geçirildi, 2 şüpheli tutuklandı!", 
+    title: "Tekirdağ Çorlu'da narkotik operasyonu: 4 adrese eş zamanlı baskın, 2 şüpheli tutuklandı!", 
     time: "19:15" 
   },
   { 
@@ -223,8 +223,163 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 36,
+    id: 35,
     headlineNumber: 1,
+    title: "Trakya'nın En Güçlü Dijital Haber Ağı: @gundemtrakya59 Instagram'da Yayında!",
+    spot: "Tekirdağ, Edirne ve Kırklareli'nin tüm sıcak gelişmeleri, canlı video bültenleri, son dakika flaş haberleri ve özel röportajlar anında cebinizde! Resmi Instagram hesabımızı takip edin, Trakya'dan habersiz kalmayın.",
+    category: "TOPLULUK & DUYURU",
+    categorySlug: "gundem",
+    location: "Trakya / Bölge Geneli",
+    badgeColor: "red",
+    date: "30 Ağustos 2026 - 00:45",
+    readTime: "2 dk",
+    views: 215400,
+    likes: 18900,
+    reactions: { like: 8200, heart: 6400, clap: 3500, thinking: 400, angry: 50 },
+    socialPosts: [
+      {
+        user: "Gündem Trakya Dijital Medya",
+        handle: "@gundemtrakya59",
+        avatar: "img/gundem-trakya-avatar-red.jpg",
+        platform: "instagram",
+        text: "Trakya'nın en dinamik haber topluluğuna sen de katıl! En sıcak gelişmeler, 60 saniyelik Reels bültenleri ve özel çekimlerle her an yanınızdayız. Takip etmeyi ve bildirimleri açmayı unutmayın! 📲🇹🇷 #gundemtrakya",
+        time: "5 dk önce",
+        likes: 5420,
+        shares: 1280
+      },
+      {
+        user: "Trakya Gençlik & Haber Kulübü",
+        handle: "@TrakyaGenc",
+        avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Trakya'da haberleri en hızlı ve en kaliteli şekilde takip ettiğimiz sayfa @gundemtrakya59. Hem web sitesi hem Instagram sayfası muazzam çalışıyor. Kesinlikle takip edin! 👏🔥",
+        time: "15 dk önce",
+        likes: 3180,
+        shares: 640
+      }
+    ],
+    comments: [
+      {
+        id: 3501,
+        author: "Emre Can",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "5 dk önce",
+        content: "Instagram hesabınızı uzun süredir takip ediyorum, özellikle Reels video bültenleri ve anlık trafik/hava durumu hikayeleri harika!",
+        likes: 215
+      },
+      {
+        id: 3502,
+        author: "Ayşe Yılmaz",
+        city: "Çorlu / Orion Çevresi",
+        time: "12 dk önce",
+        content: "Trakya'da yerel haberciliğe seviye atlattınız. İhbar hattından da anında dönüş yapıyorsunuz, tebrikler!",
+        likes: 184
+      },
+      {
+        id: 3503,
+        author: "Kaan Demirtaş",
+        city: "Edirne / Merkez",
+        time: "20 dk önce",
+        content: "Sınır kapıları ve yerel asayiş haberlerini ilk sizden duyuyoruz. Takipteyiz!",
+        likes: 142
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Sosyal Medya Masası",
+      title: "Dijital Yayın Yönetmeni",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/gundem-trakya-instagram-reklam.jpg",
+    tags: ["Instagram", "@gundemtrakya59", "Gündem Trakya", "Sosyal Medya", "Trakya Haber", "Reels", "Canlı Yayın", "Tekirdağ", "Edirne", "Kırklareli"],
+    content: `
+      <p class="lead"><strong>Trakya’nın bağımsız ve ilkeli haber portalı Gündem Trakya, sosyal medyada da bölgenin en aktif ve en hızlı dijital topluluğu olmayı sürdürüyor!</strong></p>
+      <p>Tekirdağ, Edirne, Kırklareli, Çorlu, Çerkezköy ve tüm Trakya coğrafyasındaki en sıcak gelişmeler, asayiş olayları, ekonomi, tarım, kültür-sanat ve hava durumu raporları anbean resmi Instagram hesabımız <strong>@gundemtrakya59</strong> üzerinden takipçilerimizle buluşuyor.</p>
+      
+      <div class="instagram-cta-container">
+        <div class="instagram-cta-title">
+          <i class="fa-brands fa-instagram"></i>
+          <span>@gundemtrakya59 Resmi Instagram Kanalı</span>
+        </div>
+        <p class="instagram-cta-desc">Haberin en hızlı ve en güvenilir adresiyle tanışın. 60 saniyelik video bültenler, anlık son dakika hikayeleri ve canlı yayınlar için hemen takip edin!</p>
+        <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Hemen Takip Et 👉 @gundemtrakya59</span>
+        </a>
+      </div>
+
+      <p>Trakya sokaklarındaki gelişmeleri ilk öğrenen siz olun. Siz de bölgenizdeki önemli olayları, yol durumlarını ve asayiş gelişmelerini bize DM yoluyla ulaştırabilir, sesinizi tüm Trakya'ya duyurabilirsiniz.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Neden @gundemtrakya59? Trakya'nın Nabzı Anlık Hikayelerle Cebinizde!",
+        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
+        content: `
+          <p class="lead"><strong>Gündem Trakya, modern habercilik vizyonuyla sosyal medyanın gücünü Trakya halkıyla buluşturuyor.</strong></p>
+          <p>Her gün yüz binlerce okuyucunun ziyaret ettiği portalımızın resmi Instagram hesabı <strong>@gundemtrakya59</strong>, Trakya'da yerel haberciliğin yeni nesil yüzü haline geldi. Sadece haber metinleri değil; olay yeri görüntüleri, canlı yayınlar, röportajlar ve özel dosya haberleri anlık hikayelerle takipçilerimize sunuluyor.</p>
+          
+          <div class="instagram-features-grid">
+            <div class="instagram-feat-item"><i class="fa-solid fa-bolt"></i> Anlık Son Dakika Bildirimleri</div>
+            <div class="instagram-feat-item"><i class="fa-solid fa-video"></i> 60 Saniyede Özet Reels Bülteni</div>
+            <div class="instagram-feat-item"><i class="fa-solid fa-car"></i> Sınır Kapıları & Canlı Trafik</div>
+            <div class="instagram-feat-item"><i class="fa-solid fa-cloud-sun"></i> Trakya Canlı Hava Durumu</div>
+          </div>
+
+          <div class="instagram-cta-container">
+            <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
+              <i class="fa-brands fa-instagram"></i>
+              <span>@gundemtrakya59 Profiline Git & Takip Et</span>
+            </a>
+          </div>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Reels Bültenleri & Bölgesel DM İhbar Hattı: 'Sizden Gelenler'",
+        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
+        content: `
+          <p class="lead"><strong>Zamanınız Değerli: 60 Saniyede Tüm Trakya Gündemine Hakim Olun!</strong></p>
+          <p>Günün yoğun temposunda haberleri takip etmekte zorlanan vatandaşlarımız için özel olarak kurgulanan <strong>Dikey Reels Bültenlerimiz</strong> sayesinde, günün en kritik 5 haberini spiker anlatımı ve dinamik kurgularla sadece 1 dakikada izleyebilirsiniz.</p>
+          
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Trakya'nın dört bir yanından gelen vatandaş ihbarları ve görüntüler, editörlerimizin teyidinin ardından anında milyonluk kitlelere ulaştırılıyor."</p>
+            <span>- Gündem Trakya Sosyal Medya Ekibi</span>
+          </div>
+
+          <p><strong>Siz De Haber Gönderin:</strong> Çevrenizde tanık olduğunuz kaza, yangın, altyapı sorunu, etkinlik veya başarı hikayelerini Instagram DM üzerinden bize ulaştırın, haberleştirelim!</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Büyük Trakya Ailesine Katılın: Tek Tıkla Takip Edin ve Bildirimleri Açın!",
+        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
+        content: `
+          <p class="lead"><strong>Tekirdağ'dan Edirne'ye, Kırklareli'den Çorlu ve Çerkezköy'e On Binler Burada!</strong></p>
+          <p>Trakya'nın en etkileşimli sosyal medya topluluğunda siz de yerinizi alın. Yorumlarınızla tartışmalara katılın, bölgenizin sesini yükseltin ve hiçbir gelişmeyi kaçırmayın.</p>
+          
+          <div class="instagram-cta-container">
+            <div class="instagram-cta-title">
+              <i class="fa-solid fa-bell"></i>
+              <span>Bildirimleri Açmayı Unutmayın!</span>
+            </div>
+            <p class="instagram-cta-desc">Instagram profilimizdeki zil simgesine tıklayarak 'Gönderiler' ve 'Hikayeler' bildirimlerini açın, son dakika haberleri anında cebinize gelsin.</p>
+            <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
+              <i class="fa-brands fa-instagram"></i>
+              <span>👉 @gundemtrakya59 Hesabını Takip Et</span>
+            </a>
+          </div>
+
+          <p>Trakya'nın bağımsız ve güçlü sesi sizlerle büyüyor. Desteğiniz için teşekkür ederiz!</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 36,
+    headlineNumber: 2,
     title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
     spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
     category: "DENİZCİLİK & GÜNDEM",
@@ -363,7 +518,7 @@ const headlineArticles = [
   },
   {
     id: 37,
-    headlineNumber: 2,
+    headlineNumber: 3,
     title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik kannabinoid ele geçirilirken, gözaltına alınan 2 zanlı çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -424,9 +579,7 @@ const headlineArticles = [
     tags: ["Tekirdağ", "Çorlu", "Uyuşturucu Operasyonu", "Narkotik", "Tutuklama", "Asayiş", "Emniyet", "Sentetik Kannabinoid", "Son Dakika"],
     content: `
       <p class="lead"><strong>Tekirdağ Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şube Müdürlüğü ve Çorlu İlçe Emniyet Müdürlüğü ekipleri, uyuşturucu madde ticareti yapan şahıslara yönelik başarılı bir operasyona daha imza attı.</strong></p>
-      
       <p>Alınan istihbari bilgiler doğrultusunda Çorlu ilçesinde tespit edilen 4 farklı adrese sabah saatlerinde eş zamanlı baskın düzenlendi. Özel harekat polislerinin de destek verdiği operasyonda adreslerde detaylı aramalar yapıldı.</p>
-      
       <div class="article-highlight-box">
         <h4><i class="fa-solid fa-shield-halved"></i> Operasyonun Öne Çıkan Ayrıntıları</h4>
         <ul>
@@ -436,11 +589,8 @@ const headlineArticles = [
           <li><strong>Adli Sonuç:</strong> Gözaltına alınan 2 zanlı tutuklandı</li>
         </ul>
       </div>
-
       <p>Yapılan aramalarda satışa hazır paketler halinde toplam 281 gram sentetik kannabinoid ile uyuşturucu ticaretinde kullanıldığı değerlendirilen bir miktar nakit para ve dijital materyal ele geçirildi.</p>
-      
       <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı</div></div>
-
       <p>Operasyon kapsamında gözaltına alınan A.K. ve M.S. isimli iki zanlı, emniyetteki işlemlerinin tamamlanmasının ardından yoğun güvenlik önlemleri altında Çorlu Adliyesi'ne sevk edildi. Savcılık sorgularının ardından mahkemeye çıkarılan zanlılar, "Uyuşturucu veya Uyarıcı Madde Ticareti Yapmak" suçundan tutuklanarak Çorlu Kapalı Cezaevi'ne gönderildi.</p>
     `,
     pages: [
@@ -472,127 +622,6 @@ const headlineArticles = [
           <p class="lead"><strong>Çorlu Adliyesi'nde hakim karşısına çıkan şüpheliler cezaevine gönderildi.</strong></p>
           <p>Emniyetteki sorguları tamamlanan A.K. ve M.S., çıkarıldıkları Nöbetçi Sulh Ceza Hakimliği tarafından tutuklanarak cezaevine teslim edildi. Emniyet yetkilileri, uyuşturucuyla mücadelenin kararlılıkla süreceğini vurguladı.</p>
           <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Haber İçi Reklamı</div></div>
-        `
-      }
-    ]
-  },
-  {
-        id: 3501,
-    headlineNumber: 3,
-        author: "Emre Can",
-        city: "Tekirdağ / Süleymanpaşa",
-        time: "5 dk önce",
-        content: "Instagram hesabınızı uzun süredir takip ediyorum, özellikle Reels video bültenleri ve anlık trafik/hava durumu hikayeleri harika!",
-        likes: 215
-      },
-  {
-        id: 3502,
-    headlineNumber: 3,
-        author: "Ayşe Yılmaz",
-        city: "Çorlu / Orion Çevresi",
-        time: "12 dk önce",
-        content: "Trakya'da yerel haberciliğe seviye atlattınız. İhbar hattından da anında dönüş yapıyorsunuz, tebrikler!",
-        likes: 184
-      },
-  {
-        id: 3503,
-    headlineNumber: 3,
-        author: "Kaan Demirtaş",
-        city: "Edirne / Merkez",
-        time: "20 dk önce",
-        content: "Sınır kapıları ve yerel asayiş haberlerini ilk sizden duyuyoruz. Takipteyiz!",
-        likes: 142
-      }
-],
-    author: {
-      name: "Gündem Trakya Sosyal Medya Masası",
-      title: "Dijital Yayın Yönetmeni",
-      avatar: "img/gundem-trakya-avatar-red.jpg"
-    },
-    image: "img/gundem-trakya-instagram-reklam.jpg",
-    tags: ["Instagram", "@gundemtrakya59", "Gündem Trakya", "Sosyal Medya", "Trakya Haber", "Reels", "Canlı Yayın", "Tekirdağ", "Edirne", "Kırklareli"],
-    content: `
-      <p class="lead"><strong>Trakya’nın bağımsız ve ilkeli haber portalı Gündem Trakya, sosyal medyada da bölgenin en aktif ve en hızlı dijital topluluğu olmayı sürdürüyor!</strong></p>
-      <p>Tekirdağ, Edirne, Kırklareli, Çorlu, Çerkezköy ve tüm Trakya coğrafyasındaki en sıcak gelişmeler, asayiş olayları, ekonomi, tarım, kültür-sanat ve hava durumu raporları anbean resmi Instagram hesabımız <strong>@gundemtrakya59</strong> üzerinden takipçilerimizle buluşuyor.</p>
-      
-      <div class="instagram-cta-container">
-        <div class="instagram-cta-title">
-          <i class="fa-brands fa-instagram"></i>
-          <span>@gundemtrakya59 Resmi Instagram Kanalı</span>
-        </div>
-        <p class="instagram-cta-desc">Haberin en hızlı ve en güvenilir adresiyle tanışın. 60 saniyelik video bültenler, anlık son dakika hikayeleri ve canlı yayınlar için hemen takip edin!</p>
-        <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
-          <i class="fa-brands fa-instagram"></i>
-          <span>Hemen Takip Et 👉 @gundemtrakya59</span>
-        </a>
-      </div>
-
-      <p>Trakya sokaklarındaki gelişmeleri ilk öğrenen siz olun. Siz de bölgenizdeki önemli olayları, yol durumlarını ve asayiş gelişmelerini bize DM yoluyla ulaştırabilir, sesinizi tüm Trakya'ya duyurabilirsiniz.</p>
-    `,
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Neden @gundemtrakya59? Trakya'nın Nabzı Anlık Hikayelerle Cebinizde!",
-        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
-        content: `
-          <p class="lead"><strong>Gündem Trakya, modern habercilik vizyonuyla sosyal medyanın gücünü Trakya halkıyla buluşturuyor.</strong></p>
-          <p>Her gün yüz binlerce okuyucunun ziyaret ettiği portalımızın resmi Instagram hesabı <strong>@gundemtrakya59</strong>, Trakya'da yerel haberciliğin yeni nesil yüzü haline geldi. Sadece haber metinleri değil; olay yeri görüntüleri, canlı yayınlar, röportajlar ve özel dosya haberleri anlık hikayelerle takipçilerimize sunuluyor.</p>
-          
-          <div class="instagram-features-grid">
-            <div class="instagram-feat-item"><i class="fa-solid fa-bolt"></i> Anlık Son Dakika Bildirimleri</div>
-            <div class="instagram-feat-item"><i class="fa-solid fa-video"></i> 60 Saniyede Özet Reels Bülteni</div>
-            <div class="instagram-feat-item"><i class="fa-solid fa-car"></i> Sınır Kapıları & Canlı Trafik</div>
-            <div class="instagram-feat-item"><i class="fa-solid fa-cloud-sun"></i> Trakya Canlı Hava Durumu</div>
-          </div>
-
-          <div class="instagram-cta-container">
-            <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
-              <i class="fa-brands fa-instagram"></i>
-              <span>@gundemtrakya59 Profiline Git & Takip Et</span>
-            </a>
-          </div>
-          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Reels Bültenleri & Bölgesel DM İhbar Hattı: 'Sizden Gelenler'",
-        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
-        content: `
-          <p class="lead"><strong>Zamanınız Değerli: 60 Saniyede Tüm Trakya Gündemine Hakim Olun!</strong></p>
-          <p>Günün yoğun temposunda haberleri takip etmekte zorlanan vatandaşlarımız için özel olarak kurgulanan <strong>Dikey Reels Bültenlerimiz</strong> sayesinde, günün en kritik 5 haberini spiker anlatımı ve dinamik kurgularla sadece 1 dakikada izleyebilirsiniz.</p>
-          
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"Trakya'nın dört bir yanından gelen vatandaş ihbarları ve görüntüler, editörlerimizin teyidinin ardından anında milyonluk kitlelere ulaştırılıyor."</p>
-            <span>- Gündem Trakya Sosyal Medya Ekibi</span>
-          </div>
-
-          <p><strong>Siz De Haber Gönderin:</strong> Çevrenizde tanık olduğunuz kaza, yangın, altyapı sorunu, etkinlik veya başarı hikayelerini Instagram DM üzerinden bize ulaştırın, haberleştirelim!</p>
-          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Büyük Trakya Ailesine Katılın: Tek Tıkla Takip Edin ve Bildirimleri Açın!",
-        pageImage: "img/gundem-trakya-instagram-reklam.jpg",
-        content: `
-          <p class="lead"><strong>Tekirdağ'dan Edirne'ye, Kırklareli'den Çorlu ve Çerkezköy'e On Binler Burada!</strong></p>
-          <p>Trakya'nın en etkileşimli sosyal medya topluluğunda siz de yerinizi alın. Yorumlarınızla tartışmalara katılın, bölgenizin sesini yükseltin ve hiçbir gelişmeyi kaçırmayın.</p>
-          
-          <div class="instagram-cta-container">
-            <div class="instagram-cta-title">
-              <i class="fa-solid fa-bell"></i>
-              <span>Bildirimleri Açmayı Unutmayın!</span>
-            </div>
-            <p class="instagram-cta-desc">Instagram profilimizdeki zil simgesine tıklayarak 'Gönderiler' ve 'Hikayeler' bildirimlerini açın, son dakika haberleri anında cebinize gelsin.</p>
-            <a href="https://www.instagram.com/gundemtrakya59/" target="_blank" class="instagram-follow-btn">
-              <i class="fa-brands fa-instagram"></i>
-              <span>👉 @gundemtrakya59 Hesabını Takip Et</span>
-            </a>
-          </div>
-
-          <p>Trakya'nın bağımsız ve güçlü sesi sizlerle büyüyor. Desteğiniz için teşekkür ederiz!</p>
         `
       }
     ]
@@ -3021,7 +3050,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20101,
-    headlineNumber: 27,
         author: "Mehmet K.",
         city: "Tekirdağ / Merkez",
         time: "2 saat önce",
@@ -3079,7 +3107,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20201,
-    headlineNumber: 28,
         author: "Hasan Çavuş",
         city: "Babaeski",
         time: "3 saat önce",
@@ -3136,7 +3163,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20301,
-    headlineNumber: 29,
         author: "Kemal U.",
         city: "Kapaklı",
         time: "18 saat önce",
@@ -3193,7 +3219,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20401,
-    headlineNumber: 30,
         author: "Fikret Bey",
         city: "Muratlı",
         time: "1 gün önce",
@@ -3250,7 +3275,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20501,
-    headlineNumber: 31,
         author: "Ahmet Çiftçi",
         city: "Hayrabolu",
         time: "30 dk önce",
@@ -3307,7 +3331,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20601,
-    headlineNumber: 32,
         author: "Mühendis Hakan",
         city: "Çorlu / Sanayi",
         time: "1 saat önce",
@@ -3363,7 +3386,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20701,
-    headlineNumber: 33,
         author: "Zeynep Öğretmen",
         city: "Edirne / Merkez",
         time: "2 saat önce",
@@ -3419,7 +3441,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20801,
-    headlineNumber: 34,
         author: "Ali İhsan Bey",
         city: "Tekirdağ / Süleymanpaşa",
         time: "3 saat önce",
@@ -3446,7 +3467,7 @@ const headlineArticles = [
       }
     ]
   }
-];
+
 ];
 
 // 5. Köşe Yazarları Listesi (Üst Widget Kartları İçin)

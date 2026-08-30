@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 125, 
+    articleId: 37, 
+    title: "Tekirdağ Çorlu'da narkotik operasyonu: 4 adrese eş zamanlı baskın, 2 şüpheli tutuklandı!", 
+    time: "19:15" 
+  },
+  { 
     id: 124, 
     articleId: 36, 
     title: "Tekirdağ'da balıkçılar 1 Eylül için hazır: 4,5 aylık av yasağı bitiyor, Marmara'da 'Vira Bismillah' heyecanı!", 
@@ -573,9 +579,7 @@ const headlineArticles = [
     tags: ["Tekirdağ", "Çorlu", "Uyuşturucu Operasyonu", "Narkotik", "Tutuklama", "Asayiş", "Emniyet", "Sentetik Kannabinoid", "Son Dakika"],
     content: `
       <p class="lead"><strong>Tekirdağ Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şube Müdürlüğü ve Çorlu İlçe Emniyet Müdürlüğü ekipleri, uyuşturucu madde ticareti yapan şahıslara yönelik başarılı bir operasyona daha imza attı.</strong></p>
-      
       <p>Alınan istihbari bilgiler doğrultusunda Çorlu ilçesinde tespit edilen 4 farklı adrese sabah saatlerinde eş zamanlı baskın düzenlendi. Özel harekat polislerinin de destek verdiği operasyonda adreslerde detaylı aramalar yapıldı.</p>
-      
       <div class="article-highlight-box">
         <h4><i class="fa-solid fa-shield-halved"></i> Operasyonun Öne Çıkan Ayrıntıları</h4>
         <ul>
@@ -585,11 +589,8 @@ const headlineArticles = [
           <li><strong>Adli Sonuç:</strong> Gözaltına alınan 2 zanlı tutuklandı</li>
         </ul>
       </div>
-
       <p>Yapılan aramalarda satışa hazır paketler halinde toplam 281 gram sentetik kannabinoid ile uyuşturucu ticaretinde kullanıldığı değerlendirilen bir miktar nakit para ve dijital materyal ele geçirildi.</p>
-      
       <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı</div></div>
-
       <p>Operasyon kapsamında gözaltına alınan A.K. ve M.S. isimli iki zanlı, emniyetteki işlemlerinin tamamlanmasının ardından yoğun güvenlik önlemleri altında Çorlu Adliyesi'ne sevk edildi. Savcılık sorgularının ardından mahkemeye çıkarılan zanlılar, "Uyuşturucu veya Uyarıcı Madde Ticareti Yapmak" suçundan tutuklanarak Çorlu Kapalı Cezaevi'ne gönderildi.</p>
     `,
     pages: [
@@ -3049,7 +3050,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20101,
-    headlineNumber: 27,
         author: "Mehmet K.",
         city: "Tekirdağ / Merkez",
         time: "2 saat önce",
@@ -3107,7 +3107,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20201,
-    headlineNumber: 28,
         author: "Hasan Çavuş",
         city: "Babaeski",
         time: "3 saat önce",
@@ -3164,7 +3163,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20301,
-    headlineNumber: 29,
         author: "Kemal U.",
         city: "Kapaklı",
         time: "18 saat önce",
@@ -3221,7 +3219,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20401,
-    headlineNumber: 30,
         author: "Fikret Bey",
         city: "Muratlı",
         time: "1 gün önce",
@@ -3278,7 +3275,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20501,
-    headlineNumber: 31,
         author: "Ahmet Çiftçi",
         city: "Hayrabolu",
         time: "30 dk önce",
@@ -3335,7 +3331,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20601,
-    headlineNumber: 32,
         author: "Mühendis Hakan",
         city: "Çorlu / Sanayi",
         time: "1 saat önce",
@@ -3391,7 +3386,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20701,
-    headlineNumber: 33,
         author: "Zeynep Öğretmen",
         city: "Edirne / Merkez",
         time: "2 saat önce",
@@ -3447,7 +3441,6 @@ const headlineArticles = [
     comments: [
       {
         id: 20801,
-    headlineNumber: 34,
         author: "Ali İhsan Bey",
         city: "Tekirdağ / Süleymanpaşa",
         time: "3 saat önce",
@@ -3474,7 +3467,7 @@ const headlineArticles = [
       }
     ]
   }
-];
+
 ];
 
 // 5. Köşe Yazarları Listesi (Üst Widget Kartları İçin)
