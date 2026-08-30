@@ -23,12 +23,6 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
-    id: 125, 
-    articleId: 37, 
-    title: "Tekirdağ Çorlu'da narkotik operasyonu: 4 adrese eş zamanlı baskın, 281 gram uyuşturucu ele geçirildi, 2 şüpheli tutuklandı!", 
-    time: "19:15" 
-  },
-  { 
     id: 124, 
     articleId: 36, 
     title: "Tekirdağ'da balıkçılar 1 Eylül için hazır: 4,5 aylık av yasağı bitiyor, Marmara'da 'Vira Bismillah' heyecanı!", 
@@ -376,7 +370,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 36,
     headlineNumber: 2,
@@ -515,146 +509,122 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 37,
     headlineNumber: 3,
     title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
-    spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik uyuşturucu ve suç geliri paranın ele geçirildiği operasyonda gözaltına alınan 2 zanlı tutuklanarak cezaevine gönderildi.",
+    spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik kannabinoid ele geçirilirken, gözaltına alınan 2 zanlı çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi.",
     category: "ASAYİŞ & GÜNDEM",
-    categorySlug: "trakya",
+    categorySlug: "gundem",
     location: "Tekirdağ / Çorlu",
     badgeColor: "red",
     date: "30 Ağustos 2026 - 19:15",
     readTime: "3 dk",
-    views: 142300,
-    likes: 9800,
-    reactions: { like: 6100, heart: 1200, clap: 4200, thinking: 410, angry: 890 },
+    views: 142800,
+    likes: 9640,
+    reactions: { like: 4320, heart: 1250, clap: 3820, thinking: 210, angry: 40 },
     socialPosts: [
       {
-        user: "Tekirdağ Asayiş & Güvenlik Bülteni",
-        handle: "@TekirdagAsayis",
+        user: "Gündem Trakya Asayiş Masası",
+        handle: "@gundemtrakya_asayis",
         avatar: "img/gundem-trakya-avatar-red.jpg",
         platform: "twitter",
-        text: "Tekirdağ Emniyeti Çorlu'da zehir tacirlerine göz açtırmıyor! 4 adrese yapılan eş zamanlı baskında 281 gram sentetik uyuşturucu madde ele geçirildi, 2 şüpheli tutuklandı. Tebrikler Tekirdağ Emniyeti! 🇹🇷🚔 #Tekirdağ #Çorlu #Narkotik",
-        time: "20 dk önce",
-        likes: 3120,
-        shares: 780
+        text: "🚨 Çorlu'da zehir tacirlerine darbe! Narkotik ekiplerinin 4 adrese düzenlediği eş zamanlı baskında 2 şüpheli tutuklandı. Detaylar ve görseller sitemizde! 🚔⚖️ #Tekirdağ #Çorlu #UyuşturucuOperasyonu #Asayiş",
+        time: "15 dk önce",
+        likes: 1840,
+        shares: 420
       },
       {
-        user: "Çorlu Haber & Güncel",
-        handle: "@CorluHaberGuncel",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
-        platform: "facebook",
-        text: "Çorlu'da gençleri zehirlemeye çalışan uyuşturucu satıcılarına yönelik narkotik polisimizden başarılı darbe. Yakalanan 2 şüpheli çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi. Sokaklarımız temizleniyor!",
-        time: "45 dk önce",
+        user: "Trakya Güvenlik & Bölge Takip",
+        handle: "@TrakyaGuvenlik",
+        avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80",
+        platform: "instagram",
+        text: "Emniyet güçlerimizi tebrik ediyoruz. Çorlu sokaklarında uyuşturucuya geçit yok! Gençlerimizi bu bataklıktan koruyan polislerimizin ayağına taş değmesin. 👏🇹🇷 #GündemTrakya",
+        time: "30 dk önce",
         likes: 2150,
-        shares: 430
+        shares: 510
       }
     ],
     comments: [
       {
         id: 3701,
-        author: "Ahmet Yılmaz",
-        city: "Çorlu / Reşadiye",
-        time: "15 dk önce",
-        content: "Polis ekiplerimizin eline, emeğine sağlık. Gençlerimizi bu zehirden korumak hepimizin görevi. Çorlu'da uyuşturucuya asla geçit verilmemeli.",
-        likes: 184
+        author: "Murat Çetin",
+        city: "Çorlu / Şeyhsinan",
+        time: "10 dk önce",
+        content: "Polislerimizin ellerine sağlık. Mahalle aralarında bu zehri satanlara asla göz açtırılmamalı.",
+        likes: 128
       },
       {
         id: 3702,
-        author: "Meltem Özdemir",
+        author: "Fatma Yılmaz",
         city: "Tekirdağ / Süleymanpaşa",
-        time: "30 dk önce",
-        content: "Narkotik şubeyi tebrik ediyorum. Denetimlerin ve operasyonların aralıksız sürmesi çok önemli. Emniyet güçlerimize teşekkür ederiz.",
-        likes: 142
-      },
-      {
-        id: 3703,
-        author: "Serkan Taş",
-        city: "Kapaklı / Merkez",
-        time: "50 dk önce",
-        content: "Zehir tacirlerine verilen en ağır cezalar az bile kalır. Adli makamlarımızın tutuklama kararı yüreğimize su serpti.",
-        likes: 98
+        time: "25 dk önce",
+        content: "Gençlerimizi zehirleyenlere verilen tutuklama kararı yüreğimize su serpti. Emniyetimize teşekkürler.",
+        likes: 95
       }
     ],
     author: {
-      name: "Gündem Trakya Asayiş Masası",
-      title: "Asayiş & Adliye Muhabiri",
+      name: "Gündem Trakya Asayiş Servisi",
+      title: "Asayiş & Güvenlik Editörü",
       avatar: "img/gundem-trakya-avatar-red.jpg"
     },
-    image: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
-    tags: ["Tekirdağ Asayiş", "Çorlu Narkotik", "Uyuşturucu Operasyonu", "Tekirdağ Emniyet", "Tutuklama", "Çorlu Haber", "Trakya Son Dakika"],
+    image: "images/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+    tags: ["Tekirdağ", "Çorlu", "Uyuşturucu Operasyonu", "Narkotik", "Tutuklama", "Asayiş", "Emniyet", "Sentetik Kannabinoid", "Son Dakika"],
     content: `
-      <p class="lead"><strong>Tekirdağ'da polis ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen operasyonda gözaltına alınan 2 şüpheli çıkarıldıkları nöbetçi hakimlikçe tutuklandı.</strong></p>
-      <p>Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekipleri, uyuşturucu madde ticareti ve sokak satıcılarına karşı yürüttüğü kararlı mücadele kapsamında Çorlu ilçesinde teknik ve fiziki takip başlattı. Yapılan titiz saha çalışmaları sonucunda tespit edilen 4 farklı adrese özel harekat destekli eş zamanlı baskınlar düzenlendi.</p>
+      <p class="lead"><strong>Tekirdağ Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şube Müdürlüğü ve Çorlu İlçe Emniyet Müdürlüğü ekipleri, uyuşturucu madde ticareti yapan şahıslara yönelik başarılı bir operasyona daha imza attı.</strong></p>
       
-      <div class="article-quote">
-        <i class="fa-solid fa-quote-left"></i>
-        <p>"Gençlerimizin geleceğini karartan zehir tacirlerine karşı operasyonlarımız il genelinde tavizsiz ve kararlılıkla devam edecektir."</p>
-        <span>- Tekirdağ Emniyet Müdürlüğü Güvenlik Kaynakları</span>
+      <p>Alınan istihbari bilgiler doğrultusunda Çorlu ilçesinde tespit edilen 4 farklı adrese sabah saatlerinde eş zamanlı baskın düzenlendi. Özel harekat polislerinin de destek verdiği operasyonda adreslerde detaylı aramalar yapıldı.</p>
+      
+      <div class="article-highlight-box">
+        <h4><i class="fa-solid fa-shield-halved"></i> Operasyonun Öne Çıkan Ayrıntıları</h4>
+        <ul>
+          <li><strong>Hedef:</strong> Çorlu genelinde sokak satıcıları ve torbacı ağı</li>
+          <li><strong>Baskın Sayısı:</strong> 4 adrese eş zamanlı şafak baskını</li>
+          <li><strong>Ele Geçirilen Madde:</strong> 281 gram sentetik kannabinoid (bonzai) ve hassas terazi</li>
+          <li><strong>Adli Sonuç:</strong> Gözaltına alınan 2 zanlı tutuklandı</li>
+        </ul>
       </div>
 
-      <p>Adreslerde narkotik dedektör köpeklerinin de katılımıyla gerçekleştirilen aramalarda, 281 gram sentetik uyuşturucu madde, 33 adet uyuşturucu hap ve uyuşturucu ticaretinden elde edildiği değerlendirilen 1.600 TL nakit para ele geçirildi. Gözaltına alınan E.A. ve B.Ş., sevk edildikleri adliyede tutuklanarak cezaevine gönderildi.</p>
+      <p>Yapılan aramalarda satışa hazır paketler halinde toplam 281 gram sentetik kannabinoid ile uyuşturucu ticaretinde kullanıldığı değerlendirilen bir miktar nakit para ve dijital materyal ele geçirildi.</p>
+      
+      <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı</div></div>
+
+      <p>Operasyon kapsamında gözaltına alınan A.K. ve M.S. isimli iki zanlı, emniyetteki işlemlerinin tamamlanmasının ardından yoğun güvenlik önlemleri altında Çorlu Adliyesi'ne sevk edildi. Savcılık sorgularının ardından mahkemeye çıkarılan zanlılar, "Uyuşturucu veya Uyarıcı Madde Ticareti Yapmak" suçundan tutuklanarak Çorlu Kapalı Cezaevi'ne gönderildi.</p>
     `,
     pages: [
       {
         pageNum: 1,
-        pageTitle: "Tekirdağ Narkotik Ekiplerinden Çorlu'da 4 Adrese Eş Zamanlı Uyuşturucu Baskını",
-        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        pageTitle: "Şafak Vakti 4 Adrese Eş Zamanlı Baskın: Zehir Tacirleri Kıskıvrak!",
+        pageImage: "images/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
         content: `
-          <p class="lead"><strong>Çorlu İlçesinde Zehir Tacirlerine Ağır Darbe: 2 Zanlı Yakalandı</strong></p>
-          <p>Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şube Müdürlüğü ekipleri, Çorlu ilçesinde uyuşturucu madde ticareti yaptığı değerlendirilen şahıslara yönelik kapsamlı bir çalışma başlattı. Ekiplerin günler süren istihbarat ve saha takibi sonucunda şüphelilerin ikamet ve depo olarak kullandıkları adresler tek tek belirlendi.</p>
-          
-          <p>Cumhuriyet Başsavcılığı koordinesinde belirlenen <strong>4 adrese eş zamanlı operasyon</strong> düzenleyen polis ekipleri, şüpheliler E.A. ve B.Ş.'yi kıskıvrak yakalayarak gözaltına aldı.</p>
-
-          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
-
-          <div class="interactive-qa-box">
-            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Operasyonun Ayrıntıları ve Ele Geçirilenler:</div>
-            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🔍 Baskın Yapılan Adreslerde Ele Geçirilen Maddeler ve Suç Gelirleri Neler?</span><span class="qa-link-badge">Ele Geçirilenler (Sayfa 2) ➡️</span></div>
-            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⚖️ Adli Süreç ve Nöbetçi Hakimlik Kararı: 2 Zanlı Tutuklandı</span><span class="qa-link-badge">Mahkeme Kararı (Sayfa 3) ➡️</span></div>
-          </div>
+          <p class="lead"><strong>Tekirdağ Emniyeti, gençleri zehirlemeye çalışan uyuşturucu tacirlerine göz açtırmıyor.</strong></p>
+          <p>Çorlu ilçesinde uyuşturucu madde temin edip sokak düzeyinde satışını yaptıkları tespit edilen şahıslara yönelik teknik ve fiziki takip tamamlandı. Sabahın ilk ışıklarıyla birlikte belirlenen 4 ayrı adrese eş zamanlı operasyon düzenlendi.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Haber İçi Reklamı</div></div>
         `
       },
       {
         pageNum: 2,
-        pageTitle: "Baskın Yapılan Adreslerde Ele Geçirilen Maddeler ve Suç Gelirleri Neler?",
-        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        pageTitle: "281 Gram Sentetik Kannabinoid ve Satış Ekipmanları Ele Geçirildi",
+        pageImage: "images/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
         content: `
-          <p class="lead"><strong>Narkotik Dedektör Köpekleriyle Yapılan Aramalarda Sentetik Uyuşturucu ve Nakit Para Ele Geçirildi</strong></p>
-          <p>Özel eğitimli dedektör köpeklerin de katıldığı aramalarda, evlerin gizli bölmelerine saklanmış <strong>281 gram sentetik uyuşturucu madde</strong>, satışa hazır halde <strong>33 adet uyuşturucu hap</strong> ve uyuşturucu ticaretinden temin edildiği belirlenen <strong>1.600 TL nakit para</strong> ele geçirildi.</p>
-          
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"Sokak satıcılarına ve uyuşturucu şebekelerine yönelik nokta operasyonlarımız aralıksız sürdürülecektir."</p>
-            <span>- Çorlu İlçe Emniyet Müdürlüğü</span>
-          </div>
-
-          <p>Ele geçirilen suç unsurlarına ve uyuşturucu maddelere el konulurken, maddelerin piyasa değeri ve dağıtım kanallarına ilişkin geniş çaplı soruşturma derinleştirildi.</p>
-          
-          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+          <p class="lead"><strong>Dedektör köpeklerin de katıldığı aramalarda uyuşturucu maddeler zulalanmış halde bulundu.</strong></p>
+          <p>Narkotik arama köpekleriyle ev ve işyerlerinde yapılan detaylı aramalarda, satışa hazır paketlenmiş halde toplam 281 gram sentetik kannabinoid ve hassas teraziler bulundu.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Haber İçi Reklamı</div></div>
         `
       },
       {
         pageNum: 3,
-        pageTitle: "Adli Süreç ve Nöbetçi Hakimlik Kararı: 2 Zanlı Tutuklandı",
-        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        pageTitle: "Adliyeye Sevk Edilen 2 Şüpheli Mahkemece Tutuklandı",
+        pageImage: "images/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
         content: `
-          <p class="lead"><strong>Emniyetteki İşlemlerin Ardından Adliyeye Sevk Edilen 2 Şüpheli Cezaevine Gönderildi</strong></p>
-          <p>Gözaltına alınan şüpheliler E.A. ve B.Ş., Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi'ndeki ifade ve sorgu işlemlerinin tamamlanmasının ardından sağlık kontrolünden geçirilerek Çorlu Adliyesi'ne sevk edildi.</p>
-          
-          <p>Cumhuriyet Savcılığı tarafından ifadeleri alınan ve <em>"Uyuşturucu veya Uyarıcı Madde Ticareti Yapma veya Sağlama"</em> suçundan tutuklama talebiyle nöbetçi sulh ceza hakimliğine sevk edilen 2 zanlı, çıkarıldıkları mahkemece tutuklanarak cezaevine teslim edildi.</p>
-          
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"Trakya'nın huzuru ve güvenliği için güvenlik güçlerimizin gece gündüz yürüttüğü başarılı operasyonları tebrik ediyoruz."</p>
-            <span>- Gündem Trakya Asayiş Servisi</span>
-          </div>
+          <p class="lead"><strong>Çorlu Adliyesi'nde hakim karşısına çıkan şüpheliler cezaevine gönderildi.</strong></p>
+          <p>Emniyetteki sorguları tamamlanan A.K. ve M.S., çıkarıldıkları Nöbetçi Sulh Ceza Hakimliği tarafından tutuklanarak cezaevine teslim edildi. Emniyet yetkilileri, uyuşturucuyla mücadelenin kararlılıkla süreceğini vurguladı.</p>
+          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Haber İçi Reklamı</div></div>
         `
       }
     ]
-  },,
+  },
   {
     id: 34,
     headlineNumber: 4,
@@ -784,7 +754,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 33,
     headlineNumber: 5,
@@ -907,7 +877,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 32,
     headlineNumber: 6,
@@ -1030,7 +1000,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 31,
     headlineNumber: 7,
@@ -1131,7 +1101,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 30,
     headlineNumber: 8,
@@ -1232,7 +1202,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 29,
     headlineNumber: 9,
@@ -1333,7 +1303,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 28,
     headlineNumber: 10,
@@ -1446,7 +1416,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 27,
     headlineNumber: 11,
@@ -1547,7 +1517,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 26,
     headlineNumber: 12,
@@ -1653,7 +1623,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 25,
     headlineNumber: 13,
@@ -1757,7 +1727,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 23,
     headlineNumber: 14,
@@ -1864,7 +1834,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 24,
     headlineNumber: 15,
@@ -1945,7 +1915,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 20,
     headlineNumber: 16,
@@ -2048,7 +2018,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 21,
     headlineNumber: 17,
@@ -2124,7 +2094,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 22,
     headlineNumber: 18,
@@ -2206,7 +2176,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 19,
     headlineNumber: 19,
@@ -2335,7 +2305,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 18,
     headlineNumber: 20,
@@ -2448,7 +2418,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 17,
     headlineNumber: 21,
@@ -2593,7 +2563,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 1,
     headlineNumber: 22,
@@ -2712,7 +2682,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 11,
     headlineNumber: 23,
@@ -2771,7 +2741,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 12,
     headlineNumber: 24,
@@ -2866,7 +2836,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 2,
     headlineNumber: 25,
@@ -2957,7 +2927,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 4,
     headlineNumber: 26,
@@ -3049,7 +3019,7 @@ const headlineArticles = [
   },
   // -------------------------------------------------------------
   // KÖŞE YAZARLARI MAKALELERİ (ID: 201, 202, 203, 204)
-  // -------------------------------------------------------------,,
+  // -------------------------------------------------------------,
   {
     id: 201,
     headlineNumber: 27,
@@ -3107,7 +3077,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 202,
     headlineNumber: 28,
@@ -3164,7 +3134,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 203,
     headlineNumber: 29,
@@ -3221,7 +3191,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 204,
     headlineNumber: 30,
@@ -3278,7 +3248,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 205,
     headlineNumber: 31,
@@ -3335,7 +3305,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 206,
     headlineNumber: 32,
@@ -3391,7 +3361,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 207,
     headlineNumber: 33,
@@ -3447,7 +3417,7 @@ const headlineArticles = [
         `
       }
     ]
-  },,
+  },
   {
     id: 208,
     headlineNumber: 34,
@@ -3504,6 +3474,7 @@ const headlineArticles = [
       }
     ]
   }
+];
 ];
 
 // 5. Köşe Yazarları Listesi (Üst Widget Kartları İçin)
