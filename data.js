@@ -223,286 +223,8 @@ const pharmacyData = {
 // 4. Tüm Kategoriler & Köşe Yazarlarını Kapsayan Zengin Haber Listesi
 const headlineArticles = [
   {
-    id: 36,
-    headlineNumber: 1,
-    title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
-    spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
-    category: "DENİZCİLİK & GÜNDEM",
-    categorySlug: "trakya",
-    location: "Tekirdağ / Marmara Denizi",
-    badgeColor: "blue",
-    date: "30 Ağustos 2026 - 15:30",
-    readTime: "3 dk",
-    views: 184500,
-    likes: 14200,
-    reactions: { like: 8200, heart: 5100, clap: 3400, thinking: 320, angry: 25 },
-    socialPosts: [
-      {
-        user: "Tekirdağ Balıkçılar Kooperatifi",
-        handle: "@TekirdagBalikcilar",
-        avatar: "img/gundem-trakya-avatar-red.jpg",
-        platform: "twitter",
-        text: "Tüm hazırlıklarımızı tamamladık! Ağlarımız onarıldı, motorlarımız bakımdan geçti. 1 Eylül gecesi Süleymanpaşa ve Kumbağ'dan Marmara'ya 'Vira Bismillah' diyeceğiz. Denizlerimiz bereketli, kazancımız helal olsun. ⚓🐟 #Tekirdağ #ViraBismillah",
-        time: "15 dk önce",
-        likes: 4210,
-        shares: 940
-      },
-      {
-        user: "Marmara Denizcilik & Balık Haberleri",
-        handle: "@MarmaraDenizHaber",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
-        platform: "facebook",
-        text: "15 Nisan'da başlayan genel av yasağının sonuna geldik. Tekirdağ ve Trakya sahillerinde büyük bir heyecan var. Özellikle palamut ve hamside bereketli bir sezon sinyali alıyoruz. Tezgahlara bol ve taze balık gelecek!",
-        time: "35 dk önce",
-        likes: 2850,
-        shares: 610
-      }
-    ],
-    comments: [
-      {
-        id: 3601,
-        author: "Kaptan Selim",
-        city: "Tekirdağ / Kumbağ",
-        time: "10 dk önce",
-        content: "Aylardır bu anı bekliyorduk. Tayfamızla birlikte gece gündüz ağ diktik, teknemizi boyadık. İnşallah bu sezon deniz ana bize cömert davranır, halkımız da uygun fiyata taze balık yer.",
-        likes: 195
-      },
-      {
-        id: 3602,
-        author: "Mustafa Çelik",
-        city: "Süleymanpaşa / Sahil",
-        time: "25 dk önce",
-        content: "1 Eylül akşamı limandaki vira bismillah törenini dört gözle bekliyoruz. Tekirdağ'ın simgesi balıkçılık kültürümüzdür. Bütün reislerimize kazasız belasız, hayırlı ve bereketli bir sezon diliyorum.",
-        likes: 148
-      },
-      {
-        id: 3603,
-        author: "Sevgi Eren",
-        city: "Çorlu / Merkez",
-        time: "40 dk önce",
-        content: "Palamut ve hamsiyi çok özledik. Umarım bereketli geçer de tezgahlardaki fiyatlar herkesin bütçesine uygun olur.",
-        likes: 112
-      }
-    ],
-    author: {
-      name: "Gündem Trakya Haber Masası",
-      title: "Tekirdağ & Denizcilik Muhabiri",
-      avatar: "img/gundem-trakya-avatar-red.jpg"
-    },
-    image: "img/tekirdagli-balikcilar-vira-bismillah.jpg",
-    tags: ["Tekirdağ Balıkçılık", "Vira Bismillah", "1 Eylül Av Yasağı", "Marmara Denizi", "Palamut Hamsi", "Tekirdağ Limanı", "Kumbağ", "Balık Sezonu", "Trakya Haber"],
-    content: `
-      <p class="lead"><strong>Türkiye'de denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için genel av yasağının 1 Eylül'de sona erecek olması dolayısıyla Tekirdağ'da balıkçılar, yeni sezon hazırlıklarını eksiksiz tamamladı.</strong></p>
-      <p>15 Nisan'da başlayan ve yaklaşık 4,5 aydır devam eden av yasağı dönemini teknelerinin bakımını yaparak ve yüzlerce metrelik dev ağlarını onararak geçiren Tekirdağlı balıkçılar, yeni av sezonunda Marmara Denizi ve Karadeniz'e açılmak için gün sayıyor. Limanlarda motor, güverte, radar ve av araçlarının son kontrolleri yapılırken, balıkçılar 1 Eylül gecesi hep bir ağızdan “vira bismillah” diyerek ağlarını mavi sulara bırakacak.</p>
-      
-      <div class="article-quote">
-        <i class="fa-solid fa-quote-left"></i>
-        <p>"Aylardır süren sabırlı bekleyişin ve emeğin ardından yeniden denizle buluşuyoruz. Ortak temennimiz kazasız, belasız ve bereket dolu bir sezon geçirmek, vatandaşlarımıza bol ve taze balık ulaştırmaktır."</p>
-        <span>- Tekirdağ Balıkçı Reisleri & Tayfaları</span>
-      </div>
-
-      <p>Yeni sezonla birlikte tezgahlarda başta palamut, hamsi, istavrit, lüfer ve kolyoz olmak üzere balık çeşitliliğinin artması ve taze balık fiyatlarının vatandaşın erişebileceği makul seviyelere inmesi bekleniyor.</p>
-    `,
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "4,5 Aylık Av Yasağı Sona Eriyor: Tekirdağ Limanlarında Son Hazırlıklar Tamamlandı",
-        pageImage: "img/tekirdagli-balikcilar-vira-bismillah.jpg",
-        content: `
-          <p class="lead"><strong>Tekirdağ Süleymanpaşa ve Kumbağ Limanlarında 'Vira Bismillah' Heyecanı Zirve Yaptı</strong></p>
-          <p>Karadeniz, Marmara ve Ege denizlerinde gırgır ve trol yöntemiyle avcılık yapan balıkçılar için 15 Nisan tarihinde başlayan genel av yasağı, <strong>1 Eylül Salı</strong> günü itibarıyla resmen sona eriyor. Tekirdağ genelinde denizcilik ve balıkçılıkla geçimini sağlayan yüzlerce tayfa ve tekne sahibi, aylar süren hazırlık maratonunu tamamladı.</p>
-          
-          <p>Limanlarda hummalı bir çalışma yürüten ekipler; teknelerin motor revizyonlarından boya ve raspa işlemlerine, sonar ve radar sistemlerinden yırtılan ağların ilmek ilmek onarılmasına kadar tüm aşamaları titizlikle gözden geçirdi. Teknelerine tonlarca ağırlığındaki av araçlarını ve yeni ağlarını yükleyen balıkçılar, 1 Eylül sabahının ilk ışıklarıyla birlikte Marmara'nın serin sularına doğru rota çizecek.</p>
-
-          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
-
-          <div class="interactive-qa-box">
-            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Yeni Balıkçılık Sezonu ve Beklentiler:</div>
-            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🐟 Palamut ve Hamside Bereket Beklentisi: Tezgahlara ve Fiyatlara Nasıl Yansıyacak?</span><span class="qa-link-badge">Balık Türleri & Fiyatlar (Sayfa 2) ➡️</span></div>
-            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⚓ Bölge Ekonomisine ve İstihdama Can Suyu: Binlerce Ailenin Geçim Kapısı Açılıyor</span><span class="qa-link-badge">Ekonomik Etki (Sayfa 3) ➡️</span></div>
-          </div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Palamut ve Hamside Bereket Beklentisi: Tezgahlara ve Fiyatlara Nasıl Yansıyacak?",
-        pageImage: "img/tekirdagli-balikcilar-vira-bismillah.jpg",
-        content: `
-          <p class="lead"><strong>Marmara ve Karadeniz'den Gelen İlk Sinyaller: Bu Sezon Palamut ve İstavrit Yılı Olabilir!</strong></p>
-          <p>Sezon öncesinde denizde yapılan gözlemler ve 12 metrenin altındaki küçük ölçekli geleneksel balıkçıların aktardığı ilk veriler, bu yıl özellikle <strong>palamut, hamsi, istavrit ve kolyoz</strong> popülasyonunda sevindirici bir hareketlilik olduğunu gösteriyor. Karadeniz'den Marmara Boğazı'na doğru inen balık akışının elverişli hava koşullarıyla birleşmesi durumunda rekor bir av sezonu yaşanabileceği değerlendiriliyor.</p>
-          
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"Deniz bereketiyle gelir. Av miktarının yüksek olması demek, hem balıkçının yüzünün gülmesi hem de tezgahlarda taze balığın uygun fiyatla halkımızın sofrasına girmesi demektir."</p>
-            <span>- Süleymanpaşa Balık Pazarı Esnafı</span>
-          </div>
-
-          <p><strong>Besin Değeri ve Sağlık:</strong> Uzmanlar, kaliteli protein ve güçlü Omega-3 yağ asitleri içeren taze mevsim balıklarının haftada en az iki gün tüketilmesinin kalp ve damar sağlığı, bağışıklık sistemi ve beyin fonksiyonları açısından hayati önem taşıdığına dikkat çekiyor.</p>
-          
-          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Bölge Ekonomisine ve İstihdama Can Suyu: Binlerce Ailenin Geçim Kapısı Açılıyor",
-        pageImage: "img/tekirdagli-balikcilar-vira-bismillah.jpg",
-        content: `
-          <p class="lead"><strong>Balıkçılık Yalnızca Teknelerle Sınırlı Değil: Buzhanelerden Nakliyeye Devasa Bir Tedarik Zinciri</strong></p>
-          <p>Tekirdağ ve Trakya kıyılarında balıkçılık sektörü, on binlerce vatandaşın doğrudan ve dolaylı olarak geçimini sağladığı dev bir ekonomik ekosistem oluşturuyor. Teknelerde ter döken güverte tayfalarından balık hali komisyoncularına, buz fabrikalarından kasa imalatçılarına, soğuk zincir nakliye filolarından mahalle balıkçılarına kadar tüm çarklar 1 Eylül itibarıyla yeniden dönmeye başlıyor.</p>
-          
-          <p>Tekirdağlı balıkçıların en büyük ortak temennisi ise sezon boyunca havaların fırtınasız ve müsaade edici seyretmesi, denizlerin temiz kalması ve av sezonunun herhangi bir kaza yaşanmadan tamamlanmasıdır. Tüm Trakya halkı gibi balıkçılar da 1 Eylül gecesi başlayacak büyük av seferine kilitlenmiş durumda.</p>
-          
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"Rastgele reisler! Pruvanız neta, rüzgarınız kolayına, ağlarınız balıkla dolsun. Vira Bismillah!"</p>
-            <span>- Gündem Trakya Ailesi</span>
-          </div>
-        `
-      }
-    ]
-  },
-  {
-    id: 37,
-    headlineNumber: 2,
-    title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
-    spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik uyuşturucu ve suç geliri paranın ele geçirildiği operasyonda gözaltına alınan 2 zanlı tutuklanarak cezaevine gönderildi.",
-    category: "ASAYİŞ & GÜNDEM",
-    categorySlug: "trakya",
-    location: "Tekirdağ / Çorlu",
-    badgeColor: "red",
-    date: "30 Ağustos 2026 - 19:15",
-    readTime: "3 dk",
-    views: 142300,
-    likes: 9800,
-    reactions: { like: 6100, heart: 1200, clap: 4200, thinking: 410, angry: 890 },
-    socialPosts: [
-      {
-        user: "Tekirdağ Asayiş & Güvenlik Bülteni",
-        handle: "@TekirdagAsayis",
-        avatar: "img/gundem-trakya-avatar-red.jpg",
-        platform: "twitter",
-        text: "Tekirdağ Emniyeti Çorlu'da zehir tacirlerine göz açtırmıyor! 4 adrese yapılan eş zamanlı baskında 281 gram sentetik uyuşturucu madde ele geçirildi, 2 şüpheli tutuklandı. Tebrikler Tekirdağ Emniyeti! 🇹🇷🚔 #Tekirdağ #Çorlu #Narkotik",
-        time: "20 dk önce",
-        likes: 3120,
-        shares: 780
-      },
-      {
-        user: "Çorlu Haber & Güncel",
-        handle: "@CorluHaberGuncel",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
-        platform: "facebook",
-        text: "Çorlu'da gençleri zehirlemeye çalışan uyuşturucu satıcılarına yönelik narkotik polisimizden başarılı darbe. Yakalanan 2 şüpheli çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi. Sokaklarımız temizleniyor!",
-        time: "45 dk önce",
-        likes: 2150,
-        shares: 430
-      }
-    ],
-    comments: [
-      {
-        id: 3701,
-        author: "Ahmet Yılmaz",
-        city: "Çorlu / Reşadiye",
-        time: "15 dk önce",
-        content: "Polis ekiplerimizin eline, emeğine sağlık. Gençlerimizi bu zehirden korumak hepimizin görevi. Çorlu'da uyuşturucuya asla geçit verilmemeli.",
-        likes: 184
-      },
-      {
-        id: 3702,
-        author: "Meltem Özdemir",
-        city: "Tekirdağ / Süleymanpaşa",
-        time: "30 dk önce",
-        content: "Narkotik şubeyi tebrik ediyorum. Denetimlerin ve operasyonların aralıksız sürmesi çok önemli. Emniyet güçlerimize teşekkür ederiz.",
-        likes: 142
-      },
-      {
-        id: 3703,
-        author: "Serkan Taş",
-        city: "Kapaklı / Merkez",
-        time: "50 dk önce",
-        content: "Zehir tacirlerine verilen en ağır cezalar az bile kalır. Adli makamlarımızın tutuklama kararı yüreğimize su serpti.",
-        likes: 98
-      }
-    ],
-    author: {
-      name: "Gündem Trakya Asayiş Masası",
-      title: "Asayiş & Adliye Muhabiri",
-      avatar: "img/gundem-trakya-avatar-red.jpg"
-    },
-    image: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
-    tags: ["Tekirdağ Asayiş", "Çorlu Narkotik", "Uyuşturucu Operasyonu", "Tekirdağ Emniyet", "Tutuklama", "Çorlu Haber", "Trakya Son Dakika"],
-    content: `
-      <p class="lead"><strong>Tekirdağ'da polis ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen operasyonda gözaltına alınan 2 şüpheli çıkarıldıkları nöbetçi hakimlikçe tutuklandı.</strong></p>
-      <p>Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekipleri, uyuşturucu madde ticareti ve sokak satıcılarına karşı yürüttüğü kararlı mücadele kapsamında Çorlu ilçesinde teknik ve fiziki takip başlattı. Yapılan titiz saha çalışmaları sonucunda tespit edilen 4 farklı adrese özel harekat destekli eş zamanlı baskınlar düzenlendi.</p>
-      
-      <div class="article-quote">
-        <i class="fa-solid fa-quote-left"></i>
-        <p>"Gençlerimizin geleceğini karartan zehir tacirlerine karşı operasyonlarımız il genelinde tavizsiz ve kararlılıkla devam edecektir."</p>
-        <span>- Tekirdağ Emniyet Müdürlüğü Güvenlik Kaynakları</span>
-      </div>
-
-      <p>Adreslerde narkotik dedektör köpeklerinin de katılımıyla gerçekleştirilen aramalarda, 281 gram sentetik uyuşturucu madde, 33 adet uyuşturucu hap ve uyuşturucu ticaretinden elde edildiği değerlendirilen 1.600 TL nakit para ele geçirildi. Gözaltına alınan E.A. ve B.Ş., sevk edildikleri adliyede tutuklanarak cezaevine gönderildi.</p>
-    `,
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Tekirdağ Narkotik Ekiplerinden Çorlu'da 4 Adrese Eş Zamanlı Uyuşturucu Baskını",
-        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
-        content: `
-          <p class="lead"><strong>Çorlu İlçesinde Zehir Tacirlerine Ağır Darbe: 2 Zanlı Yakalandı</strong></p>
-          <p>Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şube Müdürlüğü ekipleri, Çorlu ilçesinde uyuşturucu madde ticareti yaptığı değerlendirilen şahıslara yönelik kapsamlı bir çalışma başlattı. Ekiplerin günler süren istihbarat ve saha takibi sonucunda şüphelilerin ikamet ve depo olarak kullandıkları adresler tek tek belirlendi.</p>
-          
-          <p>Cumhuriyet Başsavcılığı koordinesinde belirlenen <strong>4 adrese eş zamanlı operasyon</strong> düzenleyen polis ekipleri, şüpheliler E.A. ve B.Ş.'yi kıskıvrak yakalayarak gözaltına aldı.</p>
-
-          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
-
-          <div class="interactive-qa-box">
-            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Operasyonun Ayrıntıları ve Ele Geçirilenler:</div>
-            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🔍 Baskın Yapılan Adreslerde Ele Geçirilen Maddeler ve Suç Gelirleri Neler?</span><span class="qa-link-badge">Ele Geçirilenler (Sayfa 2) ➡️</span></div>
-            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⚖️ Adli Süreç ve Nöbetçi Hakimlik Kararı: 2 Zanlı Tutuklandı</span><span class="qa-link-badge">Mahkeme Kararı (Sayfa 3) ➡️</span></div>
-          </div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "Baskın Yapılan Adreslerde Ele Geçirilen Maddeler ve Suç Gelirleri Neler?",
-        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
-        content: `
-          <p class="lead"><strong>Narkotik Dedektör Köpekleriyle Yapılan Aramalarda Sentetik Uyuşturucu ve Nakit Para Ele Geçirildi</strong></p>
-          <p>Özel eğitimli dedektör köpeklerin de katıldığı aramalarda, evlerin gizli bölmelerine saklanmış <strong>281 gram sentetik uyuşturucu madde</strong>, satışa hazır halde <strong>33 adet uyuşturucu hap</strong> ve uyuşturucu ticaretinden temin edildiği belirlenen <strong>1.600 TL nakit para</strong> ele geçirildi.</p>
-          
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"Sokak satıcılarına ve uyuşturucu şebekelerine yönelik nokta operasyonlarımız aralıksız sürdürülecektir."</p>
-            <span>- Çorlu İlçe Emniyet Müdürlüğü</span>
-          </div>
-
-          <p>Ele geçirilen suç unsurlarına ve uyuşturucu maddelere el konulurken, maddelerin piyasa değeri ve dağıtım kanallarına ilişkin geniş çaplı soruşturma derinleştirildi.</p>
-          
-          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Adli Süreç ve Nöbetçi Hakimlik Kararı: 2 Zanlı Tutuklandı",
-        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
-        content: `
-          <p class="lead"><strong>Emniyetteki İşlemlerin Ardından Adliyeye Sevk Edilen 2 Şüpheli Cezaevine Gönderildi</strong></p>
-          <p>Gözaltına alınan şüpheliler E.A. ve B.Ş., Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi'ndeki ifade ve sorgu işlemlerinin tamamlanmasının ardından sağlık kontrolünden geçirilerek Çorlu Adliyesi'ne sevk edildi.</p>
-          
-          <p>Cumhuriyet Savcılığı tarafından ifadeleri alınan ve <em>"Uyuşturucu veya Uyarıcı Madde Ticareti Yapma veya Sağlama"</em> suçundan tutuklama talebiyle nöbetçi sulh ceza hakimliğine sevk edilen 2 zanlı, çıkarıldıkları mahkemece tutuklanarak cezaevine teslim edildi.</p>
-          
-          <div class="article-quote">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>"Trakya'nın huzuru ve güvenliği için güvenlik güçlerimizin gece gündüz yürüttüğü başarılı operasyonları tebrik ediyoruz."</p>
-            <span>- Gündem Trakya Asayiş Servisi</span>
-          </div>
-        `
-      }
-    ]
-  },
-  {
     id: 35,
-    headlineNumber: 3,
+    headlineNumber: 1,
     title: "Trakya'nın En Güçlü Dijital Haber Ağı: @gundemtrakya59 Instagram'da Yayında!",
     spot: "Tekirdağ, Edirne ve Kırklareli'nin tüm sıcak gelişmeleri, canlı video bültenleri, son dakika flaş haberleri ve özel röportajlar anında cebinizde! Resmi Instagram hesabımızı takip edin, Trakya'dan habersiz kalmayın.",
     category: "TOPLULUK & DUYURU",
@@ -654,11 +376,288 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
+  {
+    id: 36,
+    headlineNumber: 2,
+    title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
+    spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
+    category: "DENİZCİLİK & GÜNDEM",
+    categorySlug: "trakya",
+    location: "Tekirdağ / Marmara Denizi",
+    badgeColor: "blue",
+    date: "30 Ağustos 2026 - 15:30",
+    readTime: "3 dk",
+    views: 184500,
+    likes: 14200,
+    reactions: { like: 8200, heart: 5100, clap: 3400, thinking: 320, angry: 25 },
+    socialPosts: [
+      {
+        user: "Tekirdağ Balıkçılar Kooperatifi",
+        handle: "@TekirdagBalikcilar",
+        avatar: "img/gundem-trakya-avatar-red.jpg",
+        platform: "twitter",
+        text: "Tüm hazırlıklarımızı tamamladık! Ağlarımız onarıldı, motorlarımız bakımdan geçti. 1 Eylül gecesi Süleymanpaşa ve Kumbağ'dan Marmara'ya 'Vira Bismillah' diyeceğiz. Denizlerimiz bereketli, kazancımız helal olsun. ⚓🐟 #Tekirdağ #ViraBismillah",
+        time: "15 dk önce",
+        likes: 4210,
+        shares: 940
+      },
+      {
+        user: "Marmara Denizcilik & Balık Haberleri",
+        handle: "@MarmaraDenizHaber",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "15 Nisan'da başlayan genel av yasağının sonuna geldik. Tekirdağ ve Trakya sahillerinde büyük bir heyecan var. Özellikle palamut ve hamside bereketli bir sezon sinyali alıyoruz. Tezgahlara bol ve taze balık gelecek!",
+        time: "35 dk önce",
+        likes: 2850,
+        shares: 610
+      }
+    ],
+    comments: [
+      {
+        id: 3601,
+        author: "Kaptan Selim",
+        city: "Tekirdağ / Kumbağ",
+        time: "10 dk önce",
+        content: "Aylardır bu anı bekliyorduk. Tayfamızla birlikte gece gündüz ağ diktik, teknemizi boyadık. İnşallah bu sezon deniz ana bize cömert davranır, halkımız da uygun fiyata taze balık yer.",
+        likes: 195
+      },
+      {
+        id: 3602,
+        author: "Mustafa Çelik",
+        city: "Süleymanpaşa / Sahil",
+        time: "25 dk önce",
+        content: "1 Eylül akşamı limandaki vira bismillah törenini dört gözle bekliyoruz. Tekirdağ'ın simgesi balıkçılık kültürümüzdür. Bütün reislerimize kazasız belasız, hayırlı ve bereketli bir sezon diliyorum.",
+        likes: 148
+      },
+      {
+        id: 3603,
+        author: "Sevgi Eren",
+        city: "Çorlu / Merkez",
+        time: "40 dk önce",
+        content: "Palamut ve hamsiyi çok özledik. Umarım bereketli geçer de tezgahlardaki fiyatlar herkesin bütçesine uygun olur.",
+        likes: 112
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Masası",
+      title: "Tekirdağ & Denizcilik Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/tekirdagli-balikcilar-vira-bismillah.jpg",
+    tags: ["Tekirdağ Balıkçılık", "Vira Bismillah", "1 Eylül Av Yasağı", "Marmara Denizi", "Palamut Hamsi", "Tekirdağ Limanı", "Kumbağ", "Balık Sezonu", "Trakya Haber"],
+    content: `
+      <p class="lead"><strong>Türkiye'de denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için genel av yasağının 1 Eylül'de sona erecek olması dolayısıyla Tekirdağ'da balıkçılar, yeni sezon hazırlıklarını eksiksiz tamamladı.</strong></p>
+      <p>15 Nisan'da başlayan ve yaklaşık 4,5 aydır devam eden av yasağı dönemini teknelerinin bakımını yaparak ve yüzlerce metrelik dev ağlarını onararak geçiren Tekirdağlı balıkçılar, yeni av sezonunda Marmara Denizi ve Karadeniz'e açılmak için gün sayıyor. Limanlarda motor, güverte, radar ve av araçlarının son kontrolleri yapılırken, balıkçılar 1 Eylül gecesi hep bir ağızdan “vira bismillah” diyerek ağlarını mavi sulara bırakacak.</p>
+      
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Aylardır süren sabırlı bekleyişin ve emeğin ardından yeniden denizle buluşuyoruz. Ortak temennimiz kazasız, belasız ve bereket dolu bir sezon geçirmek, vatandaşlarımıza bol ve taze balık ulaştırmaktır."</p>
+        <span>- Tekirdağ Balıkçı Reisleri & Tayfaları</span>
+      </div>
 
+      <p>Yeni sezonla birlikte tezgahlarda başta palamut, hamsi, istavrit, lüfer ve kolyoz olmak üzere balık çeşitliliğinin artması ve taze balık fiyatlarının vatandaşın erişebileceği makul seviyelere inmesi bekleniyor.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "4,5 Aylık Av Yasağı Sona Eriyor: Tekirdağ Limanlarında Son Hazırlıklar Tamamlandı",
+        pageImage: "img/tekirdagli-balikcilar-vira-bismillah.jpg",
+        content: `
+          <p class="lead"><strong>Tekirdağ Süleymanpaşa ve Kumbağ Limanlarında 'Vira Bismillah' Heyecanı Zirve Yaptı</strong></p>
+          <p>Karadeniz, Marmara ve Ege denizlerinde gırgır ve trol yöntemiyle avcılık yapan balıkçılar için 15 Nisan tarihinde başlayan genel av yasağı, <strong>1 Eylül Salı</strong> günü itibarıyla resmen sona eriyor. Tekirdağ genelinde denizcilik ve balıkçılıkla geçimini sağlayan yüzlerce tayfa ve tekne sahibi, aylar süren hazırlık maratonunu tamamladı.</p>
+          
+          <p>Limanlarda hummalı bir çalışma yürüten ekipler; teknelerin motor revizyonlarından boya ve raspa işlemlerine, sonar ve radar sistemlerinden yırtılan ağların ilmek ilmek onarılmasına kadar tüm aşamaları titizlikle gözden geçirdi. Teknelerine tonlarca ağırlığındaki av araçlarını ve yeni ağlarını yükleyen balıkçılar, 1 Eylül sabahının ilk ışıklarıyla birlikte Marmara'nın serin sularına doğru rota çizecek.</p>
+
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Yeni Balıkçılık Sezonu ve Beklentiler:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🐟 Palamut ve Hamside Bereket Beklentisi: Tezgahlara ve Fiyatlara Nasıl Yansıyacak?</span><span class="qa-link-badge">Balık Türleri & Fiyatlar (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⚓ Bölge Ekonomisine ve İstihdama Can Suyu: Binlerce Ailenin Geçim Kapısı Açılıyor</span><span class="qa-link-badge">Ekonomik Etki (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Palamut ve Hamside Bereket Beklentisi: Tezgahlara ve Fiyatlara Nasıl Yansıyacak?",
+        pageImage: "img/tekirdagli-balikcilar-vira-bismillah.jpg",
+        content: `
+          <p class="lead"><strong>Marmara ve Karadeniz'den Gelen İlk Sinyaller: Bu Sezon Palamut ve İstavrit Yılı Olabilir!</strong></p>
+          <p>Sezon öncesinde denizde yapılan gözlemler ve 12 metrenin altındaki küçük ölçekli geleneksel balıkçıların aktardığı ilk veriler, bu yıl özellikle <strong>palamut, hamsi, istavrit ve kolyoz</strong> popülasyonunda sevindirici bir hareketlilik olduğunu gösteriyor. Karadeniz'den Marmara Boğazı'na doğru inen balık akışının elverişli hava koşullarıyla birleşmesi durumunda rekor bir av sezonu yaşanabileceği değerlendiriliyor.</p>
+          
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Deniz bereketiyle gelir. Av miktarının yüksek olması demek, hem balıkçının yüzünün gülmesi hem de tezgahlarda taze balığın uygun fiyatla halkımızın sofrasına girmesi demektir."</p>
+            <span>- Süleymanpaşa Balık Pazarı Esnafı</span>
+          </div>
+
+          <p><strong>Besin Değeri ve Sağlık:</strong> Uzmanlar, kaliteli protein ve güçlü Omega-3 yağ asitleri içeren taze mevsim balıklarının haftada en az iki gün tüketilmesinin kalp ve damar sağlığı, bağışıklık sistemi ve beyin fonksiyonları açısından hayati önem taşıdığına dikkat çekiyor.</p>
+          
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Bölge Ekonomisine ve İstihdama Can Suyu: Binlerce Ailenin Geçim Kapısı Açılıyor",
+        pageImage: "img/tekirdagli-balikcilar-vira-bismillah.jpg",
+        content: `
+          <p class="lead"><strong>Balıkçılık Yalnızca Teknelerle Sınırlı Değil: Buzhanelerden Nakliyeye Devasa Bir Tedarik Zinciri</strong></p>
+          <p>Tekirdağ ve Trakya kıyılarında balıkçılık sektörü, on binlerce vatandaşın doğrudan ve dolaylı olarak geçimini sağladığı dev bir ekonomik ekosistem oluşturuyor. Teknelerde ter döken güverte tayfalarından balık hali komisyoncularına, buz fabrikalarından kasa imalatçılarına, soğuk zincir nakliye filolarından mahalle balıkçılarına kadar tüm çarklar 1 Eylül itibarıyla yeniden dönmeye başlıyor.</p>
+          
+          <p>Tekirdağlı balıkçıların en büyük ortak temennisi ise sezon boyunca havaların fırtınasız ve müsaade edici seyretmesi, denizlerin temiz kalması ve av sezonunun herhangi bir kaza yaşanmadan tamamlanmasıdır. Tüm Trakya halkı gibi balıkçılar da 1 Eylül gecesi başlayacak büyük av seferine kilitlenmiş durumda.</p>
+          
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Rastgele reisler! Pruvanız neta, rüzgarınız kolayına, ağlarınız balıkla dolsun. Vira Bismillah!"</p>
+            <span>- Gündem Trakya Ailesi</span>
+          </div>
+        `
+      }
+    ]
+  },,
+  {
+    id: 37,
+    headlineNumber: 3,
+    title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
+    spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik uyuşturucu ve suç geliri paranın ele geçirildiği operasyonda gözaltına alınan 2 zanlı tutuklanarak cezaevine gönderildi.",
+    category: "ASAYİŞ & GÜNDEM",
+    categorySlug: "trakya",
+    location: "Tekirdağ / Çorlu",
+    badgeColor: "red",
+    date: "30 Ağustos 2026 - 19:15",
+    readTime: "3 dk",
+    views: 142300,
+    likes: 9800,
+    reactions: { like: 6100, heart: 1200, clap: 4200, thinking: 410, angry: 890 },
+    socialPosts: [
+      {
+        user: "Tekirdağ Asayiş & Güvenlik Bülteni",
+        handle: "@TekirdagAsayis",
+        avatar: "img/gundem-trakya-avatar-red.jpg",
+        platform: "twitter",
+        text: "Tekirdağ Emniyeti Çorlu'da zehir tacirlerine göz açtırmıyor! 4 adrese yapılan eş zamanlı baskında 281 gram sentetik uyuşturucu madde ele geçirildi, 2 şüpheli tutuklandı. Tebrikler Tekirdağ Emniyeti! 🇹🇷🚔 #Tekirdağ #Çorlu #Narkotik",
+        time: "20 dk önce",
+        likes: 3120,
+        shares: 780
+      },
+      {
+        user: "Çorlu Haber & Güncel",
+        handle: "@CorluHaberGuncel",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Çorlu'da gençleri zehirlemeye çalışan uyuşturucu satıcılarına yönelik narkotik polisimizden başarılı darbe. Yakalanan 2 şüpheli çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi. Sokaklarımız temizleniyor!",
+        time: "45 dk önce",
+        likes: 2150,
+        shares: 430
+      }
+    ],
+    comments: [
+      {
+        id: 3701,
+        author: "Ahmet Yılmaz",
+        city: "Çorlu / Reşadiye",
+        time: "15 dk önce",
+        content: "Polis ekiplerimizin eline, emeğine sağlık. Gençlerimizi bu zehirden korumak hepimizin görevi. Çorlu'da uyuşturucuya asla geçit verilmemeli.",
+        likes: 184
+      },
+      {
+        id: 3702,
+        author: "Meltem Özdemir",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "30 dk önce",
+        content: "Narkotik şubeyi tebrik ediyorum. Denetimlerin ve operasyonların aralıksız sürmesi çok önemli. Emniyet güçlerimize teşekkür ederiz.",
+        likes: 142
+      },
+      {
+        id: 3703,
+        author: "Serkan Taş",
+        city: "Kapaklı / Merkez",
+        time: "50 dk önce",
+        content: "Zehir tacirlerine verilen en ağır cezalar az bile kalır. Adli makamlarımızın tutuklama kararı yüreğimize su serpti.",
+        likes: 98
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Asayiş Masası",
+      title: "Asayiş & Adliye Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+    tags: ["Tekirdağ Asayiş", "Çorlu Narkotik", "Uyuşturucu Operasyonu", "Tekirdağ Emniyet", "Tutuklama", "Çorlu Haber", "Trakya Son Dakika"],
+    content: `
+      <p class="lead"><strong>Tekirdağ'da polis ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen operasyonda gözaltına alınan 2 şüpheli çıkarıldıkları nöbetçi hakimlikçe tutuklandı.</strong></p>
+      <p>Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekipleri, uyuşturucu madde ticareti ve sokak satıcılarına karşı yürüttüğü kararlı mücadele kapsamında Çorlu ilçesinde teknik ve fiziki takip başlattı. Yapılan titiz saha çalışmaları sonucunda tespit edilen 4 farklı adrese özel harekat destekli eş zamanlı baskınlar düzenlendi.</p>
+      
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Gençlerimizin geleceğini karartan zehir tacirlerine karşı operasyonlarımız il genelinde tavizsiz ve kararlılıkla devam edecektir."</p>
+        <span>- Tekirdağ Emniyet Müdürlüğü Güvenlik Kaynakları</span>
+      </div>
+
+      <p>Adreslerde narkotik dedektör köpeklerinin de katılımıyla gerçekleştirilen aramalarda, 281 gram sentetik uyuşturucu madde, 33 adet uyuşturucu hap ve uyuşturucu ticaretinden elde edildiği değerlendirilen 1.600 TL nakit para ele geçirildi. Gözaltına alınan E.A. ve B.Ş., sevk edildikleri adliyede tutuklanarak cezaevine gönderildi.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Tekirdağ Narkotik Ekiplerinden Çorlu'da 4 Adrese Eş Zamanlı Uyuşturucu Baskını",
+        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        content: `
+          <p class="lead"><strong>Çorlu İlçesinde Zehir Tacirlerine Ağır Darbe: 2 Zanlı Yakalandı</strong></p>
+          <p>Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şube Müdürlüğü ekipleri, Çorlu ilçesinde uyuşturucu madde ticareti yaptığı değerlendirilen şahıslara yönelik kapsamlı bir çalışma başlattı. Ekiplerin günler süren istihbarat ve saha takibi sonucunda şüphelilerin ikamet ve depo olarak kullandıkları adresler tek tek belirlendi.</p>
+          
+          <p>Cumhuriyet Başsavcılığı koordinesinde belirlenen <strong>4 adrese eş zamanlı operasyon</strong> düzenleyen polis ekipleri, şüpheliler E.A. ve B.Ş.'yi kıskıvrak yakalayarak gözaltına aldı.</p>
+
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+
+          <div class="interactive-qa-box">
+            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> Operasyonun Ayrıntıları ve Ele Geçirilenler:</div>
+            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">🔍 Baskın Yapılan Adreslerde Ele Geçirilen Maddeler ve Suç Gelirleri Neler?</span><span class="qa-link-badge">Ele Geçirilenler (Sayfa 2) ➡️</span></div>
+            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">⚖️ Adli Süreç ve Nöbetçi Hakimlik Kararı: 2 Zanlı Tutuklandı</span><span class="qa-link-badge">Mahkeme Kararı (Sayfa 3) ➡️</span></div>
+          </div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Baskın Yapılan Adreslerde Ele Geçirilen Maddeler ve Suç Gelirleri Neler?",
+        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        content: `
+          <p class="lead"><strong>Narkotik Dedektör Köpekleriyle Yapılan Aramalarda Sentetik Uyuşturucu ve Nakit Para Ele Geçirildi</strong></p>
+          <p>Özel eğitimli dedektör köpeklerin de katıldığı aramalarda, evlerin gizli bölmelerine saklanmış <strong>281 gram sentetik uyuşturucu madde</strong>, satışa hazır halde <strong>33 adet uyuşturucu hap</strong> ve uyuşturucu ticaretinden temin edildiği belirlenen <strong>1.600 TL nakit para</strong> ele geçirildi.</p>
+          
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Sokak satıcılarına ve uyuşturucu şebekelerine yönelik nokta operasyonlarımız aralıksız sürdürülecektir."</p>
+            <span>- Çorlu İlçe Emniyet Müdürlüğü</span>
+          </div>
+
+          <p>Ele geçirilen suç unsurlarına ve uyuşturucu maddelere el konulurken, maddelerin piyasa değeri ve dağıtım kanallarına ilişkin geniş çaplı soruşturma derinleştirildi.</p>
+          
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Adli Süreç ve Nöbetçi Hakimlik Kararı: 2 Zanlı Tutuklandı",
+        pageImage: "img/tekirdag-uyusturucu-operasyonu-tutuklama.jpg",
+        content: `
+          <p class="lead"><strong>Emniyetteki İşlemlerin Ardından Adliyeye Sevk Edilen 2 Şüpheli Cezaevine Gönderildi</strong></p>
+          <p>Gözaltına alınan şüpheliler E.A. ve B.Ş., Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi'ndeki ifade ve sorgu işlemlerinin tamamlanmasının ardından sağlık kontrolünden geçirilerek Çorlu Adliyesi'ne sevk edildi.</p>
+          
+          <p>Cumhuriyet Savcılığı tarafından ifadeleri alınan ve <em>"Uyuşturucu veya Uyarıcı Madde Ticareti Yapma veya Sağlama"</em> suçundan tutuklama talebiyle nöbetçi sulh ceza hakimliğine sevk edilen 2 zanlı, çıkarıldıkları mahkemece tutuklanarak cezaevine teslim edildi.</p>
+          
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Trakya'nın huzuru ve güvenliği için güvenlik güçlerimizin gece gündüz yürüttüğü başarılı operasyonları tebrik ediyoruz."</p>
+            <span>- Gündem Trakya Asayiş Servisi</span>
+          </div>
+        `
+      }
+    ]
+  },,
   {
     id: 34,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
     spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
     category: "SİYASET & GÜNDEM",
@@ -785,11 +784,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
-
+  },,
   {
     id: 33,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -909,10 +907,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 32,
-    headlineNumber: 5,
+    headlineNumber: 6,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -1032,10 +1030,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 31,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -1133,10 +1131,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 30,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -1234,10 +1232,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 29,
-    headlineNumber: 8,
+    headlineNumber: 9,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -1335,10 +1333,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 28,
-    headlineNumber: 9,
+    headlineNumber: 10,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -1448,10 +1446,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 27,
-    headlineNumber: 10,
+    headlineNumber: 11,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -1549,10 +1547,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 26,
-    headlineNumber: 11,
+    headlineNumber: 12,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
@@ -1655,10 +1653,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 25,
-    headlineNumber: 8,
+    headlineNumber: 13,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
@@ -1759,10 +1757,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 23,
-    headlineNumber: 4,
+    headlineNumber: 14,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
@@ -1866,10 +1864,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 24,
-    headlineNumber: 3,
+    headlineNumber: 15,
     title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
     spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
     category: "YAŞAM & GÜNDEM",
@@ -1947,10 +1945,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 20,
-    headlineNumber: 4,
+    headlineNumber: 16,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -2050,10 +2048,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 21,
-    headlineNumber: 3,
+    headlineNumber: 17,
     title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
     spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
     category: "YAŞAM",
@@ -2126,10 +2124,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 22,
-    headlineNumber: 4,
+    headlineNumber: 18,
     title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
     spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
     category: "YAŞAM & EĞİTİM",
@@ -2208,10 +2206,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 19,
-    headlineNumber: 5,
+    headlineNumber: 19,
     title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
     spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
     category: "EĞİTİM & GÜNDEM",
@@ -2337,10 +2335,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 18,
-    headlineNumber: 3,
+    headlineNumber: 20,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -2450,10 +2448,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 17,
-    headlineNumber: 3,
+    headlineNumber: 21,
     title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
     spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
     category: "SAĞLIK",
@@ -2595,11 +2593,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
-
+  },,
   {
     id: 1,
-    headlineNumber: 1,
+    headlineNumber: 22,
     title: "Trakya'nın Ulaşımında Yeni Çağ: Hızlı Tren Hattında Geri Sayım Başladı!",
     spot: "İstanbul ile Edirne arasını 1 saat 20 dakikaya indirecek dev projede ray montajı tamamlandı. Ticaret, sanayi ve turizmde büyük canlanma bekleniyor.",
     category: "TRAKYA HABER",
@@ -2715,10 +2712,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 11,
-    headlineNumber: 3,
+    headlineNumber: 23,
     title: "Çerkezköy ve Kapaklı OSB'de 5 Bin Kişiye İstihdam Müjdesi!",
     spot: "Trakya'nın en büyük sanayi kümelenmesinde otomotiv, kimya ve tekstil sektörlerinde dev yatırımlar üretime geçiyor.",
     category: "TRAKYA HABER",
@@ -2774,10 +2771,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 12,
-    headlineNumber: 4,
+    headlineNumber: 24,
     title: "Çorlu'da Yeni Altyapı ve Çevre Yolu Projesinde İmzalar Atıldı",
     spot: "Çorlu şehir içi trafiğini rahatlatacak 18 kilometrelik yeni bulvar ve köprülü kavşak inşaatı haftaya başlıyor.",
     category: "TRAKYA HABER",
@@ -2869,10 +2866,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 2,
-    headlineNumber: 5,
+    headlineNumber: 25,
     title: "Trakya Çiftçisinin Yüzü Gülüyor: Ayçiçeğinde Rekor Verim ve Alım Fiyatları",
     spot: "Sarı gelin tarlalarında hasat mesaisi başladı. Birlik temsilcileri bu yıl rekoltenin yüksek olduğunu ve prim desteğinin artırıldığını açıkladı.",
     category: "EKONOMİ & TARIM",
@@ -2960,10 +2957,10 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 4,
-    headlineNumber: 7,
+    headlineNumber: 26,
     title: "Çerkezköy ve Çorlu Sanayisine 10 Milyar Liralık Dev Yeşil Enerji Yatırımı",
     spot: "Trakya'nın sanayi devleri çatı GES ve rüzgar enerjisi santralleri ile karbon ayak izini sıfırlamaya hazırlanıyor.",
     category: "EKONOMİ & TARIM",
@@ -3052,7 +3049,7 @@ const headlineArticles = [
   },
   // -------------------------------------------------------------
   // KÖŞE YAZARLARI MAKALELERİ (ID: 201, 202, 203, 204)
-  // -------------------------------------------------------------
+  // -------------------------------------------------------------,
   {
     id: 201,
     title: "Hızlı Tren Hattı Trakya'nın Çehresini ve Sanayisini Nasıl Değiştirecek?",
@@ -3108,7 +3105,7 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 202,
     title: "Trakya Çiftçisinin Geleceği: Modern Sulama ve Lisanslı Depoculuk",
@@ -3163,7 +3160,7 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 203,
     title: "Sanayi Bölgelerinde İş Güvenliği ve Çalışan Hakları",
@@ -3218,7 +3215,7 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 204,
     title: "Ergene Havzası Koruma Eylem Planında Son Durum",
@@ -3273,7 +3270,7 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 205,
     title: "Trakya Topraklarında Su Krizi: Kuraklığa Karşı Damla Sulama Devrimi",
@@ -3328,7 +3325,7 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 206,
     title: "Çerkezköy ve Çorlu Sanayisinde Sanayi 4.0 ve Yapay Zeka Dönüşümü",
@@ -3382,7 +3379,7 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 207,
     title: "Mimar Sinan'ın Edirne'deki Mühendislik Dehası: Selimiye'nin Bilinmeyen Sırları",
@@ -3436,7 +3433,7 @@ const headlineArticles = [
         `
       }
     ]
-  },
+  },,
   {
     id: 208,
     title: "Trakya'nın Lojistik Üs Olma Potansiyeli ve 2026-2027 Yatırım Fırsatları",
