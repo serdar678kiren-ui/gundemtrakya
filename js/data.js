@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   {
+  "id": 127,
+  "articleId": 39,
+  "title": "Tekirdağ Çorlu Sarılar yolunda kamyonet ile otomobil kafa kafaya çarpıştı: 3 yaralı!",
+  "time": "15:30"
+},
+  {
   "id": 126,
   "articleId": 38,
   "title": "KKTC Girne açıklarında 267 kişilik yolcu gemisi battı: 8 can kaybı, 17 kayıp, kaptan dahil 8 kişi gözaltında!",
@@ -384,8 +390,113 @@ const headlineArticles = [
     ]
   },
   {
-  "id": 38,
+  "id": 39,
   "headlineNumber": 2,
+  "title": "Çorlu'da Feci Kaza: Kamyonet ile Otomobil Kafa Kafaya Çarpıştı, 3 Kişi Yaralandı!",
+  "spot": "Tekirdağ'ın Çorlu ilçesi Sarılar Mahallesi yolu üzerinde Serkan Ö. idaresindeki kamyonet ile karşı yönden gelen Havva Seyhan A. yönetimindeki otomobil kafa kafaya çarpıştı. Hurdaya dönen araçlarda bulunan 2 sürücü ve 1 yolcu, olay yerine sevk edilen sağlık ekiplerince Çorlu Devlet Hastanesi'ne kaldırıldı.",
+  "category": "ASAYİŞ & TRAFİK",
+  "categorySlug": "gundem",
+  "location": "Tekirdağ / Çorlu - Sarılar",
+  "badgeColor": "red",
+  "date": "1 Eylül 2026 - 15:30",
+  "readTime": "3 dk",
+  "image": "img/corlu-kaza-kamyonet-otomobil.jpg",
+  "author": {
+    "name": "Gündem Trakya Çorlu Masası",
+    "role": "Asayiş & Trafik Masası",
+    "avatar": "img/gundem-trakya-avatar-red.jpg"
+  },
+  "views": 118400,
+  "likes": 8450,
+  "reactions": {
+    "like": 940,
+    "heart": 120,
+    "clap": 80,
+    "thinking": 2850,
+    "angry": 4100
+  },
+  "socialPosts": [
+    {
+      "user": "Çorlu Trafik & Yol Durumu",
+      "handle": "@CorluTrafik",
+      "avatar": "img/gundem-trakya-avatar-red.jpg",
+      "platform": "twitter",
+      "text": "Çorlu Sarılar yolu üzerinde kamyonet ile otomobilin karıştığı şiddetli kaza meydana geldi. 3 yaralımız var, Çorlu Devlet Hastanesi'ne sevk edildiler. Bölgede yol bir süre kontrollü olarak trafiğe kapatıldı. Sarılar istikametine gidecek sürücüler dikkatli olsun! ⚠️🚗 #Çorlu #TrafikKazası #Tekirdağ",
+      "time": "10 dk önce",
+      "likes": 3840,
+      "shares": 920
+    },
+    {
+      "user": "Gündem Trakya Dijital Medya",
+      "handle": "@gundemtrakya59",
+      "avatar": "img/gundem-trakya-avatar-red.jpg",
+      "platform": "instagram",
+      "text": "Çorlu Sarılar yolunda kaza: 59 ANT 002 plakalı kamyonet ile 34 TU 1245 plakalı otomobil kafa kafaya çarpıştı. Kazada 3 vatandaşımız yaralandı. Yaralılarımıza acil şifalar diliyoruz. Trakya yollarında lütfen aşırı hız ve dikkatsizlikten kaçınalım! 📲🇹🇷 #gundemtrakya #çorlu #tekirdağ #kaza",
+      "time": "20 dk önce",
+      "likes": 5420,
+      "shares": 1310
+    },
+    {
+      "user": "Trakya Asayiş & Güvenlik",
+      "handle": "@TrakyaAsayis",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80",
+      "platform": "facebook",
+      "text": "Sarılar Mahallesi yol ayrımında virajlı ve dar olan bu güzergahta sık sık kaza yaşanıyor. Sürücülerimizin kavşak ve virajlara yaklaşırken hızlarını düşürmeleri hayati önem taşıyor. Tüm yaralılara geçmiş olsun.",
+      "time": "40 dk önce",
+      "likes": 2950,
+      "shares": 590
+    }
+  ],
+  "comments": [
+    {
+      "id": 3901,
+      "author": "Mehmet Karaca",
+      "city": "Tekirdağ / Çorlu",
+      "time": "15 dk önce",
+      "content": "Sarılar yolu virajları çok tehlikeli, özellikle karşıdan gelen araçlar bazen şeridi ortalayarak geliyor. Yaralı kardeşlerimize Allah şifa versin, can kaybı olmaması tek teselli.",
+      "likes": 42
+    },
+    {
+      "id": 3902,
+      "author": "Sevim Yılmaz",
+      "city": "Çorlu / Emlak Konutları",
+      "time": "25 dk önce",
+      "content": "Olay anında oradan geçiyorduk, ambulanslar ve jandarma çok hızlı intikal etti. Araçlar ciddi hasar almıştı. Lütfen trafikte dikkatli olalım.",
+      "likes": 31
+    },
+    {
+      "id": 3903,
+      "author": "Kadir Demirtaş",
+      "city": "Tekirdağ / Muratlı",
+      "time": "35 dk önce",
+      "content": "Çorlu-Sarılar hattında yol genişletme ve uyarı levhası eksikliği var. Yetkililerin buraya bir hız kesici ve aydınlatma yapması şart.",
+      "likes": 27
+    }
+  ],
+  "pages": [
+    {
+      "pageNum": 1,
+      "pageTitle": "Kaza Nasıl Meydana Geldi? Sarılar Yolunda Can Pazarı",
+      "pageImage": "img/corlu-kaza-kamyonet-otomobil.jpg",
+      "content": "\n          <p class=\"lead\"><strong>Tekirdağ'ın Çorlu ilçesinde kamyonetle otomobilin kafa kafaya çarpışması sonucu meydana gelen feci trafik kazasında 3 kişi yaralandı.</strong></p>\n          \n          <p>Kaza, Çorlu ilçesine bağlı <strong>Sarılar Mahallesi yolu</strong> üzerinde meydana geldi. Edinilen bilgilere göre, Serkan Ö. idaresindeki <strong>59 ANT 002</strong> plakalı kamyonet ile karşı istikametten gelen Havva Seyhan A. yönetimindeki <strong>34 TU 1245</strong> plakalı otomobil, virajlı yolda henüz bilinmeyen bir nedenle kafa kafaya çarpıştı.</p>\n\n          <p>Çarpışmanın şiddetiyle her iki araç da yol kenarına savrularak hurdaya döndü. Çevredekilerin büyük bir gürültüyle sarsıldığı kazayı gören vatandaşlar durumu hemen 112 Acil Çağrı Merkezi'ne bildirdi.</p>\n\n          <h3>3 Kişi Yaralandı</h3>\n          <p>İhbar üzerine olay yerine çok sayıda polis, jandarma, itfaiye ve sağlık ekibi sevk edildi. Sağlık ekiplerinin kaza yerinde yaptığı ilk kontrollerde şu detaylar tespit edildi:</p>\n          <ul>\n            <li><strong>Sürücüler Yaralandı:</strong> Kamyonet sürücüsü Serkan Ö. ve otomobil sürücüsü Havva Seyhan A. kazanın şiddetiyle yaralandı.</li>\n            <li><strong>Yolcu Hastaneye Kaldırıldı:</strong> Kamyonette yolcu olarak bulunan Enes A. da yaralanarak ambulansa alındı.</li>\n            <li><strong>Hızlı Sevk:</strong> Olay yerinde ilk müdahaleleri yapılan 3 yaralı, ambulanslarla hızla <strong>Çorlu Devlet Hastanesi</strong> Acil Servisi'ne kaldırıldı.</li>\n          </ul>\n\n          <div class=\"in-article-ad\">\n            <span class=\"ad-label\">TRAFİK BİLGİLENDİRMESİ</span>\n            <div class=\"ad-content-box\">\n              <i class=\"fa-solid fa-triangle-exclamation\" style=\"color: var(--news-red); font-size: 1.3rem; margin-bottom: 0.3rem;\"></i>\n              <div>Kaza nedeniyle Sarılar Mahallesi yolunda trafik bir süre tek şeritten kontrollü olarak sağlandı.</div>\n            </div>\n          </div>\n            "
+    },
+    {
+      "pageNum": 2,
+      "pageTitle": "Olay Yeri İncelemesi ve Yaralıların Sağlık Durumu",
+      "pageImage": "img/corlu-kaza-kamyonet-otomobil.jpg",
+      "content": "\n          <p class=\"lead\"><strong>Hastaneye kaldırılan yaralıların tedavileri sürerken, jandarma ve trafik ekipleri kaza yerinde detaylı inceleme gerçekleştirdi.</strong></p>\n\n          <p>Çorlu Devlet Hastanesi Acil Servisi'ne ulaştırılan Serkan Ö., Havva Seyhan A. ve Enes A.'nın hemen tedavi altına alındığı, ilk belirlemelere göre hayati tehlikelerinin bulunmadığı ancak vücutlarında çeşitli kırık ve ezilmelerin olduğu öğrenildi.</p>\n\n          <h3>Araçlar Çekici Yardımıyla Kaldırıldı</h3>\n          <p>Kazada ağır hasar alarak kullanılamaz hale gelen 59 ANT 002 plakalı kamyonet ile 34 TU 1245 plakalı otomobil, olay yeri inceleme çalışmalarının ardından çekici marifetiyle yoldan kaldırıldı.</p>\n\n          <p>Belediye ekipleri tarafından yola dökülen yağ ve parçaların temizlenmesinin ardından Sarılar Mahallesi yolu yeniden normal araç trafiğine açıldı.</p>\n\n          <p style=\"background: var(--bg-card); border-left: 4px solid var(--news-red); padding: 1rem; border-radius: var(--radius-sm); font-weight: 600; color: var(--text-main);\">\n            Jandarma ve polis ekipleri, kazanın oluş şekli, şerit ihlali ve hız durumunu tespit etmek amacıyla çevredeki güvenlik kameralarını incelemeye aldı.\n          </p>\n            "
+    },
+    {
+      "pageNum": 3,
+      "pageTitle": "Sarılar Yolu Trafik Güvenliği ve Alınması Gereken Önlemler",
+      "pageImage": "img/corlu-kaza-kamyonet-otomobil.jpg",
+      "content": "\n          <p class=\"lead\"><strong>Bölge sakinleri Sarılar yolunun dar ve virajlı yapısına dikkat çekerek sürücüleri hız yapmamaları konusunda uyardı.</strong></p>\n\n          <p>Çorlu ile çevre köyleri birbirine bağlayan Sarılar Mahallesi güzergahında tarım araçları, hafriyat kamyonları ve binek araçların yoğun olarak seyrettiğini belirten mahalle sakinleri, yol üzerinde aydınlatma ve uyarı levhalarının artırılmasını talep ediyor.</p>\n\n          <h3>Trafik Ekiplerinden Sürücülere Kritik Uyarılar</h3>\n          <p>Trafik denetleme ekipleri, özellikle kırsal mahalle bağlantı yollarında sürücülerin şu kurallara azami özen göstermesi gerektiğini vurguladı:</p>\n          <ul>\n            <li>Virajlı yollarda karşı şeride taşmamak ve takip mesafesini korumak,</li>\n            <li>Hava ve yol şartlarına uygun hız limitlerine riayet etmek,</li>\n            <li>Emniyet kemeri takma kuralını şehir içinde ve mahalle yollarında asla ihmal etmemek.</li>\n          </ul>\n\n          <div class=\"interactive-qa-box\">\n            <div class=\"qa-box-title\">\n              <i class=\"fa-solid fa-circle-question\"></i>\n              <span>Kaza Hakkında Merak Edilenler</span>\n            </div>\n            <div class=\"qa-link-card\" onclick=\"goToArticlePage(1)\">\n              <span class=\"qa-link-text\">Kaza nerede ve hangi araçlar arasında oldu?</span>\n              <span class=\"qa-link-badge\">Sayfa 1'e Git</span>\n            </div>\n            <div class=\"qa-link-card\" onclick=\"goToArticlePage(2)\">\n              <span class=\"qa-link-text\">Yaralıların sağlık durumu nasıl?</span>\n              <span class=\"qa-link-badge\">Sayfa 2'ye Git</span>\n            </div>\n          </div>\n\n          <p>Gündem Trakya ailesi olarak kazada yaralanan hemşehrilerimize geçmiş olsun dileklerimizi iletiyor, acil şifalar temenni ediyoruz.</p>\n            "
+    }
+  ]
+},
+  {
+  "id": 38,
+  "headlineNumber": 3,
   "title": "Girne Açıklarında 267 Kişilik Yolcu Gemisi Battı: Faciada Can Kaybı 8'e Yükseldi, Kaptan Dahil 8 Kişi Gözaltında!",
   "spot": "Kuzey Kıbrıs Türk Cumhuriyeti Girne Limanı'ndan Mersin Taşucu'na hareket eden Filo Denizcilik'e ait yolcu gemisi, fırtına sebebiyle limanın 2 kilometre açığında alabora olarak 514 metre derinliğe battı. Arama kurtarma ekipleri 237 kişiyi sağ kurtarırken, 8 kişinin cansız bedenine ulaşıldı, 17 kayıp aranıyor. Facianın ardından gemi kaptanı dahil 8 kişi gözaltına alındı.",
   "category": "SON DAKİKA & GÜNCEL",
@@ -490,7 +601,7 @@ const headlineArticles = [
 },
   {
     id: 36,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
     spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
     category: "DENİZCİLİK & GÜNDEM",
@@ -629,7 +740,7 @@ const headlineArticles = [
   },
   {
     id: 37,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik kannabinoid ele geçirilirken, gözaltına alınan 2 zanlı çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -739,7 +850,7 @@ const headlineArticles = [
   },
   {
     id: 34,
-    headlineNumber: 5,
+    headlineNumber: 6,
     title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
     spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
     category: "SİYASET & GÜNDEM",
@@ -869,7 +980,7 @@ const headlineArticles = [
   },
   {
     id: 33,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -992,7 +1103,7 @@ const headlineArticles = [
   },
   {
     id: 32,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -1115,7 +1226,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 8,
+    headlineNumber: 9,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -1216,7 +1327,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 9,
+    headlineNumber: 10,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -1317,7 +1428,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 10,
+    headlineNumber: 11,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -1418,7 +1529,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 11,
+    headlineNumber: 12,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -1531,7 +1642,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 12,
+    headlineNumber: 13,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -1632,7 +1743,7 @@ const headlineArticles = [
   },
   {
     id: 26,
-    headlineNumber: 13,
+    headlineNumber: 14,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
@@ -1738,7 +1849,7 @@ const headlineArticles = [
   },
   {
     id: 25,
-    headlineNumber: 14,
+    headlineNumber: 15,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
@@ -1842,7 +1953,7 @@ const headlineArticles = [
   },
   {
     id: 23,
-    headlineNumber: 15,
+    headlineNumber: 16,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
@@ -1949,7 +2060,7 @@ const headlineArticles = [
   },
   {
     id: 24,
-    headlineNumber: 16,
+    headlineNumber: 17,
     title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
     spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
     category: "YAŞAM & GÜNDEM",
@@ -2030,7 +2141,7 @@ const headlineArticles = [
   },
   {
     id: 20,
-    headlineNumber: 17,
+    headlineNumber: 18,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -2133,7 +2244,7 @@ const headlineArticles = [
   },
   {
     id: 21,
-    headlineNumber: 18,
+    headlineNumber: 19,
     title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
     spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
     category: "YAŞAM",
@@ -2209,7 +2320,7 @@ const headlineArticles = [
   },
   {
     id: 22,
-    headlineNumber: 19,
+    headlineNumber: 20,
     title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
     spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
     category: "YAŞAM & EĞİTİM",
@@ -2291,7 +2402,7 @@ const headlineArticles = [
   },
   {
     id: 19,
-    headlineNumber: 20,
+    headlineNumber: 21,
     title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
     spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
     category: "EĞİTİM & GÜNDEM",
@@ -2420,7 +2531,7 @@ const headlineArticles = [
   },
   {
     id: 18,
-    headlineNumber: 21,
+    headlineNumber: 22,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -2533,7 +2644,7 @@ const headlineArticles = [
   },
   {
     id: 17,
-    headlineNumber: 22,
+    headlineNumber: 23,
     title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
     spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
     category: "SAĞLIK",
@@ -2678,7 +2789,7 @@ const headlineArticles = [
   },
   {
     id: 1,
-    headlineNumber: 23,
+    headlineNumber: 24,
     title: "Trakya'nın Ulaşımında Yeni Çağ: Hızlı Tren Hattında Geri Sayım Başladı!",
     spot: "İstanbul ile Edirne arasını 1 saat 20 dakikaya indirecek dev projede ray montajı tamamlandı. Ticaret, sanayi ve turizmde büyük canlanma bekleniyor.",
     category: "TRAKYA HABER",
@@ -2789,7 +2900,7 @@ const headlineArticles = [
   },
   {
     id: 11,
-    headlineNumber: 24,
+    headlineNumber: 25,
     title: "Çerkezköy ve Kapaklı OSB'de 5 Bin Kişiye İstihdam Müjdesi!",
     spot: "Trakya'nın en büyük sanayi kümelenmesinde otomotiv, kimya ve tekstil sektörlerinde dev yatırımlar üretime geçiyor.",
     category: "TRAKYA HABER",
@@ -2851,7 +2962,7 @@ const headlineArticles = [
   // -------------------------------------------------------------,
   {
     id: 201,
-    headlineNumber: 28,
+    headlineNumber: 29,
     title: "Hızlı Tren Hattı Trakya'nın Çehresini ve Sanayisini Nasıl Değiştirecek?",
     spot: "İstanbul ile Trakya arasındaki entegrasyon bölgedeki sanayi, turizm ve arsa değerlerini doğrudan etkileyecek.",
     category: "KÖŞE YAZISI",
@@ -2908,7 +3019,7 @@ const headlineArticles = [
   },
   {
     id: 202,
-    headlineNumber: 29,
+    headlineNumber: 30,
     title: "Trakya Çiftçisinin Geleceği: Modern Sulama ve Lisanslı Depoculuk",
     spot: "İklim krizine karşı Trakya havzasında suyun doğru yönetimi ve üretici kooperatiflerinin önemi.",
     category: "KÖŞE YAZISI",
@@ -2964,7 +3075,7 @@ const headlineArticles = [
   },
   {
     id: 203,
-    headlineNumber: 30,
+    headlineNumber: 31,
     title: "Sanayi Bölgelerinde İş Güvenliği ve Çalışan Hakları",
     spot: "Çorlu ve Çerkezköy aksında büyüyen sanayi tesislerinde yeni hukuki standartlar ve denetimler.",
     category: "KÖŞE YAZISI",
@@ -3020,7 +3131,7 @@ const headlineArticles = [
   },
   {
     id: 204,
-    headlineNumber: 31,
+    headlineNumber: 32,
     title: "Ergene Havzası Koruma Eylem Planında Son Durum",
     spot: "Arıtma tesisleri ve nehir yatağı temizliğinde gelinen nokta çevre sağlığı açısından neler vadediyor?",
     category: "KÖŞE YAZISI",
@@ -3076,7 +3187,7 @@ const headlineArticles = [
   },
   {
     id: 205,
-    headlineNumber: 32,
+    headlineNumber: 33,
     title: "Trakya Topraklarında Su Krizi: Kuraklığa Karşı Damla Sulama Devrimi",
     spot: "İklim değişikliği Trakya tarımını nasıl etkiliyor? Yeraltı sularının korunması ve akıllı tarım teknolojileri neden hayati?",
     category: "KÖŞE YAZISI",
@@ -3132,7 +3243,7 @@ const headlineArticles = [
   },
   {
     id: 206,
-    headlineNumber: 33,
+    headlineNumber: 34,
     title: "Çerkezköy ve Çorlu Sanayisinde Sanayi 4.0 ve Yapay Zeka Dönüşümü",
     spot: "Trakya fabrikalarında robotik otomasyon, yeşil enerji ve dijitalleşme ile küresel rekabet gücü nasıl artıyor?",
     category: "KÖŞE YAZISI",
@@ -3187,7 +3298,7 @@ const headlineArticles = [
   },
   {
     id: 207,
-    headlineNumber: 34,
+    headlineNumber: 35,
     title: "Mimar Sinan'ın Edirne'deki Mühendislik Dehası: Selimiye'nin Bilinmeyen Sırları",
     spot: "UNESCO Dünya Mirası Selimiye Camii'nin kubbe akustiği, deprem izolatörleri ve Trakya'nın kültürel mirası.",
     category: "KÖŞE YAZISI",
@@ -3242,7 +3353,7 @@ const headlineArticles = [
   },
   {
     id: 208,
-    headlineNumber: 35,
+    headlineNumber: 36,
     title: "Trakya'nın Lojistik Üs Olma Potansiyeli ve 2026-2027 Yatırım Fırsatları",
     spot: "Çorlu Havalimanı, Tekirdağ Asyaport Limanı ve Hızlı Tren aksı bölgeyi Avrupa'nın en büyük aktarma merkezine dönüştürüyor.",
     category: "KÖŞE YAZISI",
