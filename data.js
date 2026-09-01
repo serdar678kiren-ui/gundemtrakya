@@ -22,7 +22,13 @@ const financeData = [
 
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
-  {
+  
+  { 
+    id: 128, 
+    articleId: 38, 
+    title: "Özgür Özel'den 4-5 Eylül'de tarihi Trakya çıkarması: Tekirdağ, Edirne ve Kırklareli'de çiftçi, esnaf ve emeklilerle buluşacak!", 
+    time: "23:45" 
+  },{
   "id": 127,
   "articleId": 39,
   "title": "Tekirdağ Çorlu Sarılar yolunda kamyonet ile otomobil kafa kafaya çarpıştı: 3 yaralı!",
@@ -390,6 +396,139 @@ const headlineArticles = [
     ]
   },
   {
+    id: 38,
+    headlineNumber: 2,
+    title: "Özgür Özel’den Tarihi Trakya Çıkarması: Tekirdağ, Edirne ve Kırklareli Programı Netleşti!",
+    spot: "Yeni Parti Genel Başkanı Özgür Özel, 4 ve 5 Eylül tarihlerinde Tekirdağ, Edirne ve Kırklareli'ni kapsayan iki günlük yoğun bir Trakya maratonuna çıkıyor. Çorlu'dan Süleymanpaşa'ya, Selimiye'den Edirne Halk Pazarı'na, Kırklareli merkezden Babaeski köylerine kadar çiftçiler, emekliler ve esnafla buluşacak Özel'in Trakya çıkarması bölge siyasetinde büyük heyecan yarattı.",
+    category: "SİYASET & GÜNDEM",
+    categorySlug: "siyaset",
+    location: "Trakya / Bölge Geneli",
+    badgeColor: "red",
+    date: "1 Eylül 2026 - 23:45",
+    readTime: "4 dk",
+    views: 128500,
+    likes: 8940,
+    reactions: { like: 4120, heart: 2850, clap: 1640, thinking: 280, angry: 50 },
+    socialPosts: [
+      {
+        user: "Trakya Siyaset Masası",
+        handle: "@TrakyaSiyaset",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Özgür Özel'in 4-5 Eylül Trakya turu bölge için tarihi bir gövde gösterisine dönüşecek. Çorlu, Süleymanpaşa, Edirne, Kırklareli ve Babaeski'de doğrudan halkla buluşma kararı çok kritik. #OzgurOzel #Trakya #YeniParti",
+        time: "10 dk önce",
+        likes: 3120,
+        shares: 640
+      },
+      {
+        user: "Edirne & Kırklareli Gündemi",
+        handle: "@EdirneKirklareli",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Selimiye Camii, Edirne Emekli Evi ve Babaeski Taşağıl Köyü'nde üreticilerle buluşma programı Trakya'nın nabzını tutacak. Saha siyasetinde yeni bir dönem başlıyor.",
+        time: "25 dk önce",
+        likes: 2180,
+        shares: 430
+      }
+    ],
+    comments: [
+      {
+        id: 3801,
+        author: "Kemal Güler",
+        city: "Tekirdağ / Süleymanpaşa",
+        time: "5 dk önce",
+        content: "Hükümet Caddesi'ndeki yürüyüş ve esnaf ziyareti çok ses getirecektir. Trakya halkı sahada doğrudan vatandaşın derdini dinleyen lider görmek istiyor.",
+        likes: 142
+      },
+      {
+        id: 3802,
+        author: "Murat Çetin",
+        city: "Edirne / Merkez",
+        time: "12 dk önce",
+        content: "Cumartesi günü Selimiye ve Edirne Halk Pazarı ziyareti çok isabetli. Emeklilerin ve pazarcı esnafının durumunu ilk ağızdan dinleyecek olması çok değerli.",
+        likes: 118
+      },
+      {
+        id: 3803,
+        author: "Ayten Yılmaz",
+        city: "Kırklareli / Babaeski",
+        time: "20 dk önce",
+        content: "Babaeski Taşağıl Köyü'nde çiftçilerle buluşacak olması biz Trakya üreticileri için çok önemli. Mazot, gübre ve ayçiçeği fiyatları konusunda sesimiz duyulsun.",
+        likes: 95
+      },
+      {
+        id: 3804,
+        author: "Hakan Demir",
+        city: "Çorlu / Şeyhsinan",
+        time: "30 dk önce",
+        content: "Cuma günü Süleymaniye Camii ve Çorlu buluşmasıyla başlayacak olması Çorlu esnafı için de hareketlilik getirecektir. Hayırlı olsun.",
+        likes: 74
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Haber Merkezi",
+      title: "Siyaset & Bölge Masası",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/ozgur-ozel-trakya-cikarmasi.jpg",
+    tags: ["Özgür Özel", "Trakya Çıkarması", "Tekirdağ", "Edirne", "Kırklareli", "Babaeski", "Çorlu", "Süleymanpaşa", "Yeni Parti", "Siyaset", "Çiftçi Buluşması"],
+    content: `
+      <p class="lead"><strong>Yeni Parti Genel Başkanı Özgür Özel, 4 ve 5 Eylül tarihlerinde Tekirdağ, Edirne ve Kırklareli illerini kapsayan iki günlük dev bir Trakya saha turu gerçekleştirecek.</strong></p>
+      <p>Kuruluşunun ardından Türkiye genelinde örgütlenme ve saha çalışmalarına hız veren Yeni Parti'de Genel Başkan Özgür Özel'in yeni rotası Trakya oldu. İki gün boyunca Çorlu, Süleymanpaşa, Edirne, Kırklareli ve Babaeski'de esnaf, emekli, pazarcı ve çiftçilerle bir araya gelecek olan Özel, vatandaşların ekonomik sıkıntılarını ve yerel taleplerini yerinde dinleyecek.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Trakya'nın toprağına, üreticisine, esnafına ve emeklisine sahip çıkmak için adım adım sokaklarda, tarlalarda ve pazarlarda olacağız. Yürüyelim arkadaşlar, Trakya'nın sesi tüm Türkiye'de yankılanacak."</p>
+        <span>- Özgür Özel, Yeni Parti Genel Başkanı</span>
+      </div>
+      <p>Özellikle Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer ve ilçe belediye başkanlarının Yeni Parti'ye katılımının ardından gerçekleşecek bu ziyaret, bölgedeki siyasi dengeleri doğrudan etkileyecek tarihi bir gövde gösterisi olarak değerlendiriliyor.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "4 Eylül Cuma Tekirdağ'dan Başlıyor: Çorlu ve Süleymanpaşa'da Büyük Esnaf Buluşması",
+        pageImage: "img/ozgur-ozel-trakya-cikarmasi.jpg",
+        content: `
+          <p class="lead">Yeni Parti'nin kuruluşunun ardından Türkiye genelindeki saha çalışmalarına ağırlık veren Genel Başkan Özgür Özel'in rotası bu kez Trakya olacak. Özel, iki güne yayılan yoğun programında Tekirdağ, Edirne ve Kırklareli illerini ziyaret ederek vatandaşlarla bir araya gelecek.</p>
+          <p>Özgür Özel'in Trakya çıkarması <strong>4 Eylül Cuma günü Tekirdağ'dan</strong> başlayacak. Programın ilk durağı Çorlu olacak. Özel'in saat 13.15'te Çorlu Süleymaniye Camii'nde cuma namazını kılması ve ardından cemaat ve esnafla hasbihal etmesi planlanıyor.</p>
+          <p>Özel daha sonra il merkezine, Süleymanpaşa'ya geçecek. Saat 17.30'da Tekirdağ'ın kalbi sayılan <strong>Hükümet Caddesi'nde</strong> esnaf ziyaretinde bulunacak olan Yeni Parti Genel Başkanı, ardından vatandaşlarla birlikte kent merkezinde yürüyüş gerçekleştirecek.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Tekirdağ'da ve tüm Trakya'da halkımızın değişim ve adalet arayışına tercüman olacağız. Sokakta esnafımızla, meydanda hemşehrilerimizle omuz omuza yürüyeceğiz."</p>
+            <span>- Özgür Özel</span>
+          </div>
+          <p>Yeni Parti'nin Tekirdağ'daki güçlü yapılanmasının ardından gerçekleştirilecek bu ziyaretin, parti açısından bölgedeki en önemli saha buluşmalarından biri olması bekleniyor.</p>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Edirne'de Emekliler ve Pazar Esnafı, Kırklareli'nde 'Yürüyelim Arkadaşlar' Çağrısı",
+        pageImage: "img/ozgur-ozel-trakya-cikarmasi.jpg",
+        content: `
+          <p class="lead">Tekirdağ programının ardından Özgür Özel'in rotası serhat şehri Edirne olacak. 5 Eylül Cumartesi günü sabah saatlerinde Edirne'de başlayacak temaslar gün boyu sürecek.</p>
+          <p>5 Eylül Cumartesi günü saat 10.00'da Mimar Sinan'ın şaheseri <strong>Selimiye Camii'ni</strong> ziyaret edecek olan Özel, saat 10.30'da <strong>Vefa Edirne Emekli Evi'nde</strong> emeklilerle bir araya gelecek. Hayat pahalılığı ve maaş yetersizliği çeken emeklilerin sorunlarını dinleyecek.</p>
+          <p>Özel, saat 12.00'de ise <strong>Edirne Halk Pazarı'na</strong> geçerek pazarcı esnafı ve alışveriş yapan vatandaşlarla buluşacak. Yeni Parti'nin Edirne'de örgütlenme ve kongre hazırlıklarının hız kazandığı bir dönemde gerçekleşecek ziyaret, teşkilat açısından da büyük önem taşıyor. Edirne'de kurucu üyelik sürecinin ardından üye sayısının yaklaşık 1.600'e ulaştığı ve ilçe kongrelerinin 12 Eylül'den itibaren başlayacağı açıklanmıştı.</p>
+          <p>Özgür Özel, Edirne'deki temaslarının ardından aynı gün <strong>Kırklareli'ne</strong> geçecek. Saat 15.00'te başlayacak program kapsamında Cumhuriyet Caddesi ve Fevzi Çakmak Bulvarı üzerinde esnaf ziyaretleri gerçekleştirecek olan Özel, vatandaşlarla buluşacak ve kent merkezinde kitlesel bir yürüyüş yapacak. Kırklareli programı Yeni Parti tarafından <em>"Yürüyelim arkadaşlar"</em> çağrısıyla duyuruldu.</p>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Babaeski Taşağıl Köyü'nde Üretici Zirvesi ve Trakya Siyasetinde Yeni Dönem",
+        pageImage: "img/ozgur-ozel-trakya-cikarmasi.jpg",
+        content: `
+          <p class="lead">Özel'in iki günlük Trakya programının en dikkat çeken duraklarından biri de tarım ve üretimin kalbi Babaeski olacak.</p>
+          <p>Kırklareli merkez programının ardından Babaeski'ye geçecek olan Özgür Özel, saat 17.00'de <strong>Taşağıl Köyü'nde çiftçilerle</strong> bir araya gelecek. Buluşmada üreticilerin yaşadığı girdi maliyetleri, mazot ve gübre zamları, kuraklık ve sulama problemleri ile ayçiçeği ve buğday taban fiyatları doğrudan üreticilerden dinlenecek.</p>
+          <p>Özgür Özel böylece 4 ve 5 Eylül'de Tekirdağ, Edirne ve Kırklareli'ni kapsayan son derece yoğun bir Trakya turunu tamamlamış olacak. Çorlu'dan Süleymanpaşa'ya, Edirne'den Kırklareli ve Babaeski'ye uzanacak programda Özel'in özellikle doğrudan vatandaş temasını ön plana çıkarması dikkat çekiyor.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Trakya çiftçisi alın terinin karşılığını alamıyor. Taşağıl'dan tüm Türkiye'ye üreticinin sesini haykıracağız."</p>
+            <span>- Özgür Özel</span>
+          </div>
+          <p>Esnaf, emekli, pazarcı, çiftçi ve kent merkezlerinde vatandaşlarla gerçekleştirilecek buluşmalar, Yeni Parti'nin Trakya'daki saha siyasetinin ilk büyük sınavı olacak. Ziyaretin bölgede yaratacağı siyasi dalgalanma şimdiden kamuoyunun en çok konuştuğu başlık haline geldi.</p>
+        `
+      }
+    ]
+  },
+  {
   "id": 39,
   "headlineNumber": 2,
   "title": "Çorlu'da Feci Kaza: Kamyonet ile Otomobil Kafa Kafaya Çarpıştı, 3 Kişi Yaralandı!",
@@ -601,7 +740,7 @@ const headlineArticles = [
 },
   {
     id: 36,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
     spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
     category: "DENİZCİLİK & GÜNDEM",
@@ -740,7 +879,7 @@ const headlineArticles = [
   },
   {
     id: 37,
-    headlineNumber: 5,
+    headlineNumber: 6,
     title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik kannabinoid ele geçirilirken, gözaltına alınan 2 zanlı çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -850,7 +989,7 @@ const headlineArticles = [
   },
   {
     id: 34,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
     spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
     category: "SİYASET & GÜNDEM",
@@ -980,7 +1119,7 @@ const headlineArticles = [
   },
   {
     id: 33,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -1103,7 +1242,7 @@ const headlineArticles = [
   },
   {
     id: 32,
-    headlineNumber: 8,
+    headlineNumber: 9,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -1226,7 +1365,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 9,
+    headlineNumber: 10,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -1327,7 +1466,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 10,
+    headlineNumber: 11,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -1428,7 +1567,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 11,
+    headlineNumber: 12,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -1529,7 +1668,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 12,
+    headlineNumber: 13,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -1642,7 +1781,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 13,
+    headlineNumber: 14,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -1743,7 +1882,7 @@ const headlineArticles = [
   },
   {
     id: 26,
-    headlineNumber: 14,
+    headlineNumber: 15,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
@@ -1849,7 +1988,7 @@ const headlineArticles = [
   },
   {
     id: 25,
-    headlineNumber: 15,
+    headlineNumber: 16,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
@@ -1953,7 +2092,7 @@ const headlineArticles = [
   },
   {
     id: 23,
-    headlineNumber: 16,
+    headlineNumber: 17,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
@@ -2060,7 +2199,7 @@ const headlineArticles = [
   },
   {
     id: 24,
-    headlineNumber: 17,
+    headlineNumber: 18,
     title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
     spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
     category: "YAŞAM & GÜNDEM",
@@ -2141,7 +2280,7 @@ const headlineArticles = [
   },
   {
     id: 20,
-    headlineNumber: 18,
+    headlineNumber: 19,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -2244,7 +2383,7 @@ const headlineArticles = [
   },
   {
     id: 21,
-    headlineNumber: 19,
+    headlineNumber: 20,
     title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
     spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
     category: "YAŞAM",
@@ -2320,7 +2459,7 @@ const headlineArticles = [
   },
   {
     id: 22,
-    headlineNumber: 20,
+    headlineNumber: 21,
     title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
     spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
     category: "YAŞAM & EĞİTİM",
@@ -2402,7 +2541,7 @@ const headlineArticles = [
   },
   {
     id: 19,
-    headlineNumber: 21,
+    headlineNumber: 22,
     title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
     spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
     category: "EĞİTİM & GÜNDEM",
@@ -2531,7 +2670,7 @@ const headlineArticles = [
   },
   {
     id: 18,
-    headlineNumber: 22,
+    headlineNumber: 23,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -2644,7 +2783,7 @@ const headlineArticles = [
   },
   {
     id: 17,
-    headlineNumber: 23,
+    headlineNumber: 24,
     title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
     spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
     category: "SAĞLIK",
@@ -2789,7 +2928,7 @@ const headlineArticles = [
   },
   {
     id: 1,
-    headlineNumber: 24,
+    headlineNumber: 25,
     title: "Trakya'nın Ulaşımında Yeni Çağ: Hızlı Tren Hattında Geri Sayım Başladı!",
     spot: "İstanbul ile Edirne arasını 1 saat 20 dakikaya indirecek dev projede ray montajı tamamlandı. Ticaret, sanayi ve turizmde büyük canlanma bekleniyor.",
     category: "TRAKYA HABER",
@@ -2900,7 +3039,7 @@ const headlineArticles = [
   },
   {
     id: 11,
-    headlineNumber: 25,
+    headlineNumber: 26,
     title: "Çerkezköy ve Kapaklı OSB'de 5 Bin Kişiye İstihdam Müjdesi!",
     spot: "Trakya'nın en büyük sanayi kümelenmesinde otomotiv, kimya ve tekstil sektörlerinde dev yatırımlar üretime geçiyor.",
     category: "TRAKYA HABER",
@@ -2962,7 +3101,7 @@ const headlineArticles = [
   // -------------------------------------------------------------,
   {
     id: 201,
-    headlineNumber: 29,
+    headlineNumber: 30,
     title: "Hızlı Tren Hattı Trakya'nın Çehresini ve Sanayisini Nasıl Değiştirecek?",
     spot: "İstanbul ile Trakya arasındaki entegrasyon bölgedeki sanayi, turizm ve arsa değerlerini doğrudan etkileyecek.",
     category: "KÖŞE YAZISI",
@@ -3019,7 +3158,7 @@ const headlineArticles = [
   },
   {
     id: 202,
-    headlineNumber: 30,
+    headlineNumber: 31,
     title: "Trakya Çiftçisinin Geleceği: Modern Sulama ve Lisanslı Depoculuk",
     spot: "İklim krizine karşı Trakya havzasında suyun doğru yönetimi ve üretici kooperatiflerinin önemi.",
     category: "KÖŞE YAZISI",
@@ -3075,7 +3214,7 @@ const headlineArticles = [
   },
   {
     id: 203,
-    headlineNumber: 31,
+    headlineNumber: 32,
     title: "Sanayi Bölgelerinde İş Güvenliği ve Çalışan Hakları",
     spot: "Çorlu ve Çerkezköy aksında büyüyen sanayi tesislerinde yeni hukuki standartlar ve denetimler.",
     category: "KÖŞE YAZISI",
@@ -3131,7 +3270,7 @@ const headlineArticles = [
   },
   {
     id: 204,
-    headlineNumber: 32,
+    headlineNumber: 33,
     title: "Ergene Havzası Koruma Eylem Planında Son Durum",
     spot: "Arıtma tesisleri ve nehir yatağı temizliğinde gelinen nokta çevre sağlığı açısından neler vadediyor?",
     category: "KÖŞE YAZISI",
@@ -3187,7 +3326,7 @@ const headlineArticles = [
   },
   {
     id: 205,
-    headlineNumber: 33,
+    headlineNumber: 34,
     title: "Trakya Topraklarında Su Krizi: Kuraklığa Karşı Damla Sulama Devrimi",
     spot: "İklim değişikliği Trakya tarımını nasıl etkiliyor? Yeraltı sularının korunması ve akıllı tarım teknolojileri neden hayati?",
     category: "KÖŞE YAZISI",
@@ -3243,7 +3382,7 @@ const headlineArticles = [
   },
   {
     id: 206,
-    headlineNumber: 34,
+    headlineNumber: 35,
     title: "Çerkezköy ve Çorlu Sanayisinde Sanayi 4.0 ve Yapay Zeka Dönüşümü",
     spot: "Trakya fabrikalarında robotik otomasyon, yeşil enerji ve dijitalleşme ile küresel rekabet gücü nasıl artıyor?",
     category: "KÖŞE YAZISI",
@@ -3298,7 +3437,7 @@ const headlineArticles = [
   },
   {
     id: 207,
-    headlineNumber: 35,
+    headlineNumber: 36,
     title: "Mimar Sinan'ın Edirne'deki Mühendislik Dehası: Selimiye'nin Bilinmeyen Sırları",
     spot: "UNESCO Dünya Mirası Selimiye Camii'nin kubbe akustiği, deprem izolatörleri ve Trakya'nın kültürel mirası.",
     category: "KÖŞE YAZISI",
@@ -3353,7 +3492,7 @@ const headlineArticles = [
   },
   {
     id: 208,
-    headlineNumber: 36,
+    headlineNumber: 37,
     title: "Trakya'nın Lojistik Üs Olma Potansiyeli ve 2026-2027 Yatırım Fırsatları",
     spot: "Çorlu Havalimanı, Tekirdağ Asyaport Limanı ve Hızlı Tren aksı bölgeyi Avrupa'nın en büyük aktarma merkezine dönüştürüyor.",
     category: "KÖŞE YAZISI",
