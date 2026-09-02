@@ -22,7 +22,12 @@ const financeData = [
 
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
-  
+  { 
+    id: 129, 
+    articleId: 40, 
+    title: "Trakya sınır kapılarında tarihi gurbetçi rekoru: 3,7 milyon yolcu ve 1 milyon araç geçiş yaptı, bekleme süresi 27 dakikaya indi!", 
+    time: "20:30" 
+  },
   { 
     id: 128, 
     articleId: 38, 
@@ -396,8 +401,138 @@ const headlineArticles = [
     ]
   },
   {
-    id: 38,
+    id: 40,
     headlineNumber: 2,
+    title: "Gurbetçi Sezonunda Trakya Sınır Kapılarında Tarihi Rekor: 3,7 Milyon Yolcu ve 1 Milyon Araç Geçişi!",
+    spot: "Avrupa'da yaşayan Türk vatandaşlarının yıllık izinlerini geçirmek üzere Türkiye'ye akın ettiği gurbetçi sezonunda, Trakya'daki sınır kapılarından yaklaşık 3,7 milyon yolcu ve 1 milyon araç geçiş yaptı. Edirne Valisi Yunus Sezer, bekleme süresinin 39 dakikadan 27 dakikaya indirildiğini duyurdu.",
+    category: "EKONOMİ & GÜNDEM",
+    categorySlug: "ekonomi",
+    location: "Edirne / Kapıkule & İpsala",
+    badgeColor: "red",
+    date: "2 Eylül 2026 - 20:30",
+    readTime: "3 dk",
+    views: 134200,
+    likes: 9850,
+    reactions: { like: 4320, heart: 2980, clap: 2210, thinking: 290, angry: 50 },
+    socialPosts: [
+      {
+        user: "Edirne Sınır & Gurbetçi Platformu",
+        handle: "@EdirneSinir",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Kapıkule ve İpsala'da bu sezon bekleme sürelerinin 27 dakikaya düşmesi gurbetçi kardeşlerimiz için büyük kolaylık oldu. 3.7 milyon vatandaşımıza memleket hasretinde güvenli yolculuklar! 🚗🇹🇷 #Kapıkule #Gurbetçi",
+        time: "10 dk önce",
+        likes: 3890,
+        shares: 940
+      },
+      {
+        user: "Trakya Ekonomi & Lojistik",
+        handle: "@TrakyaEkonomi",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "1 milyon araçlık devasa hareketlilik bölge esnafına ve ülke ekonomisine muazzam bir canlılık kattı. Emeği geçen tüm gümrük ve emniyet personeline teşekkürler. 👏",
+        time: "25 dk önce",
+        likes: 2150,
+        shares: 510
+      }
+    ],
+    comments: [
+      {
+        id: 4001,
+        author: "Mehmet Yılmaz",
+        city: "Almanya / Köln",
+        time: "12 dk önce",
+        content: "Bu sene Kapıkule'den çıkış yaparken gerçekten işlemler çok daha hızlıydı. 25-30 dakikada geçtik. Emeği geçen herkese teşekkürler, vatanımız bir başka.",
+        likes: 245
+      },
+      {
+        id: 4002,
+        author: "Esnaf Hasan",
+        city: "Edirne / Merkez",
+        time: "5 dk önce",
+        content: "Gurbetçi sezonu Edirne'mizin çarşısına, ciğercisine, oteline her şeyine can suyu oluyor. Allah hepsine kazasız belasız dönüşler nasip etsin.",
+        likes: 184
+      },
+      {
+        id: 4003,
+        author: "Selim Çavuş",
+        city: "Avusturya / Viyana",
+        time: "18 dk önce",
+        content: "Geçen yıllara göre peronların tümünün açık olması ve yönlendirmeler çok başarılıydı. Yollarımız ve gümrüklerimiz gurur verici.",
+        likes: 128
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Ekonomi Masası",
+      title: "Bölge Ekonomisi & Gümrük Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/gurbetci-sezonu-trakya-sinir-kapilari.jpg",
+    tags: ["Edirne", "Kapıkule", "İpsala", "Hamzabeyli", "Pazarkule", "Gurbetçi", "Gümrük", "Ekonomi", "Trakya", "Son Dakika"],
+    content: `
+      <p class="lead"><strong>Avrupa ülkelerinde yaşayan Türk vatandaşlarının yıllık izinlerini geçirmek üzere Türkiye'ye geliş ve dönüşlerinin yoğunlaştığı gurbetçi sezonunda, Trakya'daki sınır kapılarından yaklaşık 3 milyon 700 bin yolcu giriş ve çıkış yaptı.</strong></p>
+      <p>22 Haziran'da başlayan gurbetçi sezonunda Kapıkule başta olmak üzere Hamzabeyli, İpsala ve Pazarkule sınır kapılarında tarihi bir hareketlilik yaşandı. Sezon kapsamında sınır kapılarından yaklaşık 1 milyon araç giriş-çıkış gerçekleştirdi. 27 Ağustos'ta ise Trakya'daki sınır kapılarından 5 bin 587 aracın çıkış yaptığı ve bu rakamın son 3 yılın en yüksek günlük araç çıkışı olduğu bildirildi.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Sınır kapılarımızda aldığımız teknolojik önlemler, ilave peronlar ve personel takviyeleri sayesinde geçen yıl ortalama 39 dakika olan bekleme süresini bu yıl 27 dakikaya kadar düşürdük."</p>
+        <span>- Edirne Valisi Yunus Sezer</span>
+      </div>
+      <p>Gurbetçi sezonunun önümüzdeki günlerde sona ermesi beklenirken, dönüş yolculuğuna çıkan vatandaşların oluşturduğu akıcı yoğunluk sınır kapılarında kesintisiz koordinasyonla devam ediyor.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Gurbetçi Sezonunda Kapılardan 3,7 Milyon Yolcu Geçiş Yaptı",
+        pageImage: "img/gurbetci-sezonu-trakya-sinir-kapilari.jpg",
+        content: `
+          <p class="lead"><strong>Avrupa’nın dört bir yanından anavatana hasretle gelen gurbetçiler, bu yıl Trakya sınır kapılarında rekor seviyede yolcu ve araç trafiği oluşturdu.</strong></p>
+          <p>22 Haziran’da başlayarak Ağustos ayının son günlerine kadar artarak devam eden sezonda, Türkiye'nin Avrupa'ya açılan kapıları olan <strong>Kapıkule, Hamzabeyli, İpsala ve Pazarkule</strong> gümrük kapılarından yaklaşık <strong>3 milyon 700 bin yolcu</strong> ile <strong>1 milyon araç</strong> giriş-çıkış yaptı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Yıllık izinlerini memleketlerinde geçiren gurbetçi vatandaşlarımız hem ekonomimize can suyu oldu hem de sınır kapılarımızdaki modernizasyonun hızını test etti."</p>
+            <span>- Trakya Gümrük ve Dış Ticaret Bölge Müdürlüğü</span>
+          </div>
+          <p>Gurbetçilerin seyahat konforunu artırmak adına sınır sahalarında dinlenme alanları, mobil sağlık üniteleri ve ikram noktaları 24 saat kesintisiz hizmet verdi.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Bekleme Süresi 39 Dakikadan 27 Dakikaya Düşürüldü",
+        pageImage: "img/gurbetci-sezonu-trakya-sinir-kapilari.jpg",
+        content: `
+          <p class="lead"><strong>Vali Yunus Sezer: '27 Ağustos'ta Son 3 Yılın Günlük Çıkış Rekoru Kırıldı'</strong></p>
+          <p>Edirne Valisi <strong>Yunus Sezer</strong>, sınır kapılarında uygulanan yeni koordinasyon modeli ve dijital takip sistemleri sayesinde işlemlerin rekor hızla tamamlandığını vurguladı.</p>
+          <p>Vali Sezer, geçtiğimiz yıl ortalama 39 dakika olan sınır geçiş bekleme süresinin bu yıl <strong>27 dakikaya kadar gerilediğini</strong> açıkladı. Özellikle gurbetçilerin dönüş dalgasının zirve yaptığı 27 Ağustos tarihinde, Trakya sınır kapılarından tek bir günde <strong>5 bin 587 aracın</strong> çıkış yaptığı ve bu rakamın son 3 yılın en yüksek günlük araç çıkışı olarak kayıtlara geçtiği bildirildi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Gümrük, polis ve jandarma ekiplerimizin özverili mesaisiyle sınır kapılarımızda uzun kuyruklar ve saatlerce süren bekleyişler tarihe karıştı."</p>
+            <span>- Edirne Valiliği Resmi Açıklaması</span>
+          </div>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Dönüş Yolculuğu Sürüyor: Trakya ve Ülke Ekonomisine Dev Katkı",
+        pageImage: "img/gurbetci-sezonu-trakya-sinir-kapilari.jpg",
+        content: `
+          <p class="lead"><strong>Milyarlarca Liralık Turizm ve Ticaret Hacmi Oluştu</strong></p>
+          <p>Avrupa'da yaşayan Türk vatandaşlarının anavatan ziyareti, başta Edirne ve Trakya genelindeki yerel esnaf olmak üzere perakendeden konaklamaya, ulaşımdan gastronomiye kadar geniş bir sektöre büyük bir ekonomik canlılık kazandırdı.</p>
+          <p>Önümüzdeki günlerde okulların açılmasıyla birlikte gurbetçi sezonunun resmi olarak tamamlanması beklenirken, sınır kapılarındaki dönüş akışının kontrollü ve güvenli şekilde sürdüğü ifade edildi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Gurbetçilerimizin vatan hasretini dindirip huzur içinde ülkelerine dönmeleri için tüm tedbirlerimizi sezonun son anına kadar titizlikle sürdüreceğiz."</p>
+            <span>- Edirne İl Emniyet ve Gümrük Koordinasyon Kurulu</span>
+          </div>
+          <p>Yetkililer, yola çıkacak sürücüleri hız kurallarına uymaları ve emniyet kemeri kullanmaları konusunda bir kez daha uyardı.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 38,
+    headlineNumber: 3,
     title: "Özgür Özel’den Tarihi Trakya Çıkarması: Tekirdağ, Edirne ve Kırklareli Programı Netleşti!",
     spot: "Yeni Parti Genel Başkanı Özgür Özel, 4 ve 5 Eylül tarihlerinde Tekirdağ, Edirne ve Kırklareli'ni kapsayan iki günlük yoğun bir Trakya maratonuna çıkıyor. Çorlu'dan Süleymanpaşa'ya, Selimiye'den Edirne Halk Pazarı'na, Kırklareli merkezden Babaeski köylerine kadar çiftçiler, emekliler ve esnafla buluşacak Özel'in Trakya çıkarması bölge siyasetinde büyük heyecan yarattı.",
     category: "SİYASET & GÜNDEM",
