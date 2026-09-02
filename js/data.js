@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 130, 
+    articleId: 41, 
+    title: "Velimeşe'de 7 kişinin öldüğü tren faciasından 5 yıl sonra hemzemin geçit kapatıldı: Mahalleli isyan etti, 'HÂLÂ BİR ÇÖZÜM YOK!'", 
+    time: "22:55" 
+  },
+  { 
     id: 129, 
     articleId: 40, 
     title: "Trakya sınır kapılarında tarihi gurbetçi rekoru: 3,7 milyon yolcu ve 1 milyon araç geçiş yaptı, bekleme süresi 27 dakikaya indi!", 
@@ -401,8 +407,139 @@ const headlineArticles = [
     ]
   },
   {
-    id: 40,
+    id: 41,
     headlineNumber: 2,
+    title: "7 CAN VERDİK, 5 YIL GEÇTİ AMA HÂLÂ BİR ÇÖZÜM YOK! Velimeşe Kapatılan Hemzemin Geçitte İsyan Etti: 'Yolu Kapatmak Çözüm Değil, Katlı Kavşak İstiyoruz!'",
+    spot: "Tekirdağ Ergene Velimeşe'de 7 işçinin yaşamını yitirdiği tren faciasından 4 yıl 9 ay sonra hemzemin geçidin kapatılarak mahallenin tek yola mahkum edilmesi bardağı taşırdı. Muhtar Olcay Alpsoy ve yüzlerce mahalleli kapanan geçitte eylem yaptı: 'Esnaf battı, öğrenciler ve işçiler perişan, ambulans geçemiyor. HÂLÂ BİR ÇÖZÜM YOK, katlı kavşak acilen yapılsın!'",
+    category: "GÜNCEL & TRAKYA",
+    categorySlug: "gundem",
+    location: "Tekirdağ / Ergene (Velimeşe)",
+    badgeColor: "red",
+    date: "2 Eylül 2026 - 22:55",
+    readTime: "4 dk",
+    views: 142800,
+    likes: 11200,
+    reactions: { like: 2400, heart: 420, clap: 1850, thinking: 3200, angry: 6450 },
+    socialPosts: [
+      {
+        user: "Ergene & Velimeşe Dayanışması",
+        handle: "@VelimeseGundem",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "7 canımızı toprağa verdik, aradan 5 yıl geçti ama HÂLÂ BİR ÇÖZÜM YOK! Yolumuzu bariyerle kesip halkı çaresiz bırakamazsınız. Velimeşe katlı kavşak ve güvenli duble yol istiyor! ⚠️🚧 #Velimeşe #Ergene #HemzeminGeçit #HalaBirCozumYok",
+        time: "10 dk önce",
+        likes: 4890,
+        shares: 1420
+      },
+      {
+        user: "Trakya Emek & Ulaşım Meclisi",
+        handle: "@TrakyaUlasim",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Sanayi ve işçi kenti Trakya'da hemzemin geçit ayıbı son bulmalıdır. Kapatmak değil, modern viyadük ve alt geçit yapmak zorundasınız. Velimeşe halkının yanındayız. 👏",
+        time: "25 dk önce",
+        likes: 3150,
+        shares: 780
+      }
+    ],
+    comments: [
+      {
+        id: 4101,
+        author: "Şükrü Bey",
+        city: "Ergene / Velimeşe Esnafı",
+        time: "8 dk önce",
+        content: "Dükkanlarımızın önü kesildi, müşteri gelemiyor. Fabrika servisleri köyün içine giremiyor. 5 yıldır kavşak sözü verip yolu kapatıp gittiler. Hâlâ bir çözüm yok!",
+        likes: 312
+      },
+      {
+        id: 4102,
+        author: "Hatice Öğretmen",
+        city: "Tekirdağ / Ergene",
+        time: "15 dk önce",
+        content: "Öğrencilerimiz okula gitmek için kilometrelerce dolanmak zorunda. Olası bir yangında veya acil sağlık durumunda itfaiye/ambulans nereden geçecek? Yetkililer artık sesimizi duysun.",
+        likes: 245
+      },
+      {
+        id: 4103,
+        author: "Serkan",
+        city: "Çorlu / İş Güvenliği Uzmanı",
+        time: "22 dk önce",
+        content: "2021'deki feci kazada 7 canımızı yitirmiştik. Bilirkişi raporlarında alt/üst geçit zorunluluğu açıkça belirtilmişken 5 yıl sonra sadece yolu kapatmak akıl tutulmasıdır.",
+        likes: 198
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Asayiş & Bölge Masası",
+      title: "Ergene & Çorlu Özel Haber Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/velimese-hemzemin-gecit-isyan.jpg",
+    tags: ["Velimeşe", "Ergene", "Hemzemin Geçit", "Hâlâ Bir Çözüm Yok", "Tekirdağ", "Tren Kazası", "Katlı Kavşak", "Son Dakika", "Ulaşım"],
+    content: `
+      <p class="lead"><strong>Tekirdağ’ın Ergene ilçesi Velimeşe Mahallesi’nde 2021 yılında 7 fabrika işçisinin hayatını kaybettiği tren-minibüs faciasının ardından aradan geçen 4 yıl 9 aya rağmen köprülü kavşak yapılmadı. Valilik kararıyla hemzemin geçidin tamamen kapatılması üzerine mahalle sakinleri isyan ederek eylem yaptı: "HÂLÂ BİR ÇÖZÜM YOK!"</strong></p>
+      <p>4 Eylül 2021 tarihinde Kapıkule-Halkalı seferini yapan yük treninin bariyerleri kapalı hemzemin geçitte işçi minibüsüne çarpması sonucu Suzan Aksoy, eşi Halil Aksoy, Nebibe Korkmaz, Cangül Akın, Hülya Dinçkol, Yaşar Yüce ve Nusret Açıkgöz hayatını kaybetmiş, 5 kişi de ağır yaralanmıştı. Faciaya ilişkin hazırlanan bilirkişi raporlarında TCDD ve Karayolları yerel idaresinin de kusurlu olduğu saptanmış, bölgeye acilen katlı kavşak yapılması gerektiği vurgulanmıştı.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"2021 yılında projesi hazırlanan katlı kavşak aradan 5 yıl geçmesine rağmen hala hayata geçirilmedi. Geçidi kapatıp gittiler, esnaf battı, öğrenciler perişan! Velimeşe tek yola mahkum edilemez!"</p>
+        <span>- Olcay Alpsoy, Velimeşe Mahallesi Muhtarı</span>
+      </div>
+      <p>İstasyon Caddesi'nin kapatılmasıyla birlikte Çerkezköy ve fabrikalar yönüne ulaşımın kesildiğini, tarım arazilerine geçişin imkansızlaştığını belirten yüzlerce vatandaş, kapatılan geçide yürüyerek yetkililere çağrıda bulundu.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "7 Canın Yitirildiği Faciadan 5 Yıl Sonra Gelen 'Kapatma' Kararı Bardağı Taşırdı!",
+        pageImage: "img/velimese-hemzemin-gecit-isyan.jpg",
+        content: `
+          <p class="lead"><strong>7 Fabrika İşçisinin Can Verdiği Hemzemin Geçitte Aradan 5 Yıl Geçti: Kalıcı Çözüm Yerine Barikat Kuruldu!</strong></p>
+          <p>Tekirdağ’ın Ergene ilçesine bağlı sanayi ve yerleşim merkezi <strong>Velimeşe Mahallesi’nde</strong>, 4 Eylül 2021 tarihinde yaşanan feci tren kazasında 7 vatandaşımız hayatını kaybetmişti. Kazanın ardından bölgeye katlı kavşak ve köprülü geçit yapılacağı sözü verilmişti.</p>
+          <p>Ancak kazadan 4 yıl 9 ay sonra Karayolları ve Valilik kararıyla İstasyon Caddesi girişindeki hemzemin geçit aniden taşıt ve yaya trafiğine tamamen kapatıldı. Hiçbir alternatif alt geçit veya köprü inşa edilmeden yolun kapatılması mahallede infiale yol açtı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"7 vatandaşımızın can verdiği yerde çözüm yolu kapatıp insanları cezalandırmak değil, modern ve güvenli bir katlı kavşak inşa etmektir."</p>
+            <span>- Velimeşe Mahalle İnisiyatifi Bildirisi</span>
+          </div>
+          <p>Kapatılan yol nedeniyle İstasyon karşısındaki 30'a yakın hanenin ve tüm mahallenin günlük yaşamı adeta felç oldu.</p>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Muhtar Olcay Alpsoy ve Mahalleli Eylem Yaptı: 'Esnaf Çöktü, Ulaşım Felç Oldu!'",
+        pageImage: "img/velimese-hemzemin-gecit-isyan.jpg",
+        content: `
+          <p class="lead"><strong>Mahalle Meydanında Toplanan 300 Kişi Kapanan Geçide Yürüdü</strong></p>
+          <p>Hemzemin geçidin kapatılmasına tepki gösteren yaklaşık 300 mahalle sakini, Velimeşe Meydanı’nda toplanarak seslerini duyurdu. Toplanan kalabalığa seslenen Velimeşe Mahallesi Muhtarı <strong>Olcay Alpsoy</strong>, yaşanan derin mağduriyeti maddeler halinde sıraladı:</p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>🏬 <strong>Esnaf Maddi Çöküşte:</strong> İstasyon Caddesi esnafı müşteri ve araç girişinin kesilmesiyle iflas noktasına geldi.</li>
+            <li>🚌 <strong>İşçi ve Öğrenci Çilesi:</strong> Fabrika servisleri ve okul servislerinin güzergahı uzadı, trafik yoğunluğu riski tırmandı.</li>
+            <li>🌾 <strong>Çiftçiler Tarlalarına Gidemiyor:</strong> Üreticiler traktörleriyle tarım arazilerine ulaşmak için kilometrelerce dolanmak zorunda kalıyor.</li>
+            <li>🚑 <strong>Acil Durum Tehdidi:</strong> Velimeşe tek bir giriş-çıkış yoluna mahkum edildi. Olası bir yangın veya kaza durumunda itfaiye ve ambulansın mahalleye ulaşımı hayati tehlikeye girdi.</li>
+          </ul>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "HÂLÂ BİR ÇÖZÜM YOK: 'Kapatmak Çözüm Değil, Katlı Kavşak İstiyoruz!'",
+        pageImage: "img/velimese-hemzemin-gecit-isyan.jpg",
+        content: `
+          <p class="lead"><strong>Tekirdağ Büyükşehir Belediyesi ve İlgili Bakanlıklara Acil Çağrı</strong></p>
+          <p>Muhtar Olcay Alpsoy ve mahalle sakinleri, 2021 yılında projesi hazırlanan ancak 5 yıldır rafa kaldırılan <strong>katlı kavşak ve duble bağlantı yolu projesinin</strong> derhal başlatılmasını talep etti.</p>
+          <p>Konuşmaların ardından ellerindeki dövizlerle bariyerlerle kapatılan hemzemin geçide yürüyen vatandaşlar, <strong>"HÂLÂ BİR ÇÖZÜM YOK, hakkımızı ve güvenli yolumuzu istiyoruz"</strong> sloganlarıyla tepkilerini dile getirdiler.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Biz Tekirdağ Büyükşehir Belediyesi, Karayolları ve TCDD'den acilen katlı kavşak projesinin hayata geçirilmesini istiyoruz. Velimeşe halkının sesine kulak verin!"</p>
+            <span>- Velimeşe Halkı ve Muhtarlık Ortak Çağrısı</span>
+          </div>
+          <p>Eylemin ardından vatandaşlar olaysız şekilde dağılırken, somut bir adım atılmaması halinde eylemlerin artarak devam edeceği vurgulandı.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 40,
+    headlineNumber: 3,
     title: "Gurbetçi Sezonunda Trakya Sınır Kapılarında Tarihi Rekor: 3,7 Milyon Yolcu ve 1 Milyon Araç Geçişi!",
     spot: "Avrupa'da yaşayan Türk vatandaşlarının yıllık izinlerini geçirmek üzere Türkiye'ye akın ettiği gurbetçi sezonunda, Trakya'daki sınır kapılarından yaklaşık 3,7 milyon yolcu ve 1 milyon araç geçiş yaptı. Edirne Valisi Yunus Sezer, bekleme süresinin 39 dakikadan 27 dakikaya indirildiğini duyurdu.",
     category: "EKONOMİ & GÜNDEM",
@@ -532,7 +669,7 @@ const headlineArticles = [
   },
   {
     id: 38,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Özgür Özel’den Tarihi Trakya Çıkarması: Tekirdağ, Edirne ve Kırklareli Programı Netleşti!",
     spot: "Yeni Parti Genel Başkanı Özgür Özel, 4 ve 5 Eylül tarihlerinde Tekirdağ, Edirne ve Kırklareli'ni kapsayan iki günlük yoğun bir Trakya maratonuna çıkıyor. Çorlu'dan Süleymanpaşa'ya, Selimiye'den Edirne Halk Pazarı'na, Kırklareli merkezden Babaeski köylerine kadar çiftçiler, emekliler ve esnafla buluşacak Özel'in Trakya çıkarması bölge siyasetinde büyük heyecan yarattı.",
     category: "SİYASET & GÜNDEM",
