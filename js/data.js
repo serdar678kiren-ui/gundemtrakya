@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 131, 
+    articleId: 42, 
+    title: "Velimeşe hemzemin geçit çilesinde Valilikte kritik zirve: Projeyi Karayolları üstlendi, 'İNŞALLAH ARTIK ÇÖZERSİNİZ!'", 
+    time: "23:05" 
+  },
+  { 
     id: 130, 
     articleId: 41, 
     title: "Velimeşe'de 7 kişinin öldüğü tren faciasından 5 yıl sonra hemzemin geçit kapatıldı: Mahalleli isyan etti, 'HÂLÂ BİR ÇÖZÜM YOK!'", 
@@ -407,8 +413,138 @@ const headlineArticles = [
     ]
   },
   {
-    id: 41,
+    id: 42,
     headlineNumber: 2,
+    title: "İNŞALLAH ARTIK ÇÖZERSİNİZ! Velimeşe'deki 5 Yıllık Hemzemin Çilesi İçin Valilikte Kritik Zirve: Projeyi Karayolları Üstlendi!",
+    spot: "Velimeşe'de 7 canın yitirildiği ve 5 yıldır kapatılarak bölgeyi mağdur eden hemzemin geçit çilesi için Tekirdağ Valisi Recep Soytürk başkanlığında kritik zirve toplandı. Karayolları Genel Müdürlüğü'nün üstlendiği köprülü kavşak projesinin yol haritası masaya yatırıldı. Velimeşe halkı ve esnafı tek ses oldu: 'İnşallah bu sefer lafta kalmaz, artık çözersiniz!'",
+    category: "GÜNCEL & YEREL YÖNETİM",
+    categorySlug: "gundem",
+    location: "Tekirdağ / Valilik & Ergene",
+    badgeColor: "red",
+    date: "2 Eylül 2026 - 23:05",
+    readTime: "3 dk",
+    views: 156400,
+    likes: 12800,
+    reactions: { like: 5400, heart: 1200, clap: 3800, thinking: 1950, angry: 450 },
+    socialPosts: [
+      {
+        user: "Ergene & Trakya Ulaşım Masası",
+        handle: "@ErgeneUlasim",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Valilikte yapılan toplantı çok kritik bir adım. 5 yıldır beklenen köprülü kavşak projesini Karayolları Genel Müdürlüğü üstlendi. İnşallah artık çözersiniz ve ilk kazma acilen vurulur! 🏗️🚦 #Velimeşe #Ergene #Koprulukavsak #InsallahArtikCozersiniz",
+        time: "10 dk önce",
+        likes: 5420,
+        shares: 1650
+      },
+      {
+        user: "Trakya Yerel Haberler",
+        handle: "@TrakyaHaber",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "Vali Recep Soytürk başkanlığında TCDD, Karayolları, Büyükşehir ve Ergene Belediyesi tek masada toplandı. Gözler şimdi hızla başlayacak inşaat takviminde.",
+        time: "25 dk önce",
+        likes: 3850,
+        shares: 920
+      }
+    ],
+    comments: [
+      {
+        id: 4201,
+        author: "Cemalettin Kaya",
+        city: "Ergene / Velimeşe Sakini",
+        time: "5 dk önce",
+        content: "Bütün kurumların aynı masada toplanması ve Karayolları'nın projeyi üstlenmesi çok olumlu bir gelişme. Yeter ki bürokrasiye takılmasın, inşallah artık bu çile çözülür.",
+        likes: 342
+      },
+      {
+        id: 4202,
+        author: "Esnaf Burak",
+        city: "Velimeşe / Çarşı",
+        time: "12 dk önce",
+        content: "Geçit kapandığından beri işlerimiz durma noktasına gelmişti. Valimiz Recep Soytürk ve Ergene Belediye Başkanı Müge Yıldız Topak'a teşekkürler. Sürecin takipçisi olacağız!",
+        likes: 285
+      },
+      {
+        id: 4203,
+        author: "Nesrin Hanım",
+        city: "Çorlu / Ulaşım Gönüllüsü",
+        time: "18 dk önce",
+        content: "Trakya'nın en yoğun sanayi ve yerleşim aksında hemzemin geçitler tarihe karışmalı. Viyadük projesi hızla tamamlansın.",
+        likes: 198
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Valilik & Politika Masası",
+      title: "Tekirdağ Valilik & Yerel Yönetimler Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/velimese-koprulu-kavsak-toplanti.jpg",
+    tags: ["Velimeşe", "Ergene", "Recep Soytürk", "Köprülü Kavşak", "İnşallah Artık Çözersiniz", "Karayolları", "TCDD", "Tekirdağ", "Son Dakika"],
+    content: `
+      <p class="lead"><strong>Tekirdağ’ın Ergene ilçesinde yaya ve araç trafiğine kapatılan TCDD hemzemin geçidinin köprülü kavşakla aşılması için Tekirdağ Valisi Recep Soytürk başkanlığında üst düzey değerlendirme toplantısı gerçekleştirildi.</strong></p>
+      <p>Tekirdağ Valiliği'nden yapılan açıklamaya göre, Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu'nun kente gerçekleştirdiği ziyaret kapsamında, Velimeşe Mahallesi'ndeki hemzemin geçidin köprülü kavşakla geçilmesine ilişkin projenin yapımını <strong>Karayolları Genel Müdürlüğü'nün üstlenmesi</strong> kararlaştırıldı.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Velimeşe'mizde vatandaşlarımızın güvenliğini sağlayacak, trafik akışını kesintisiz hale getirecek köprülü kavşak projesinin tüm süreçleri ve uygulama takvimi titizlikle yürütülmektedir."</p>
+        <span>- Tekirdağ Valiliği Resmi Bildirisi</span>
+      </div>
+      <p>Valilik Toplantı Salonu'nda düzenlenen zirveye Tekirdağ Büyükşehir Belediyesi Genel Sekreteri Ergül Halisçelik, Ergene Belediye Başkanı Müge Yıldız Topak, TCDD 1. Bölge Müdürü Necmettin Acar, Karayolları 1. Bölge Müdürü Şenol Altıok ve Ulaşım Dairesi Başkan Vekili Mustafa Nazlıgül katıldı.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Vali Recep Soytürk Başkanlığında Kritik Zirve: Tüm Kurumlar Masada!",
+        pageImage: "img/velimese-koprulu-kavsak-toplanti.jpg",
+        content: `
+          <p class="lead"><strong>Bölge Halkının İsyanı ve Çağrısı Karşılık Buldu: Devletin Tüm Kademeleri Velimeşe İçin Toplandı</strong></p>
+          <p>Tekirdağ Ergene Velimeşe Mahallesi'nde 2021 yılında yaşanan facianın ardından geçidin kapatılmasıyla tırmanan mağduriyet, Valilik düzeyinde en üst seviyede masaya yatırıldı.</p>
+          <p>Tekirdağ Valisi <strong>Recep Soytürk</strong> başkanlığında toplanan heyette; Tekirdağ Büyükşehir Belediyesi, Ergene Belediyesi, TCDD 1. Bölge Müdürlüğü ve Karayolları 1. Bölge Müdürlüğü yetkilileri hazır bulundu. Toplantıda hemzemin geçidin yerine inşa edilecek köprülü kavşak projesine ilişkin süreç ve izlenecek ortak yol haritası ayrıntılarıyla ele alındı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Kurumlar arası tam koordinasyonla hemzemin geçit çilesine kalıcı, modern ve güvenli bir mühendislik çözümü getiriyoruz."</p>
+            <span>- Vali Recep Soytürk</span>
+          </div>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Projeyi Karayolları Genel Müdürlüğü Üstlendi: İşte Yol Haritası",
+        pageImage: "img/velimese-koprulu-kavsak-toplanti.jpg",
+        content: `
+          <p class="lead"><strong>Bakan Uraloğlu'nun Ziyareti Sonrası Düğmeye Basıldı: İhale ve İnşa Süreci Başlıyor</strong></p>
+          <p>Ulaştırma ve Altyapı Bakanı <strong>Abdulkadir Uraloğlu’nun</strong> Tekirdağ temaslarında alınan karar doğrultusunda, Velimeşe köprülü kavşak projesinin yapım ve finansman sorumluluğu resmen <strong>Karayolları Genel Müdürlüğü</strong> tarafından üstlenildi.</p>
+          <p>Toplantıda alınan kararlar kapsamında:</p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>🌉 <strong>Modern Köprülü Viyadük:</strong> Tren yolu hattını üstten bypass edecek katlı kavşak ve viyadük projesi uygulanacak.</li>
+            <li>🛣️ <strong>Genişletilmiş Duble Bağlantı Yolları:</strong> İstasyon Caddesi ve sanayi bağlantı aksları duble yol standardına kavuşturulacak.</li>
+            <li>⚡ <strong>Hızlı İhale ve İmalat Takvimi:</strong> Proje revizyonlarının tamamlanmasının hemen ardından yapım ihalesi gerçekleştirilecek.</li>
+          </ul>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Velimeşe Halkı ve Esnafı Beklemede: 'İnşallah Bu Kez Gerçekten Çözülür!'",
+        pageImage: "img/velimese-koprulu-kavsak-toplanti.jpg",
+        content: `
+          <p class="lead"><strong>"Yıllardır Verilen Sözler Bu Kez Sahaya Yansısın"</strong></p>
+          <p>Valilikteki kritik zirve haberi Velimeşe halkı ve esnafında temkinli bir memnuniyet yarattı. Geçidin kapatılması yüzünden aylardır tek yola mahkum kalan, ticareti ve günlük yaşamı durma noktasına gelen mahalle sakinleri, kararın ivedilikle sahaya yansımasını bekliyor.</p>
+          <p>Ergene Belediye Başkanı <strong>Müge Yıldız Topak</strong> da sürecin takipçisi olacaklarını belirterek Ergene ve Velimeşe halkının refahı için tüm imkanların seferber edildiğini bildirdi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"5 yıldır çektiğimiz çilenin son bulması için toplantı kararlarını umutla karşılıyoruz. İnşallah artık çözersiniz ve mahallemiz nefes alır!"</p>
+            <span>- Velimeşe Mahalle Muhtarlığı & Esnaf İnisiyatifi</span>
+          </div>
+          <p>Gündem Trakya olarak ihale ve inşaat sürecindeki tüm gelişmeleri anbean okuyucularımıza aktarmaya devam edeceğiz.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 41,
+    headlineNumber: 3,
     title: "7 CAN VERDİK, 5 YIL GEÇTİ AMA HÂLÂ BİR ÇÖZÜM YOK! Velimeşe Kapatılan Hemzemin Geçitte İsyan Etti: 'Yolu Kapatmak Çözüm Değil, Katlı Kavşak İstiyoruz!'",
     spot: "Tekirdağ Ergene Velimeşe'de 7 işçinin yaşamını yitirdiği tren faciasından 4 yıl 9 ay sonra hemzemin geçidin kapatılarak mahallenin tek yola mahkum edilmesi bardağı taşırdı. Muhtar Olcay Alpsoy ve yüzlerce mahalleli kapanan geçitte eylem yaptı: 'Esnaf battı, öğrenciler ve işçiler perişan, ambulans geçemiyor. HÂLÂ BİR ÇÖZÜM YOK, katlı kavşak acilen yapılsın!'",
     category: "GÜNCEL & TRAKYA",
@@ -539,7 +675,7 @@ const headlineArticles = [
   },
   {
     id: 40,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "Gurbetçi Sezonunda Trakya Sınır Kapılarında Tarihi Rekor: 3,7 Milyon Yolcu ve 1 Milyon Araç Geçişi!",
     spot: "Avrupa'da yaşayan Türk vatandaşlarının yıllık izinlerini geçirmek üzere Türkiye'ye akın ettiği gurbetçi sezonunda, Trakya'daki sınır kapılarından yaklaşık 3,7 milyon yolcu ve 1 milyon araç geçiş yaptı. Edirne Valisi Yunus Sezer, bekleme süresinin 39 dakikadan 27 dakikaya indirildiğini duyurdu.",
     category: "EKONOMİ & GÜNDEM",
@@ -669,7 +805,7 @@ const headlineArticles = [
   },
   {
     id: 38,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "Özgür Özel’den Tarihi Trakya Çıkarması: Tekirdağ, Edirne ve Kırklareli Programı Netleşti!",
     spot: "Yeni Parti Genel Başkanı Özgür Özel, 4 ve 5 Eylül tarihlerinde Tekirdağ, Edirne ve Kırklareli'ni kapsayan iki günlük yoğun bir Trakya maratonuna çıkıyor. Çorlu'dan Süleymanpaşa'ya, Selimiye'den Edirne Halk Pazarı'na, Kırklareli merkezden Babaeski köylerine kadar çiftçiler, emekliler ve esnafla buluşacak Özel'in Trakya çıkarması bölge siyasetinde büyük heyecan yarattı.",
     category: "SİYASET & GÜNDEM",
