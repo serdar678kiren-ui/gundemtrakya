@@ -425,7 +425,6 @@ const headlineArticles = [
     ]
   },
   {
-      {
     id: 43,
     headlineNumber: 2,
     title: "500 KİLODAN 115 TONA! Trakya'nın Yüzde 100 Yerli ve Milli Ayçiçeği Tohumu Rekorla Büyüyor: 100 Bin Dönümde Hasat Başladı!",
@@ -494,7 +493,7 @@ const headlineArticles = [
     },
     image: "img/trakya-yerli-aycicegi-tohumu-hasat.jpg",
     tags: ["Trakya Tohum", "Ayçiçeği", "Kırklareli", "Lüleburgaz", "Karamusul", "Uğur Turan", "Mahmut Şahin", "Tarım", "Yerli Tohum", "Son Dakika"],
-    content: 
+    content: `
       <p class="lead"><strong>Trakya Kalkınma Ajansı koordinasyonunda kurulan Trakya Tohum A.Ş. tarafından geliştirilen yüzde 100 yerli ve milli hibrit ayçiçeği tohumunun tanıtımı ve hasadı, Kırklareli’nin Lüleburgaz ilçesine bağlı Karamusul köyünde düzenlenen görkemli bir tarla günü etkinliğiyle gerçekleştirildi.</strong></p>
       <p>500 kilogramlık deneme üretimiyle başlayan yerli tohum serüveni, 2026 yılı itibarıyla 115 tonluk devasa bir üretime ulaşarak 20'den fazla ilde 100 bin dönüm arazide toprakla buluştu. Kırklareli Valisi Uğur Turan ve Trakya Kalkınma Ajansı Genel Sekreteri Mahmut Şahin bizzat biçerdövere binerek hasada eşlik etti.</p>
       <div class="article-quote">
@@ -503,13 +502,13 @@ const headlineArticles = [
         <span>- Uğur Turan, Kırklareli Valisi</span>
       </div>
       <p>Geliştirilen SUN 2259 CL ve SUN 1734 CL yerli hibrit çeşitlerinin orobanş parazitine ve mildiyö hastalığına karşı yüksek dayanımı, aşırı kuraklık ve sıcaklıklara direnci çiftçilerden tam not aldı.</p>
-    ,
+    `,
     pages: [
       {
         pageNum: 1,
         pageTitle: "500 Kilogramla Başlayan Seferberlik: 115 Ton Üretimle 20 İle Ulaştı!",
         pageImage: "img/trakya-yerli-aycicegi-tohumu-hasat.jpg",
-        content: 
+        content: `
           <p class="lead"><strong>Trakya Tohum A.Ş. 8 Yıllık Ar-Ge ve Emekle Türkiye'nin Gururu Oldu</strong></p>
           <p>Trakya Kalkınma Ajansı Genel Sekreteri <strong>Mahmut Şahin</strong>, yaklaşık 8 yıl önce başlatılan yerli ve milli tohum hamlesinin geldiği gurur verici noktayı anlattı. Şahin, ekosistemdeki A'dan Z'ye her aşamada Türk mühendislerinin ve çiftçilerinin yer aldığını vurguladı.</p>
           <p>Şahin, <em>"500 kilo üreterek başladığımız bu tohumu bu yıl 115 ton üreterek 20'den fazla ilimizde satışa sunduk. 2026 yılında ise 100.000 dönüm arazide 4.000 paket yerli ayçiçeği tohumumuzun ekimi gerçekleştirildi"</em> ifadelerini kullandı.</p>
@@ -519,13 +518,13 @@ const headlineArticles = [
             <span>- Mahmut Şahin, Trakya Kalkınma Ajansı Genel Sekreteri</span>
           </div>
           <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
-        
+        `
       },
       {
         pageNum: 2,
         pageTitle: "Vali Uğur Turan ve Mahmut Şahin Biçerdöverle Hasada Katıldı: 'Tohum Milli Bağımsızlıktır'",
         pageImage: "img/trakya-yerli-aycicegi-tohumu-hasat.jpg",
-        content: 
+        content: `
           <p class="lead"><strong>Kırklareli Valisi Uğur Turan: 'Kendi Tohumunu Üreten Ülke Geleceğini Garantiye Alır'</strong></p>
           <p>Hasat etkinliğinde konuşan Kırklareli Valisi <strong>Uğur Turan</strong>, tohumun stratejik önemine dikkat çekerek kamu, üniversite ve özel sektör iş birliğinin en güzel örneğinin Trakya'da sergilendiğini belirtti.</p>
           <p>Trakya Tohum A.Ş.'nin 2019 yılında Sanayi ve Teknoloji Bakanlığı desteği, Trakya Kalkınma Ajansı koordinasyonu, Namık Kemal Üniversitesi Teknoparkı, 32 tohumculuk şirketi ve 10 ticaret borsasının katılımıyla <strong>43 ortaklı güçlü bir girişim</strong> olarak kurulduğunu hatırlatan Vali Turan, törenin ardından biçerdöver kabinine geçerek yerli ayçiçeği hasadını başlattı.</p>
@@ -535,13 +534,13 @@ const headlineArticles = [
             <span>- Kırklareli Valiliği Basın Açıklaması</span>
           </div>
           <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
-        
+        `
       },
       {
         pageNum: 3,
         pageTitle: "SUN 2259 CL ve SUN 1734 CL Çeşitleri: Kuraklığa ve Hastalıklara Karşı Tam Direnç!",
         pageImage: "img/trakya-yerli-aycicegi-tohumu-hasat.jpg",
-        content: 
+        content: `
           <p class="lead"><strong>Trakya Tarımsal Araştırma Enstitüsü Islah Çalışmalarından Çıkan Çifte Başarı</strong></p>
           <p>Trakya Tohum A.Ş. ile Tarımsal Araştırma Enstitüsü iş birliğiyle ıslah edilen <strong>SUN 2259 CL</strong> ve <strong>SUN 1734 CL</strong> hibrit çeşitleri, Trakya tarlalarında yapılan saha denemelerinde olağanüstü performans sergiledi.</p>
           <p>Saha gözlemlerine göre yerli tohumlar:</p>
@@ -551,7 +550,7 @@ const headlineArticles = [
             <li>☀️ <strong>Aşırı Sıcaklık ve Kuraklık Toleransı:</strong> İklim krizinin etkilediği Trakya şartlarında su stresine dayanıklılık gösteriyor.</li>
           </ul>
           <p>Hasat şenliği, üreticilerle çekilen hatıra fotoğrafları ve bereket dilekleriyle sona erdi.</p>
-        
+        `
       }
     ]
   },
@@ -624,7 +623,7 @@ const headlineArticles = [
     },
     image: "img/tekirdag-sebze-fidesi-destegi-sarkoy.jpg",
     tags: ["Tekirdağ Büyükşehir", "Şarköy", "Sebze Fidesi", "Çiftçi Desteği", "Tarımsal Hizmetler", "Kırsal Kalkınma", "Domates", "Biber", "Son Dakika"],
-    content: 
+    content: `
       <p class="lead"><strong>Tekirdağ Büyükşehir Belediyesi tarafından kırsal kalkınmanın desteklenmesi, üreticilerin güçlendirilmesi ve sebze yetiştiriciliğinin yaygınlaştırılması amacıyla hayata geçirilen "Sebzeciliği Geliştirme Projesi" kapsamında Şarköy’de Yazlık Sebze Fidesi Dağıtım Töreni düzenlendi.</strong></p>
       <p>Şarköy ilçesi Yel Değirmeni Mevkii’nde düzenlenen törende 170 üreticiye 123 bin sebze fidesi teslim edildi. Proje kapsamında il genelinde toplam 482 bin fide çiftçilerle buluşturulacak. Dağıtılan fidelerin yüzde 70'i Tekirdağ Büyükşehir Belediyesi tarafından hibe edilirken, yüzde 30'u ise ziraat odalarına üye çiftçiler tarafından karşılandı.</p>
       <div class="article-quote">
@@ -633,13 +632,13 @@ const headlineArticles = [
         <span>- Dr. Ulaş Ay, Tarımsal Hizmetler Dairesi Başkanı</span>
       </div>
       <p>Proje kapsamında üreticilere salçalık domates, sofralık domates, kapya biber, kavun ve karpuz fideleri teslim edildi.</p>
-    ,
+    `,
     pages: [
       {
         pageNum: 1,
         pageTitle: "Şarköy'de 170 Üreticiye 123 Bin Fide Teslim Edildi: İl Genelinde 482 Bin Fide Dağıtılacak!",
         pageImage: "img/tekirdag-sebze-fidesi-destegi-sarkoy.jpg",
-        content: 
+        content: `
           <p class="lead"><strong>Yel Değirmeni Mevkii'nde Coşkulu Tören: Üreticilere Büyük Can Suyu</strong></p>
           <p>Tekirdağ Büyükşehir Belediyesi Tarımsal Hizmetler Dairesi Başkanlığı, 14 Mayıs Dünya Çiftçiler Günü vesilesiyle başlattığı dev fide dağıtım programını Şarköy'de gerçekleştirdi.</p>
           <p>Törende konuşan Tarımsal Hizmetler Dairesi Başkanı <strong>Dr. Ulaş Ay</strong>, artan girdi maliyetlerinin üreticileri zorladığını ifade ederek, belediyenin çiftçinin yükünü hafifletmek için tüm imkanlarını seferber ettiğini belirtti. İlk etapta Şarköy'deki 170 çiftçiye 123 bin fide teslim edilirken, il genelinde dağıtımın 482 bin adede ulaşacağı kaydedildi.</p>
@@ -649,13 +648,13 @@ const headlineArticles = [
             <span>- Dr. Ulaş Ay</span>
           </div>
           <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
-        
+        `
       },
       {
         pageNum: 2,
         pageTitle: "Yüzde 70'i Büyükşehir Hibesi: Domates, Kapya Biber, Kavun ve Karpuz Fideleri Toprakla Buluştu",
         pageImage: "img/tekirdag-sebze-fidesi-destegi-sarkoy.jpg",
-        content: 
+        content: `
           <p class="lead"><strong>Ziraat Odaları ve Üreticilerle Ortak Güç Birliği</strong></p>
           <p>Sebzeciliği Geliştirme Projesi, maliyet paylaşımı modeliyle sürdürülebilir bir tarım desteği sağlıyor. Proje bütçesinin <strong>%70'i Tekirdağ Büyükşehir Belediyesi hibesi</strong> olarak karşılanırken, kalan %30'luk kısım ziraat odalarına kayıtlı üreticiler tarafından karşılanıyor.</p>
           <p>Dağıtılan sertifikalı ve yüksek verimli fide çeşitleri:</p>
@@ -665,13 +664,13 @@ const headlineArticles = [
             <li>🍉 <strong>Kavun ve Karpuz:</strong> Bölge topraklarına uyumlu, yüksek şeker ve aroma oranına sahip yerli çeşitler.</li>
           </ul>
           <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
-        
+        `
       },
       {
         pageNum: 3,
         pageTitle: "Tarımsal Hizmetler Dairesi: 'Artan Maliyetlere Karşı Çiftçimizin Yanındayız!'",
         pageImage: "img/tekirdag-sebze-fidesi-destegi-sarkoy.jpg",
-        content: 
+        content: `
           <p class="lead"><strong>"Verimli Topraklarımızı Boş Bırakmayacağız"</strong></p>
           <p>Tekirdağ Büyükşehir Belediyesi yetkilileri; kaliteli fide kullanımının yaygınlaştırılması, yenilikçi tarım teknolojileri ve pazarlama imkanlarının güçlendirilmesi yönündeki desteklerin kesintisiz süreceğini vurguladı.</p>
           <p>Törene katılan kurum ve kuruluş temsilcileri, sivil toplum örgütleri ve çiftçiler, üretime güç katan destekten dolayı Tekirdağ Büyükşehir Belediyesi'ne teşekkür etti.</p>
@@ -681,11 +680,12 @@ const headlineArticles = [
             <span>- Tekirdağ Büyükşehir Belediyesi</span>
           </div>
           <p>Fidelerini teslim alan üreticiler, dikim çalışmalarına vakit kaybetmeden başladılar.</p>
-        
+        `
       }
     ]
   },
-id: 42,
+  {
+    id: 42,
     headlineNumber: 4,
     title: "İNŞALLAH ARTIK ÇÖZERSİNİZ! Velimeşe'deki 5 Yıllık Hemzemin Çilesi İçin Valilikte Kritik Zirve: Projeyi Karayolları Üstlendi!",
     spot: "Velimeşe'de 7 canın yitirildiği ve 5 yıldır kapatılarak bölgeyi mağdur eden hemzemin geçit çilesi için Tekirdağ Valisi Recep Soytürk başkanlığında kritik zirve toplandı. Karayolları Genel Müdürlüğü'nün üstlendiği köprülü kavşak projesinin yol haritası masaya yatırıldı. Velimeşe halkı ve esnafı tek ses oldu: 'İnşallah bu sefer lafta kalmaz, artık çözersiniz!'",
@@ -3606,6 +3606,7 @@ id: 42,
       }
     ]
   },
+// -------------------------------------------------------------
   // KÖŞE YAZARLARI MAKALELERİ (ID: 201, 202, 203, 204)
   // -------------------------------------------------------------,
   {
