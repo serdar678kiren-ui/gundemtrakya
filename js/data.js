@@ -23,6 +23,18 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 133, 
+    articleId: 43, 
+    title: "Trakya'nın yerli hibrit ayçiçeği tohumunda tarihi rekor: 500 kilodan 115 tona çıktı, 100 bin dönümde hasat başladı!", 
+    time: "10:45" 
+  },
+  { 
+    id: 132, 
+    articleId: 44, 
+    title: "Tekirdağ Büyükşehir'den üreticiye dev destek: 482 bin sebze fidesi yüzde 70 hibeyle toprakla buluşuyor!", 
+    time: "11:30" 
+  },
+  { 
     id: 131, 
     articleId: 42, 
     title: "Velimeşe hemzemin geçit çilesinde Valilikte kritik zirve: Projeyi Karayolları üstlendi, 'İNŞALLAH ARTIK ÇÖZERSİNİZ!'", 
@@ -413,8 +425,268 @@ const headlineArticles = [
     ]
   },
   {
-    id: 42,
+      {
+    id: 43,
     headlineNumber: 2,
+    title: "500 KİLODAN 115 TONA! Trakya'nın Yüzde 100 Yerli ve Milli Ayçiçeği Tohumu Rekorla Büyüyor: 100 Bin Dönümde Hasat Başladı!",
+    spot: "Trakya Kalkınma Ajansı koordinasyonunda Trakya Tohum A.Ş. tarafından geliştirilen yüzde 100 yerli ve milli hibrit ayçiçeği tohumları Lüleburgaz Karamusul köyünde düzenlenen tarla gününde biçerdöverlerle hasat edildi. Kırklareli Valisi Uğur Turan ve Genel Sekreter Mahmut Şahin müjdeyi verdi: '500 kiloyla başladık, bu yıl 115 tona ulaştık! 20'den fazla ilde 100 bin dönüm arazide ekildi.'",
+    category: "TARIM & EKONOMİ",
+    categorySlug: "ekonomi",
+    location: "Kırklareli / Lüleburgaz (Karamusul)",
+    badgeColor: "green",
+    date: "4 Eylül 2026 - 10:45",
+    readTime: "4 dk",
+    views: 168200,
+    likes: 14200,
+    reactions: { like: 7200, heart: 4100, clap: 2400, thinking: 420, angry: 80 },
+    socialPosts: [
+      {
+        user: "Trakya Çiftçiler & Tarım Platformu",
+        handle: "@TrakyaCiftci",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Trakya'nın bereketli topraklarına yerli ve milli hibrit tohum çok yakıştı! 500 kilodan 115 tona uzanan bu başarı hikayesi tarımsal bağımsızlığımızın teminatıdır. Emeği geçen herkesi kutluyoruz! 🌻🚜🇹🇷 #TrakyaTohum #Aycicegi #Luleburgaz",
+        time: "10 dk önce",
+        likes: 5890,
+        shares: 1820
+      },
+      {
+        user: "Trakya Kalkınma & Ekonomi",
+        handle: "@TrakyaKalkinma",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "SUN 2259 CL ve SUN 1734 CL çeşitlerimiz kuraklığa ve hastalıklara karşı yüksek direnç gösteriyor. Trakya çiftçisi kazanıyor, Türkiye kazanıyor. 👏",
+        time: "25 dk önce",
+        likes: 4150,
+        shares: 980
+      }
+    ],
+    comments: [
+      {
+        id: 4301,
+        author: "Ahmet Dayı",
+        city: "Lüleburgaz / Karamusul Köyü",
+        time: "8 dk önce",
+        content: "Tarlamızda denedik, hem kuraklığa dayandı hem de verimi yabancı tohumlardan çok daha iyi çıktı. Kendi tohumumuzu ekmek gurur verici.",
+        likes: 385
+      },
+      {
+        id: 4302,
+        author: "Mustafa Çavuş",
+        city: "Edirne / Havsa",
+        time: "15 dk önce",
+        content: "Geçen yıl az bir alanda denemiştik, bu yıl tüm ayçiçeği tarlalarımıza ektik. Yağ oranı çok yüksek. Emeği geçen mühendislerimize helal olsun.",
+        likes: 294
+      },
+      {
+        id: 4303,
+        author: "Zeynep Hanım",
+        city: "Tekirdağ / Ziraat Mühendisi",
+        time: "22 dk önce",
+        content: "Trakya Tohum A.Ş.'nin 43 ortaklı modelle kamuyu, üniversiteyi ve özel sektörü buluşturması tarımda örnek bir reformdur.",
+        likes: 242
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Tarım & Ekonomi Masası",
+      title: "Bölge Tarımı & Kırsal Kalkınma Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/trakya-yerli-aycicegi-tohumu-hasat.jpg",
+    tags: ["Trakya Tohum", "Ayçiçeği", "Kırklareli", "Lüleburgaz", "Karamusul", "Uğur Turan", "Mahmut Şahin", "Tarım", "Yerli Tohum", "Son Dakika"],
+    content: 
+      <p class="lead"><strong>Trakya Kalkınma Ajansı koordinasyonunda kurulan Trakya Tohum A.Ş. tarafından geliştirilen yüzde 100 yerli ve milli hibrit ayçiçeği tohumunun tanıtımı ve hasadı, Kırklareli’nin Lüleburgaz ilçesine bağlı Karamusul köyünde düzenlenen görkemli bir tarla günü etkinliğiyle gerçekleştirildi.</strong></p>
+      <p>500 kilogramlık deneme üretimiyle başlayan yerli tohum serüveni, 2026 yılı itibarıyla 115 tonluk devasa bir üretime ulaşarak 20'den fazla ilde 100 bin dönüm arazide toprakla buluştu. Kırklareli Valisi Uğur Turan ve Trakya Kalkınma Ajansı Genel Sekreteri Mahmut Şahin bizzat biçerdövere binerek hasada eşlik etti.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Tohum, yalnızca tarımsal üretimin bir girdisi değildir. Tohum; gıda güvenliğimizin, tarımsal bağımsızlığımızın ve milli üretim gücümüzün temelidir."</p>
+        <span>- Uğur Turan, Kırklareli Valisi</span>
+      </div>
+      <p>Geliştirilen SUN 2259 CL ve SUN 1734 CL yerli hibrit çeşitlerinin orobanş parazitine ve mildiyö hastalığına karşı yüksek dayanımı, aşırı kuraklık ve sıcaklıklara direnci çiftçilerden tam not aldı.</p>
+    ,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "500 Kilogramla Başlayan Seferberlik: 115 Ton Üretimle 20 İle Ulaştı!",
+        pageImage: "img/trakya-yerli-aycicegi-tohumu-hasat.jpg",
+        content: 
+          <p class="lead"><strong>Trakya Tohum A.Ş. 8 Yıllık Ar-Ge ve Emekle Türkiye'nin Gururu Oldu</strong></p>
+          <p>Trakya Kalkınma Ajansı Genel Sekreteri <strong>Mahmut Şahin</strong>, yaklaşık 8 yıl önce başlatılan yerli ve milli tohum hamlesinin geldiği gurur verici noktayı anlattı. Şahin, ekosistemdeki A'dan Z'ye her aşamada Türk mühendislerinin ve çiftçilerinin yer aldığını vurguladı.</p>
+          <p>Şahin, <em>"500 kilo üreterek başladığımız bu tohumu bu yıl 115 ton üreterek 20'den fazla ilimizde satışa sunduk. 2026 yılında ise 100.000 dönüm arazide 4.000 paket yerli ayçiçeği tohumumuzun ekimi gerçekleştirildi"</em> ifadelerini kullandı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Nasıl bu topraklar Trakya Birlik'i çıkardıysa, şimdi de Trakya Tohum A.Ş. ile hem bölgemize hem Türkiye'mize büyük bir katma değer sağlıyoruz."</p>
+            <span>- Mahmut Şahin, Trakya Kalkınma Ajansı Genel Sekreteri</span>
+          </div>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Vali Uğur Turan ve Mahmut Şahin Biçerdöverle Hasada Katıldı: 'Tohum Milli Bağımsızlıktır'",
+        pageImage: "img/trakya-yerli-aycicegi-tohumu-hasat.jpg",
+        content: 
+          <p class="lead"><strong>Kırklareli Valisi Uğur Turan: 'Kendi Tohumunu Üreten Ülke Geleceğini Garantiye Alır'</strong></p>
+          <p>Hasat etkinliğinde konuşan Kırklareli Valisi <strong>Uğur Turan</strong>, tohumun stratejik önemine dikkat çekerek kamu, üniversite ve özel sektör iş birliğinin en güzel örneğinin Trakya'da sergilendiğini belirtti.</p>
+          <p>Trakya Tohum A.Ş.'nin 2019 yılında Sanayi ve Teknoloji Bakanlığı desteği, Trakya Kalkınma Ajansı koordinasyonu, Namık Kemal Üniversitesi Teknoparkı, 32 tohumculuk şirketi ve 10 ticaret borsasının katılımıyla <strong>43 ortaklı güçlü bir girişim</strong> olarak kurulduğunu hatırlatan Vali Turan, törenin ardından biçerdöver kabinine geçerek yerli ayçiçeği hasadını başlattı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"İklim değişikliği ve kuraklık karşısında kendi tohumuna sahip olan ülkeler dirençli kalacaktır. Çiftçimizin emeğiyle tohumumuz toprağa bereket saçıyor."</p>
+            <span>- Kırklareli Valiliği Basın Açıklaması</span>
+          </div>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        
+      },
+      {
+        pageNum: 3,
+        pageTitle: "SUN 2259 CL ve SUN 1734 CL Çeşitleri: Kuraklığa ve Hastalıklara Karşı Tam Direnç!",
+        pageImage: "img/trakya-yerli-aycicegi-tohumu-hasat.jpg",
+        content: 
+          <p class="lead"><strong>Trakya Tarımsal Araştırma Enstitüsü Islah Çalışmalarından Çıkan Çifte Başarı</strong></p>
+          <p>Trakya Tohum A.Ş. ile Tarımsal Araştırma Enstitüsü iş birliğiyle ıslah edilen <strong>SUN 2259 CL</strong> ve <strong>SUN 1734 CL</strong> hibrit çeşitleri, Trakya tarlalarında yapılan saha denemelerinde olağanüstü performans sergiledi.</p>
+          <p>Saha gözlemlerine göre yerli tohumlar:</p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>🌻 <strong>Yüksek Yağ Oranı:</strong> Sanayicinin ve kırma fabrikalarının talep ettiği en yüksek yağ verimini sağlıyor.</li>
+            <li>🛡️ <strong>Orobanş ve Mildiyö Direnci:</strong> Bölgedeki en yaygın parazit ve mantar hastalıklarına karşı genetik koruma sunuyor.</li>
+            <li>☀️ <strong>Aşırı Sıcaklık ve Kuraklık Toleransı:</strong> İklim krizinin etkilediği Trakya şartlarında su stresine dayanıklılık gösteriyor.</li>
+          </ul>
+          <p>Hasat şenliği, üreticilerle çekilen hatıra fotoğrafları ve bereket dilekleriyle sona erdi.</p>
+        
+      }
+    ]
+  },
+  {
+    id: 44,
+    headlineNumber: 3,
+    title: "TEKİRDAĞ BÜYÜKŞEHİR'DEN ÇİFTÇİYE DEV CAN SUYU! 482 Bin Sebze Fidesi Toprakla Buluşuyor: Şarköy'de Törenle Dağıtıldı!",
+    spot: "Tekirdağ Büyükşehir Belediyesi, kırsal kalkınmayı güçlendirmek ve artan girdi maliyetleri karşısında üreticiye nefes aldırmak amacıyla 'Sebzeciliği Geliştirme Projesi' kapsamında Şarköy'de 170 çiftçiye 123 bin yazlık sebze fidesi dağıttı. İl genelinde toplam 482 bin fidenin yüzde 70 hibe desteğiyle çiftçilere ulaştırılacağı açıklandı.",
+    category: "YEREL YÖNETİM & TARIM",
+    categorySlug: "ekonomi",
+    location: "Tekirdağ / Şarköy & İl Geneli",
+    badgeColor: "green",
+    date: "4 Eylül 2026 - 11:30",
+    readTime: "3 dk",
+    views: 148500,
+    likes: 11800,
+    reactions: { like: 5800, heart: 3200, clap: 2400, thinking: 320, angry: 80 },
+    socialPosts: [
+      {
+        user: "Şarköy Üreticiler Birliği",
+        handle: "@SarkoyUretici",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Salçalık ve sofralık domates, kapya biber, kavun ve karpuz fidelerimiz geldi! Yüzde 70 belediye destekli bu proje Şarköy ve Tekirdağ çiftçisine can suyu oldu. Teşekkürler Tekirdağ Büyükşehir! 🌱🍅 #Tekirdag #Sarkoy #FideDestegi",
+        time: "10 dk önce",
+        likes: 4950,
+        shares: 1250
+      },
+      {
+        user: "Trakya Kırsal Kalkınma",
+        handle: "@TrakyaKirsalkalkinma",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "482 bin fide desteği gıda enflasyonuna ve üretim maliyetlerine karşı sahada verilen en somut destektir. Üreten Trakya güçlü Trakya! 👏",
+        time: "25 dk önce",
+        likes: 3420,
+        shares: 780
+      }
+    ],
+    comments: [
+      {
+        id: 4401,
+        author: "Hasan Tahsin",
+        city: "Şarköy / Mürefte",
+        time: "5 dk önce",
+        content: "Mazot ve gübre fiyatlarının belimizi büktüğü bu dönemde fidelerin yüzde 70 hibeyle verilmesi harika oldu. Tarlalarımıza hemen ekiyoruz.",
+        likes: 312
+      },
+      {
+        id: 4402,
+        author: "Ali Rıza",
+        city: "Süleymanpaşa / Banarlı",
+        time: "14 dk önce",
+        content: "Kaliteli fideler sayesinde bu yıl verimimiz çok daha yüksek olacak. Emeği geçen Tarımsal Hizmetler Dairesi'ne teşekkür ederiz.",
+        likes: 245
+      },
+      {
+        id: 4403,
+        author: "Emine Hanım",
+        city: "Malkara / Üretici Kadın",
+        time: "20 dk önce",
+        content: "Kadın üreticiler olarak bahçelerimize domates ve kapya biber fidelerini diktik. Desteklerin artarak devam etmesini diliyoruz.",
+        likes: 198
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Yerel Yönetimler Masası",
+      title: "Tekirdağ Kırsal Hizmetler Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/tekirdag-sebze-fidesi-destegi-sarkoy.jpg",
+    tags: ["Tekirdağ Büyükşehir", "Şarköy", "Sebze Fidesi", "Çiftçi Desteği", "Tarımsal Hizmetler", "Kırsal Kalkınma", "Domates", "Biber", "Son Dakika"],
+    content: 
+      <p class="lead"><strong>Tekirdağ Büyükşehir Belediyesi tarafından kırsal kalkınmanın desteklenmesi, üreticilerin güçlendirilmesi ve sebze yetiştiriciliğinin yaygınlaştırılması amacıyla hayata geçirilen "Sebzeciliği Geliştirme Projesi" kapsamında Şarköy’de Yazlık Sebze Fidesi Dağıtım Töreni düzenlendi.</strong></p>
+      <p>Şarköy ilçesi Yel Değirmeni Mevkii’nde düzenlenen törende 170 üreticiye 123 bin sebze fidesi teslim edildi. Proje kapsamında il genelinde toplam 482 bin fide çiftçilerle buluşturulacak. Dağıtılan fidelerin yüzde 70'i Tekirdağ Büyükşehir Belediyesi tarafından hibe edilirken, yüzde 30'u ise ziraat odalarına üye çiftçiler tarafından karşılandı.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Tekirdağ'ın verimli toprakları ve uygun iklim koşulları sebze yetiştiriciliğine çok elverişli. Artan maliyetler karşısında üreticimizi asla yalnız bırakmayacağız."</p>
+        <span>- Dr. Ulaş Ay, Tarımsal Hizmetler Dairesi Başkanı</span>
+      </div>
+      <p>Proje kapsamında üreticilere salçalık domates, sofralık domates, kapya biber, kavun ve karpuz fideleri teslim edildi.</p>
+    ,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Şarköy'de 170 Üreticiye 123 Bin Fide Teslim Edildi: İl Genelinde 482 Bin Fide Dağıtılacak!",
+        pageImage: "img/tekirdag-sebze-fidesi-destegi-sarkoy.jpg",
+        content: 
+          <p class="lead"><strong>Yel Değirmeni Mevkii'nde Coşkulu Tören: Üreticilere Büyük Can Suyu</strong></p>
+          <p>Tekirdağ Büyükşehir Belediyesi Tarımsal Hizmetler Dairesi Başkanlığı, 14 Mayıs Dünya Çiftçiler Günü vesilesiyle başlattığı dev fide dağıtım programını Şarköy'de gerçekleştirdi.</p>
+          <p>Törende konuşan Tarımsal Hizmetler Dairesi Başkanı <strong>Dr. Ulaş Ay</strong>, artan girdi maliyetlerinin üreticileri zorladığını ifade ederek, belediyenin çiftçinin yükünü hafifletmek için tüm imkanlarını seferber ettiğini belirtti. İlk etapta Şarköy'deki 170 çiftçiye 123 bin fide teslim edilirken, il genelinde dağıtımın 482 bin adede ulaşacağı kaydedildi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Artan enerji ve işçilik maliyetleriyle sebze üretiminde karlılık azalıyor; bu durum gıda fiyatlarının yükselmesine yol açıyor. Çözüm tarladaki üreticiyi doğrudan desteklemektir."</p>
+            <span>- Dr. Ulaş Ay</span>
+          </div>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Yüzde 70'i Büyükşehir Hibesi: Domates, Kapya Biber, Kavun ve Karpuz Fideleri Toprakla Buluştu",
+        pageImage: "img/tekirdag-sebze-fidesi-destegi-sarkoy.jpg",
+        content: 
+          <p class="lead"><strong>Ziraat Odaları ve Üreticilerle Ortak Güç Birliği</strong></p>
+          <p>Sebzeciliği Geliştirme Projesi, maliyet paylaşımı modeliyle sürdürülebilir bir tarım desteği sağlıyor. Proje bütçesinin <strong>%70'i Tekirdağ Büyükşehir Belediyesi hibesi</strong> olarak karşılanırken, kalan %30'luk kısım ziraat odalarına kayıtlı üreticiler tarafından karşılanıyor.</p>
+          <p>Dağıtılan sertifikalı ve yüksek verimli fide çeşitleri:</p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>🍅 <strong>Salçalık ve Sofralık Domates:</strong> Yüksek et dolgunluğu ve raf ömrüne sahip çeşitler.</li>
+            <li>🌶️ <strong>Kapya Biber:</strong> Trakya sanayisinde közleme ve kurutmalık için tercih edilen birinci sınıf tohumlar.</li>
+            <li>🍉 <strong>Kavun ve Karpuz:</strong> Bölge topraklarına uyumlu, yüksek şeker ve aroma oranına sahip yerli çeşitler.</li>
+          </ul>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Tarımsal Hizmetler Dairesi: 'Artan Maliyetlere Karşı Çiftçimizin Yanındayız!'",
+        pageImage: "img/tekirdag-sebze-fidesi-destegi-sarkoy.jpg",
+        content: 
+          <p class="lead"><strong>"Verimli Topraklarımızı Boş Bırakmayacağız"</strong></p>
+          <p>Tekirdağ Büyükşehir Belediyesi yetkilileri; kaliteli fide kullanımının yaygınlaştırılması, yenilikçi tarım teknolojileri ve pazarlama imkanlarının güçlendirilmesi yönündeki desteklerin kesintisiz süreceğini vurguladı.</p>
+          <p>Törene katılan kurum ve kuruluş temsilcileri, sivil toplum örgütleri ve çiftçiler, üretime güç katan destekten dolayı Tekirdağ Büyükşehir Belediyesi'ne teşekkür etti.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Tarlada izi olanın harmanda yüzü olur. Tekirdağ'ın bereketli topraklarında üreten her bir çiftçimizin alın teri başımızın tacıdır."</p>
+            <span>- Tekirdağ Büyükşehir Belediyesi</span>
+          </div>
+          <p>Fidelerini teslim alan üreticiler, dikim çalışmalarına vakit kaybetmeden başladılar.</p>
+        
+      }
+    ]
+  },
+id: 42,
+    headlineNumber: 4,
     title: "İNŞALLAH ARTIK ÇÖZERSİNİZ! Velimeşe'deki 5 Yıllık Hemzemin Çilesi İçin Valilikte Kritik Zirve: Projeyi Karayolları Üstlendi!",
     spot: "Velimeşe'de 7 canın yitirildiği ve 5 yıldır kapatılarak bölgeyi mağdur eden hemzemin geçit çilesi için Tekirdağ Valisi Recep Soytürk başkanlığında kritik zirve toplandı. Karayolları Genel Müdürlüğü'nün üstlendiği köprülü kavşak projesinin yol haritası masaya yatırıldı. Velimeşe halkı ve esnafı tek ses oldu: 'İnşallah bu sefer lafta kalmaz, artık çözersiniz!'",
     category: "GÜNCEL & YEREL YÖNETİM",
@@ -544,7 +816,7 @@ const headlineArticles = [
   },
   {
     id: 41,
-    headlineNumber: 3,
+    headlineNumber: 5,
     title: "7 CAN VERDİK, 5 YIL GEÇTİ AMA HÂLÂ BİR ÇÖZÜM YOK! Velimeşe Kapatılan Hemzemin Geçitte İsyan Etti: 'Yolu Kapatmak Çözüm Değil, Katlı Kavşak İstiyoruz!'",
     spot: "Tekirdağ Ergene Velimeşe'de 7 işçinin yaşamını yitirdiği tren faciasından 4 yıl 9 ay sonra hemzemin geçidin kapatılarak mahallenin tek yola mahkum edilmesi bardağı taşırdı. Muhtar Olcay Alpsoy ve yüzlerce mahalleli kapanan geçitte eylem yaptı: 'Esnaf battı, öğrenciler ve işçiler perişan, ambulans geçemiyor. HÂLÂ BİR ÇÖZÜM YOK, katlı kavşak acilen yapılsın!'",
     category: "GÜNCEL & TRAKYA",
@@ -675,7 +947,7 @@ const headlineArticles = [
   },
   {
     id: 40,
-    headlineNumber: 4,
+    headlineNumber: 6,
     title: "Gurbetçi Sezonunda Trakya Sınır Kapılarında Tarihi Rekor: 3,7 Milyon Yolcu ve 1 Milyon Araç Geçişi!",
     spot: "Avrupa'da yaşayan Türk vatandaşlarının yıllık izinlerini geçirmek üzere Türkiye'ye akın ettiği gurbetçi sezonunda, Trakya'daki sınır kapılarından yaklaşık 3,7 milyon yolcu ve 1 milyon araç geçiş yaptı. Edirne Valisi Yunus Sezer, bekleme süresinin 39 dakikadan 27 dakikaya indirildiğini duyurdu.",
     category: "EKONOMİ & GÜNDEM",
@@ -805,7 +1077,7 @@ const headlineArticles = [
   },
   {
     id: 38,
-    headlineNumber: 5,
+    headlineNumber: 7,
     title: "Özgür Özel’den Tarihi Trakya Çıkarması: Tekirdağ, Edirne ve Kırklareli Programı Netleşti!",
     spot: "Yeni Parti Genel Başkanı Özgür Özel, 4 ve 5 Eylül tarihlerinde Tekirdağ, Edirne ve Kırklareli'ni kapsayan iki günlük yoğun bir Trakya maratonuna çıkıyor. Çorlu'dan Süleymanpaşa'ya, Selimiye'den Edirne Halk Pazarı'na, Kırklareli merkezden Babaeski köylerine kadar çiftçiler, emekliler ve esnafla buluşacak Özel'in Trakya çıkarması bölge siyasetinde büyük heyecan yarattı.",
     category: "SİYASET & GÜNDEM",
@@ -1148,7 +1420,7 @@ const headlineArticles = [
 },
   {
     id: 36,
-    headlineNumber: 5,
+    headlineNumber: 8,
     title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
     spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
     category: "DENİZCİLİK & GÜNDEM",
@@ -1287,7 +1559,7 @@ const headlineArticles = [
   },
   {
     id: 37,
-    headlineNumber: 6,
+    headlineNumber: 9,
     title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik kannabinoid ele geçirilirken, gözaltına alınan 2 zanlı çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -1397,7 +1669,7 @@ const headlineArticles = [
   },
   {
     id: 34,
-    headlineNumber: 7,
+    headlineNumber: 10,
     title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
     spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
     category: "SİYASET & GÜNDEM",
@@ -1527,7 +1799,7 @@ const headlineArticles = [
   },
   {
     id: 33,
-    headlineNumber: 8,
+    headlineNumber: 11,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -1650,7 +1922,7 @@ const headlineArticles = [
   },
   {
     id: 32,
-    headlineNumber: 9,
+    headlineNumber: 12,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -1773,7 +2045,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 10,
+    headlineNumber: 13,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -1874,7 +2146,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 11,
+    headlineNumber: 14,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -1975,7 +2247,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 12,
+    headlineNumber: 15,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -2076,7 +2348,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 13,
+    headlineNumber: 16,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -2189,7 +2461,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 14,
+    headlineNumber: 17,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -2290,7 +2562,7 @@ const headlineArticles = [
   },
   {
     id: 26,
-    headlineNumber: 15,
+    headlineNumber: 18,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
@@ -2396,7 +2668,7 @@ const headlineArticles = [
   },
   {
     id: 25,
-    headlineNumber: 16,
+    headlineNumber: 19,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
@@ -2500,7 +2772,7 @@ const headlineArticles = [
   },
   {
     id: 23,
-    headlineNumber: 17,
+    headlineNumber: 20,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
@@ -2607,7 +2879,7 @@ const headlineArticles = [
   },
   {
     id: 24,
-    headlineNumber: 18,
+    headlineNumber: 21,
     title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
     spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
     category: "YAŞAM & GÜNDEM",
@@ -2688,7 +2960,7 @@ const headlineArticles = [
   },
   {
     id: 20,
-    headlineNumber: 19,
+    headlineNumber: 22,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -2791,7 +3063,7 @@ const headlineArticles = [
   },
   {
     id: 21,
-    headlineNumber: 20,
+    headlineNumber: 23,
     title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
     spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
     category: "YAŞAM",
@@ -2867,7 +3139,7 @@ const headlineArticles = [
   },
   {
     id: 22,
-    headlineNumber: 21,
+    headlineNumber: 24,
     title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
     spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
     category: "YAŞAM & EĞİTİM",
@@ -2949,7 +3221,7 @@ const headlineArticles = [
   },
   {
     id: 19,
-    headlineNumber: 22,
+    headlineNumber: 25,
     title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
     spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
     category: "EĞİTİM & GÜNDEM",
@@ -3078,7 +3350,7 @@ const headlineArticles = [
   },
   {
     id: 18,
-    headlineNumber: 23,
+    headlineNumber: 26,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -3191,7 +3463,7 @@ const headlineArticles = [
   },
   {
     id: 17,
-    headlineNumber: 24,
+    headlineNumber: 27,
     title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
     spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
     category: "SAĞLIK",
@@ -3334,177 +3606,6 @@ const headlineArticles = [
       }
     ]
   },
-  {
-    id: 1,
-    headlineNumber: 25,
-    title: "Trakya'nın Ulaşımında Yeni Çağ: Hızlı Tren Hattında Geri Sayım Başladı!",
-    spot: "İstanbul ile Edirne arasını 1 saat 20 dakikaya indirecek dev projede ray montajı tamamlandı. Ticaret, sanayi ve turizmde büyük canlanma bekleniyor.",
-    category: "TRAKYA HABER",
-    categorySlug: "trakya",
-    location: "Çerkezköy / Edirne",
-    badgeColor: "red",
-    date: "26 Ağustos 2026 - 22:30",
-    readTime: "5 dk",
-    views: 154200,
-    likes: 5120,
-    reactions: { like: 2650, heart: 1920, clap: 980, thinking: 310, angry: 45 },
-    socialPosts: [
-      {
-        user: "Çerkezköy Haber Gazetesi",
-        handle: "@cerkezkoyhaber",
-        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-        platform: "instagram",
-        text: "Çerkezköy İstasyonu'nda hızlı tren peronları hazır! İstanbul'a gidiş 25 dakikaya, Edirne'ye 45 dakikaya düşüyor. Sanayi kenti Çerkezköy sınıf atlıyor. 🚄📸 #Cerkezkoy #HizliTren",
-        time: "12 dk önce",
-        likes: 1840,
-        shares: 512
-      },
-      {
-        user: "Çorlu Güncel Medya",
-        handle: "@corlu_gundem",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
-        platform: "facebook",
-        text: "Çorlu ve Çerkezköy aksında sanayi çalışanları için banliyö ve hızlı tren sefer saatleri netleşti. Trafik çilesi tarihe karışacak! 🚆👏",
-        time: "35 dk önce",
-        likes: 1250,
-        shares: 340
-      }
-    ],
-    comments: [
-      {
-        id: 1,
-        author: "Ersin Vardar",
-        city: "Edirne / Merkez",
-        time: "8 dakika önce",
-        content: "Yıllardır beklediğimiz an geldi. Üniversite öğrencileri ve memurlar için İstanbul'a günübirlik gidip gelmek artık hayal değil. Emeği geçen herkesi tebrik ederim!",
-        likes: 142
-      },
-],
-    author: {
-      name: "Murat Çelik",
-      title: "Bölge Haberleri Müdürü",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "Genel Bakış & Projenin Detayları",
-        pageImage: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">Ulaştırma ve Altyapı Bakanlığı'nın mega projeleri arasında yer alan <strong>Halkalı-Kapıkule Hızlı Tren Hattı</strong> projesinde tarihi bir eşiğe gelindi. Toplam 229 kilometrelik hattın ray döşeme, sinyalizasyon ve elektrifikasyon çalışmaları rekor sürede tamamlanarak ilk test sürüşleri için geri sayım başladı.</p>
-          
-          <p>Proje tamamlandığında İstanbul ile Edirne arasındaki yolculuk süresi mevcut 4 saatten sadece <strong>1 saat 20 dakikaya</strong> düşecek. Aynı zamanda Çerkezköy ve Çorlu sanayi merkezleri üzerinden geçen hat, yük taşımacılığında da Türkiye'nin Avrupa'ya açılan en güçlü lojistik koridoru haline gelecek.</p>
-          
-          <p>Trakya'nın kalkınma vizyonunda mihenk taşı kabul edilen hat, çift hatlı, 200 km/s hıza uygun ve en son Avrupa Demiryolu Trafik Yönetim Sistemi (ERTMS) standartlarında inşa edildi. Hattın faaliyete geçmesiyle karayolu trafiğindeki TIR yoğunluğunun %35 oranında raylara kayması ve karbon emisyonlarının ciddi oranda azalması hedefleniyor.</p>
-
-          <div class="in-article-ad"><span class="ad-label">REKLAM (SAYFA 1)</span><div class="ad-content-box"><i class="fa-solid fa-rectangle-ad"></i> Google AdSense Sayfa İçi Reklam Alanı (336x280)</div></div>
-          
-          <div class="interactive-qa-box">
-            <div class="qa-box-title"><i class="fa-solid fa-circle-question"></i> En Çok Merak Edilen Başlıklar:</div>
-            <div class="qa-link-card" onclick="goToArticlePage(2)"><span class="qa-link-text">❓ Hızlı tren hangi il ve ilçelerde duracak? İstasyon listesi açıklandı mı?</span><span class="qa-link-badge">İstasyonları Gör (Sayfa 2) ➡️</span></div>
-            <div class="qa-link-card" onclick="goToArticlePage(3)"><span class="qa-link-text">❓ Bilet fiyatları ne kadar olacak? Öğrenci ve memur indirimi var mı?</span><span class="qa-link-badge">Fiyat Tarifesi (Sayfa 3) ➡️</span></div>
-          </div>
-        `
-      },
-      {
-        pageNum: 2,
-        pageTitle: "İstasyon Listesi ve Güzergah Haritası",
-        pageImage: "https://images.unsplash.com/photo-1515165562839-978bbcf18277?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Soru 1: Hızlı Tren Hattı Hangi İl ve İlçelerden Geçecek?</strong></p>
-          <p>Halkalı-Kapıkule Demiryolu Hattı, Trakya'nın stratejik sanayi, tarım ve üniversite merkezlerini birbirine bağlayacak şekilde tasarlandı.</p>
-          
-          <div class="in-article-ad" style="border-color: var(--news-blue);"><span class="ad-label" style="color: var(--news-blue);">REKLAM (SAYFA 2)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
-          
-          <h3>Kesinleşen Durak ve İstasyon Listesi:</h3>
-          <ol style="line-height: 1.8; margin-left: 1.5rem; color: var(--text-main);">
-            <li><strong>İstanbul Halkalı Garı:</strong> Marmaray ve İstanbul Havalimanı metro entegrasyonuyla ana transfer merkezi.</li>
-            <li><strong>Çerkezköy İstasyonu:</strong> 350'den fazla fabrikanın bulunduğu ÇOSB ve Kapaklı bölgesinin yolcu ve lojistik aktarma üssü.</li>
-            <li><strong>Büyükkarıştıran İstasyonu:</strong> Trakya'nın yeni Lojistik Köy terminali ve kuru liman bağlantısı.</li>
-            <li><strong>Lüleburgaz Garı:</strong> Kırklareli'nin en büyük ilçesinde modern mimariyle inşa edilen dev yolcu terminali.</li>
-            <li><strong>Babaeski İstasyonu:</strong> Tarım ticareti ve yerel yolcu sirkülasyonu için modern peronlar.</li>
-            <li><strong>Edirne Merkez Garı:</strong> Trakya Üniversitesi ve Selimiye tarihi yarımadasına 10 dakika mesafede ana terminal.</li>
-            <li><strong>Kapıkule Sınır İstasyonu:</strong> Bulgaristan ve Avrupa demiryolu ağına direkt entegrasyon.</li>
-          </ol>
-        `
-      },
-      {
-        pageNum: 3,
-        pageTitle: "Bilet Fiyatları, Sefer Saatleri & Konfor",
-        pageImage: "https://images.unsplash.com/photo-1532105956626-9569c03602f6?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead"><strong>Soru 2: Bilet Fiyatları Ne Kadar Olacak ve Seferler Ne Zaman Başlıyor?</strong></p>
-          
-          <p>TCDD Taşımacılık tarafından hazırlanan tarife taslağına göre, hızlı tren biletleri karayolu otobüs fiyatlarıyla son derece rekabetçi bir düzeyde tutulacak. Ayrıca bölgede çalışan işçiler, kamu personeli ve üniversite öğrencileri için avantajlı aylık abonman kartları sunulacak.</p>
-
-          <div class="in-article-ad" style="border-color: var(--news-green);"><span class="ad-label" style="color: var(--news-green);">REKLAM (SAYFA 3)</span><div class="ad-content-box">Google AdSense Reklamı (300x250)</div></div>
-          
-          <p>Tren setlerinde yüksek hızlı internet (Wi-Fi), kafeterya vagonu, ergonomik koltuklar ve engelsiz erişim donanımları standart olarak yer alacak. Sabah ve akşam mesai saatlerinde Çerkezköy-İstanbul arasında her 30 dakikada bir sefer düzenlenmesi planlanıyor.</p>
-        `
-      }
-    ]
-  },
-  {
-    id: 11,
-    headlineNumber: 26,
-    title: "Çerkezköy ve Kapaklı OSB'de 5 Bin Kişiye İstihdam Müjdesi!",
-    spot: "Trakya'nın en büyük sanayi kümelenmesinde otomotiv, kimya ve tekstil sektörlerinde dev yatırımlar üretime geçiyor.",
-    category: "TRAKYA HABER",
-    categorySlug: "trakya",
-    location: "Tekirdağ / Çerkezköy",
-    badgeColor: "red",
-    date: "26 Ağustos 2026 - 22:15",
-    readTime: "4 dk",
-    views: 132000,
-    likes: 4280,
-    reactions: { like: 2450, heart: 1820, clap: 920, thinking: 110, angry: 15 },
-    socialPosts: [
-      {
-        user: "Çerkezköy Bakış Gazetesi",
-        handle: "@cerkezkoybakis",
-        avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80",
-        platform: "facebook",
-        text: "Çerkezköy Organize Sanayi Bölgesi'nde kurulan yeni fabrikalarda mavi ve beyaz yaka 5.000 kişilik personel alımı başladı. Başvurular İŞKUR ve kariyer merkezlerinde alınıyor. 🏭👔 #CerkezkoyOSB",
-        time: "20 dk önce",
-        likes: 1420,
-        shares: 612
-      }
-    ],
-    comments: [
-      {
-        id: 1101,
-        author: "Volkan Kurt",
-        city: "Çerkezköy / Kızılpınar",
-        time: "15 dk önce",
-        content: "Bölgemiz için harika bir haber. Vardiya servis güzergahları Kızılpınar ve Kapaklı iç mahallelerine de uzatılmalı.",
-        likes: 92
-      }
-    ],
-    author: {
-      name: "Murat Çelik",
-      title: "Sanayi Editörü",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
-    },
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-    pages: [
-      {
-        pageNum: 1,
-        pageTitle: "İstihdam Hamlesi & Şartlar",
-        pageImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-        content: `
-          <p class="lead">Türkiye'nin en dinamik üretim üslerinden <strong>Çerkezköy Organize Sanayi Bölgesi (ÇOSB)</strong> ve Kapaklı Sanayi Bölgesi, 2026 yılının en kapsamlı istihdam protokolüne imza attı.</p>
-          
-          <p>Yeni kurulan yüksek teknolojili otomotiv yan sanayi, biyoteknoloji ve teknik tekstil tesislerinin faaliyete geçmesiyle birlikte ilk etapta <strong>5.000 kişilik</strong> yeni kadro açıldı. İşe alımlarda hem vasıflı teknik personel hem de mesleki eğitim kursları aracılığıyla yetiştirilecek genç adaylar öncelikli olacak.</p>
-          
-          <p>İŞKUR Tekirdağ İl Müdürlüğü ve ÇOSB Bölge Müdürlüğü iş birliğiyle yürütülen projede; asgari ücretin üzerinde başlangıç maaşları, özel sağlık sigortası, kreş desteği ve kapsamlı servis olanakları sağlanacağı bildirildi.</p>
-
-          <div class="in-article-ad"><span class="ad-label">REKLAM</span><div class="ad-content-box">Google AdSense Reklamı (336x280)</div></div>
-        `
-      }
-    ]
-  },
-// -------------------------------------------------------------
   // KÖŞE YAZARLARI MAKALELERİ (ID: 201, 202, 203, 204)
   // -------------------------------------------------------------,
   {
