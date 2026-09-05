@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 134, 
+    articleId: 45, 
+    title: "Boğaz köprüleri ve Edirne-İstanbul otoyolu için 30 yıllık özelleştirme kararı Resmî Gazete'de yayımlandı!", 
+    time: "21:50" 
+  },
+  { 
     id: 133, 
     articleId: 43, 
     title: "Trakya'nın yerli hibrit ayçiçeği tohumunda tarihi rekor: 500 kilodan 115 tona çıktı, 100 bin dönümde hasat başladı!", 
@@ -425,8 +431,138 @@ const headlineArticles = [
     ]
   },
   {
-    id: 43,
+    id: 45,
     headlineNumber: 2,
+    title: "BOĞAZ KÖPRÜLERİ VE EDİRNE-İSTANBUL OTOYOLU İÇİN 30 YILLIK ÖZELLEŞTİRME KARARI! Resmî Gazete'de Yayımlandı, Tepkiler Çığ Gibi Büyüyor!",
+    spot: "Cumhurbaşkanı Erdoğan'ın imzasıyla yayımlanan 11750 sayılı kararla 15 Temmuz Şehitler ve FSM köprüleri ile Trakya'nın can damarı Edirne-İstanbul (Avrupa Otoyolu) dahil 8 otoyolun 30 yıllığına özelleştirilmesi kararlaştırıldı. Muhalefet ve sürücüler ayağa kalktı: 'Devletin yılda 600 milyon dolar kâr ettiği köprü ve otoyollar 30 yıl boyunca zam üstüne zamma mahkum edilecek!'",
+    category: "EKONOMİ & ULAŞIM",
+    categorySlug: "ekonomi",
+    location: "Türkiye / Trakya & İstanbul",
+    badgeColor: "red",
+    date: "5 Eylül 2026 - 21:50",
+    readTime: "4 dk",
+    views: 182400,
+    likes: 15400,
+    reactions: { like: 1850, heart: 320, clap: 1400, thinking: 4200, angry: 9800 },
+    socialPosts: [
+      {
+        user: "Trakya Lojistik & Ulaşım Masası",
+        handle: "@TrakyaLojistik",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Mahmutbey-Edirne ve Avrupa Otoyolu'nun 30 yıllık işletme devri Trakya'daki tüm nakliye, sanayi ve gurbetçi geçiş maliyetlerini doğrudan vuracak! Özelleştirme değil kamusal hizmet istiyoruz. 🚛🛣️ #KopruOzellestirme #Otoyollar #Edirne #Istanbul",
+        time: "15 dk önce",
+        likes: 6890,
+        shares: 2420
+      },
+      {
+        user: "Ekonomi & Kamu Politikaları",
+        handle: "@KamuEkonomisi",
+        avatar: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=80",
+        platform: "facebook",
+        text: "2025'te 585 milyon aracın geçtiği ve 600 milyon dolar net kâr bırakan köprüler 30 yıllığına devrediliyor. 31 Aralık 2031'e kadar süreç tamamlanacak. 👏",
+        time: "30 dk önce",
+        likes: 4850,
+        shares: 1120
+      }
+    ],
+    comments: [
+      {
+        id: 4501,
+        author: "Murat Bey",
+        city: "Çerkezköy / Lojistik Firma Sahibi",
+        time: "8 dk önce",
+        content: "Her gün fabrikalardan İstanbul'a tır çıkarıyoruz. Edirne-İstanbul otoyolu özel şirkete geçerse geçiş ücretleri fırlar, bu maliyet doğrudan tüketiciye ve esnafa yansır.",
+        likes: 412
+      },
+      {
+        id: 4502,
+        author: "Kemal Usta",
+        city: "Edirne / Şoförler Odası",
+        time: "14 dk önce",
+        content: "Köprülerin parası 30 yıl önce halkın vergisiyle ödendi. Devlet tıkır tıkır kâr ederken neden 30 yıllığına özel şirketlere veriliyor? Çok yanlış bir karar.",
+        likes: 385
+      },
+      {
+        id: 4503,
+        author: "Caner",
+        city: "Tekirdağ / Üniversite Öğrencisi",
+        time: "22 dk önce",
+        content: "İstanbul'a gidiş gelişlerimiz zaten otobüs biletleriyle zorlaşmıştı, otoyol zamlarıyla Trakya-İstanbul arası seyahat lüks haline gelecek.",
+        likes: 298
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Ekonomi & Ulaşım Masası",
+      title: "Ulaştırma & Makroekonomi Muhabiri",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/bogaz-kopruleri-otoyollar-ozellestirme.png",
+    tags: ["Boğaz Köprüleri", "Özelleştirme", "Edirne-İstanbul Otoyolu", "15 Temmuz Şehitler Köprüsü", "FSM Köprüsü", "Deniz Yavuzyılmaz", "Resmî Gazete", "Ulaştırma", "Ekonomi", "Son Dakika"],
+    content: `
+      <p class="lead"><strong>Cumhurbaşkanı Recep Tayyip Erdoğan’ın imzasıyla Resmî Gazete’de yayımlanan 11750 sayılı Cumhurbaşkanı Kararı ile Karayolları Genel Müdürlüğü’nün (KGM) işlettiği Boğaz köprüleri ve otoyolların 30 yıl süreyle özelleştirilmesi resmileşti.</strong></p>
+      <p>Kararla birlikte 15 Temmuz Şehitler ve Fatih Sultan Mehmet köprülerinin yanı sıra Trakya'nın en kritik ulaşım ve lojistik arteri olan <strong>Mahmutbey-Edirne (Avrupa Otoyolu)</strong>, KGM Anadolu Otoyolu, İzmir-Aydın, İzmir-Çeşme, Niğde-Pozantı ve Bursa Çevre Otoyolu özelleştirme kapsam ve programına alındı. Mülkiyet devri yapılmayacak ancak işletme hakkı devri, kiralama ve gelir ortaklığı modeliyle 30 yıllık devir sözleşmeleri imzalanacak. Sürecin 31 Aralık 2031'e kadar tamamlanması öngörülüyor.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Maliyeti yıllar önce vatandaşın vergileriyle ödenmiş ve devletin yılda 600 milyon dolar kârla işlettiği bu köprü ve otoyolları özelleştirmek vatandaşa ihanettir. 30 yıl boyunca araç geçiş ücretlerine zam üstüne zam yapacaklar!"</p>
+        <span>- Deniz Yavuzyılmaz, YENİ Parti Zonguldak Milletvekili</span>
+      </div>
+      <p>Ulaştırma Bakanlığı verilerine göre 2025 yılında söz konusu köprü ve otoyollardan toplam 585 milyon 906 bin 492 araç geçiş yapmıştı.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "Cumhurbaşkanı Kararı Resmî Gazete'de: 30 Yıllık İşletme Devri Başlıyor!",
+        pageImage: "img/bogaz-kopruleri-otoyollar-ozellestirme.png",
+        content: `
+          <p class="lead"><strong>4 Eylül Tarihli 11750 Sayılı Kararla Dev Özelleştirme Programı Genişletildi</strong></p>
+          <p>Resmî Gazete'de yayımlanan Cumhurbaşkanı Kararı ile Karayolları Genel Müdürlüğü bünyesindeki köprü ve otoyolların özelleştirilme takvimi ve şartları kesinleşti.</p>
+          <p>Karara göre mülkiyet devri hariç tutularak işletme hakkının verilmesi, kiralama, gayri ayni hakların tesisi veya gelir ortaklığı modelleriyle <strong>30 yıllık sözleşmeler</strong> düzenlenecek. Özelleştirme işlemleri <strong>31 Aralık 2031</strong> tarihine kadar tamamlanacak; süreç bitene kadar bakım, onarım ve işletme KGM sorumluluğunda devam edecek.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Özelleştirme sözleşmelerinin süresi 30 yıl olarak belirlenmiş olup, Niğde-Pozantı ve Bursa Çevre Otoyolu gibi yeni güzergahlar da programa dahil edilmiştir."</p>
+            <span>- Resmî Gazete İlgili Karar Metni</span>
+          </div>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "Hangi Köprü ve Otoyollar Kapsamda? Edirne-İstanbul ve Boğaz Köprüleri Listede!",
+        pageImage: "img/bogaz-kopruleri-otoyollar-ozellestirme.png",
+        content: `
+          <p class="lead"><strong>Trakya Sanayisi ve Avrupa Transit Taşımacılığının Kalbi Özelleştiriliyor</strong></p>
+          <p>Karar kapsamında Türkiye'nin en işlek köprü ve otoyol hatları yer alıyor:</p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>🌉 <strong>Boğaz Köprüleri:</strong> 15 Temmuz Şehitler Köprüsü ve Fatih Sultan Mehmet (FSM) Köprüsü.</li>
+            <li>🚛 <strong>Avrupa Otoyolu (Mahmutbey - Edirne):</strong> Trakya sanayisinin, Çerkezköy, Çorlu ve Kapıkule sınır kapısı transit trafiğinin ana arteri.</li>
+            <li>🛣️ <strong>Anadolu & Ege Hatları:</strong> KGM Anadolu Otoyolu, İzmir-Aydın, İzmir-Çeşme, Niğde-Mersin-Adana otoyolları.</li>
+            <li>🔄 <strong>Çevre Yolları:</strong> Bursa Çevre Otoyolu ve Gaziantep Çevre Otoyolu.</li>
+          </ul>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "Muhalefet ve Sektörden Sert Tepki: 'Yıllık 600 Milyon Dolar Kâr Eden Yollara Zam Yağmuru Gelecek!'",
+        pageImage: "img/bogaz-kopruleri-otoyollar-ozellestirme.png",
+        content: `
+          <p class="lead"><strong>30 Yılda 18 Milyar Dolarlık Gelir Kaybı Uyarısı</strong></p>
+          <p>YENİ Parti Zonguldak Milletvekili <strong>Deniz Yavuzyılmaz</strong>, KGM'nin işlettiği köprü ve otoyolların yalnızca 2025 yılında devlete <strong>600 milyon dolar net kâr</strong> bıraktığını belirterek kararın iptal edilmesini istedi.</p>
+          <p>Yavuzyılmaz, <em>"Bu yolları işletecek olan özel şirketler 30 yıl boyunca araç geçiş ücretlerine fahiş zamlar yapacak. Maliyeti halkın vergisiyle karşılanmış devasa kamu varlıkları devredilemez"</em> dedi.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Geçiş garantili modeller ve özelleştirmeler vatandaşa yeni vergi ve zam yükü olarak geri dönecektir. Trakya nakliyecisi ve vatandaşı bu yükün altından kalkamaz."</p>
+            <span>- Trakya Nakliyeciler ve Lojistik Derneği</span>
+          </div>
+          <p>Kararın Resmi Gazete'de yayımlanmasıyla birlikte ekonomi ve ulaşım çevrelerinde tartışmaların dozu artarak devam ediyor.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 43,
+    headlineNumber: 3,
     title: "500 KİLODAN 115 TONA! Trakya'nın Yüzde 100 Yerli ve Milli Ayçiçeği Tohumu Rekorla Büyüyor: 100 Bin Dönümde Hasat Başladı!",
     spot: "Trakya Kalkınma Ajansı koordinasyonunda Trakya Tohum A.Ş. tarafından geliştirilen yüzde 100 yerli ve milli hibrit ayçiçeği tohumları Lüleburgaz Karamusul köyünde düzenlenen tarla gününde biçerdöverlerle hasat edildi. Kırklareli Valisi Uğur Turan ve Genel Sekreter Mahmut Şahin müjdeyi verdi: '500 kiloyla başladık, bu yıl 115 tona ulaştık! 20'den fazla ilde 100 bin dönüm arazide ekildi.'",
     category: "TARIM & EKONOMİ",
@@ -556,7 +692,7 @@ const headlineArticles = [
   },
   {
     id: 44,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "TEKİRDAĞ BÜYÜKŞEHİR'DEN ÇİFTÇİYE DEV CAN SUYU! 482 Bin Sebze Fidesi Toprakla Buluşuyor: Şarköy'de Törenle Dağıtıldı!",
     spot: "Tekirdağ Büyükşehir Belediyesi, kırsal kalkınmayı güçlendirmek ve artan girdi maliyetleri karşısında üreticiye nefes aldırmak amacıyla 'Sebzeciliği Geliştirme Projesi' kapsamında Şarköy'de 170 çiftçiye 123 bin yazlık sebze fidesi dağıttı. İl genelinde toplam 482 bin fidenin yüzde 70 hibe desteğiyle çiftçilere ulaştırılacağı açıklandı.",
     category: "YEREL YÖNETİM & TARIM",
@@ -686,7 +822,7 @@ const headlineArticles = [
   },
   {
     id: 42,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "İNŞALLAH ARTIK ÇÖZERSİNİZ! Velimeşe'deki 5 Yıllık Hemzemin Çilesi İçin Valilikte Kritik Zirve: Projeyi Karayolları Üstlendi!",
     spot: "Velimeşe'de 7 canın yitirildiği ve 5 yıldır kapatılarak bölgeyi mağdur eden hemzemin geçit çilesi için Tekirdağ Valisi Recep Soytürk başkanlığında kritik zirve toplandı. Karayolları Genel Müdürlüğü'nün üstlendiği köprülü kavşak projesinin yol haritası masaya yatırıldı. Velimeşe halkı ve esnafı tek ses oldu: 'İnşallah bu sefer lafta kalmaz, artık çözersiniz!'",
     category: "GÜNCEL & YEREL YÖNETİM",
@@ -816,7 +952,7 @@ const headlineArticles = [
   },
   {
     id: 41,
-    headlineNumber: 5,
+    headlineNumber: 6,
     title: "7 CAN VERDİK, 5 YIL GEÇTİ AMA HÂLÂ BİR ÇÖZÜM YOK! Velimeşe Kapatılan Hemzemin Geçitte İsyan Etti: 'Yolu Kapatmak Çözüm Değil, Katlı Kavşak İstiyoruz!'",
     spot: "Tekirdağ Ergene Velimeşe'de 7 işçinin yaşamını yitirdiği tren faciasından 4 yıl 9 ay sonra hemzemin geçidin kapatılarak mahallenin tek yola mahkum edilmesi bardağı taşırdı. Muhtar Olcay Alpsoy ve yüzlerce mahalleli kapanan geçitte eylem yaptı: 'Esnaf battı, öğrenciler ve işçiler perişan, ambulans geçemiyor. HÂLÂ BİR ÇÖZÜM YOK, katlı kavşak acilen yapılsın!'",
     category: "GÜNCEL & TRAKYA",
@@ -947,7 +1083,7 @@ const headlineArticles = [
   },
   {
     id: 40,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "Gurbetçi Sezonunda Trakya Sınır Kapılarında Tarihi Rekor: 3,7 Milyon Yolcu ve 1 Milyon Araç Geçişi!",
     spot: "Avrupa'da yaşayan Türk vatandaşlarının yıllık izinlerini geçirmek üzere Türkiye'ye akın ettiği gurbetçi sezonunda, Trakya'daki sınır kapılarından yaklaşık 3,7 milyon yolcu ve 1 milyon araç geçiş yaptı. Edirne Valisi Yunus Sezer, bekleme süresinin 39 dakikadan 27 dakikaya indirildiğini duyurdu.",
     category: "EKONOMİ & GÜNDEM",
@@ -1077,7 +1213,7 @@ const headlineArticles = [
   },
   {
     id: 38,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "Özgür Özel’den Tarihi Trakya Çıkarması: Tekirdağ, Edirne ve Kırklareli Programı Netleşti!",
     spot: "Yeni Parti Genel Başkanı Özgür Özel, 4 ve 5 Eylül tarihlerinde Tekirdağ, Edirne ve Kırklareli'ni kapsayan iki günlük yoğun bir Trakya maratonuna çıkıyor. Çorlu'dan Süleymanpaşa'ya, Selimiye'den Edirne Halk Pazarı'na, Kırklareli merkezden Babaeski köylerine kadar çiftçiler, emekliler ve esnafla buluşacak Özel'in Trakya çıkarması bölge siyasetinde büyük heyecan yarattı.",
     category: "SİYASET & GÜNDEM",
@@ -1420,7 +1556,7 @@ const headlineArticles = [
 },
   {
     id: 36,
-    headlineNumber: 8,
+    headlineNumber: 9,
     title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
     spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
     category: "DENİZCİLİK & GÜNDEM",
@@ -1559,7 +1695,7 @@ const headlineArticles = [
   },
   {
     id: 37,
-    headlineNumber: 9,
+    headlineNumber: 10,
     title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik kannabinoid ele geçirilirken, gözaltına alınan 2 zanlı çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -1669,7 +1805,7 @@ const headlineArticles = [
   },
   {
     id: 34,
-    headlineNumber: 10,
+    headlineNumber: 11,
     title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
     spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
     category: "SİYASET & GÜNDEM",
@@ -1799,7 +1935,7 @@ const headlineArticles = [
   },
   {
     id: 33,
-    headlineNumber: 11,
+    headlineNumber: 12,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -1922,7 +2058,7 @@ const headlineArticles = [
   },
   {
     id: 32,
-    headlineNumber: 12,
+    headlineNumber: 13,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -2045,7 +2181,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 13,
+    headlineNumber: 14,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -2146,7 +2282,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 14,
+    headlineNumber: 15,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -2247,7 +2383,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 15,
+    headlineNumber: 16,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -2348,7 +2484,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 16,
+    headlineNumber: 17,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -2461,7 +2597,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 17,
+    headlineNumber: 18,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -2562,7 +2698,7 @@ const headlineArticles = [
   },
   {
     id: 26,
-    headlineNumber: 18,
+    headlineNumber: 19,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
@@ -2668,7 +2804,7 @@ const headlineArticles = [
   },
   {
     id: 25,
-    headlineNumber: 19,
+    headlineNumber: 20,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
@@ -2772,7 +2908,7 @@ const headlineArticles = [
   },
   {
     id: 23,
-    headlineNumber: 20,
+    headlineNumber: 21,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
@@ -2879,7 +3015,7 @@ const headlineArticles = [
   },
   {
     id: 24,
-    headlineNumber: 21,
+    headlineNumber: 22,
     title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
     spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
     category: "YAŞAM & GÜNDEM",
@@ -2960,7 +3096,7 @@ const headlineArticles = [
   },
   {
     id: 20,
-    headlineNumber: 22,
+    headlineNumber: 23,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -3063,7 +3199,7 @@ const headlineArticles = [
   },
   {
     id: 21,
-    headlineNumber: 23,
+    headlineNumber: 24,
     title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
     spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
     category: "YAŞAM",
@@ -3139,7 +3275,7 @@ const headlineArticles = [
   },
   {
     id: 22,
-    headlineNumber: 24,
+    headlineNumber: 25,
     title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
     spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
     category: "YAŞAM & EĞİTİM",
@@ -3221,7 +3357,7 @@ const headlineArticles = [
   },
   {
     id: 19,
-    headlineNumber: 25,
+    headlineNumber: 26,
     title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
     spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
     category: "EĞİTİM & GÜNDEM",
@@ -3350,7 +3486,7 @@ const headlineArticles = [
   },
   {
     id: 18,
-    headlineNumber: 26,
+    headlineNumber: 27,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -3463,7 +3599,7 @@ const headlineArticles = [
   },
   {
     id: 17,
-    headlineNumber: 27,
+    headlineNumber: 28,
     title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
     spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
     category: "SAĞLIK",
