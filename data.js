@@ -23,6 +23,12 @@ const financeData = [
 // 2. Son Dakika (Breaking News) Başlıkları
 const breakingNewsData = [
   { 
+    id: 135, 
+    articleId: 46, 
+    title: "KPSS Lisans ilk oturumu tamamlandı: Adaylardan 'Güncel sorular çok alakasızdı!' isyanı!", 
+    time: "12:45" 
+  },
+  { 
     id: 134, 
     articleId: 45, 
     title: "Boğaz köprüleri ve Edirne-İstanbul otoyolu için 30 yıllık özelleştirme kararı Resmî Gazete'de yayımlandı!", 
@@ -431,8 +437,138 @@ const headlineArticles = [
     ]
   },
   {
-    id: 45,
+    id: 46,
     headlineNumber: 2,
+    title: "KPSS LİSANS SONRASI ADAYLARDAN BÜYÜK İSYAN: 'GÜNCEL SORULAR ÇOK ALAKASIZDI!' Sınav Tamamlandı, Gözler ÖSYM Soru ve Cevap Anahtarında!",
+    spot: "Milyonlarca memur adayının ter döktüğü KPSS Lisans Genel Yetenek - Genel Kültür oturumu saat 12:25 itibarıyla tamamlandı. Sınav salonlarından çıkan adaylar özellikle güncel bilgiler ve genel kültür testindeki sürpriz ve alakasız sorulara büyük tepki gösterdi: 'Aylarca genel kültür çalıştık, çıkan soruların gündemle ve müfredatla uzaktan yakından alakası yoktu!'",
+    category: "EĞİTİM & GÜNDEM",
+    categorySlug: "gundem",
+    location: "Türkiye & Trakya Geneli",
+    badgeColor: "red",
+    date: "6 Eylül 2026 - 12:45",
+    readTime: "3 dk",
+    views: 194500,
+    likes: 16800,
+    reactions: { like: 1200, heart: 320, clap: 950, thinking: 7400, angry: 8900 },
+    socialPosts: [
+      {
+        user: "KPSS 2026 Dayanışma & Bilgi Masası",
+        handle: "@KpssBilgiAgi",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+        platform: "twitter",
+        text: "Güncel bilgiler testi resmen şans oyunu gibiydi! Kimsenin aklına gelmeyecek, hiçbir denemede çıkmayan sorularla karşılaştık. Aylarca çalışıp bu sorularla karşılaşmak büyük hayal kırıklığı. 🤯 #KPSS #KPSS2026 #GuncelSorular #OSYM",
+        time: "20 dk önce",
+        likes: 8940,
+        shares: 3120
+      },
+      {
+        user: "Trakya Üniversiteliler Platformu",
+        handle: "@TrakyaUniGenclik",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+        platform: "instagram",
+        text: "Tekirdağ, Çorlu ve Edirne'de sınava giren tüm arkadaşlarımıza geçmiş olsun. Genel Yetenek Türkçe paragrafları çok uzundu, güncel sorular ise herkesi şaşırttı. Şimdi gözler ÖSYM'nin açıklayacağı cevap anahtarında! 📚✍️",
+        time: "35 dk önce",
+        likes: 6420,
+        shares: 1450
+      }
+    ],
+    comments: [
+      {
+        id: 4601,
+        author: "Ebru K.",
+        city: "Tekirdağ / Süleymanpaşa - KPSS Adayı",
+        time: "10 dk önce",
+        content: "Yıl boyunca coğrafya, tarih, vatandaşlık, güncel bilgi çalıştık. Güncel sorular o kadar alakasız ve absürttü ki salonda herkes birbirine baktı. Emeğimize yazık gerçekten!",
+        likes: 642
+      },
+      {
+        id: 4602,
+        author: "Ahmet T.",
+        city: "Çorlu / Öğretmen Adayı",
+        time: "18 dk önce",
+        content: "Genel Yetenek Türkçe paragrafları çok uzundu, matematiğe vakit yetmedi. Güncel bilgiler kısmında ise tahmin dahi edilemeyecek sorular çıktı. Netler geçen yıla göre kesinlikle düşer.",
+        likes: 518
+      },
+      {
+        id: 4603,
+        author: "Serkan V.",
+        city: "Edirne / Memur Adayı",
+        time: "25 dk önce",
+        content: "Sınav kuralları ve süre 130 dakikaydı ama güncel sorular resmen şans oyunu gibiydi. ÖSYM'nin soru kitapçığı ve cevap anahtarını bir an önce açıklamasını bekliyoruz.",
+        likes: 435
+      }
+    ],
+    author: {
+      name: "Gündem Trakya Eğitim & Gençlik Masası",
+      title: "Eğitim & Sınavlar Editörü",
+      avatar: "img/gundem-trakya-avatar-red.jpg"
+    },
+    image: "img/kpss-lisans-sinav-sorulari-isyan.jpg",
+    tags: ["KPSS", "KPSS 2026", "Güncel Sorular", "Genel Kültür", "Genel Yetenek", "ÖSYM", "Sınav Yorumları", "Soru Kitapçığı", "Cevap Anahtarı", "Eğitim", "Son Dakika"],
+    content: `
+      <p class="lead"><strong>Ölçme, Seçme ve Yerleştirme Merkezi (ÖSYM) tarafından uygulanan Kamu Personel Seçme Sınavı (2026-KPSS Lisans) Genel Yetenek ve Genel Kültür oturumu saat 12:25 itibarıyla yurt genelinde tamamlandı.</strong></p>
+      <p>Saat 10:15'te başlayan ve 130 dakika süren sınavda adaylara toplam 120 soru yöneltildi. Sınav salonlarından çıkan yüz binlerce aday, Genel Yetenek kısmındaki uzun paragrafların yanı sıra özellikle Genel Kültür testinde yer alan güncel bilgiler sorularının alakasızlığına ve zorluğuna isyan etti.</p>
+      <div class="article-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Aylarca tarih, coğrafya ve güncel olayları takip ettik. Sınavda sorulan güncel soruların Türkiye veya dünya gündemiyle en ufak bir bağı yoktu. Resmen şans faktörüne bırakılmış sorularla karşılaştık!"</p>
+        <span>- Sınavdan Çıkan Bir KPSS Adayı</span>
+      </div>
+      <p>ÖSYM kurallarına göre ilk 95 dakika ve son 15 dakika sınav salonundan çıkışa izin verilmezken, adaylar şimdi ÖSYM'den gelecek temel soru kitapçığı ve cevap anahtarı duyurusuna kilitlendi.</p>
+    `,
+    pages: [
+      {
+        pageNum: 1,
+        pageTitle: "KPSS Lisans Genel Yetenek - Genel Kültür Oturumu Tamamlandı: Süre ve Kurallar Nasıl İşledi?",
+        pageImage: "img/kpss-lisans-sinav-sorulari-isyan.jpg",
+        content: `
+          <p class="lead"><strong>130 Dakika, 120 Soru: Türkiye Genelinde Milyonluk Memurluk Yarışı</strong></p>
+          <p>ÖSYM takvimine göre sabah saat 10:00'da sınav binalarının kapıları kapandı ve 10:15 itibarıyla KPSS Lisans Genel Yetenek - Genel Kültür oturumu başladı. Adaylara Genel Yetenek'ten 60, Genel Kültür'den 60 olmak üzere toplam 120 soru soruldu.</p>
+          <p>Sınav süresi 130 dakika olarak uygulanırken, kurallar gereği sınavın ilk <strong>95 dakikası</strong> ile son <strong>15 dakikası</strong> içerisinde adayların salonu terk etmesine izin verilmedi. Saat 12:25'te bitiş zilinin çalmasıyla birlikte ilk oturum maratonu noktalandı.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Sınav salonlarında sıkı güvenlik önlemleri uygulandı, saat 10:00'dan sonra gelen hiçbir aday binalara alınmadı. Oturum sorunsuz bir şekilde tamamlandı."</p>
+            <span>- ÖSYM Sınav Koordinasyon Merkezi</span>
+          </div>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Esnek Haber İçi Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 2,
+        pageTitle: "'Güncel Sorular Çok Alakasızdı!' Adaylar Sosyal Medyada Tepkilerini Dile Getirdi",
+        pageImage: "img/kpss-lisans-sinav-sorulari-isyan.jpg",
+        content: `
+          <p class="lead"><strong>Sosyal Medyada KPSS Gündemi: Türkçe Paragrafları ve Alakasız Güncel Sorular Damga Vurdu</strong></p>
+          <p>Sınav biter bitmez sosyal medya platformları X (Twitter) ve Instagram'da #KPSS etiketi Türkiye gündeminin ilk sırasına yerleşti. Adayların ortak tepkisi ise Genel Kültür testindeki güncel bilgiler sorularının müfredat dışı ve tahmin edilemez olmasıydı.</p>
+          <p>Adayların öne çıkan değerlendirmeleri şu şekilde oldu:</p>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+            <li>❓ <strong>Güncel Bilgiler Şoku:</strong> Adaylar, son 1 yılın önemli olayları yerine son derece kıyıda köşede kalmış detayların sorulmasına tepki gösterdi: <em>"Güncel sorular çok alakasızdı, çalışmanın hiçbir faydası olmadı."</em></li>
+            <li>📖 <strong>Türkçe Paragrafları Zaman Aldı:</strong> Türkçe testindeki uzun ve çeldirici paragrafların vakit kaybettirdiği, adayların matematik sorularına yeterince zaman ayıramadığı belirtildi.</li>
+            <li>📊 <strong>Tarih ve Coğrafya Dengesi:</strong> Tarih testinde bilgi ağırlıklı ve detay sorular yer alırken, coğrafya testinin standart zorlukta olduğu kaydedildi.</li>
+          </ul>
+          <div class="in-article-ad"><span class="ad-label">SPONSORLU BAĞLANTI</span><div class="ad-content-box">Google AdSense Haber İçi Görüntülü Reklamı (ca-pub-5030743781658996)</div></div>
+        `
+      },
+      {
+        pageNum: 3,
+        pageTitle: "ÖSYM Soru Kitapçığı ve Cevap Anahtarı Ne Zaman Açıklanacak? İtiraz Süreci",
+        pageImage: "img/kpss-lisans-sinav-sorulari-isyan.jpg",
+        content: `
+          <p class="lead"><strong>Gözler ÖSYM'nin ais.osym.gov.tr Sayfasında!</strong></p>
+          <p>Sınavın tamamlanmasının ardından adayların en çok merak ettiği konu, ÖSYM'nin 2026-KPSS Lisans Temel Soru Kitapçığı ve Cevap Anahtarı'nı ne zaman yayımlayacağı oldu.</p>
+          <p>ÖSYM geleneksel olarak sınav oturumlarının tamamlanmasının ardından aynı gün akşam saatlerinde veya ertesi gün soruların yüzde 10'luk kısmını kamuoyuna, tamamını ise <strong>AİS (Aday İşlemleri Sistemi)</strong> üzerinden T.C. kimlik numarası ve aday şifresiyle erişime açmaktadır.</p>
+          <div class="article-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Temel Soru Kitapçığı ve Cevap Anahtarı yayımlandıktan sonra adaylar, sorulara ve cevaplara ilişkin itirazlarını ÖSYM'nin belirlediği takvim çerçevesinde iletebilecek."</p>
+            <span>- Gündem Trakya Eğitim Masası</span>
+          </div>
+          <p>Adaylar, ais.osym.gov.tr adresini takip ederek kendi cevap kağıtlarını ve sınav sorularını görüntüleyebilecekler.</p>
+        `
+      }
+    ]
+  },
+  {
+    id: 45,
+    headlineNumber: 3,
     title: "BOĞAZ KÖPRÜLERİ VE EDİRNE-İSTANBUL OTOYOLU İÇİN 30 YILLIK ÖZELLEŞTİRME KARARI! Resmî Gazete'de Yayımlandı, Tepkiler Çığ Gibi Büyüyor!",
     spot: "Cumhurbaşkanı Erdoğan'ın imzasıyla yayımlanan 11750 sayılı kararla 15 Temmuz Şehitler ve FSM köprüleri ile Trakya'nın can damarı Edirne-İstanbul (Avrupa Otoyolu) dahil 8 otoyolun 30 yıllığına özelleştirilmesi kararlaştırıldı. Muhalefet ve sürücüler ayağa kalktı: 'Devletin yılda 600 milyon dolar kâr ettiği köprü ve otoyollar 30 yıl boyunca zam üstüne zamma mahkum edilecek!'",
     category: "EKONOMİ & ULAŞIM",
@@ -562,7 +698,7 @@ const headlineArticles = [
   },
   {
     id: 43,
-    headlineNumber: 3,
+    headlineNumber: 4,
     title: "500 KİLODAN 115 TONA! Trakya'nın Yüzde 100 Yerli ve Milli Ayçiçeği Tohumu Rekorla Büyüyor: 100 Bin Dönümde Hasat Başladı!",
     spot: "Trakya Kalkınma Ajansı koordinasyonunda Trakya Tohum A.Ş. tarafından geliştirilen yüzde 100 yerli ve milli hibrit ayçiçeği tohumları Lüleburgaz Karamusul köyünde düzenlenen tarla gününde biçerdöverlerle hasat edildi. Kırklareli Valisi Uğur Turan ve Genel Sekreter Mahmut Şahin müjdeyi verdi: '500 kiloyla başladık, bu yıl 115 tona ulaştık! 20'den fazla ilde 100 bin dönüm arazide ekildi.'",
     category: "TARIM & EKONOMİ",
@@ -692,7 +828,7 @@ const headlineArticles = [
   },
   {
     id: 44,
-    headlineNumber: 4,
+    headlineNumber: 5,
     title: "TEKİRDAĞ BÜYÜKŞEHİR'DEN ÇİFTÇİYE DEV CAN SUYU! 482 Bin Sebze Fidesi Toprakla Buluşuyor: Şarköy'de Törenle Dağıtıldı!",
     spot: "Tekirdağ Büyükşehir Belediyesi, kırsal kalkınmayı güçlendirmek ve artan girdi maliyetleri karşısında üreticiye nefes aldırmak amacıyla 'Sebzeciliği Geliştirme Projesi' kapsamında Şarköy'de 170 çiftçiye 123 bin yazlık sebze fidesi dağıttı. İl genelinde toplam 482 bin fidenin yüzde 70 hibe desteğiyle çiftçilere ulaştırılacağı açıklandı.",
     category: "YEREL YÖNETİM & TARIM",
@@ -822,7 +958,7 @@ const headlineArticles = [
   },
   {
     id: 42,
-    headlineNumber: 5,
+    headlineNumber: 6,
     title: "İNŞALLAH ARTIK ÇÖZERSİNİZ! Velimeşe'deki 5 Yıllık Hemzemin Çilesi İçin Valilikte Kritik Zirve: Projeyi Karayolları Üstlendi!",
     spot: "Velimeşe'de 7 canın yitirildiği ve 5 yıldır kapatılarak bölgeyi mağdur eden hemzemin geçit çilesi için Tekirdağ Valisi Recep Soytürk başkanlığında kritik zirve toplandı. Karayolları Genel Müdürlüğü'nün üstlendiği köprülü kavşak projesinin yol haritası masaya yatırıldı. Velimeşe halkı ve esnafı tek ses oldu: 'İnşallah bu sefer lafta kalmaz, artık çözersiniz!'",
     category: "GÜNCEL & YEREL YÖNETİM",
@@ -952,7 +1088,7 @@ const headlineArticles = [
   },
   {
     id: 41,
-    headlineNumber: 6,
+    headlineNumber: 7,
     title: "7 CAN VERDİK, 5 YIL GEÇTİ AMA HÂLÂ BİR ÇÖZÜM YOK! Velimeşe Kapatılan Hemzemin Geçitte İsyan Etti: 'Yolu Kapatmak Çözüm Değil, Katlı Kavşak İstiyoruz!'",
     spot: "Tekirdağ Ergene Velimeşe'de 7 işçinin yaşamını yitirdiği tren faciasından 4 yıl 9 ay sonra hemzemin geçidin kapatılarak mahallenin tek yola mahkum edilmesi bardağı taşırdı. Muhtar Olcay Alpsoy ve yüzlerce mahalleli kapanan geçitte eylem yaptı: 'Esnaf battı, öğrenciler ve işçiler perişan, ambulans geçemiyor. HÂLÂ BİR ÇÖZÜM YOK, katlı kavşak acilen yapılsın!'",
     category: "GÜNCEL & TRAKYA",
@@ -1083,7 +1219,7 @@ const headlineArticles = [
   },
   {
     id: 40,
-    headlineNumber: 7,
+    headlineNumber: 8,
     title: "Gurbetçi Sezonunda Trakya Sınır Kapılarında Tarihi Rekor: 3,7 Milyon Yolcu ve 1 Milyon Araç Geçişi!",
     spot: "Avrupa'da yaşayan Türk vatandaşlarının yıllık izinlerini geçirmek üzere Türkiye'ye akın ettiği gurbetçi sezonunda, Trakya'daki sınır kapılarından yaklaşık 3,7 milyon yolcu ve 1 milyon araç geçiş yaptı. Edirne Valisi Yunus Sezer, bekleme süresinin 39 dakikadan 27 dakikaya indirildiğini duyurdu.",
     category: "EKONOMİ & GÜNDEM",
@@ -1213,7 +1349,7 @@ const headlineArticles = [
   },
   {
     id: 38,
-    headlineNumber: 8,
+    headlineNumber: 9,
     title: "Özgür Özel’den Tarihi Trakya Çıkarması: Tekirdağ, Edirne ve Kırklareli Programı Netleşti!",
     spot: "Yeni Parti Genel Başkanı Özgür Özel, 4 ve 5 Eylül tarihlerinde Tekirdağ, Edirne ve Kırklareli'ni kapsayan iki günlük yoğun bir Trakya maratonuna çıkıyor. Çorlu'dan Süleymanpaşa'ya, Selimiye'den Edirne Halk Pazarı'na, Kırklareli merkezden Babaeski köylerine kadar çiftçiler, emekliler ve esnafla buluşacak Özel'in Trakya çıkarması bölge siyasetinde büyük heyecan yarattı.",
     category: "SİYASET & GÜNDEM",
@@ -1556,7 +1692,7 @@ const headlineArticles = [
 },
   {
     id: 36,
-    headlineNumber: 9,
+    headlineNumber: 10,
     title: "Tekirdağlı Balıkçılar Marmara'ya Açılmaya Hazır: 1 Eylül'de 'Vira Bismillah' Coşkusu!",
     spot: "Türkiye genelinde denizlerde gırgır ve trol ağlarıyla avcılık yapan balıkçılar için 4,5 aydır süren genel av yasağı 1 Eylül'de sona eriyor. Tekirdağ Süleymanpaşa ve Kumbağ limanlarında ağlarını onarıp teknelerinin bakımını tamamlayan balıkçılar, Marmara ve Karadeniz'de 'Vira Bismillah' demek için gün sayıyor.",
     category: "DENİZCİLİK & GÜNDEM",
@@ -1695,7 +1831,7 @@ const headlineArticles = [
   },
   {
     id: 37,
-    headlineNumber: 10,
+    headlineNumber: 11,
     title: "Tekirdağ'da Uyuşturucu Operasyonu: 4 Adrese Eş Zamanlı Baskın, 2 Şüpheli Tutuklandı!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü Narkotik Suçlarla Mücadele Şubesi ekiplerince Çorlu ilçesinde uyuşturucu satıcılarına yönelik düzenlenen planlı operasyonda 4 ayrı adrese eş zamanlı baskın gerçekleştirildi. 281 gram sentetik kannabinoid ele geçirilirken, gözaltına alınan 2 zanlı çıkarıldıkları mahkemece tutuklanarak cezaevine gönderildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -1805,7 +1941,7 @@ const headlineArticles = [
   },
   {
     id: 34,
-    headlineNumber: 11,
+    headlineNumber: 12,
     title: "Trakya Siyasetinde Tarihi Deprem: Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer CHP'den İstifa Etti!",
     spot: "Tekirdağ Büyükşehir Belediye Başkanı Dr. Candan Yüceer, 18 yıldır üyesi olduğu CHP'den istifa ettiğini duyurdu. Süleymanpaşa, Şarköy, Çorlu ve Malkara belediye başkanlarıyla birlikte YENİ Parti saflarına geçen Yüceer, 'Seçilmiş iradenin ve parti örgütünün yok sayılmasına sessiz kalmayacağım' dedi.",
     category: "SİYASET & GÜNDEM",
@@ -1935,7 +2071,7 @@ const headlineArticles = [
   },
   {
     id: 33,
-    headlineNumber: 12,
+    headlineNumber: 13,
     title: "Çerkezköy'de Sıcak Saatler: Alacağını Tahsil Edemeyen İşçi Elektrik Direğine Çıktı!",
     spot: "Tekirdağ'ın Çerkezköy ilçesinde çalıştığı inşaattan alacağını tahsil edemediğini öne süren bir işçi elektrik direğine çıkarak eylem yaptı. Polis, itfaiye ve sağlık ekiplerinin yaklaşık 2 saat süren ikna çalışmasının ardından şahıs güvenle indirildi.",
     category: "ASAYİŞ & GÜNDEM",
@@ -2058,7 +2194,7 @@ const headlineArticles = [
   },
   {
     id: 32,
-    headlineNumber: 13,
+    headlineNumber: 14,
     title: "Çerkezköy'de Feci Olay: 15 Yaşındaki Stajyer İnşaatta Akıma Kapılarak Hayatını Kaybetti!",
     spot: "Tekirdağ'ın Çerkezköy ilçesi Kızılpınar Namık Kemal Mahallesi'nde bir inşaatta stajyer olarak çalışan 15 yaşındaki Eren Gündoğdu, kablo çekimi sırasında elektrik akımına kapılarak hayatını kaybetti. Jandarma geniş çaplı soruşturma başlattı.",
     category: "ASAYİŞ & SON DAKİKA",
@@ -2181,7 +2317,7 @@ const headlineArticles = [
   },
   {
     id: 31,
-    headlineNumber: 14,
+    headlineNumber: 15,
     title: "Tekirdağ'da Dev Huzur ve Asayiş Operasyonu: Çorlu ve Çerkezköy'de Çok Sayıda Tutuklama!",
     spot: "Tekirdağ İl Emniyet Müdürlüğü ve İl Jandarma Komutanlığı ekiplerince il genelinde eş zamanlı düzenlenen geniş çaplı huzur ve asayiş operasyonunda kesinleşmiş hapis cezası bulunan aranan şahıslar yakalandı, adli makamlara sevk edilen çok sayıda şüpheli tutuklandı.",
     category: "ASAYİŞ & GÜVENLİK",
@@ -2282,7 +2418,7 @@ const headlineArticles = [
   },
   {
     id: 30,
-    headlineNumber: 15,
+    headlineNumber: 16,
     title: "ÇOSB İtfaiye Filosuna 32 Metrelik Dev Araç Takviyesi: Yüksek Katlı Tesislere Anında Müdahale!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB), bölgedeki fabrikaların ve sanayi kuruluşlarının yangın güvenliğini en üst seviyeye çıkarmak amacıyla filosuna 32 metre mafsallı merdivenli modern itfaiye aracı kazandırdı.",
     category: "SANAYİ & GÜNDEM",
@@ -2383,7 +2519,7 @@ const headlineArticles = [
   },
   {
     id: 29,
-    headlineNumber: 16,
+    headlineNumber: 17,
     title: "Çerkezköy 1911 Spor ile MBA Okulları Arasında Kadın Futboluna Güçlü Destek!",
     spot: "Çerkezköy 1911 Spor Kulübü ile MBA Okulları arasında imzalanan iş birliği protokolüyle kadın futbolu ve genç sporcuların geleceğine büyük destek sağlandı. Tanıtım Müdürü Fikriye Gülverin antrenmanı ziyaret ederek sporcularla buluştu.",
     category: "SPOR & EĞİTİM",
@@ -2484,7 +2620,7 @@ const headlineArticles = [
   },
   {
     id: 28,
-    headlineNumber: 17,
+    headlineNumber: 18,
     title: "Buzdolabında Bile Çoğalıyor: Uzmanlardan 'Listeria' Besin Zehirlenmesi ve Peynir Uyarısı!",
     spot: "Tarım ve Orman Bakanlığı'nın beyaz peynirde Listeria tespit etmesinin ardından İrmet Hospital Enfeksiyon Hastalıkları Uzmanı Prof. Dr. Davut Özdemir uyardı: '+4 derecede bile ürer, menenjit ve sepsise yol açabilir!' İşte 'Kaynat, Pişir, Soy' altın kuralı.",
     category: "SAĞLIK & YAŞAM",
@@ -2597,7 +2733,7 @@ const headlineArticles = [
   },
   {
     id: 27,
-    headlineNumber: 18,
+    headlineNumber: 19,
     title: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin Ameliyat Sonrası Sağlığına Kavuştu!",
     spot: "Çerkezköy Belediye Başkan Yardımcısı Yunus Erçin, Özel İrmet Hastanesi'nde Genel Cerrahi Uzmanı Dr. Hüsamettin Bayraktar tarafından gerçekleştirilen başarılı cerrahi operasyonun ardından taburcu olarak sağlığına kavuştu.",
     category: "GÜNDEM & SAĞLIK",
@@ -2698,7 +2834,7 @@ const headlineArticles = [
   },
   {
     id: 26,
-    headlineNumber: 19,
+    headlineNumber: 20,
     title: "ÇOSB Kapaklı Devlet Hastanesi Bölge Sağlığının Yükünü Omuzluyor: 115 Yatak, 38 Poliklinik ve 5 Ameliyathane!",
     spot: "Çerkezköy Organize Sanayi Bölgesi (ÇOSB) tarafından Kapaklı’ya kazandırılan ÇOSB Kapaklı Devlet Hastanesi; 115 yatak kapasitesi, 38 polikliniği, 5 tam donanımlı ameliyathanesi, yoğun bakım ve endoskopi üniteleriyle bölgeye şifa dağıtıyor.",
     category: "SAĞLIK & HİZMET",
@@ -2804,7 +2940,7 @@ const headlineArticles = [
   },
   {
     id: 25,
-    headlineNumber: 20,
+    headlineNumber: 21,
     title: "Marmaraereğlisi'nde 30 Ağustos Zafer Coşkusu: Fener Alayı, Cüneyt Şentürk ve Lerzan Mutlu Konserleri!",
     spot: "Marmaraereğlisi Belediyesi, 30 Ağustos Zafer Bayramı’nın 104. yıl dönümünü Yeniçiftlik'te düzenlenecek dev fener alayı, Cüneyt Şentürk ve Lerzan Mutlu konserlerinin yer aldığı görkemli programla kutlayacak.",
     category: "KÜLTÜR & YAŞAM",
@@ -2908,7 +3044,7 @@ const headlineArticles = [
   },
   {
     id: 23,
-    headlineNumber: 21,
+    headlineNumber: 22,
     title: "Ergene'de Sosyal Alanlara Çirkin Saldırı: Çocuk Parkları ve Salıncaklar Hedef Alındı!",
     spot: "Ergene Belediyesi tarafından çocukların ve ailelerin güvenle vakit geçirmesi için kazandırılan Sağlık Mahallesi çocuk parkındaki oyun grupları, salıncaklar ve zemin kaplamaları kimliği belirsiz kişilerce tahrip edildi.",
     category: "GÜNDEM & ASAYİŞ",
@@ -3015,7 +3151,7 @@ const headlineArticles = [
   },
   {
     id: 24,
-    headlineNumber: 22,
+    headlineNumber: 23,
     title: "Tekirdağ Süleymanpaşa'da Ana İçme Suyu Borusu Patladı: Tonlarca Su Boşa Aktı!",
     spot: "Süleymanpaşa'nın en işlek caddelerinden Hükümet Caddesi'nde yer altından geçen ana şebeke borusunun patlaması sonucu tonlarca içme suyu caddeye aktı. Kuraklık döneminde yaşanan israfa vatandaşlar tepki gösterdi.",
     category: "YAŞAM & GÜNDEM",
@@ -3096,7 +3232,7 @@ const headlineArticles = [
   },
   {
     id: 20,
-    headlineNumber: 23,
+    headlineNumber: 24,
     title: "Küllerinden Yeniden Doğan Takım: Marmaraereğlisi Belediye Spor Şampiyon!",
     spot: "Bir dönem BAL ligine yükselmesine rağmen belediye desteği kesilip kapanma noktasına gelen Marmaraereğlisi Belediye Spor, Başkan Mustafa Onur Bozkurter'in hamlesiyle KaracakılavuzSpor'u 4-2 devirerek şampiyonluk kupasını kaldırdı.",
     category: "SPOR",
@@ -3199,7 +3335,7 @@ const headlineArticles = [
   },
   {
     id: 21,
-    headlineNumber: 24,
+    headlineNumber: 25,
     title: "Trakya Genelinde Yağmurla Birlikte Çamur Yağdı: Araçlar ve Tarlalar Tozla Kaplandı!",
     spot: "Kuzey Afrika üzerinden gelen yoğun çöl tozu Trakya genelinde yağışla birleşti. Edirne, Tekirdağ ve Çorlu'da sabah araçların üzerini çamur kaplarken oto yıkamacılarda yoğunluk yaşandı.",
     category: "YAŞAM",
@@ -3275,7 +3411,7 @@ const headlineArticles = [
   },
   {
     id: 22,
-    headlineNumber: 25,
+    headlineNumber: 26,
     title: "Tekirdağ Büyükşehir'den Kadınlara Büyük Destek: 'Birlikte Güçlüyüz' Atölyesi Başlıyor!",
     spot: "Tekirdağ Büyükşehir Belediyesi Çerkezköy Kadın Danışma Merkezi, 'Birlikte Güçlüyüz' sloganıyla 8 haftalık ücretsiz kadın çalışmaları atölyesini başlatıyor. İletişim, haklar ve psikolojik güçlenme hedefleniyor.",
     category: "YAŞAM & EĞİTİM",
@@ -3357,7 +3493,7 @@ const headlineArticles = [
   },
   {
     id: 19,
-    headlineNumber: 26,
+    headlineNumber: 27,
     title: "Narin Ailesi Yaptığı Eserleriyle Takdir Topluyor: Çerkezköy'e 8 Derslikli Özden Narin Anaokulu Geliyor!",
     spot: "İnsanlar isimleriyle değil geride bıraktığı eserleriyle ölümsüzleşir sözünü yaşatan Narin Ailesi, 8 bin öğrenciye ulaşan eğitim yatırımlarına Çerkezköy'de Özden Narin Anaokulu'nu ekliyor. Valilikte protokol imzalandı.",
     category: "EĞİTİM & GÜNDEM",
@@ -3486,7 +3622,7 @@ const headlineArticles = [
   },
   {
     id: 18,
-    headlineNumber: 27,
+    headlineNumber: 28,
     title: "Başkan Müge Yıldız Topak Sahaya İndi: 'Üreticimizin Yarasını Birlikte Saracağız!'",
     spot: "Ergene ile Çorlu arasında 900 dekar arazide etkili olan anız yangınının ardından Ergene Belediyesi, zarar gören çiftçiler ve çiftlikler için seferberlik başlattı. Hayvanlar için geçici barınaklar kuruluyor.",
     category: "TRAKYA HABER",
@@ -3599,7 +3735,7 @@ const headlineArticles = [
   },
   {
     id: 17,
-    headlineNumber: 28,
+    headlineNumber: 29,
     title: "Çerkezköy Özel İrmet Hospital'dan Anne Adaylarına Müjde: Ücretsiz Gebe Okulu Başladı!",
     spot: "Uzman Kadın Doğum hekimleri, ebeler ve fizyoterapistler eşliğinde anne adaylarına nefes egzersizleri, pilates, ağrısız doğum ve bebek bakımı eğitimi veriliyor.",
     category: "SAĞLIK",
